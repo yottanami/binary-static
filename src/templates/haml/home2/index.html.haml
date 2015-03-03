@@ -36,8 +36,8 @@
           %li!= l('<span>All durations:</span> from 10 seconds to 365 days.')
           %li!= l('<span>All payouts:</span> from $1 to $100,000.')
         .center{:style => "margin-top:40px;"}
-          %a#signbox.button.pjaxload.pjaxload-focus{:href => url_for('linkto_acopening.cgi?actype=real')}
-            %span= l('Open a Real Money Account')
+          %a#signbox.button.important.pjaxload.pjaxload-focus{:href => url_for('linkto_acopening.cgi?actype=real')}
+            != l('Open a Real Money Account')
 #q-cta
   #q-reason
     .grd-container
@@ -60,10 +60,10 @@
               %h3= l('Go with the leader')
               %p= l('Binary.com is the award-winning industry pioneer in online options trading.')
   .q-cta
-    %a.pjaxload.q-real{:href => url_for('linkto_acopening.cgi?actype=real'), :class => 'button'}
-      %span= l('Open real account')
-    %a.pjaxload.q-virtual{:href => url_for('linkto_acopening.cgi?actype=virtual'), :class => 'button'}
-      %span= l('Open virtual account')
+    %a.button.important.pjaxload.q-real{:href => url_for('linkto_acopening.cgi?actype=real')}
+      != l('Open real account')
+    %a.button.pjaxload.q-virtual{:href => url_for('linkto_acopening.cgi?actype=virtual')}
+      != l('Open virtual account')
 #xtestimonial
   .grd-container
     .grd-row-padding

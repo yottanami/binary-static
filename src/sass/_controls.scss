@@ -3,9 +3,10 @@ button, input[type=submit], input[type=button], a.button {
     color: $COLOR_WHITE;
     background: $COLOR_BLUE;
     font-weight: bold;
+    text-transform: capitalize;
     border: 0;
     padding: 10px 15px;
-    border-radius: 4px;
+    border-radius: 4px;    
     &:focus {
         outline: none;
     }
