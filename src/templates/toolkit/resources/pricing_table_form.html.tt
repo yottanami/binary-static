@@ -110,7 +110,7 @@
                 <div class="grd-grid-12 center-aligned">
                     <input type="hidden" value="price" name="action" />
                     <input type="hidden" id="calculating" value=[% l('Calculating') %] />
-                    <button id="pricingtable_calculate" class="button" value="calculate" type="submit">[% l('Calculate') %]</button>
+                    <button id="pricingtable_calculate" class="button important" value="calculate" type="submit">[% l('Calculate') %]</button>
                     <button style="display:none;" disabled="disabled" id="pricingtable_calculating" class="button" value="calculating" type="submit">[% l('Calculating') %]</button>
                 </div>
             </fieldset>

@@ -58,10 +58,6 @@
   .open-account {
     background: $COLOR_LIGHT_GRAY;
     padding: 20px;
-    a {
-      @include link-button;
-      display: block;
-    }
   }
 }
 
@@ -83,30 +79,6 @@
   .open-account {
     p { margin-bottom: 1em; }
     padding: 20px;
-    a {
-      @include link-button;
-      display: block;
-    }
-  }
-}
-
-@mixin link-button {
-  color: $COLOR_WHITE;
-  text-decoration: none;
-  text-align: center;
-  line-height:100%;
-  background: $COLOR_GREEN;
-  border-radius: 4px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 15px 10px 15px;
-  display: inline-block;
-  &:visited {
-    color: $COLOR_WHITE;
-  }
-  &:hover, &:active {
-    text-decoration: none;
-    background-color: #14602B;
   }
 }
 
@@ -121,6 +93,7 @@
       border: none;
       border-bottom: 2px solid $COLOR_GRAY_SHADE;
       border-radius: 0;
+      padding: 10px 25px;
       color: $COLOR_BLACK;
       font-weight: normal;
       &.disabled {

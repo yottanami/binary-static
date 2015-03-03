@@ -15,7 +15,6 @@
     border-radius: 4px;
   }
   input[type=button] {
-    @include link-button;
     padding: 6px 15px 6px 15px;
     font-size: 14px;
   }
