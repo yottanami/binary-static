@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1228\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-02-22 03:34+0200\n"
+"PO-Revision-Date: 2015-02-27 10:34+0200\n"
 "Last-Translator: Freddy Hew <hewfreddy@gmail.com>\n"
 "Language-Team: Chinese (China) <https://hosted.weblate.org/projects/binary/static/zh_CN/>\n"
 "Language: zh_cn\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.2\n"
+"X-Generator: Weblate 2.3-dev\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: /home/git/regentmarkets/bom-app/top_up_virtual.cgi:58
@@ -26,16 +26,6 @@ msgstr " 已记入您的虚拟资金账户"
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:42
 msgid "\"I work with a number of affiliate companies, and %1 is by far the friendliest and most helpful that I've found. They go out of their way to provide their affiliates with all the tools, advice and support they need to succeed. To top it all off they offer some of the most handsome rebates in the industry.\" - <strong>Vinod Gorasia, Marketing Manager, Agora Lifestyles</strong>."
 msgstr "“我与多家联盟公司合作，迄今为止，%1 是我所发现的最友好最有帮助的联盟网站。他们竭力为联盟提供成功所需的所有工具、建议和支持。最重要的是，他们提供业内最佳的回扣。”- <strong>Agora Lifestyles 公司市场经理 Vinod Gorasia </strong>表示。"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "$1 to $100,000 payouts, low-risk to high-leverage, and much more. We offer limitless profit opportunities."
-msgstr "您可自主设定赔付额，低至 1 美元高至 10 万美元；低风险与高杠杆齐聚一身，更多优点不胜枚举！我们为您提供无限的获利机会。"
-
-#. ('100%')
-#. ('1000%')
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "%1"
-msgstr "%1"
 
 #. (client.loginid)
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/betting_limits.html.tt:2
@@ -233,7 +223,7 @@ msgid "%1 prices are benchmarked against the interbank options market, so you al
 msgstr "%1的报价基于银行间二元期权市场，让您可在交易中始终获得同类产品中最优的报价。"
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3910
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3904
 msgid "%1 provides <a href=\"%2\">Self Exclusion</a> facilities which allow you to set limits on your account."
 msgstr "%1 提供 <a href=\"%2\">自我禁止 (Self Exclusion)</a> 工具，方便您设置账户限额。"
 
@@ -247,10 +237,15 @@ msgstr "%1提供多种图表，以帮助您决定在哪些市场上交易。赶�
 msgid "%1 provides approved business partners with a REST-style application programming interface (API) over the internet. The API provides the following functionality:"
 msgstr "%1通过互联网向已核准的业务伙伴提供表述性状态转移(REST)风格的应用程序编程接口(API)。API提供以下功能："
 
-#. (stash->{website_name})
+#. (stash->{website_name}, url_for('self_exclusion.cgi')
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "%1 provides you with the opportunity to either self exclude or"
-msgstr "%1为您提供自我禁止或"
+msgid "%1 provides you with the opportunity to either self exclude or <a href=\"%2\">set limits on your trading activities</a> on this website. You may also <a href=\"%3\">contact us</a> to state the limits you wish to set via live chat, email or phone. Available limits are:"
+msgstr "通过 %1，您可以在网站上 self exclude 或 <a href=\"%2\">为自己的交易活动设限</a>。您也可以通过在线交谈、电邮或电话 <a href=\"%3\">联系我们</a> 告诉我们您想要设定的限额。可用的限额如下："
+
+#. ($currency)
+#: lib/BOM/Product/Transaction.pm:532
+msgid "%1 transactions may not be performed with this account."
+msgstr "此账户可能无法执行%1交易。"
 
 #. ('REFRESH_TOKEN')
 #: /home/git/translations/binary-static/src/templates/haml/static/devguide.html.haml:1
@@ -285,6 +280,7 @@ msgid "%1's patented pricing technology allows you to benefit from the same rate
 msgstr "利用%1受专利保护的报价技术，您可获得与银行间市场交易员同样的回报率。"
 
 #. (stash('broker_name')
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home4/index.html.haml:1
@@ -316,6 +312,16 @@ msgstr "%2提供虚拟资金账户，以便投资者掌握二元期权交易的�
 msgid "%ctx(If you look in the sky)You will see %plural(%1,one star, %d stars)."
 msgstr "%ctx（如果你仰望天空）你会看到 %plural(%1,一颗星星, %d 很多星星)。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "&#8220;Binary.com is one of the oldest and trustworthy partners we ever had. We have worked together for many years.&#8221;"
+msgstr "&#8220;Binary.com一向都是我们最长久和最伩赖的合作伙伴。我们已经有很多年的合作关系。&#8221;"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "&#8220;We have used www.binary.com for the last 8 years and highly recommend binary to all our members worldwide&#8221;"
+msgstr "&#8220;我们已经使用了 www.binary.com 达8年之久，非常乐意地向我们的全球会员推荐此网站&#8221;"
+
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:54
 msgid "(Bejing/CST -8 hours)"
 msgstr "（北京/CST -8 小时）"
@@ -335,10 +341,6 @@ msgstr "*免税：在很多国家免税，但须咨询专业税务顾问。"
 #: /home/git/translations/binary-static/src/templates/haml/get_started/binary_options_basics.html.haml:1
 msgid "1. Choose the Underlying"
 msgstr "1. 选择标的资产"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "10 seconds to 365 days..."
-msgstr "从10 秒到 365 天..."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/charting/livechart_duration.html.tt:4
 msgid "10min"
@@ -537,6 +539,26 @@ msgstr "<span class=\"zquotation\">“</span>Binary.com一向都是我们最长�
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "<span class=\"zquotation\">“</span>We have used www.binary.com for the last 8 years and highly recommend binary to all our members worldwide<span class=\"zquotation\">”</span>"
 msgstr "<span class=\"zquotation\">“</span>我们已经使用了 www.binary.com 达8年之久，非常乐意地向我们的全球会员推荐此网站<span class=\"zquotation\">”</span>"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "<span>All durations:</span> from 10 seconds to 365 days."
+msgstr "<span>所有合约期限:</span>从10 秒到 365 天。"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "<span>All market conditions:</span> up/down, touch/no-touch, stays in/goes out."
+msgstr "<span>所有市场条件:</span>上涨/下跌，触及/未触及，范围内/范围外。"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "<span>All markets:</span> currencies, stock indices, and commodities."
+msgstr "<span>所有市场:</span>外汇、股指和大宗商品。"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "<span>All payouts:</span> from $1 to $100,000."
+msgstr "<span>所有赔付额:</span>从 1 美元到 10 万美元。"
 
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/get_started/benefits_of_trading_binaries.html.haml:1
@@ -867,7 +889,7 @@ msgstr "出现问题"
 msgid "A problem occurred while connecting to the server. Please try again later."
 msgstr "连接服务器时出现问题。请稍后重试。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4388
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4382
 msgid "A recent (less than 3 months old) scanned copy of your paper utility bill, or your paper bank, credit union, building society, credit, or debit card statement, or passbook"
 msgstr "您近期（3个月内）的水电煤或银行、信用合作社、房屋抵押贷款协会、信用卡或借记卡纸质账单或存折的扫描件"
 
@@ -875,7 +897,7 @@ msgstr "您近期（3个月内）的水电煤或银行、信用合作社、房�
 msgid "A scanned copy of a utility bill showing your current residential address (utility bill must not be more than 3 months old)."
 msgstr "您目前居住地址的水电煤账单扫描件（账单不得超过3个月）。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4385
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4379
 msgid "A scanned copy of your current valid passport, current driving license (provisional or full), or identity card"
 msgstr "当前有效护照、当前驾照（临时或永久）或身份证的扫描件"
 
@@ -912,6 +934,10 @@ msgstr "关于"
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:147
 msgid "About Us"
+msgstr "关于我们"
+
+#: /home/git/translations/binary-static/src/templates/haml/about/index.html.haml:1
+msgid "About us"
 msgstr "关于我们"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/resources/pricing_table_form.html.tt:50
@@ -951,7 +977,7 @@ msgstr "账户管理及追踪"
 
 #: /home/git/regentmarkets/bom-app/create_account.cgi:208
 #: /home/git/regentmarkets/bom-app/create_account.cgi:328
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3762
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3756
 #: /home/git/regentmarkets/bom-app/open_account.cgi:16
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:127
 msgid "Account Opening"
@@ -1055,8 +1081,8 @@ msgstr "网站所载的一切意见、新闻、研究、分析、价格或其他
 msgid "All times are in GMT (Greenwich Mean Time)."
 msgstr "所有时间均采用 格林威治标准时间（GMT）。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3390
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3528
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3385
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3522
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:221
 msgid "Amount"
 msgstr "金额"
@@ -1113,6 +1139,11 @@ msgstr "摆动指标用于识别相对强弱指数（RSI）的超买或超卖。
 msgid "And your weekends can take you to some of the world’s most exotic and beautiful places."
 msgstr "周末到了，您可去世界上最奇特、最美丽的一些地方游玩。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Andrei Asavei <span>Top Binary Options Brokers</span>"
+msgstr "Andrei Asavei <span>顶尖二元期权代理</span>"
+
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Andrei Asavei<span> Top Binary Options Brokers</span>"
 msgstr "Andrei Asavei<span>顶尖二元期权代理</span>"
@@ -1138,10 +1169,6 @@ msgstr "任何形式的垃圾邮件都将会导致您的账户受到审查，所
 msgid "Any information given on these pages and/or emails or newsletters sent by the company related thereto, is not intended as financial or investment advice and the Company will not accept any liability in this respect, nor will the Company accept any responsibility for the accuracy or comprehensiveness of the information provided on this site."
 msgstr "这些网页上和/或公司发送的与之相关的邮件或简报上的信息不构成财务或投资建议，公司将不会承担任何与此相关的责任，公司也不负责确保网站上信息的准确性或完整性。"
 
-#: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "Any limits set may only be changed or increased after 7 days notice."
-msgstr "所设置的限额仅可在 7 天通知期后才可更改或增加。"
-
 #. (affiliate_email)
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:126
 msgid "Any notice given or made under this Agreement to the Company shall be by email to %1. The Company shall send you any notices given or made under this Agreement to the email address supplied on your application form or such other email address as notified by you to the Company."
@@ -1160,7 +1187,7 @@ msgstr "应用程序名称"
 msgid "Apply for access"
 msgstr "申请访问权限"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3929
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3923
 #: /home/git/regentmarkets/bom-app/paymentagent_application.cgi:19
 #: /home/git/regentmarkets/bom-app/paymentagent_application.cgi:23
 #: /home/git/regentmarkets/bom-app/paymentagent_application.cgi:53
@@ -1252,7 +1279,7 @@ msgstr "资产"
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/resources/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:90
-#: lib/BOM/Product/Contract.pm:2877 lib/BOM/Product/Contract.pm:2919
+#: lib/BOM/Product/Contract.pm:2876 lib/BOM/Product/Contract.pm:2918
 msgid "Asset Index"
 msgstr "资产指数"
 
@@ -1290,7 +1317,7 @@ msgstr "验证您的账户"
 msgid "Authenticated"
 msgstr "已验证"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4321
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4315
 msgid "Authentication"
 msgstr "验证"
 
@@ -1360,7 +1387,7 @@ msgstr "银行电汇/转账"
 msgid "Bank your way"
 msgstr "支持各种存取款方式"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3963
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3957
 msgid "Bank/Credit Union/Building Society/Credit/Debit Card statement or passbook (within last 3 months)."
 msgstr "银行/信用合作社/房屋抵押贷款协会/信用卡/借记卡账单或存折（最近 3 个月内）。"
 
@@ -1405,16 +1432,16 @@ msgstr "障碍步骤(%)超出范围"
 msgid "Barrier Step format error"
 msgstr "障碍步骤格式错误"
 
-#: lib/BOM/Product/Contract.pm:2602
+#: lib/BOM/Product/Contract.pm:2601
 msgid "Barrier is out of acceptable range."
 msgstr "障碍不在可接受范围内。"
 
-#: lib/BOM/Product/Contract.pm:2592
+#: lib/BOM/Product/Contract.pm:2591
 msgid "Barrier may not be adjusted."
 msgstr "障碍可能无法调整。"
 
 #. ($min_pips . ' pips away from the spot.')
-#: lib/BOM/Product/Contract.pm:2548
+#: lib/BOM/Product/Contract.pm:2547
 msgid "Barrier must be at least "
 msgstr "障碍至少必须 "
 
@@ -1435,7 +1462,7 @@ msgstr "障碍条款"
 msgid "Barrier(s)"
 msgstr "障碍"
 
-#: lib/BOM/Product/Contract.pm:2573
+#: lib/BOM/Product/Contract.pm:2572
 msgid "Barriers must be on either side of the spot."
 msgstr "障碍必须放到点的两边之一。"
 
@@ -1464,10 +1491,6 @@ msgstr "二元期权交易的优点"
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:67
 msgid "Best Tracking with \"Forever Cookies\""
 msgstr "通过“永久性 Cookie”实现最佳追踪"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Best-in-class pricing for binaries..."
-msgstr "二元期权业内最佳报价..."
 
 #: /home/git/translations/binary-static/src/templates/haml/static/group_history.html.haml:1
 msgid "BetOnMarkets goes live"
@@ -1589,6 +1612,8 @@ msgstr "Binary.com 是 Perl 社区的活跃成员，正在将一些内部使用�
 msgid "Binary.com is an active proponent of the open-source movement and is in the process of open-sourcing a number of components of its codebase."
 msgstr "Binary.com是开源运动的积极倡导者，并正在开放一批代码库组件。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Binary.com is the award-winning industry pioneer in online options trading."
 msgstr "Binary.com是在线期权交易领域屡获殊荣的领先企业。"
@@ -1596,6 +1621,10 @@ msgstr "Binary.com是在线期权交易领域屡获殊荣的领先企业。"
 #: /home/git/translations/binary-static/src/templates/haml/static/group_history.html.haml:1
 msgid "Binary.com offers new ways to trade"
 msgstr "Binary.com 提供新的交易方式"
+
+#: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
+msgid "Binary.com open-source projects"
+msgstr "Binary.com 开源项目"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/group_history.html.haml:1
 msgid "Binary.com reaches $2 billion turnover since starting in 1999"
@@ -1610,6 +1639,8 @@ msgstr "Binary.com 注册用户已达1百万人"
 msgid "Binary.com supports %1. GamCare has a commitment to promote responsible attitudes to gambling and to work for the provision of proper care for those who have been harmed by gambling dependency."
 msgstr "Binary.com支持%1。GamCare致力于促进以负责任的态度进行投机交易，努力为深受投机成瘾之苦的人们提供适当关怀。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Binary.com's patented pricing technology allows you to benefit from the same rates of return as traders in the interbank market."
 msgstr "利用Binary.com受专利保护的报价技术，您可获得与银行间市场交易员同样的回报率。"
@@ -1745,6 +1776,7 @@ msgstr "你是否能为我的网站定制一个横幅广告？"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:175
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:506
+#: /home/git/translations/binary-static/src/templates/toolkit/container/confirm_box_popup.html.tt:7
 msgid "Cancel"
 msgstr "取消"
 
@@ -1919,6 +1951,8 @@ msgstr "如您希望通过预测市场在合约期限内是否会触及或不触
 msgid "Choose a duration from 10 seconds to 365 days."
 msgstr "合约期限的选择范围为10 秒到 365 天。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Choose a password"
 msgstr "选用密码"
@@ -2034,8 +2068,10 @@ msgid "Clients who do not wish to renew the self-exclusion and make a request to
 msgstr "对于不想续签自我禁止并请求重新开始交易的客户，我们将在允许此类客户访问本网站之前给予他们一天时间的冷静期。需要注意的是，客户必须通过电话与我们的客户服务人员联系，这是非常重要的。仅以电子邮件联系是不足够的。"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "Clients who wish to self-exclude should be aware that the self-exclusion period is a minimum of six months and are given the option to extend it to a total of at least five years, immediately without any cooling-off period. At the end of the self-exclusion period, the self-exclusion remains in place, unless positive action is taken by the client in order to trade again."
-msgstr "愿意自我禁止的客户应注意，自我禁止期至少是6个月，且可以在没有任何冷静期的情况下选择立即将禁止期延长到总共至少五年。在自我禁止期结束时，自我禁止状态将继续保留，除非客户采取积极行动再次进行交易。"
+msgid "Clients who wish to self-exclude should be aware that the self-exclusion period is a minimum of six months and are given the option to extend it to a total of at least five years, immediately without any cooling-off period. When the self-exclusion period is set, the balance of funds in the client's account will be refunded to the client. At the end of the self-exclusion period, the self-exclusion remains in place, unless positive action is taken by the client in order to trade again."
+msgstr ""
+"愿意自我禁止的客户应注意，自我禁止期至少是6个月，且可以在没有任何冷静期的情况下选择立即将禁止期延长到总共至少五年。自我禁止期\n"
+"设定之后，客户帐户里的剩余资金将退还给客户。在自我禁止期结束时，自我禁止状态将继续保留，除非客户采取积极行动再次进行交易。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:443
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:540
@@ -2141,6 +2177,7 @@ msgid "Complaints and Disputes"
 msgstr "投诉与纠纷"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/container/confirm_box_popup.html.tt:1
+#: /home/git/translations/binary-static/src/templates/toolkit/container/confirm_box_popup.html.tt:5
 msgid "Confirm"
 msgstr "确认"
 
@@ -2159,7 +2196,6 @@ msgstr "联系方式"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:99
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/topbar.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/static/contact.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/white_labels.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/email/common_email.html.tt:736
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:174
@@ -2206,7 +2242,7 @@ msgid "Contract barrier must be positive."
 msgstr "合约障碍必须为正数。"
 
 #. ($end_of_bo->date)
-#: lib/BOM/Product/Contract.pm:2994
+#: lib/BOM/Product/Contract.pm:2993
 msgid "Contract can not expire during the end-of-year holiday period. Select an expiry date after %1."
 msgstr "合约的到期日不能设置在年末节日期间。选择 %1 之后的一个到期日。"
 
@@ -2222,20 +2258,20 @@ msgstr "合约发现与报价"
 msgid "Contract expired"
 msgstr "合约已到期"
 
-#: lib/BOM/Product/Contract.pm:2759
+#: lib/BOM/Product/Contract.pm:2758
 msgid "Contract has already expired."
 msgstr "合约已经到期。"
 
-#: lib/BOM/Product/Contract.pm:1853
+#: lib/BOM/Product/Contract.pm:1852
 msgid "Contract market price is too close to final payout."
 msgstr "合约市场价格离最终赔付额太近。"
 
 #. ($eod_blackout_expiry->as_string)
-#: lib/BOM/Product/Contract.pm:2801
+#: lib/BOM/Product/Contract.pm:2800
 msgid "Contract may not expire within the last %1 of trading."
 msgstr "合约不能在交易的最后%1内到期。"
 
-#: lib/BOM/Product/Contract.pm:2768
+#: lib/BOM/Product/Contract.pm:2767
 msgid "Contract must expire during trading hours."
 msgstr "合约必须在交易时段内到期。"
 
@@ -2279,7 +2315,7 @@ msgid "Contracts on %1 which both start and end between %2 and %3 on the same da
 msgstr "%1在同一天始于及结束于 %2 和 %3 之间的合约不可用。"
 
 #. ($underlying->translated_display_name()
-#: lib/BOM/Product/Contract.pm:2787
+#: lib/BOM/Product/Contract.pm:2786
 msgid "Contracts on %1 with durations under 24 hours must expire on the same trading day."
 msgstr "期限小于24小时的%1合约必须在同一交易日到期。"
 
@@ -2357,7 +2393,7 @@ msgstr "外汇报价四舍五入到5位数，所有的合约均以5位数外汇�
 msgid "Current Spot"
 msgstr "当前现货价格"
 
-#: lib/BOM/Product/Contract.pm:2445
+#: lib/BOM/Product/Contract.pm:2444
 msgid "Current market price is 0."
 msgstr "当前市场价格是 0。"
 
@@ -2365,16 +2401,16 @@ msgstr "当前市场价格是 0。"
 msgid "Current password"
 msgstr "当前密码"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3954
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4408
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3948
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4402
 msgid "Current photocard Driving Licence (Provisional or Full)"
 msgstr "当前照片卡驾照（临时或正式）"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3951
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3945
 msgid "Current signed Passport"
 msgstr "有效签字护照"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4407
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4401
 msgid "Current signed Passport OR"
 msgstr "有效签字护照或"
 
@@ -2407,7 +2443,7 @@ msgstr "每日成交量限额"
 
 #. ($all_currencies, $self_exclusion->max_turnover)
 #. ($currencies, $self_exclusion->max_turnover)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4017
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4011
 #: /home/git/regentmarkets/bom-backoffice/f_setting_selfexclusion.cgi:64
 msgid "Daily Turnover limit is currently set to <strong>%1 %2</strong>"
 msgstr "每日成交量限额当前设置为 <strong>%1 %2</strong>"
@@ -2602,8 +2638,6 @@ msgstr "存款/包含佣金"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/account/statement.html.tt:59
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:16
-#: /home/git/translations/binary-static/src/templates/toolkit/homepage/deposit_alert.html.tt:1
-#: /home/git/translations/binary-static/src/templates/toolkit/homepage/deposit_alert.html.tt:5
 msgid "Deposit"
 msgstr "存款"
 
@@ -2617,7 +2651,7 @@ msgid "Deposit Bonus"
 msgstr "存款奖金"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:517
-msgid "Deposit to Payment Agent"
+msgid "Deposit to payment agent"
 msgstr "存入支付代理"
 
 #: /home/git/regentmarkets/bom-backoffice/f_manager_confodeposit.cgi:311
@@ -2703,11 +2737,6 @@ msgstr "探索我们的智能指数。"
 msgid "Discover our indices generated from random numbers."
 msgstr "探索我们利用随机数字生成的指数。"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
-msgid "Discover the easiest way to get started in the financial markets."
-msgstr "探索参与金融市场最简便的方法。"
-
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:20
 msgid "Discovering an easy, low-risk, flexible, award-winning platform for profiting from market action"
 msgstr "探索简单易用、低风险、灵活和备受好评的平台，通过预测市场行为获利"
@@ -2764,6 +2793,8 @@ msgstr "您要查看其他语言版本的Binary.com，还是想对当前译文�
 msgid "Documents are required to verify your identity"
 msgstr "需要提交文件才能验证您的身份"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Don't limit yourself! Whatever your market view, Binary.com allows you to put your strategy to work and profit from your predictions."
 msgstr "不要局限自己！无论您的市场观点如何，Binary.com  都能让您的交易策略实现价值，让您能通过预测市场获利。"
@@ -2831,7 +2862,7 @@ msgid "Duration"
 msgstr "期限"
 
 #. ($shortest->as_string, $longest->as_string)
-#: lib/BOM/Product/Contract.pm:2883
+#: lib/BOM/Product/Contract.pm:2882
 msgid "Duration must be between %1 and %2."
 msgstr "期限须在%1 与 %2之间。"
 
@@ -2944,6 +2975,8 @@ msgstr "请按与现货价格差额的形式输入障碍水平。如果您输入
 msgid "Enter the barrier in terms of the difference from the spot price. If you enter +0.005, then you will be purchasing a contract with a barrier 0.005 higher than the entry spot. The entry spot will be the next tick after your order has been received."
 msgstr "请按与现货价格差额的形式输入障碍水平。如果您输入 +0.005 ，那么您将买入障碍水平比入市现价高 0.005 的合约。入市现价为收到您订单之后的下一个价格。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Enter your email"
 msgstr "请输入您的电子邮件"
@@ -2991,15 +3024,15 @@ msgstr "换股收购"
 msgid "Exclude me from the website until"
 msgstr "禁止我访问本网站直到"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3317
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3312
 msgid "Exclude time cannot be for more than five years."
 msgstr "禁止时间不能超过五年。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3312
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3307
 msgid "Exclude time cannot be less than 6 months."
 msgstr "禁止时间不能少于6个月。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3307
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3302
 msgid "Exclude time must be after today."
 msgstr "禁止时间必须在今日之后。"
 
@@ -3021,10 +3054,6 @@ msgstr "退出现价"
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/explanation/details/risefall.html.tt:10
 msgid "Exit spot"
 msgstr "退出现价"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Experienced Traders"
-msgstr "熟练交易者"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/resources/pricing_table.html.tt:5
 #: /home/git/translations/binary-static/src/templates/toolkit/resources/pricing_table_ajax.html.tt:13
@@ -3062,7 +3091,7 @@ msgid "Exponential Moving Average"
 msgstr "指数移动平均线"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
-msgid "ExtJS Front-End"
+msgid "ExtJS front-end"
 msgstr "ExtJS 前端"
 
 #: /home/git/regentmarkets/bom-app/affiliate_signup.cgi:76
@@ -3224,7 +3253,7 @@ msgstr ""
 "↵ \n"
 "%1"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3944
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3938
 msgid "For security reasons, please note that Payment Agent accounts will only be able to deposit via Bank Wire."
 msgstr "需要注意的是，出于安全考虑，只能通过银行电汇将资金存入支付代理的账户。"
 
@@ -3271,7 +3300,7 @@ msgstr "欺诈和洗钱"
 msgid "Free Bonus"
 msgstr "免费奖金"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4182
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4176
 msgid "Free Contract Bonus"
 msgstr "免费合约奖金"
 
@@ -3306,7 +3335,7 @@ msgstr "到期起始日期超出范围"
 msgid "From:"
 msgstr "起始："
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3563
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3557
 msgid "Further Instructions"
 msgstr "详细说明"
 
@@ -3317,7 +3346,7 @@ msgid "Further information"
 msgstr "更多信息"
 
 #. (300)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3586
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3580
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:178
 msgid "Further instructions must not exceed %1 characters."
 msgstr "详细说明不能超过 %1 个字符。"
@@ -3353,7 +3382,7 @@ msgid "Generous Commission Structure"
 msgstr "优厚的佣金结构"
 
 #. ($promocode_currency . $promocode_amount,            $promocode_currency . $min_deposit)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4158
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4152
 msgid "Get %1 when you deposit %2."
 msgstr "存 %2 奖 %1。"
 
@@ -3363,10 +3392,13 @@ msgstr "获取报价"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/mobile_menu.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/layouts/default/nav.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/header.html.tt:46
 #: /home/git/translations/binary-static/src/templates/toolkit/global/mobile_menu.html.tt:8
 msgid "Get Started"
+msgstr "开始交易"
+
+#: /home/git/translations/binary-static/src/templates/haml/layouts/default/nav.html.haml:1
+msgid "Get started"
 msgstr "开始交易"
 
 #: /home/git/translations/binary-static/src/templates/haml/layouts/get_started/more.html.haml:1
@@ -3380,7 +3412,6 @@ msgid "Get your free $10k virtual money account"
 msgstr "开立1万美元的虚拟资金账户"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/how_to_trade_binaries.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 msgid "Get your price"
 msgstr "获取报价"
 
@@ -3418,6 +3449,8 @@ msgstr "前往首页"
 msgid "Go to the <a href=\"http://login.binary.com/signup.php\">sign up page</a> to register as %1 affiliate [for free] today."
 msgstr "前往<a href=\"http://login.binary.com/signup.php\">注册页面</a> [免费]注册成为 %1 的联盟会员 。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Go with the leader"
@@ -3595,13 +3628,18 @@ msgstr "如何在随机市场上交易？"
 msgid "How to use a payment agent?"
 msgstr "如何使用支付代理?"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4402
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4396
 msgid "However, in order to increase your withdrawal limits, you are kindly requested to follow the instructions below."
 msgstr "但是，为了提高取款限额，请您务必遵照以下要求行事。"
 
 #: /home/git/regentmarkets/bom-app/smartchart.cgi:80
 msgid "Huge"
 msgstr "巨大"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Hundreds of deposit and withdrawal options."
+msgstr "数以千计的存款和取款选项。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:52
 msgid "I forgot my password, what should I do?"
@@ -3789,10 +3827,6 @@ msgstr "如您是个人交易者，您肯定会认同二元期权交易的简易
 #: /home/git/translations/binary-static/src/templates/haml/static/careers.html.haml:1
 msgid "If you’re looking to build a career, and not a resume, talk to us, Binary.com. We’re one of the IT world’s most vibrant and progressive workplaces."
 msgstr "如果您想成就一番事业，而不是找一份工作，欢迎联系我们。我们是IT领域最具活力、最开明的工作场所之一。"
-
-#: lib/BOM/Product/Transaction.pm:532
-msgid "Illegal currency $currency for $broker"
-msgstr "非法货币$货币$经纪人"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/careers.html.haml:1
 msgid "Imagine"
@@ -3984,7 +4018,7 @@ msgstr "释义"
 msgid "Intraday"
 msgstr "日内"
 
-#: lib/BOM/Product/Contract.pm:1595
+#: lib/BOM/Product/Contract.pm:1594
 msgid "Intraday contracts may not cross market open."
 msgstr "日内合约不能跨越开市。"
 
@@ -4004,10 +4038,10 @@ msgstr "无效住宅编号/名称"
 msgid "Invalid Input"
 msgstr "无效输入"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3412
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3418
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3407
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3413
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3544
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3550
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3556
 msgid "Invalid amount"
 msgstr "无效金额"
 
@@ -4019,7 +4053,7 @@ msgstr "无效传真号。"
 msgid "Invalid login ID and password combination."
 msgstr "无效的登录 ID 和密码组合。"
 
-#: lib/BOM/Product/Contract.pm:2381
+#: lib/BOM/Product/Contract.pm:2380
 msgid "Invalid payout currency."
 msgstr "无效赔付币种。"
 
@@ -4027,7 +4061,7 @@ msgstr "无效赔付币种。"
 msgid "Invalid period input! Please input the period between 0 and #1"
 msgstr "无效期限输入！请输入在 0 和 #1 之间的期限"
 
-#: lib/BOM/Product/Contract.pm:2430
+#: lib/BOM/Product/Contract.pm:2429
 msgid "Invalid stake"
 msgstr "无效投注金额"
 
@@ -4054,11 +4088,11 @@ msgid "Invalid telephone number."
 msgstr "无效电话号码。"
 
 #: /home/git/regentmarkets/bom-app/smartchart.cgi:127
-#: /home/git/regentmarkets/bom-app/smartchart.cgi:457
+#: /home/git/regentmarkets/bom-app/smartchart.cgi:467
 msgid "Invalid underlying"
 msgstr "无效标的资产"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3877
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3871
 msgid "Invalid value."
 msgstr "无效值。"
 
@@ -4123,13 +4157,21 @@ msgstr "一月"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:201
 #: /home/git/translations/binary-static/src/templates/haml/charting/index.html.haml:1
-#: /home/git/translations/binary-static/src/templates/toolkit/charting/chart_application.html.tt:2
 msgid "Java Charts"
+msgstr "Java 图表"
+
+#: /home/git/translations/binary-static/src/templates/toolkit/charting/chart_application.html.tt:2
+msgid "Java charts"
 msgstr "Java 图表"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/email/common_email.html.tt:670
 msgid "Join our analysts LIVE twice a week for a comprehensive analysis of recent developments and trends in the global financial markets."
 msgstr "加入我们每周两次的分析师“实时在线分析”(LIVE)，对全球金融市场的最新发展和趋势进行全面分析。"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Joshua Cavallaro <span> Markets And You Trader.</span>"
+msgstr "Joshua Cavallaro <span> 让您在交易市场得心应手。</span>"
 
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Joshua Cavallaro<span> Markets And You Trader.</span>"
@@ -4202,10 +4244,6 @@ msgstr "显示 %2 最新 %1 跳点之最后数字"
 msgid "Laws regarding financial contracts vary throughout the world, and it is the responsibility of persons accessing this site to ensure that they understand and fully comply with any laws or regulations relevant to themselves in their own country. This site does not constitute, and may not be used for the purposes of, an offer or solicitation to anyone in any jurisdiction in which such offer or solicitation is not authorised or to any person to whom it is unlawful to make such offer or solicitation. Access to this site and the offering of financial contracts via this site in certain jurisdictions may be restricted and, accordingly, persons accessing this site are required to inform themselves about and to observe such restrictions."
 msgstr "世界各地有关金融合约的法律各不相同，本网站访客有责任确保自己了解并完全遵守所在国家与其相关的法律规定。如要约或要约邀请在任何司法管辖区未经授权或向任何人士作出此类要约或要约邀请属于非法，本网站在此类司法管辖区不构成向任何人士发出的要约或要约邀请或者被用于此类目的。访问本网站以及本网站提供的金融合约在部分司法管辖区受到限制，本网站访客须自行获知并遵守此类限制。"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Learn More"
-msgstr "了解更多"
-
 #: /home/git/translations/binary-static/src/templates/haml/get_started/index.html.haml:1
 msgid "Learn about one of the fastest growing sectors of the finance industry."
 msgstr "了解金融行业发展最快的一个领域。"
@@ -4239,7 +4277,7 @@ msgstr "了解在线交易"
 msgid "Legacy Contract"
 msgstr "遗留合约"
 
-#: lib/BOM/Product/Contract.pm:951
+#: lib/BOM/Product/Contract.pm:950
 msgid "Legacy contract. No further information is available."
 msgstr "遗留合约，无其他信息。"
 
@@ -4269,6 +4307,10 @@ msgstr "和%2一样，%1也是每天重新设定价格为1000。区别在于%1�
 msgid "Limit"
 msgstr "限额"
 
+#: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
+msgid "Limits 1 to 3 may only be changed or increased after 7 days notice."
+msgstr "1 到 3 的限额仅可在 7 天通知期后才可更改或增加。"
+
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:426
 msgid "Line"
 msgstr "线"
@@ -4285,8 +4327,8 @@ msgstr "线点图"
 msgid "Links"
 msgstr "链接"
 
-#. (BOM::Platform::Runtime->instance->countries->localized_code2country($target_country, request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3505
+#. (BOM::Platform::Runtime->instance->countries->localized_code2country($client->residence, request()
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3499
 msgid "Listing only Payment Agents in %1."
 msgstr "仅列出在 %1 的支付代理。"
 
@@ -4297,9 +4339,12 @@ msgstr "实时图表"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:225
 #: /home/git/translations/binary-static/src/templates/haml/charting/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
-#: /home/git/translations/binary-static/src/templates/toolkit/charting/livechart.html.tt:2
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:142
 msgid "Live Charts"
+msgstr "实时图表"
+
+#: /home/git/translations/binary-static/src/templates/toolkit/charting/livechart.html.tt:2
+msgid "Live charts"
 msgstr "实时图表"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/contact.html.haml:1
@@ -4423,7 +4468,7 @@ msgstr "下轨"
 msgid "Lower Band = Average - 0.5 * Std Deviation"
 msgstr "下轨 = 平均线 - 0.5 * 标准差"
 
-#: lib/BOM/Product/Contract.pm:2582
+#: lib/BOM/Product/Contract.pm:2581
 msgid "Lower barrier is out of acceptable range. Please adjust the lower barrier."
 msgstr "低障碍价格不在可接受的范围内。请调整低障碍价格。"
 
@@ -4452,12 +4497,11 @@ msgstr "存入资金"
 msgid "Make a deposit or withdraw"
 msgstr "存取款"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3765
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3759
 msgid "Make a deposit using credit card, bank wire, cheque and e-cash. Accounts are available in dollars, pounds and euros. The minimum account size is ($/&pound;/&euro;) 5 and the maximum account size is ($/&pound;/&euro;) 150,000."
 msgstr "通过信用卡、银行电汇、支票和电子现金存入资金。账户支持美元、英镑和欧元。最小账户金额为 5（美元/英镑/欧元），最大账户金额为  150,000（美元/英镑/欧元）。"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/how_to_trade_binaries.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 msgid "Make your trade"
 msgstr "执行交易"
 
@@ -4501,7 +4545,7 @@ msgid "Market exit price"
 msgstr "平仓价"
 
 #. ($safer_expiry->date)
-#: lib/BOM/Product/Contract.pm:2946
+#: lib/BOM/Product/Contract.pm:2945
 msgid "Market holiday during the contract period. Select an expiry date after %1."
 msgstr "该合约期限内的市场假日。在 %1之后选择到期日。"
 
@@ -4532,12 +4576,11 @@ msgstr "市场"
 msgid "Mass Index"
 msgstr "梅斯线"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4170
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4164
 msgid "Matched Contract Bonus"
 msgstr "匹配合约奖励"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3386
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3524
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3518
 msgid "Max"
 msgstr "最多"
 
@@ -4552,7 +4595,7 @@ msgstr "最大账户现金余额"
 
 #. ($all_currencies, $self_exclusion->max_balance)
 #. ($currencies, $self_exclusion->max_balance)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4011
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4005
 #: /home/git/regentmarkets/bom-backoffice/f_setting_selfexclusion.cgi:59
 msgid "Maximum account cash balance is currently set to <strong>%1 %2</strong>"
 msgstr "最大账户现金余额当前设置为  <strong>%1 %2</strong>"
@@ -4575,7 +4618,7 @@ msgid "Maximum number of open positions"
 msgstr "最大未平仓头寸数目"
 
 #. ($self_exclusion->max_open_bets)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4023
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4017
 #: /home/git/regentmarkets/bom-backoffice/f_setting_selfexclusion.cgi:69
 msgid "Maximum number of open positions is currently set to <strong>%1</strong>"
 msgstr "最大未平仓头寸数目当前设置为 <strong>%1</strong>"
@@ -4620,8 +4663,7 @@ msgstr "方式"
 msgid "Mid"
 msgstr "中间"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3386
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3524
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3518
 msgid "Min"
 msgstr "最少"
 
@@ -4633,6 +4675,11 @@ msgstr "存款金额范围"
 msgid "Min-Max Withdrawal"
 msgstr "取款金额范围"
 
+#. ($min_amount, $max_amount)
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3381
+msgid "Min: %1 Max: %2"
+msgstr "最小: %1 最大: %2"
+
 #: /home/git/translations/binary-static/src/templates/toolkit/charting/daily_ohlc.html.tt:75
 msgid "Minimum"
 msgstr "最小"
@@ -4641,19 +4688,19 @@ msgstr "最小"
 msgid "Miss"
 msgstr "遗漏"
 
-#: lib/BOM/Product/Contract.pm:1711
+#: lib/BOM/Product/Contract.pm:1710
 msgid "Missing market data for contract duration"
 msgstr "合约期间的遗漏市场数据"
 
-#: lib/BOM/Product/Contract.pm:1556 lib/BOM/Product/Contract.pm:1609
+#: lib/BOM/Product/Contract.pm:1555 lib/BOM/Product/Contract.pm:1608
 msgid "Missing market data for contract period."
 msgstr "合约期间的遗漏市场数据。"
 
-#: lib/BOM/Product/Contract.pm:1495
+#: lib/BOM/Product/Contract.pm:1494
 msgid "Missing market data for entry spot."
 msgstr "入市现价的遗漏市场数据。"
 
-#: lib/BOM/Product/Contract.pm:1569 lib/BOM/Product/Contract.pm:1582
+#: lib/BOM/Product/Contract.pm:1568 lib/BOM/Product/Contract.pm:1581
 msgid "Missing market data for exit spot."
 msgstr "退出现价的遗漏市场数据。"
 
@@ -4708,11 +4755,6 @@ msgstr "月份"
 #: /home/git/translations/binary-static/src/templates/haml/static/careers.html.haml:1
 msgid "More benefits"
 msgstr "更多福利"
-
-#. ('<h1>1,000,000</h1>')
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "More than %1 trades available"
-msgstr "超过 %1 种交易供您选择"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:563
 msgid "Mother's maiden name"
@@ -4816,13 +4858,9 @@ msgstr "新密码"
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:268
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:289
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:315
-#: /home/git/regentmarkets/bom-backoffice/f_clientloginid_newpassword.cgi:79
+#: /home/git/regentmarkets/bom-backoffice/f_clientloginid_newpassword.cgi:78
 msgid "New Password Request"
 msgstr "新密码请求"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "New To Trading?"
-msgstr "交易新手？"
 
 #: /home/git/regentmarkets/bom-app/create_account.cgi:196
 msgid "New account registration fail."
@@ -4842,7 +4880,6 @@ msgstr "下一页"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1007
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2900
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:416
-#: /home/git/translations/binary-static/src/templates/toolkit/container/confirm_box_popup.html.tt:7
 msgid "No"
 msgstr "无"
 
@@ -4879,7 +4916,6 @@ msgid "No person shall abuse this site for the purpose of money laundering. The 
 msgstr "任何人都不得以洗钱为目的滥用本网站。公司采用最佳反洗钱程序，可能会对客户造成一些影响。公司有权拒绝、中断或撤销不接受或不遵守反洗钱规定的客户所执行的交易。"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/how_to_trade_binaries.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/layouts/get_started/more.html.haml:1
 msgid "No risk, $10K virtual money account"
 msgstr "无任何风险，获得一万美元虚拟资金账户"
@@ -4906,11 +4942,11 @@ msgstr "注：公司有权取消逾期两年未申领的佣金。请阅读我们
 msgid "Note: You will be able to withdraw your bonus of %1%2 only once your aggregate volume of trades exceeds %1%3. This restriction applies only to the bonus and profits derived therefrom.  All other deposits and profits derived therefrom can be withdrawn at any time."
 msgstr "注：仅当您的交易总额超过 %1%3时，您才能够提取您的奖金  %1%2。此限制仅适用于由此产生的奖金和收益。由此产生的所有其他存款和收益可随时提取。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4050
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4044
 msgid "Note: limits will apply to all currency segments on your account individually."
 msgstr "注：将单独对您账户的所有货币应用限额。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3940
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3934
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:156
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:174
 #: /home/git/translations/binary-static/src/templates/toolkit/resources/pricing_table.html.tt:69
@@ -4918,12 +4954,12 @@ msgid "Notes:"
 msgstr "注："
 
 #. ($attorney->url, $attorney->company_name)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4088
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4082
 msgid "Notice: Power of Attorney to your account has been revoked from <a target=\"_blank\" href=\"%1\">%2</a>.<br>Trades cannot be placed anymore on your account directly by <a target=\"_blank\" href=\"%1\">%2</a>."
 msgstr "注意：您的账户委托书已从<a target=\"_blank\" href=\"%1\">%2</a>撤销。<br/>您的账户再也不能通过<a target=\"_blank\" href=\"%1\">%2</a>直接进行交易。"
 
 #. ($attorney->url,            $attorney->company_name,            request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4084
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4078
 msgid "Notice: your account has granted Power of Attorney to <a target=\"_blank\" href=\"%1\">%2</a>.<br>Trades may be placed on your account directly by <a target=\"_blank\" href=\"%1\">%2</a>. You may <a class=\"bom_confirm_popup_link\" href=\"%3\">revoke this Power of Attorney at any time.</a>"
 msgstr "注意：您的账户已将委托书授予<a target=\"_blank\" href=\"%1\">%2</a>。<br/><a target=\"_blank\" href=\"%1\">%2</a>可通过您的账户直接进行交易。要撤消此委托书，请<a class=\"bom_confirm_popup_link\" href=\"%3\">点击这里。</a>"
 
@@ -4941,10 +4977,6 @@ msgstr "十一月"
 msgid "November"
 msgstr "十一月"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Novice or Expert..."
-msgstr "不论是新手，还是专家..."
-
 #: /home/git/regentmarkets/bom-app/analyse_contract.cgi:189
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:821
 msgid "Now"
@@ -4960,7 +4992,7 @@ msgid "Number of ticks"
 msgstr "跳动点数目"
 
 #. ($min_tick, $max_tick)
-#: lib/BOM/Product/Contract.pm:2836
+#: lib/BOM/Product/Contract.pm:2835
 msgid "Number of ticks must be between %1 and %2"
 msgstr "跳动点数目须在%1 与 %2之间"
 
@@ -4984,19 +5016,11 @@ msgstr "OAuth2.0 是为达此目的而新兴的互联网标准。正式的定义
 msgid "OK"
 msgstr "确定"
 
-#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
-msgid "OPEN REAL ACCOUNT"
-msgstr "开立真实账户"
-
-#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
-msgid "OPEN VIRTUAL ACCOUNT"
-msgstr "开立虚拟账户"
-
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4412
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4406
 msgid "ORIGINAL Bank/Credit Union/Building Society/Credit/Debit Card statement or passbook (within last 3 months)"
 msgstr "银行/信用合作社/房屋抵押贷款协会/信用卡/借记卡账单或存折原件（最近 3 个月内）"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4411
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4405
 msgid "ORIGINAL Utility bill (within last 3 months) ; or"
 msgstr "水电煤账单原件（最近 3 个月内）；或"
 
@@ -5006,14 +5030,14 @@ msgstr "水电煤账单原件（最近 3 个月内）；或"
 msgid "Oct"
 msgstr "十月"
 
-#: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
-msgid "Octal Futures"
-msgstr "八进制期货"
-
 #. ('http://mojolicio.us/', 'https://github.com/binary-com/octalfutures')
 #: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
 msgid "Octal Futures is a Perl web application which demonstrates how to authenticate and make server-side calls to the Binary.com API.  It is developed with <a target=\"_blank\" href=\"%1\">Mojolicious</a> and is open-sourced as <a target=\"_blank\" href=\"%2\">octalfutures</a> on github. Perl/Mojolicious developers are invited to participate in this project by forking the repository."
 msgstr "八进制期货是验证并示范如何对对 Binary.com API 进行服务器端调用的Perl 互联网应用程序。以<a target=\"_blank\" href=\"%1\">Mojolicious</a>开发，且受开源为<a target=\"_blank\" href=\"%2\">八进制期货</a>于github上。Mojolicious 开发者被邀请通过派生存储库参与这个项目。"
+
+#: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
+msgid "Octal futures"
+msgstr "八进制期货"
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:95
 msgid "October"
@@ -5065,7 +5089,6 @@ msgstr "一旦您点击“提交”按钮，资金将从您的账户取出并转
 msgid "One simple platform"
 msgstr "一个简单的平台"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home/styles.html.haml:1
 msgid "Online Trading platform for binary options on Forex, Indices, Commodities and Smart Indices"
 msgstr "可交易外汇、指数、大宗商品及智能指数的二元期权在线交易平台"
@@ -5094,10 +5117,6 @@ msgstr "开盘"
 msgid "Open Account"
 msgstr "开户"
 
-#: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:10
-msgid "Open An Account Now"
-msgstr "立即开户"
-
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Open Free Account Now"
 msgstr "立即开立免费账户"
@@ -5105,11 +5124,6 @@ msgstr "立即开立免费账户"
 #: /home/git/regentmarkets/bom-app/linkto_acopening.cgi:16
 msgid "Open New Account"
 msgstr "开立新账户"
-
-#: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:15
-#: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:29
-msgid "Open Now"
-msgstr "立即开户"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:13
 msgid "Open Real Account"
@@ -5121,17 +5135,37 @@ msgid "Open Source"
 msgstr "开源"
 
 #: /home/git/translations/binary-static/src/templates/haml/layouts/get_started/more.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Open a Free account"
 msgstr "开立免费账户"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Open a Real Money Account"
 msgstr "开立真实资金账户"
 
-#: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
-msgid "Open-Source Projects"
-msgstr "开源项目"
+#: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
+msgid "Open a free account"
+msgstr "开立免费账户"
+
+#: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:10
+msgid "Open an account now"
+msgstr "立即开设帐户"
+
+#: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:15
+#: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:29
+msgid "Open now"
+msgstr "立即开户"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Open real account"
+msgstr "开设真实账户"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Open virtual account"
+msgstr "开设虚拟账户"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/beginners_faq.html.haml:1
 msgid "Opening an account"
@@ -5193,13 +5227,9 @@ msgid "Our data feed may at times differ slightly from other data feeds found on
 msgstr "我们的数据源有时可能与互联网上其他数据源（各种互联网数据源可能本身就有差异）存在差异。数据源提供商之间存在差异的原因包括："
 
 #. ($cs_email)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4414
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4408
 msgid "Our email address is %1."
 msgstr "我们的电子邮件地址为%1。"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Our exclusive pricing technology gives you the best possible opportunity to make your money work for you."
-msgstr "我们独有的报价技术为您提供最佳获利机会。"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/group_history.html.haml:1
 msgid "Our fast organic growth is supplemented by the acquisition of the client base of BetsForTraders, one of our main competitors."
@@ -5313,10 +5343,6 @@ msgstr "未输入密码。"
 msgid "Password reset"
 msgstr "重设密码"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Password:"
-msgstr "密码："
-
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:160
 msgid "Patents"
@@ -5326,9 +5352,9 @@ msgstr "专利"
 msgid "Payment Agent Deposit"
 msgstr "支付代理存款"
 
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:29
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:33
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:75
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:28
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:32
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:67
 msgid "Payment Agent Withdrawal"
 msgstr "支付代理取款"
 
@@ -5347,7 +5373,7 @@ msgid "Payment Agents are not available for your account."
 msgstr "您的账户无可用支付代理。"
 
 #: /home/git/regentmarkets/bom-app/paymentagent_transfer.cgi:57
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:45
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:44
 msgid "Payment Agents are not available on this site."
 msgstr "本网站无可用支付代理。"
 
@@ -5360,6 +5386,8 @@ msgstr "支付方式"
 msgid "Payment agents"
 msgstr "支付代理"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:3
 msgid "Payment methods"
 msgstr "支付方式"
@@ -5388,17 +5416,17 @@ msgstr "赔付货币"
 msgid "Payout has moved in your favour from %1 to %2."
 msgstr "赔付变得对您有利，从 %1 变为 %2。"
 
-#: lib/BOM/Product/Contract.pm:2403
+#: lib/BOM/Product/Contract.pm:2402
 msgid "Payout may not have more than two decimal places."
 msgstr "赔付额的小数点后不超过两位数。"
 
 #. (to_monetary_number_format($payout_min, 1)
-#: lib/BOM/Product/Contract.pm:1865
+#: lib/BOM/Product/Contract.pm:1864
 msgid "Payout must be between <strong>%1</strong> and <strong>%2</strong>."
 msgstr "赔付额必须介于 <strong>%1</strong> 和 <strong>%2</strong>之间。"
 
 #. (qq{<span class="balance">$currency_label $promocode_amount</span>})
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4149
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4143
 msgid "Pending Bonus: %1"
 msgstr "待定奖金：%1"
 
@@ -5413,7 +5441,7 @@ msgid "Period"
 msgstr "周期"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
-msgid "Perl Modules"
+msgid "Perl modules"
 msgstr "Perl 模块"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ErrorMessage.pm:10
@@ -5460,11 +5488,11 @@ msgstr "请确认交易详情以完成转账："
 msgid "Please contact us with whatever is on your mind at <a href=\"mailto:%1\">%1</a>. We'll be happy to hear your feedback and to answer any questions promptly and accurately."
 msgstr "无论您有什么想法，请发送邮件至 <a href=\"mailto:%1\">%1</a>与我们联系。我们十分乐意听取您的反馈，也将快速准确地回复您的问题。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3779
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3773
 msgid "Please do not click more than once and please allow 15 seconds for processing."
 msgstr "点击请勿超过一次，请等待 15 秒进行处理。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3139
+#: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:136
 msgid "Please enter a date that is at least 6 months from now."
 msgstr "请输入至少6个月后的日期。"
 
@@ -5480,8 +5508,8 @@ msgstr "请输入密码。"
 msgid "Please enter a town or city."
 msgstr "请输入城镇或城市。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3406
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3544
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3401
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3538
 #: /home/git/regentmarkets/bom-app/paymentagent_transfer.cgi:128
 msgid "Please enter a valid amount."
 msgstr "请输入有效金额。"
@@ -5498,11 +5526,11 @@ msgid "Please enter an integer value."
 msgstr "请输入整数。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3134
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3148
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3143
 msgid "Please enter date in the format YYYY-MM-DD."
 msgstr "请输入日期，格式为年-月-日。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3357
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3352
 msgid "Please enter the Login ID to transfer funds."
 msgstr "请输入登录 ID 以便进行转账。"
 
@@ -5557,7 +5585,7 @@ msgstr "请再次输入确认"
 msgid "Please make sure that you first agree with the Agent on the terms of payment before submitting your request."
 msgstr "在提交请求前，请确保您首先同意代理的支付条款。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3966
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3960
 msgid "Please note that mobile telephone bills are not acceptable as evidence of address"
 msgstr "请注意，我们不接受手机账单作为地址证明"
 
@@ -5590,12 +5618,12 @@ msgstr "请注意，您可以随时登录账户的“设置”部分更新您的
 msgid "Please note that your settings have been updated as follows:"
 msgstr "请注意，您的设置已进行以下更新："
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3971
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3965
 msgid "Please post the documents to:"
 msgstr "请将文件邮寄至："
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3177
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3326
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3172
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3321
 msgid "Please provide at least one self-exclusion setting."
 msgstr "请提供至少一个自我禁止设置。"
 
@@ -5613,7 +5641,7 @@ msgstr "请提供关于您本人以及您所提供服务的一些信息"
 msgid "Please provide us with the following information:"
 msgstr "请向我们提供下列信息："
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3777
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3771
 msgid "Please provide your email address and password to open a virtual money account and start practicing."
 msgstr "请提供电子邮件和密码，以便开立虚拟资金账户，学习如何交易。"
 
@@ -5630,12 +5658,12 @@ msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr "请选择“赔付额”或“投注额”选项。"
 
 #. (qq(<a href="mailto:$cs_email">$cs_email</a>)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4391
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4385
 msgid "Please send this email to %1."
 msgstr "请发送此电子邮件至%1。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1212
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3699
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3693
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:484
 msgid "Please specify your country."
 msgstr "请指定您的国家。"
@@ -5709,7 +5737,7 @@ msgstr "表示您证券组合中未平仓合约的最大总赔付额。如果达
 msgid "Prevailing market price cannot be determined at this time."
 msgstr "现行市价目前无法确定。"
 
-#: lib/BOM/Product/Contract.pm:1508 lib/BOM/Product/Contract.pm:3020
+#: lib/BOM/Product/Contract.pm:1507 lib/BOM/Product/Contract.pm:3019
 msgid "Prevailing market price cannot be determined."
 msgstr "现行市价无法确定。"
 
@@ -5753,8 +5781,11 @@ msgstr "价格"
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/resources/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:81
-#: /home/git/translations/binary-static/src/templates/toolkit/resources/pricing_table_form.html.tt:2
 msgid "Pricing Table"
+msgstr "价格表"
+
+#: /home/git/translations/binary-static/src/templates/toolkit/resources/pricing_table_form.html.tt:2
+msgid "Pricing table"
 msgstr "价格表"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:432
@@ -5817,11 +5848,11 @@ msgstr "推广 %1网站"
 msgid "Promotional"
 msgstr "促销的"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3957
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3951
 msgid "Proof of address"
 msgstr "地址证明"
 
-#: lib/BOM/Product/Contract.pm:2565
+#: lib/BOM/Product/Contract.pm:2564
 msgid "Proper barriers could not be determined."
 msgstr "无法确定合适的障碍。"
 
@@ -5829,7 +5860,7 @@ msgstr "无法确定合适的障碍。"
 msgid "Provide the Company with all data and information related to the Company (including, but not limited to, passwords) at no charge to the Company, to enable the Company to monitor your Site and to ensure that you are complying with these terms and conditions."
 msgstr "无偿向公司提供与公司有关的全部数据和信息（包括但不限于密码），使公司能够监督您的网站并确保您遵守本条款和条件。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3946
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3940
 msgid "Provide us with the following documentation:"
 msgstr "请向我们提供下列文件："
 
@@ -6079,25 +6110,25 @@ msgstr "表示您的投资组合中未平仓合约的最大数量。您投资组
 msgid "Represents the maximum volume of contracts that you may purchase in any given trading day."
 msgstr "表示任一给定交易日您可以买入的最大合约数量。"
 
-#: lib/BOM/Product/Contract.pm:2993
+#: lib/BOM/Product/Contract.pm:2992
 msgid "Resale of this contract is not offered due to end-of-year market holidays."
 msgstr "因为年底市场休假，该合约不能转售。"
 
-#: lib/BOM/Product/Contract.pm:2945
+#: lib/BOM/Product/Contract.pm:2944
 msgid "Resale of this contract is not offered due to market holiday during contract period."
 msgstr "因为合约期限内存在市场假日，该合约不能转售。"
 
-#: lib/BOM/Product/Contract.pm:2966
+#: lib/BOM/Product/Contract.pm:2965
 msgid "Resale of this contract is not offered due to market holidays during contract period."
 msgstr "因为合约期限内存在市场假日，该合约不能转售。"
 
 #. ($shortest->as_string)
-#: lib/BOM/Product/Contract.pm:2873
+#: lib/BOM/Product/Contract.pm:2872
 msgid "Resale of this contract is not offered with less than %1 remaining."
 msgstr "不允许转售少于%1的合约。"
 
-#: lib/BOM/Product/Contract.pm:2344 lib/BOM/Product/Contract.pm:2867
-#: lib/BOM/Product/Contract.pm:2917
+#: lib/BOM/Product/Contract.pm:2343 lib/BOM/Product/Contract.pm:2866
+#: lib/BOM/Product/Contract.pm:2916
 #: lib/BOM/Product/Pricing/Engine/Role/StandardMarkup.pm:173
 msgid "Resale of this contract is not offered."
 msgstr "该合约不能转售。"
@@ -6174,8 +6205,11 @@ msgstr "“上涨/下跌”交易"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:179
 #: /home/git/regentmarkets/bom-app/rise_fall_table.cgi:120
-#: /home/git/translations/binary-static/src/templates/toolkit/resources/rise_fall_table.html.tt:2
 msgid "Rise / Fall Table"
+msgstr "“上涨/下跌”合约表"
+
+#: /home/git/translations/binary-static/src/templates/toolkit/resources/rise_fall_table.html.tt:2
+msgid "Rise / Fall table"
 msgstr "“上涨/下跌”合约表"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/resources/rise_fall_list.html.tt:3
@@ -6268,7 +6302,7 @@ msgstr "家庭地址第二行"
 msgid "Secret question"
 msgstr "密码提示问题"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3888
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3882
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:818
 #: /home/git/translations/binary-static/src/templates/haml/static/partner_api.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
@@ -6296,7 +6330,7 @@ msgstr "查看演示"
 msgid "See our "
 msgstr "请参考我们的 "
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4431
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4425
 #: /home/git/translations/binary-static/src/templates/haml/static/contact.html.haml:1
 msgid "Select Country"
 msgstr "选择国家"
@@ -6305,7 +6339,7 @@ msgstr "选择国家"
 msgid "Select market"
 msgstr "选择市场"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3992
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3986
 #: /home/git/regentmarkets/bom-backoffice/f_setting_selfexclusion.cgi:23
 msgid "Self-Exclusion Facilities"
 msgstr "自我禁止工具"
@@ -6360,12 +6394,12 @@ msgstr "九月"
 msgid "Service summary"
 msgstr "服务摘要"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3295
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3290
 msgid "Session duration limit cannot be more than 1440 minutes."
 msgstr "交易期持续时间限制不能大于 1440 分钟。"
 
 #. ($self_exclusion->session_duration_limit)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4028
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4022
 #: /home/git/regentmarkets/bom-backoffice/f_setting_selfexclusion.cgi:73
 msgid "Session duration limit is currently set to <strong>%1 minutes.</strong>"
 msgstr "交易期持续时间限制当前设置为  <strong>%1 分钟。</strong>"
@@ -6374,12 +6408,8 @@ msgstr "交易期持续时间限制当前设置为  <strong>%1 分钟。</strong
 msgid "Session duration limit, in minutes"
 msgstr "交易期持续时间限制，单位分钟"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Set your position"
-msgstr "设置您的头寸参数"
-
 #: /home/git/regentmarkets/bom-app/f_writepartics.cgi:94
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3883
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3877
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:99
 #: /home/git/regentmarkets/bom-app/settings.cgi:15
 #: /home/git/regentmarkets/bom-app/settings.cgi:19
@@ -6403,6 +6433,8 @@ msgstr "结算"
 msgid "Sharp Prices. Smart Trading."
 msgstr "精准报价，智能交易。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Sharp prices"
@@ -6460,7 +6492,7 @@ msgstr "支付代理列表："
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:11
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:35
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:89
-msgid "Sign Me Up"
+msgid "Sign me up"
 msgstr "我要注册"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:514
@@ -6573,11 +6605,11 @@ msgid "Sorry, only USD is allowed."
 msgstr "对不起，只允许美元。"
 
 #. ($country)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3706
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3700
 msgid "Sorry, our service is not available for residents of %1."
 msgstr "对不起，我们不对 %1 的居民提供服务。"
 
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:48
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:47
 msgid "Sorry, payments agents are unavailable at the weekend (UTC timezone)."
 msgstr "对不起，支付代理周末(国际协调时间UTC时区)不提供服务。"
 
@@ -6587,11 +6619,11 @@ msgid "Sorry, the IP Security field you specified (%1) wouldn't let you in from 
 msgstr "对不起，您指定的 IP 安全字段 (%1) 不允许您从当前 IP 地址%2 进入。"
 
 #. ($transfer_form->get_field_value('transfer_to')
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3477
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3472
 msgid "Sorry, the Login ID (%1) does not exist."
 msgstr "对不起，登录 ID (%1) 不存在。"
 
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:43
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:42
 msgid "Sorry, the Payment Agent Withdrawal is temporarily disabled due to system maintenance. Please try again in 30 minutes."
 msgstr "对不起，由于系统维护，支付代理取款暂时不可用。请 30 分钟后重试。"
 
@@ -6747,7 +6779,7 @@ msgid "Stake"
 msgstr "投注资金"
 
 #. (to_monetary_number_format($stake_min, 1)
-#: lib/BOM/Product/Contract.pm:1856
+#: lib/BOM/Product/Contract.pm:1855
 msgid "Stake must be between <strong>%1</strong> and <strong>%2</strong>."
 msgstr "投注资金必须介于<strong>%1</strong>和<strong>%2</strong>之间。"
 
@@ -6774,20 +6806,20 @@ msgstr "立即开始交易"
 msgid "Start time"
 msgstr "开始时间"
 
-#: lib/BOM/Product/Contract.pm:2657 lib/BOM/Product/Transaction.pm:399
+#: lib/BOM/Product/Contract.pm:2656 lib/BOM/Product/Transaction.pm:399
 msgid "Start time is in the past"
 msgstr "开始时间是在过去"
 
-#: lib/BOM/Product/Contract.pm:2647
+#: lib/BOM/Product/Contract.pm:2646
 msgid "Start time is invalid."
 msgstr "开始时间无效。"
 
-#: lib/BOM/Product/Contract.pm:2637
+#: lib/BOM/Product/Contract.pm:2636
 msgid "Start time must be before expiry time."
 msgstr "开始时间必须早于到期时间。"
 
 #. ($forward_starting_blackout->as_string)
-#: lib/BOM/Product/Contract.pm:2700
+#: lib/BOM/Product/Contract.pm:2699
 msgid "Start time on forward-starting contracts must be more than %1 from now."
 msgstr "远期起点合约的开始时间必须距离现在超过 %1。"
 
@@ -6813,7 +6845,7 @@ msgid "Statement and Portfolio Enquiries"
 msgstr "账单和投资组合查询"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
-msgid "Static Content"
+msgid "Static content"
 msgstr "静态内容"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/charting/daily_ohlc.html.tt:64
@@ -6915,8 +6947,8 @@ msgid "Subject to your complying with the Company's instructions, with regards t
 msgstr "在您遵守公司要求的前提下，对于通过您网站链接或在注册时注明您的联盟会员 ID 而跟踪客户对 %1 的访问，公司将采用所有合理的方式确保任何时候客户通过这些链接或联盟会员 ID 访问 %1，并后续执行合约交易或以其他方式与公司进行交易，相关的客户会被相应地确定源自您或您的网站。但是，如果公司无法确定某客户源自您或您的网站，则公司对您不承担任何责任。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2945
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3429
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3597
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3424
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3591
 msgid "Submit"
 msgstr "提交"
 
@@ -6979,10 +7011,6 @@ msgstr "目标"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:636
 msgid "Technical Indicator derived from subtracting Aroon Down from Aroon Up. As Aroon Up and Aroon Down oscillate between 0 and 100, the Aroon Oscillator oscillates between -100 and 100 with zero as the centre crossover line."
 msgstr "技术指标由阿隆上升线减去阿隆下行线得出。阿隆上升线和下行线在 0 到 100 之间摆动，而阿隆摆动指标在 -100 和 100 之间摆动，以零作为中间跨界线。"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Technology leader with more than 10 years experience..."
-msgstr "拥有 10 多年经验的技术领先者..."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/payment_agent_further_info.html.tt:35
 msgid "Tel"
@@ -7109,8 +7137,8 @@ msgstr "%1将返回一个JSON结构，其中包括访问令牌以及其他几个
 
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/about/index.html.haml:1
-msgid "The <span itemprop=\"brand\">%1</span> service (formerly known as BetOnMarkets.com) is owned and operated by the Binary Ltd. Fully licensed and regulated, %1 has been providing financial trading to a worldwide audience of over 300,000 clients since <span itemprop=\"foundingdate\">1999</span>"
-msgstr "<span itemprop=\"brand\">%1</span>服务（前称为 BetOnMarkets.com）由 Binary Ltd. 所有并运营。%1 自<span itemprop=\"foundingdate\">1999</span>年开始运营，得到全面的许可和监管，向全世界超过 300,000 名客户提供金融交易服务"
+msgid "The <span itemprop=\"brand\">%1</span> service (formerly known as BetOnMarkets.com) is owned and operated by the Binary Ltd. Fully licensed and regulated, %1 has been providing financial trading to a worldwide audience of over 1,000,000 clients since <span itemprop=\"foundingdate\">1999</span>"
+msgstr "<span itemprop=\"brand\">%1</span>服务（前称为 BetOnMarkets.com）由 Binary Ltd. 所有并运营。%1 自<span itemprop=\"foundingdate\">1999</span>年开始运营，得到全面的许可和监管，向全世界超过 100,000 名客户提供金融交易服务"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/explanation/details/staysinout.html.tt:3
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/explanation/details/touchnotouch.html.tt:4
@@ -7349,11 +7377,17 @@ msgstr "中间价为买入价和卖出价的平均数。"
 msgid "The Moving Average Convergence/Divergence (MACD) indicator is a trend following indicator and is designed to identify trend changes.The MACD is an oscillator based on two exponential moving averages of a share price. Three lines are shown. The \"MACD\" line is calculated as the difference between the two moving averages (usually based on 12- and 26- day averages). The \"signal\" line is a 9-day smoothed average of the standard MACD line, and is sometimes referred to as the \"slow\" MACD line."
 msgstr "指数平滑异动移动平均线（MACD)指数是一个趋势跟踪指数，用于判断趋势变化。MACD是一个摆动指标，以一个股票价格的两条价格指数平均线为基础，一共显示三条线。MACD线计算的是两个移动平均线之间的差（通常是12日和26日平均线）。而\"信号\"线则是标准MACD线的9日平滑平均线，有时候也被称为\"缓慢\" MACD线。"
 
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:77
+msgid "The Payment Agent facility is currently not available in your country."
+msgstr "您的国家无可用支付代理设施。"
+
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:384
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:595
 msgid "The Performance indicator displays a security's price performance as a percentage. This is sometimes called a \"normalized\" chart. The Performance indicator displays the percentage that the security has increased since the first period displayed. For example, if the Performance indicator is 10, it means that the security's price has increased 10% since the first period displayed on the left side of the chart. Similarly, a value of -10% means that the security's price has fallen by 10% since the first period displayed.Performance charts are helpful for comparing the price movements of different securities."
 msgstr "表现指标以百分数的形式显示股票价格表现，有时候又被称为\"标准化\"图表。该指标表示自显示首期以来股票上涨的百分比。比如，如果表现指标为10，意味着股票价格在图表左侧显示首期后上涨了10%。同理，-10意味着价格的股票自显示首期后下跌了10%。表现图表非常有助于比较不同股票的价格变动。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "The Premier Platform for Binary Options Trading"
 msgstr "二元期权交易的首选平台"
@@ -7495,11 +7529,11 @@ msgstr "合约期限是指交易的时间周期，即合约持续时间。"
 msgid "The cost of your open positions"
 msgstr "您的未平仓头寸成本"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4179
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4173
 msgid "The currency of your bonus will be the same as the currency of your first deposit."
 msgstr "您奖金的币种将与您首次存款的币种相同。"
 
-#: lib/BOM/Product/Contract.pm:991
+#: lib/BOM/Product/Contract.pm:990
 msgid "The database is not yet updated with settlement data."
 msgstr "数据库未进行结算数据更新。"
 
@@ -7514,6 +7548,11 @@ msgstr "中间线与上限线和下限线之间的距离"
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "The duration is the length of a purchased trade (see 'contract period')."
 msgstr "期限是所买入交易的时间周期（参考“合约期限”’）。"
+
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "The easiest way to get started in the financial markets"
+msgstr "参与金融市场最简便的方法"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "The entry spot price is the starting price of the trade purchased by a trader."
@@ -7556,7 +7595,7 @@ msgstr "首个跳动点指在我们服务器处理合约后的第一个跳动点
 msgid "The market exit price is the price in effect at the end of the contract period."
 msgstr "市场平仓价为合约期限到期时的有效价格。"
 
-#: lib/BOM/Product/Contract.pm:2663
+#: lib/BOM/Product/Contract.pm:2662
 msgid "The market must be open at the start time."
 msgstr "市场必须在开始时间已经开市。"
 
@@ -7650,10 +7689,6 @@ msgstr "范围平滑周期"
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/privacy.html.tt:6
 msgid "The personal information that we obtain about you assists us in servicing your account. We know you may be concerned about what we do with this information, and with financial information about your account. The following outlines our privacy practices."
 msgstr "我们获得的有关您的个人信息有助于我们为您提供账户服务。我们知道您可能会关注我们如何处置这一信息以及您账户的财务信息。以下内容概括了我公司的隐私规范。"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "The premier platform for binary options trading"
-msgstr "二元期权交易的首选平台"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "The profit is the difference between the purchase price (the stake) and the payout on a winning trade."
@@ -7751,11 +7786,6 @@ msgstr "接下来请要求您的IT开发人员在GitHub上分支%2回购，并�
 #: /home/git/translations/binary-static/src/templates/haml/static/tour.html.haml:1
 msgid "Then, make your trade"
 msgstr "然后进行交易"
-
-#. ($client->residence)
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:82
-msgid "There are no Payment Agents in your country (%1)."
-msgstr "您的国家(%1)无可用支付代理。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:70
 msgid "There are no available Payment Agents."
@@ -7908,7 +7938,7 @@ msgstr "此客户的收银台部分已锁定。"
 msgid "This contract cannot be properly validated at this time."
 msgstr "目前该交易无法正确验证。"
 
-#: lib/BOM/Product/Contract.pm:1695
+#: lib/BOM/Product/Contract.pm:1694
 msgid "This contract has already expired."
 msgstr "合约已经到期。"
 
@@ -7929,7 +7959,7 @@ msgstr "此合约已到期。"
 msgid "This contract is limited to "
 msgstr "此合约只限于 "
 
-#: lib/BOM/Product/Contract.pm:980
+#: lib/BOM/Product/Contract.pm:979
 msgid "This contract is no longer offered."
 msgstr "该合约不再提供。"
 
@@ -7941,7 +7971,7 @@ msgstr "此账户不可交易该合约。"
 msgid "This contract lost"
 msgstr "此合约亏损"
 
-#: lib/BOM/Product/Contract.pm:2445
+#: lib/BOM/Product/Contract.pm:2444
 msgid "This contract offers no return."
 msgstr "该合约不提供回报。"
 
@@ -7958,7 +7988,7 @@ msgstr "此合约获利"
 msgid "This document (the \"Agreement\") sets out the terms and conditions between \"the Company\" which is Binary Ltd, and you (the person who applied for this program; \"you\" or \"your\"), in relation to your application to setup an affiliate account (and membership of the affiliate program if your application is deemed successful) to promote the website %1"
 msgstr "本文件（“协议”）规定了“公司”（即 Binary Ltd.）与“您”（本项目申请人；“您”或“您的”）之间关于您申请设立联盟会员账户（申请成功后还包括联盟项目的会员资格）以推广网站%1的条款和条件"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4317
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4311
 msgid "This function is not relevant to Virtual money accounts"
 msgstr "此功能不适用虚拟资金账户"
 
@@ -8011,7 +8041,7 @@ msgstr "这是为了确认您 %2 上的账户 %1 的电子邮件地址已从 %3 
 msgid "This market closes early today at"
 msgstr "此市场今日在下列时间提前收市"
 
-#: lib/BOM/Product/Contract.pm:2663
+#: lib/BOM/Product/Contract.pm:2662
 msgid "This market is presently closed."
 msgstr "此市场目前已收市。"
 
@@ -8040,7 +8070,7 @@ msgstr "本优惠不能和其他任何优惠一起使用。"
 msgid "This promotion is only available to new Clients. Existing or former Clients do not qualify. It is only available once to each Client."
 msgstr "本促销活动仅适用于新客户。现有或以往客户不符合条件。每一客户仅能获得一次。"
 
-#: lib/BOM/Product/Contract.pm:2345
+#: lib/BOM/Product/Contract.pm:2344
 msgid "This trade is not offered."
 msgstr "不提供此交易。"
 
@@ -8132,7 +8162,7 @@ msgstr "请先<a href=\"%1\">注册成为联盟会员</a>，以创建白色标�
 msgid "To enable cookies, follow the instructions below for the browser version that you are using."
 msgstr "要启用 cookie，请按下面符合您浏览器版本的指示说明进行操作。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4406
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4400
 msgid "To fully authenticate your account, please email scanned copies of the document listed below."
 msgstr "为了充分验证您的账户，请通过电子邮件提交下列文件的扫描件。"
 
@@ -8153,7 +8183,7 @@ msgid "Today's Bet"
 msgstr "今日预测"
 
 #. ($safer_expiry->date)
-#: lib/BOM/Product/Contract.pm:2967
+#: lib/BOM/Product/Contract.pm:2966
 msgid "Too many market holidays during the contract period. Select an expiry date after %1."
 msgstr "该合约期限内有太多市场假日，请在 %1之后选择到期日。"
 
@@ -8204,6 +8234,11 @@ msgstr "城镇/城市"
 msgid "Trade"
 msgstr "交易"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Trade 24/7, even on weekends. Customize your trades to meet your needs."
+msgstr "全天候进行交易，包括周末。按需定制您的交易。"
+
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/buy_success_ajax.html.tt:2
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/sell_success_ajax.html.tt:2
 msgid "Trade Confirmation"
@@ -8221,6 +8256,8 @@ msgstr "交易所有主要货币、指数、股票及大宗商品。"
 msgid "Trade all market conditions"
 msgstr "交易各种市况"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Trade in the world's financial markets in a simple, user-friendly platform."
 msgstr "在提供简单、人性化的全球性金融市场平台进行交易。"
@@ -8249,15 +8286,13 @@ msgstr "根据您的风险承受能力进行交易。切勿借钱交易。"
 msgid "Trade the Smart Indices"
 msgstr "交易智能指数"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Trade with confidence with the industry pioneer."
-msgstr "与行业领先者一起交易，安心无忧。"
-
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/static/tour.html.haml:1
 msgid "Trade with ease with %1's wide range of deposit and withdrawal methods. Your funds will be segregated and held in AAA-rated banks."
 msgstr "易进易出 - %1 提供广泛的存取款方式。您的资金均由 3A 级银行单独托管。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Trade your way"
@@ -8298,9 +8333,9 @@ msgstr "交易规则"
 #: /home/git/regentmarkets/bom-app/trading_times.cgi:19
 #: /home/git/translations/binary-static/src/templates/haml/resources/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/datafeed.html.tt:29
-#: lib/BOM/Product/Contract.pm:2313 lib/BOM/Product/Contract.pm:2720
-#: lib/BOM/Product/Contract.pm:2735 lib/BOM/Product/Contract.pm:2751
-#: lib/BOM/Product/Contract.pm:2936
+#: lib/BOM/Product/Contract.pm:2312 lib/BOM/Product/Contract.pm:2719
+#: lib/BOM/Product/Contract.pm:2734 lib/BOM/Product/Contract.pm:2750
+#: lib/BOM/Product/Contract.pm:2935
 msgid "Trading Times"
 msgstr "交易时间"
 
@@ -8321,23 +8356,23 @@ msgid "Trading is Suspended"
 msgstr "交易暂停"
 
 #. ($blackout_time)
-#: lib/BOM/Product/Contract.pm:2683
+#: lib/BOM/Product/Contract.pm:2682
 msgid "Trading is available after the first %1 of the session."
 msgstr "交易在交易时段第一个 %1 后可用。"
 
-#: lib/BOM/Product/Contract.pm:2918
+#: lib/BOM/Product/Contract.pm:2917
 msgid "Trading is not offered for this duration."
 msgstr "不在此段期间提供交易。"
 
-#: lib/BOM/Product/Contract.pm:2266 lib/BOM/Product/Contract.pm:2332
+#: lib/BOM/Product/Contract.pm:2265 lib/BOM/Product/Contract.pm:2331
 msgid "Trading is suspended at the moment."
 msgstr "当前交易暂停。"
 
 #. ($translated_name)
 #. ($underlying->translated_display_name()
 #: /home/git/regentmarkets/bom-app/analyse_contract.cgi:62
-#: lib/BOM/Product/Contract.pm:2274 lib/BOM/Product/Contract.pm:2283
-#: lib/BOM/Product/Contract.pm:2311
+#: lib/BOM/Product/Contract.pm:2273 lib/BOM/Product/Contract.pm:2282
+#: lib/BOM/Product/Contract.pm:2310
 msgid "Trading on %1 is suspended at the moment."
 msgstr "%1 的当前交易暂停。"
 
@@ -8345,25 +8380,25 @@ msgstr "%1 的当前交易暂停。"
 #. ($self->underlying->translated_display_name()
 #. ($underlying->translated_display_name()
 #. ($bet->underlying->translated_display_name()
-#: lib/BOM/Product/Contract.pm:2294 lib/BOM/Product/Contract.pm:2301
-#: lib/BOM/Product/Contract.pm:3028
+#: lib/BOM/Product/Contract.pm:2293 lib/BOM/Product/Contract.pm:2300
+#: lib/BOM/Product/Contract.pm:3027
 #: lib/BOM/Product/Pricing/Engine/Intraday.pm:280
 #: lib/BOM/Product/Pricing/Engine/Intraday/Index.pm:80
 msgid "Trading on %1 is suspended due to missing market data."
 msgstr "由于市场数据丢失，%1 交易暂停。"
 
-#: lib/BOM/Product/Contract.pm:2733
+#: lib/BOM/Product/Contract.pm:2732
 msgid "Trading on this contract type is suspended for the last one hour of the session."
 msgstr "此种合约交易时段最后一小时暂停交易。"
 
 #. ($eod_blackout_start->as_string)
-#: lib/BOM/Product/Contract.pm:2718
+#: lib/BOM/Product/Contract.pm:2717
 msgid "Trading suspended for the last %1 of the session."
 msgstr "交易时段最后 %1 暂停交易。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3996
-msgid "Trading the financial markets can become addictive. Fill in the form below to limit your participation on the website or send a signed letter or fax to our customer support team. Limits will only be removed or altered after 7 days."
-msgstr "金融市场交易可能使人上瘾。请填写下表以限制您对本网站的参与，或发送签名信或传真到我们的客户支持团队。限制只能在 7 天后取消或更改。"
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3990
+msgid "Trading the financial markets can become addictive. Fill in the form below to limit your participation on the website or send a signed letter or fax to our customer support team. Limits will only be removed or altered after 7 days with the exception of the self-exclusion date, which cannot be removed or altered once you have confirmed it."
+msgstr "金融市场交易可能使人上瘾。请填写下表以限制您对本网站的参与，或发送签名信或传真到我们的客户支持团队。限制只能在 7 天后取消或更改，除了自我禁止期在您确认后就不能取消或更改。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2476
 msgid "Transact in"
@@ -8373,11 +8408,11 @@ msgstr "交易"
 msgid "Transfer to"
 msgstr "转给"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3341
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3336
 msgid "Transfer to Login ID"
 msgstr "转给登录 ID"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3495
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3489
 msgid "Transfer to Payment Agent"
 msgstr "转给支付代理"
 
@@ -8409,7 +8444,6 @@ msgid "Trust"
 msgstr "信任"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/how_to_trade_binaries.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/layouts/get_started/more.html.haml:1
 msgid "Try it now"
 msgstr "立即体验"
@@ -8473,11 +8507,6 @@ msgstr "无法处理您的请求"
 msgid "Unauthenticated"
 msgstr "未验证"
 
-#. ('<h1>$1</h1>')
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Under %1 for market-leading returns"
-msgstr "投入低至 %1，获得市场领先的回报"
-
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
 msgid "Underage Gambling"
 msgstr "未成年人投注"
@@ -8498,10 +8527,6 @@ msgstr "解除收银台/设置部分的锁定"
 msgid "Unsupported bet class $bet_params->{bet_class}"
 msgstr "不支持的投注类型$bet_params->{bet_class}"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Up to"
-msgstr "高达"
-
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "Up to <span> 100% </span> Return <br> on Rise/Fall Trades"
 msgstr "进行上升/下跌交易，获得高达  <span>100%</span> 的回报<br>"
@@ -8519,7 +8544,7 @@ msgstr "未来事件"
 msgid "Update"
 msgstr "更新"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3187
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3182
 msgid "Update Settings"
 msgstr "更新设置"
 
@@ -8556,7 +8581,7 @@ msgstr "利用我们网站提供的机会可以免费通过虚拟账户进行交
 msgid "Use this feature to restrict access to your account from a specific IP address, or range of IP addresses.  For example, if you are certain that your IP address will always be in the range 213.45.0.0 - 213.45.255.255 then you would input 213.45.*.* into the IP address field.  This would ensure that persons outside of that IP network cannot access your account (even if they have the correct password)."
 msgstr "使用此功能可限制从某个或某些 IP 地址访问您的账户。例如，如果您确定您的 IP 地址字段将始终介于 213.45.0.0 - 213.45.255.255 之间，那么您可输入 213.45.*.* 到 IP 地址字段。这将确保处于该 IP 网络之外的人不能访问您的账户（即使其有正确的密码）。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3960
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3954
 msgid "Utility bill (within last 3 months)"
 msgstr "水电煤账单（最近 3 个月内）"
 
@@ -8568,7 +8593,7 @@ msgstr "马耳他首都瓦莱塔"
 msgid "Variable return"
 msgstr "可变回报"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3948
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3942
 msgid "Verification of identity"
 msgstr "身份验证"
 
@@ -8604,7 +8629,7 @@ msgstr "查看资产指数"
 msgid "View Rise/Fall contract prices across a range of markets."
 msgstr "查看各市场中的“上涨/下跌”合约价格。"
 
-#: lib/BOM/Product/Contract.pm:2671 lib/BOM/Product/Contract.pm:2686
+#: lib/BOM/Product/Contract.pm:2670 lib/BOM/Product/Contract.pm:2685
 msgid "View Trading Times"
 msgstr "查看交易时间"
 
@@ -8624,10 +8649,6 @@ msgstr "查看不同障碍和期限的合约价格。"
 #: /home/git/translations/binary-static/src/templates/haml/static/tour.html.haml:1
 msgid "View payment methods"
 msgstr "查看支付方式"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "View prices"
-msgstr "查看报价"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/portfolio/contract_details.html.tt:60
 msgid "View progress"
@@ -8650,7 +8671,7 @@ msgid "View the operating hours of the markets you can trade."
 msgstr "查看您可以进行交易的市场开放时间。"
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4324
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4318
 msgid "View your <a href=\"%1\">withdrawal limits</a>."
 msgstr "查看您的<a href=\"%1\">取款限额</a>。"
 
@@ -8676,12 +8697,12 @@ msgstr "查看您的交易利润/亏损。"
 msgid "Virtual Account"
 msgstr "虚拟账户"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3768
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3762
 msgid "Virtual Money Account Opening"
 msgstr "开立虚拟资金账户"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1010
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4070
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4064
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:387
 #: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:24
 msgid "Virtual money account"
@@ -8748,7 +8769,7 @@ msgstr "我们的牌照要求我们通知您：在公司失去偿付能力的情
 msgid "We could not authenticate your account online. please proceed to the <a href=\"%1\">manual authentication section</a>. If you would like to register additional credit cards, please contact <a class=\"pjaxload\" href=\"%2\">customer support</a>."
 msgstr "我们未能在线验证您的账户。请继续<a href=\"%1\">手动验证</a>。如果您要注册额外的信用卡，请联系<a class=\"pjaxload\" href=\"%2\">客户支持人员</a>。"
 
-#: lib/BOM/Product/Contract.pm:1806 lib/BOM/Product/Contract.pm:504
+#: lib/BOM/Product/Contract.pm:1805 lib/BOM/Product/Contract.pm:504
 msgid "We could not process this contract at this time."
 msgstr "目前我们无法处理该合约。"
 
@@ -8816,7 +8837,7 @@ msgstr "我们希望尽可能创造条件，以方便您介绍潜在客户。一
 msgid "We were unable to recover your Login ID or Password with the provided information. <a href=\"%1\">Return to Password Recovery</a>, or <a href=\"%2\"><strong>contact us</strong></a> should you need further assistance."
 msgstr "我们无法根据您提供的信息找回您的登录 ID 或密码。<a href=\"%1\">返回“找回密码”页面</a>，或<a href=\"%2\"><strong>联系我们</strong></a>获取进一步帮助。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4381
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4375
 msgid "We were unable to verify your identity and prove your residential address using our automated verification procedure."
 msgstr "我们未能通过自动验证程序验证您的身份和您的住址。"
 
@@ -8880,7 +8901,7 @@ msgstr "网站"
 
 #. ($self_exclusion->exclude_until)
 #. ($until->date)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4038
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4032
 #: /home/git/regentmarkets/bom-backoffice/f_setting_selfexclusion.cgi:77
 msgid "Website exclusion is currently set to <strong>%1.</strong>"
 msgstr "网站禁止当前设置为 <strong>%1。</strong>"
@@ -8973,6 +8994,11 @@ msgstr "我还可以生成其他哪些报告？"
 msgid "What our Clients are Saying"
 msgstr "客户评语"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "What our clients are saying"
+msgstr "客户评语"
+
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/get_started/types_of_trades.html.haml:1
 msgid "Whatever your market view or strategy, %1 provides you with the right trade to profit from your prediction. Choose from five ways to trade:"
@@ -8994,6 +9020,10 @@ msgstr "当公司为客户开立账户时，该客户个人或实体将会成为
 #: /home/git/translations/binary-static/src/templates/haml/get_started/how_to_trade_binaries.html.haml:1
 msgid "When you are satisfied with the trade price, instantly execute your trade."
 msgstr "一旦您对交易价格感到满意，请立刻就执行交易。"
+
+#: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:137
+msgid "When you click 'Ok' you will be excluded from trading on the site until the selected date."
+msgstr "当您点选“Ok”后，您将被禁止在此网站交易，直到选定期限结束为止。"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/tour.html.haml:1
 msgid "When you start trading with Binary.com, you’ll be directed to the trading screen, where you set your trading parameters, and choose what you want to trade, how and when."
@@ -9050,6 +9080,10 @@ msgstr "无论是在马耳他或马来西亚，您都可以享受优渥的生活
 msgid "White Labels"
 msgstr "白标"
 
+#: /home/git/translations/binary-static/src/templates/haml/static/white_labels.html.haml:1
+msgid "White labels"
+msgstr "白标"
+
 #. (broker_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:13
 msgid "Who can be a client on the %1 platform?"
@@ -9063,13 +9097,17 @@ msgstr "我们乐于与来自不同文化背景的同事合作，并热衷于为
 msgid "Why 1,000,000 People Around the World Trust us"
 msgstr "为何世界各地有1,000,000人伩任我们"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
+msgid "Why 1,000,000 people around the world trust us"
+msgstr "为何世界各地有1,000,000人伩任我们"
+
 #: /home/git/translations/binary-static/src/templates/haml/get_started/what_is_binary_trading.html.haml:1
 msgid "Why Choose Binary Trading?"
 msgstr "为何选择二元期权交易？"
 
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/mobile_menu.html.haml:1
-#: /home/git/translations/binary-static/src/templates/haml/layouts/default/nav.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:55
 #: /home/git/translations/binary-static/src/templates/toolkit/global/header.html.tt:43
@@ -9104,6 +9142,10 @@ msgstr "我为什么要成为%1联盟会员？"
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:26
 msgid "Why should I become a binary options trading affiliate?"
 msgstr "我为什么应成为二元期权交易的联盟会员？"
+
+#: /home/git/translations/binary-static/src/templates/haml/layouts/default/nav.html.haml:1
+msgid "Why us?"
+msgstr "为何选择我们？"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/beginners_faq.html.haml:1
 msgid "Will I need to install any software?"
@@ -9180,6 +9222,8 @@ msgstr "通过 %1 交易，一切尽在您的掌握中。每次执行交易前�
 msgid "With %1, your money is secure."
 msgstr "通过 %1 交易，您的资金绝对安全无虞。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 msgid "With Binary.com, your money is secure. We segregate and hold client funds in secure AAA-rated banks."
 msgstr "您的资金在Binary.com非常安全。我们把客户资金交由安全的 3A 级银行独立托管。"
@@ -9187,10 +9231,6 @@ msgstr "您的资金在Binary.com非常安全。我们把客户资金交由安�
 #: /home/git/translations/binary-static/src/templates/haml/static/devguide.html.haml:1
 msgid "With a current access_token it is now possible to make calls to an API Service.  Such a call looks like this: "
 msgstr "通过当前的访问令牌，现在可以调用API服务。此调用看起来像这样： "
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "With payouts from $1 to $100,000, we have you covered."
-msgstr "您可选择1 美元至 100,000 美元范围内的赔付额。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/account/statement.html.tt:61
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:19
@@ -9270,7 +9310,6 @@ msgstr "年"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1003
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2896
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:478
-#: /home/git/translations/binary-static/src/templates/toolkit/container/confirm_box_popup.html.tt:5
 msgid "Yes"
 msgstr "是"
 
@@ -9303,7 +9342,7 @@ msgstr "您不是支付代理"
 msgid "You are not allowed to rebate any part commission payment onto your referrals and your affiliate account shall be revoked immediately, should the company realise you are engaged in such actions."
 msgstr "您不能用部分佣金对您的推荐人作为折扣，否则在公司发现后您的账户将立即撤销。"
 
-#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:54
+#: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:53
 msgid "You are not authorized for withdrawal via payment agent."
 msgstr "您未经授权通过付款代理进行取款。"
 
@@ -9345,7 +9384,7 @@ msgstr "您可以在任何时间卖出您的长线交易合约，根据市场变
 msgid "You can set the length of your trade, from 10 seconds to 365 days."
 msgstr "您可设定交易期限，从10 秒至 365 天。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4383
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4377
 msgid "You can still authenticate your account by sending us scans of the following documents by email"
 msgstr "您还是可以通过把下列文件的扫描件以电子邮件发送过来，以验证您的账户"
 
@@ -9417,7 +9456,7 @@ msgstr "自您开户以来，您已累计提取 EUR %1。"
 msgid "You have already withdrawn the equivalent of EUR %1."
 msgstr "您已累计提取 EUR %1。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4167
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4161
 msgid "You have bought contracts with a combined purchase price of five times the bonus amount."
 msgstr "您已买入总买价为奖励金额五倍的合约。"
 
@@ -9427,7 +9466,7 @@ msgstr "您已买入总买价为奖励金额五倍的合约。"
 msgid "You have entered an invalid IP address."
 msgstr "您输入的 IP 地址无效。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3367
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3362
 msgid "You have entered an invalid login ID"
 msgstr "您输入的登录 ID 无效"
 
@@ -9581,7 +9620,7 @@ msgid "Your %1 day withdrawal limit is currently <strong>EUR %2</strong> (or %3 
 msgstr "您的 %1 天取款限额目前为<strong>EUR %2</strong>（或其他货币为 %3）。"
 
 #. ($currency_label, $min_deposit)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4165
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4159
 msgid "Your <strong>first</strong> deposit is equal to or more than %1%2, and"
 msgstr "您的<strong>首次</strong>存入金额等于或高于%1%2，且"
 
@@ -9593,10 +9632,6 @@ msgstr "您的API令牌是： "
 msgid "Your Client will receive an email notification informing him/her that the transfer has been processed."
 msgstr "您的客户将收到电子邮件通知，告知其转账交易已处理。"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "Your Email:"
-msgstr "您的电邮是："
-
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:59
 msgid "Your IP address appears to have changed.  This could be because you recently disconnected and then reconnected to your ISP."
 msgstr "您的 IP 地址已改变。这可能因为您最近从您的互联网服务提供商 (ISP) 断开后又重新连接。"
@@ -9605,7 +9640,7 @@ msgstr "您的 IP 地址已改变。这可能因为您最近从您的互联网�
 msgid "Your Login ID"
 msgstr "您的登录 ID"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3362
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3357
 msgid "Your Login ID should not contain spaces."
 msgstr "您的登录 ID 不应包含空格。"
 
@@ -9623,7 +9658,7 @@ msgstr "您的账户余额"
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "您的账户余额(%1%2)不足以买入该合约 (%1%3)。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4416
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4410
 msgid "Your account does not require authentication at this time."
 msgstr "目前您的账户不需要认证。"
 
@@ -9641,11 +9676,11 @@ msgid "Your account is fully authenticated and your withdrawal limit of EUR %1 h
 msgstr "您的账户已经得到完全验证，且您 EUR %1 的取款限额已经取消。"
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4350
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4344
 msgid "Your account is fully authenticated. You can view your <a href=\"%1\">trading limits here</a>."
 msgstr "您的账户已经得到完全验证，且您 <a href=\"%1\">% 的取款限额已经取消</a>。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4400
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4394
 msgid "Your account is fully operational and you may begin depositing money and buying contracts."
 msgstr "您的账户完全可用，您可以开始存入金额并买入合约。"
 
@@ -9675,15 +9710,15 @@ msgstr "您对所有 API 调用的基本网址"
 msgid "Your bonus request - %1"
 msgstr "您的奖励请求- %1"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4161
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4155
 msgid "Your bonus will be credited to your account within 3 working days after the following conditions have been met:"
 msgstr "您的奖金将在满足下列条件后的 3 个工作日内汇入您的账户："
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4174
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4168
 msgid "Your bonus will be credited to your account within 3 working days after you have bought contracts with a combined purchase price equal to or greater than the bonus amount."
 msgstr "您的奖金将在您以等于或大于奖金金额的合计合约买入价格后的3个工作日内计入您的账户。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4183
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4177
 msgid "Your bonus will be credited to your account within 3 working days."
 msgstr "您的奖金将在3个工作日内计入您的账户。"
 
@@ -9707,7 +9742,7 @@ msgstr "您的收银台部分已被锁定。"
 msgid "Your cashier session has expired"
 msgstr "您的收银台会话已经过期"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4005
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3999
 msgid "Your current self-exclusion settings are as follows:"
 msgstr "您当前的自我禁止设置如下："
 
@@ -9727,6 +9762,8 @@ msgstr "您的电子邮件地址"
 msgid "Your form has been submitted."
 msgstr "您的表格已提交。"
 
+#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
+#: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home3/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Your funds are safe"
@@ -9875,7 +9912,7 @@ msgstr "在指定时间期限内您可以交易的金额限制；"
 msgid "a limit on the losses you may incur within a specified period of time;"
 msgstr "在指定时间期限内您可遭受的损失限额；"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4409
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4403
 msgid "and"
 msgstr "以及"
 
@@ -9903,7 +9940,7 @@ msgstr "由于该人士的本网站活动导致本公司遭受任何金钱、财
 msgid "any restriction to its Clients from purchasing any contracts during certain hours."
 msgstr "对客户在特定时段买入任何合约的限制。"
 
-#: lib/BOM/Product/Contract.pm:2245
+#: lib/BOM/Product/Contract.pm:2244
 msgid "barrier"
 msgstr "障碍"
 
@@ -9915,10 +9952,6 @@ msgstr "更佳交易"
 #: /home/git/translations/binary-static/src/templates/toolkit/global/head.html.tt:13
 msgid "binary options, forex, forex trading, online trading, financial trading, binary trading, index trading, trading indices, forex trades, trading commodities, binary options strategy, binary broker, binary bet, binary options trading platform, binary strategy, finance, stocks, investment, trading"
 msgstr "二元期权、外汇、外汇交易、在线交易、金融交易、二元期权交易、指数交易、交易指数、外汇交易、交易大宗商品、二元期权策略、二元经纪、二元投注、二元期权交易平台、二元策略、金融、股票、投资、交易"
-
-#: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "contact us"
-msgstr "请与我们联系"
 
 #: lib/BOM/Product/Contract/Type.pm:350
 msgid "contract start time"
@@ -9985,7 +10018,7 @@ msgstr "详细的编码说明。"
 msgid "here"
 msgstr "这里"
 
-#: lib/BOM/Product/Contract.pm:2245
+#: lib/BOM/Product/Contract.pm:2244
 msgid "high barrier"
 msgstr "高障碍"
 
@@ -10012,12 +10045,12 @@ msgstr "减"
 msgid "loading..."
 msgstr "加载中..."
 
-#: lib/BOM/Product/Contract.pm:2245
+#: lib/BOM/Product/Contract.pm:2244
 msgid "low barrier"
 msgstr "低障碍"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3418
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3556
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3413
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3550
 msgid "maximum is"
 msgstr "最大为"
 
@@ -10033,12 +10066,12 @@ msgstr "最小"
 msgid "minimum available duration"
 msgstr "最短可用期限"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3412
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3550
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3407
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3544
 msgid "minimum is"
 msgstr "最小为"
 
-#: lib/BOM/Product/Contract.pm:2242
+#: lib/BOM/Product/Contract.pm:2241
 msgid "minus"
 msgstr "减去"
 
@@ -10074,13 +10107,12 @@ msgstr "无"
 msgid "not available"
 msgstr "不可使用"
 
-# 交易 = trades
-#: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "on this website. You may also"
-msgstr "在本网站上。您还可以"
+#: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
+msgid "open-Source projects"
+msgstr "开源项目"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3952
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3961
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3946
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3955
 msgid "or"
 msgstr "或"
 
@@ -10093,7 +10125,7 @@ msgid "or please try the site map below"
 msgstr "或请尝试以下的网站地图"
 
 #. (request()
-#: lib/BOM/Product/Contract.pm:2674 lib/BOM/Product/Contract.pm:2689
+#: lib/BOM/Product/Contract.pm:2673 lib/BOM/Product/Contract.pm:2688
 msgid "or try out the <a href='%1'>Random Indices</a> which are always open."
 msgstr "或者尝试总是开放的 <a href='%1'>随机指数</a>。"
 
@@ -10102,7 +10134,7 @@ msgstr "或者尝试总是开放的 <a href='%1'>随机指数</a>。"
 msgid "page for the exact time of settlement for all contracts. Other websites may adopt a different convention (for example some websites choose 4 o'clock NY time, or 5 o'clock London time). As a result, the open, high, low and closing prices displayed on our website may differ to those on other websites, due to the market-closing time convention."
 msgstr "所有合约准确结算时间的页面。其他网站可能会有不同的惯例（比如一些网站采用纽约时间4点或伦敦时间5点）。由于不同的收盘时间惯例，在我们网站上展示的开盘、高或低或收盘价可能跟其他网站不一致。"
 
-#: lib/BOM/Product/Contract.pm:2242
+#: lib/BOM/Product/Contract.pm:2241
 msgid "plus"
 msgstr "加"
 
@@ -10122,18 +10154,6 @@ msgstr "剩余"
 msgid "return"
 msgstr "回报"
 
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "return on"
-msgstr "回报"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "return on trades you make"
-msgstr "的交易回报"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "rise/fall"
-msgstr "上涨/下跌"
-
 #: /home/git/translations/binary-static/src/templates/toolkit/portfolio/contract_table.html.tt:31
 msgid "running"
 msgstr "运转"
@@ -10146,10 +10166,6 @@ msgstr "秒"
 msgid "seconds"
 msgstr "秒"
 
-#: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "set limits on your trading activities"
-msgstr "对您的交易活动设定限额"
-
 #: /home/git/translations/binary-static/src/templates/toolkit/portfolio/contract_table.html.tt:31
 msgid "starting in"
 msgstr "将开始"
@@ -10158,17 +10174,9 @@ msgstr "将开始"
 msgid "ticks"
 msgstr "跳动点"
 
-#: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-msgid "to state the limits you wish to set via live chat, email or phone. Available limits are:"
-msgstr "以表明您希望通过即时交谈、邮件或电话设置限制。可设的限制如下："
-
 #: /home/git/regentmarkets/bom-app/trading_times.cgi:150
 msgid "today"
 msgstr "今天"
-
-#: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
-msgid "trades"
-msgstr "交易"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
 msgid "website"
@@ -10355,25 +10363,25 @@ msgstr "澳元/新加坡元"
 msgid "EUR/INR"
 msgstr "欧元/印度卢比"
 
-#: Underlying Symbol frxAUDBRL
-msgid "AUD/BRL"
-msgstr "澳元/巴西雷亚尔"
-
 #: Underlying Symbol frxGBPCNY
 msgid "GBP/CNY"
 msgstr "英镑/人民币"
+
+#: Underlying Symbol frxAUDBRL
+msgid "AUD/BRL"
+msgstr "澳元/巴西雷亚尔"
 
 #: Underlying Symbol frxUSDJPY
 msgid "USD/JPY"
 msgstr "美元/日元"
 
-#: Underlying Symbol frxGBPBRL
-msgid "GBP/BRL"
-msgstr "英镑/巴西里尔"
-
 #: Underlying Symbol frxUSDSGD
 msgid "USD/SGD"
 msgstr "美元/新加坡元"
+
+#: Underlying Symbol frxGBPBRL
+msgid "GBP/BRL"
+msgstr "英镑/巴西里尔"
 
 #: Underlying Symbol frxAUDNOK
 msgid "AUD/NOK"
@@ -10419,13 +10427,13 @@ msgstr "欧元/人民币"
 msgid "EUR/BRL"
 msgstr "欧元/巴西雷亚尔"
 
-#: Underlying Symbol frxNZDUSD
-msgid "NZD/USD"
-msgstr "新西兰元/美元"
-
 #: Underlying Symbol frxUSDDKK
 msgid "USD/DKK"
 msgstr "美元/丹麦克朗"
+
+#: Underlying Symbol frxNZDUSD
+msgid "NZD/USD"
+msgstr "新西兰元/美元"
 
 #: Underlying Symbol frxAUDNZD
 msgid "AUD/NZD"
@@ -10503,13 +10511,13 @@ msgstr "英镑/港币"
 msgid "GBP/NZD"
 msgstr "英镑/新西兰元"
 
-#: Underlying Symbol frxNZDJPY
-msgid "NZD/JPY"
-msgstr "纽元/日元"
-
 #: Underlying Symbol frxUSDPLN
 msgid "USD/PLN"
 msgstr "美元/波兰兹罗提"
+
+#: Underlying Symbol frxNZDJPY
+msgid "NZD/JPY"
+msgstr "纽元/日元"
 
 #: Underlying Symbol frxAUDSEK
 msgid "AUD/SEK"
@@ -10527,13 +10535,13 @@ msgstr "英镑/丹麦克朗"
 msgid "EUR/HKD"
 msgstr "欧元/港币"
 
-#: Underlying Symbol frxGBPAUD
-msgid "GBP/AUD"
-msgstr "英镑/澳元"
-
 #: Underlying Symbol frxGBPPLN
 msgid "GBP/PLN"
 msgstr "英镑/波兰兹罗提"
+
+#: Underlying Symbol frxGBPAUD
+msgid "GBP/AUD"
+msgstr "英镑/澳元"
 
 #: Underlying Symbol frxUSDSEK
 msgid "USD/SEK"
@@ -11456,10 +11464,6 @@ msgstr "如果%3<strong>在%5时一直在%7</strong>至<strong>%6</strong>之间
 msgid "%1 <strong>%2</strong> payout if %3 after <strong>%5 ticks</strong> is strictly <strong>higher</strong> than <strong>%6</strong>."
 msgstr "如果%3在<strong>%5跳动点</strong>过后<strong>严格</strong>高于<strong>%6</strong>，将获得%1<strong>%2</strong>的赔付额。"
 
-#: Translation for contract type "PUT"
-msgid "lower"
-msgstr "低于"
-
 #: Translation for contract type "ASIANU"
 msgid "asian up"
 msgstr "亚洲上涨"
@@ -11474,6 +11478,113 @@ msgstr "亚洲上涨"
 #: Translation for contract type description (ASIANU - intraday)
 msgid "%1 <strong>%2</strong> payout if the <strong>last tick</strong> of %3 is strictly <strong>higher</strong> than the <strong>average</strong> of the <strong>%5 ticks</strong>."
 msgstr "如果<strong>%3</strong>的最新<strong>跳动点</strong>严格<strong>高于</strong>%5跳动点<strong>的平均</strong>价格，将获得%1<strong>%2</strong>的赔付额。"
+
+#: Translation for contract type "PUT"
+msgid "lower"
+msgstr "低于"
+
+#~ msgid "Illegal currency $currency for $broker"
+#~ msgstr "非法货币$货币$经纪人"
+
+#~ msgid "There are no Payment Agents in your country (%1)."
+#~ msgstr "您的国家(%1)无可用支付代理。"
+
+#~ msgid "$1 to $100,000 payouts, low-risk to high-leverage, and much more. We offer limitless profit opportunities."
+#~ msgstr "您可自主设定赔付额，低至 1 美元高至 10 万美元；低风险与高杠杆齐聚一身，更多优点不胜枚举！我们为您提供无限的获利机会。"
+
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "%1 provides you with the opportunity to either self exclude or"
+#~ msgstr "%1为您提供自我禁止或"
+
+#~ msgid "10 seconds to 365 days..."
+#~ msgstr "从10 秒到 365 天..."
+
+#~ msgid "Best-in-class pricing for binaries..."
+#~ msgstr "二元期权业内最佳报价..."
+
+#~ msgid "Experienced Traders"
+#~ msgstr "熟练交易者"
+
+#~ msgid "Learn More"
+#~ msgstr "了解更多"
+
+#~ msgid "More than %1 trades available"
+#~ msgstr "超过 %1 种交易供您选择"
+
+#~ msgid "New To Trading?"
+#~ msgstr "交易新手？"
+
+#~ msgid "Novice or Expert..."
+#~ msgstr "不论是新手，还是专家..."
+
+#~ msgid "OPEN REAL ACCOUNT"
+#~ msgstr "开立真实账户"
+
+#~ msgid "OPEN VIRTUAL ACCOUNT"
+#~ msgstr "开立虚拟账户"
+
+#~ msgid "Open An Account Now"
+#~ msgstr "立即开户"
+
+#~ msgid "Our exclusive pricing technology gives you the best possible opportunity to make your money work for you."
+#~ msgstr "我们独有的报价技术为您提供最佳获利机会。"
+
+#~ msgid "Password:"
+#~ msgstr "密码："
+
+#~ msgid "Set your position"
+#~ msgstr "设置您的头寸参数"
+
+#~ msgid "Technology leader with more than 10 years experience..."
+#~ msgstr "拥有 10 多年经验的技术领先者..."
+
+#~ msgid "The premier platform for binary options trading"
+#~ msgstr "二元期权交易的首选平台"
+
+#~ msgid "Trade with confidence with the industry pioneer."
+#~ msgstr "与行业领先者一起交易，安心无忧。"
+
+#~ msgid "Under %1 for market-leading returns"
+#~ msgstr "投入低至 %1，获得市场领先的回报"
+
+#~ msgid "Up to"
+#~ msgstr "高达"
+
+#~ msgid "View prices"
+#~ msgstr "查看报价"
+
+#~ msgid "With payouts from $1 to $100,000, we have you covered."
+#~ msgstr "您可选择1 美元至 100,000 美元范围内的赔付额。"
+
+#~ msgid "Your Email:"
+#~ msgstr "您的电邮是："
+
+#~ msgid "contact us"
+#~ msgstr "请与我们联系"
+
+# 交易 = trades
+#~ msgid "on this website. You may also"
+#~ msgstr "在本网站上。您还可以"
+
+#~ msgid "return on"
+#~ msgstr "回报"
+
+#~ msgid "return on trades you make"
+#~ msgstr "的交易回报"
+
+#~ msgid "rise/fall"
+#~ msgstr "上涨/下跌"
+
+#~ msgid "set limits on your trading activities"
+#~ msgstr "对您的交易活动设定限额"
+
+#~ msgid "to state the limits you wish to set via live chat, email or phone. Available limits are:"
+#~ msgstr "以表明您希望通过即时交谈、邮件或电话设置限制。可设的限制如下："
+
+#~ msgid "trades"
+#~ msgstr "交易"
 
 #~ msgid "Sorry, due to VAT regulations in your country of residence, contracts on Random Indices are not available."
 #~ msgstr "对不起，由于您所居住国家的增值税法规，不可使用随机指数合约。"
@@ -14059,9 +14170,6 @@ msgstr "如果<strong>%3</strong>的最新<strong>跳动点</strong>严格<stron
 #~ msgid "Number of days to display"
 #~ msgstr "要显示的天数"
 
-#~ msgid "Open a Virtual Account"
-#~ msgstr "开设虚拟帐户"
-
 #~ msgid "Purchase<br>Price"
 #~ msgstr "购买<br>价格"
 
@@ -15140,9 +15248,6 @@ msgstr "如果<strong>%3</strong>的最新<strong>跳动点</strong>严格<stron
 
 #~ msgid "Service is unavailable"
 #~ msgstr "服务不可用"
-
-#~ msgid "%1 provides you with the opportunity to either self exclude or <a href=\"%2\">set limits on your trading activities</a> on this website. You may also <a href=\"%3\">contact us</a> to state the limits you wish to set via live chat, email or phone. Available limits are:"
-#~ msgstr "通过 %1，您可以在网站上 self exclude 或 <a href=\"%2\">为自己的交易活动设限</a>。您也可以通过在线交谈、电邮或电话 <a href=\"%3\">联系我们</a> 告诉我们您想要设定的限额。可用的限额如下："
 
 #~ msgid "Binary (Europe) Ltd, ompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta. Licenced and regulated by the Lotteries and Gaming Authority in Malta, licence no LGA/CL2/118/2000."
 #~ msgstr "Binary (Europe) Ltd（Regent Markets（马耳他）有限责任公司），地址为：Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta。由马耳他管理局许可并受其监管，许可证号LGA/CL2/118/2000。"
@@ -17990,9 +18095,6 @@ msgstr "如果<strong>%3</strong>的最新<strong>跳动点</strong>严格<stron
 #~ msgid "Only one Moneybookers account is allowed per Client. Please use the account you used previously: %1"
 #~ msgstr "每个客户只允许使用一个 Moneybookers 帐户。请使用您之前使用的帐户：%1"
 
-#~ msgid "Open an account now"
-#~ msgstr "立即开设帐户"
-
 #~ msgid "Organisation"
 #~ msgstr "机构"
 
@@ -19528,11 +19630,6 @@ msgstr "如果<strong>%3</strong>的最新<strong>跳动点</strong>严格<stron
 #~| msgid "Login ID not given."
 #~ msgid "Login ID not given"
 #~ msgstr "未输入登录 ID 。"
-
-#, fuzzy
-#~| msgid "Open demo account"
-#~ msgid "Open free account"
-#~ msgstr "开设模拟帐户"
 
 #, fuzzy
 #~| msgid "Password not given."

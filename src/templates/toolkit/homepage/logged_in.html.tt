@@ -11,10 +11,6 @@
             </p>
         [% END %]
     [% ELSE %]
-        [% IF attorney_note %]
-            <p>[% attorney_note %]</p>
-        [% END %]
-
         [% IF client.payment_agent && client.payment_agent.is_authenticated %]
             <p>
             [% l('Your account is registered as a Payment Agent.') %]

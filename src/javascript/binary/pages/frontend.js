@@ -1,24 +1,3 @@
-var slider = function() {
-    var slider = $('#slider');
-    if (slider.size()) {
-        $('.invisibleslides').show();
-        slider.slides({
-            container: 'slides-container',
-            paginationClass: 'slides-pagination',
-            generatePagination: false,
-            generateNextPrev: false,
-            start: 1,
-            preload: true,
-            play: 10000,
-            slideSpeed: 800,
-        });
-        if ($('.slides_control').height() < 300) {
-            $('.slides_control').css('min-height', '300px');
-        }
-    }
-};
-
-
 var sidebar_scroll = function(elm_selector) {
     elm_selector.on('click', '#sidebar-nav li', function() {
         var clicked_li = $(this);
@@ -282,7 +261,6 @@ var show_live_chat_icon = function() {
 pjax_config_page('/$|/home', function() {
     return {
         onLoad: function() {
-            slider();
             select_user_country();
             get_ticker();
             home_bomoverlay.init();

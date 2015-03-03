@@ -41,6 +41,7 @@
         background: $COLOR_GRAY;
       }
       a {
+        font-weight: normal;
         text-decoration: none;
         display: block;
         padding: 5px 5px 5px 10px;
@@ -73,7 +74,7 @@
       margin: 0;
     }
     a {
-      font-weight: bold;
+      font-weight: normal;
     }
   }
   .open-account {
@@ -121,6 +122,7 @@
       padding: 0 10px;
       a, a:visited {
         padding: 0;
+        font-weight: normal;
         text-decoration: none;
         color: $COLOR_BLACK;
         font-size: 90%;
@@ -133,6 +135,7 @@
       a {
         background: none;
         color: $COLOR_WHITE;
+        font-weight: normal;
         text-decoration: none;
         padding: 0;
       }
@@ -148,6 +151,7 @@
         a {
           color: $COLOR_BLACK;
           padding-top: 0;
+          font-weight: normal;
           text-decoration: none;
           width: auto;
         }
