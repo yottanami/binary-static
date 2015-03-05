@@ -3,7 +3,7 @@
     <h3>[% l("What is the definition of a 'client'?") %]</h3>
     [% l("<p>A client is someone who has been referred through one of your marketing tools and who has deposited money into their [_1] account. They must fulfill the following criteria: </p>
 
-    <ul class='checked'>
+    <ul class='bullet'>
         <li>Have not previously been a [_1] customer.</li>
         <li>Have made the minimum deposit.</li>
         <li>Are over 18.</li>
@@ -24,12 +24,12 @@
     <p>Seasoned traders can use the [_1] platform for the full advantage of the wide range of trading and analysis tools we have on offer.</p>", broker_name) %]
     <br>
     <h3>[% l("Why should I become a binary options trading affiliate?") %]</h3>
-    [% l("<p>In only a short space of time since their inception, binary options are fast becoming a popular trading product. The numerous binary options trading platforms subsequently being created support this growing trend. By becoming an affiliate now you can profit from the fast growth of interest in this new industry.</p> 
+    [% l("<p>In only a short space of time since their inception, binary options are fast becoming a popular trading product. The numerous binary options trading platforms subsequently being created support this growing trend. By becoming an affiliate now you can profit from the fast growth of interest in this new industry.</p>
     <p>Binary options trading is a high profit market where there's a place for everyone ~[including you~] to take a cut of the pie!</p>") %]
     <br>
     <h3>[% l("Why should I become a [_1] affiliate?", broker_name) %]</h3>
     <p>
-    [% l("<ul class='checked'>
+    [% l("<ul class='bullet'>
     <li>[_1] is the leading binary option trading platform.</li>
     <li>With an interface in English, Spanish, French, Japanese, Portuguese, Russian and Indonesian it has an internationally wide appeal.</li>
     <li>The [_1] platform is 100% web based making it instantly available for clients.</li>
@@ -83,7 +83,7 @@
     <br>
     <h3>[% l("Can you customize a banner for my site?") %]</h3>
     [% l("<p>Yes. Please contact your account manager if you would like a customized banner and provide him/her with the following information:</p>
-    <ul class='checked'>
+    <ul class='bullet'>
         <li>Pixel size.</li>
         <li>File format.</li>
         <li>Desired language.</li>
