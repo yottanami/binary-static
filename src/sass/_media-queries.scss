@@ -1,6 +1,6 @@
 @media all and (max-width: 759px) {
     html {
-        font-size: 16px;
+        font-size: $FONT_SIZE_N / 2 + $FONT_SIZE_S / 2; // halfway between N and S
     }
     .sitemap, .extra-award, .adcopy  {
         display: none;
@@ -12,7 +12,7 @@
 }
 @media all and (max-width: 479px) {
     html {
-        font-size: 14px;
+        font-size: $FONT_SIZE_S;
     }
     .login-embed {
         flex: 1;
@@ -21,8 +21,7 @@
     .sitemap,
     .footer,
     .msgbar-wrapper,
-    .emphasis-wrapper-wrapper,
-    #footer {
+    .emphasis-wrapper-wrapper {
         display: none;
 
     }
