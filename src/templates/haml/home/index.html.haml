@@ -27,7 +27,6 @@
               %input.button.xtopcta{:id => 'btn_registration',:type => 'submit', :value => stash('createacc')}
       .grd-grid-2.grd-hide-mobile.grd-hide-phablet
 .grd-container
-  %hr.xtopseparator
   #xsection1
     .grd-grid-12.grd-parent
       %h1.center= l('The easiest way to get started in the financial markets')
@@ -41,7 +40,7 @@
           %li!= l('<span>All durations:</span> from 10 seconds to 365 days.')
           %li!= l('<span>All payouts:</span> from $1 to $100,000.')
         .center{:style => "margin-top:40px;"}
-          %a#signbox.button.important.pjaxload.pjaxload-focus{:href => url_for('linkto_acopening.cgi?actype=real')}
+          %a#signbox.button.pjaxload.pjaxload-focus{:href => url_for('linkto_acopening.cgi?actype=real')}
             != l('Open a Real Money Account')
 #xcta
   #xreason
@@ -65,7 +64,7 @@
               %h3= l('Go with the leader')
               %p= l('Binary.com is the award-winning industry pioneer in online options trading.')
   .xcta
-    %a.button.important.pjaxload.xreal{:href => url_for('linkto_acopening.cgi?actype=real')}
+    %a.button.pjaxload.xreal{:href => url_for('linkto_acopening.cgi?actype=real')}
       != l('Open real account')
     %a.button.pjaxload.xvirtual{:href => url_for('linkto_acopening.cgi?actype=virtual')}
       != l('Open virtual account')

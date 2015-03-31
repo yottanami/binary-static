@@ -23,7 +23,7 @@
           %span#login-fields
             %input{:name => 'loginid', :type => 'text', :placeholder => stash('loginholder')}
             %input{:name => 'password', :type => 'password', :placeholder => stash('pwdholder')}
-            %input.important{:type => 'submit', :value => stash('logintext')}
+            %input{:type => 'submit', :value => stash('logintext')}
           %span#login-links
             %a.pjaxload#register{:href=>url_for('/user/open_account')}= l('Register')
             %a.pjaxload#lost-password{:href=>url_for('lost_password.cgi')}= l('Lost password?')

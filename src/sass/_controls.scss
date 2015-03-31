@@ -1,29 +1,32 @@
-button, input[type=submit], input[type=button], a.button {
+button,
+input[type=submit],
+input[type=button],
+a.button {
     border: 0;
     border-radius: 100px;
     cursor: pointer;
     color: $COLOR_WHITE;
-    background: $COLOR_ORANGE;
+    background: linear-gradient(lighten($COLOR_ORANGE, 2%), darken($COLOR_ORANGE, 2%));
     text-transform: capitalize;
     line-height: 2;
-    padding: 0 1em;
+    padding: 0 1.5em;
     font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, .1);
     &:focus {
         outline: none;
     }
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, .2);
+        background: linear-gradient(lighten($COLOR_ORANGE, 5%), darken($COLOR_ORANGE, 5%));
+    }
 }
-
 a.button {
     text-decoration: none;
     display: inline-block;
     text-align: center;
 }
-
-button:disabled, .button-disabled {
+button:disabled,
+.button-disabled {
     color: $COLOR_GRAY_SHADE;
     background: $COLOR_LIGHT_GRAY;
-}
-
-.important {
-    background: $COLOR_ORANGE !important;
 }

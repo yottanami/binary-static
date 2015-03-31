@@ -79,7 +79,6 @@
       display: block;
     }
     input {
-      display: inline;
       font-size: $FONT_SIZE_S;
     }
     input[type=text], input[type=password] {
@@ -100,14 +99,6 @@
     color: $COLOR_WHITE;
     font-size: 70%;
     margin-top: 10px;
-    a, a:visited {
-      &.logout {
-        background-position: 104.6% 0.3%;
-        background-repeat: no-repeat;
-        padding: 5px;
-        margin-left: 0.4em;
-      }
-    }
   }
   #mobile-menu-icon-container {
     margin-top: 5px;
