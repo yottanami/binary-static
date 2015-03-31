@@ -42,9 +42,6 @@
             padding: 10px 15px;
           }
           height: 40px;
-          button.button {
-            line-height: 0.3em;
-          }
         }
       }
     }
@@ -73,13 +70,11 @@
           > li {
             padding: 0;
             .tm-ul-2 {
-              top: 27px;
-              margin-top: 0;
+              margin-top: 5px;
             }
             a.tm-a {
               padding: 0 5px 0 5px;
               width: auto;
-              font-size: 85%;
             }
           }
         }

@@ -10,7 +10,6 @@
 .tab-menu-wrap, #content .tab-menu-wrap {
   ul {
     margin: 0;
-    font-size: 85%;
     background-color: $COLOR_LIGHT_GRAY;
     position: relative;
     display: block;
@@ -54,7 +53,7 @@
         left: 1px;
         width: 99%;
         z-index: 10;
-        margin-top: 3px solid transparent;
+        margin-top: 3px;
         background: #fff;
         li {
           margin-right: 2em;
@@ -74,7 +73,7 @@
       @extend li.hover;
       a {
         color: $COLOR_ORANGE;
-        background: url("../images/common/nav/menu-sub-selection_1.png") no-repeat bottom;
+        border-bottom: 2px solid $COLOR_ORANGE;
       }
       ul {
         z-index: 1;
@@ -137,7 +136,7 @@
                     background: none;
                     a {
                         color: $COLOR_ORANGE;
-                        background: url("../images/common/nav/menu-sub-selection_1.png") no-repeat bottom;
+                        border-bottom: 2px solid $COLOR_ORANGE;
                     }
                 }
             }

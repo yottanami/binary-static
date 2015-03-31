@@ -5,7 +5,6 @@
 - );
 #header
   .grd-container
-    .grd-row-padding
       .grd-grid-3.grd-grid-mobile-2.grd-grid-phablet-1
         %a#logo{:href=>url_for("/")}
           .grd-grid-3.grd-grid-mobile-12.grd-grid-phablet-12.grd-no-gutter
@@ -17,7 +16,7 @@
       .grd-grid-3.grd-grid-mobile-9.grd-grid-phablet-10.by_client_type.client_virtual.client_real#client-logged-in{ :style => 'display: none;'}
         #logout
           %a.pjaxload#client_loginid{:href => url_for('/user/my_account')}
-          %a.logout{:href => url_for('/logout')}= l('Log out')
+          %a.button{:href => url_for('/logout')}= l('Log out')
       .grd-grid-3.grd-grid-mobile-9.grd-grid-phablet-10.grd-no-gutter-left.by_client_type.client_logged_out#client-logged-out
         %form#login-form{:action => url_for('/login'), :method => 'post'}
           %span#login-fields

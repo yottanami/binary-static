@@ -37,10 +37,10 @@
     .section-content
       .grd-grid-12
         %h1= l('Bank your way')
-        %a.pjaxload.button{:href => url_for('/cashier/available_payment_methods')}
+        %a.pjaxload{:href => url_for('/cashier/available_payment_methods')}
           %span= l('View payment methods')
         %p= l('Trade with ease with [_1]\'s wide range of deposit and withdrawal methods. Your funds will be segregated and held in AAA-rated banks.', stash->{website_name})
-        %a.pjaxload.button{:href => url_for('/cashier/available_payment_methods')}
+        %a.pjaxload{:href => url_for('/cashier/available_payment_methods')}
           %img.responsive{:src => url_for('images/pages/tour/tour-flexible-banking.png')}
 
   .section
@@ -48,7 +48,7 @@
       .grd-grid-12
         %h1= l('Study our live charts')
         %p= l('Frame your trading strategy using [_1]\'s powerful live charts. Instantly view the trading patterns of forex, indices, commodities and stocks.', stash->{website_name})
-        %a.pjaxload.button{:href => url_for('/charting/livechart')}
+        %a.pjaxload{:href => url_for('/charting/livechart')}
           %img.responsive#new-trader-icon{:src => url_for('images/pages/tour/live-chart-snapshot.svg')}
 
   .section

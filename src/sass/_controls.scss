@@ -8,16 +8,16 @@ a.button {
     color: $COLOR_WHITE;
     background: linear-gradient(lighten($COLOR_ORANGE, 2%), darken($COLOR_ORANGE, 2%));
     text-transform: capitalize;
-    line-height: 2;
-    padding: 0 1.5em;
+    line-height: 1;
+    padding: .4em 1.2em;
     font-weight: normal;
     border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .1);
     &:focus {
         outline: none;
     }
     &:hover {
         border: 1px solid rgba(0, 0, 0, .2);
-        background: linear-gradient(lighten($COLOR_ORANGE, 5%), darken($COLOR_ORANGE, 5%));
     }
 }
 a.button {
