@@ -64,8 +64,6 @@
 
 #header {
   background: $COLOR_BLUE;
-  border-top: 2px solid $COLOR_BLUE_SHADE;
-  border-bottom: 4px solid $COLOR_ORANGE;
   a {
     color: $COLOR_WHITE;
     text-decoration: none;
@@ -81,9 +79,7 @@
     }
     input {
       display: inline;
-      border-radius: 4px;
-      font-size: 11px;
-      margin: 0 0 0 5px;
+      font-size: $FONT_SIZE_S;
     }
     input[type=text], input[type=password] {
       background: #FEFEFE;
@@ -91,15 +87,6 @@
       width: 50px;
       color: #000000;
       padding: 4px;
-    }
-    input[type=submit] {
-      border: 0;
-      text-transform: uppercase;
-      padding: 5px;
-      word-break: break-all;
-      white-space: pre-wrap;
-      max-width: 60px;
-      letter-spacing: 0;
     }
   }
   a#lost-password, a#register {
@@ -140,7 +127,7 @@
         background: none;
       }
       a {
-        font-weight: normal;          
+        font-weight: normal;
         vertical-align: middle;
         display: table-cell;
         height: 50px;

@@ -1,12 +1,13 @@
 button, input[type=submit], input[type=button], a.button {
+    border: 0;
+    border-radius: 100px;
     cursor: pointer;
     color: $COLOR_WHITE;
-    background: $COLOR_BLUE;
-    font-weight: bold;
+    background: $COLOR_ORANGE;
     text-transform: capitalize;
-    border: 0;
-    padding: 10px 15px;
-    border-radius: 4px;    
+    line-height: 2;
+    padding: 0 1em;
+    font-weight: normal;
     &:focus {
         outline: none;
     }

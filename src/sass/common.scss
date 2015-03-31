@@ -43,11 +43,10 @@ p {
     line-height: 1.4em;
 }
 h1, h2, h3, h4 {
-    font-weight: bold;
+    font-weight: 300;
 }
 h1 {
     font-size: 34px;
-    font-weight: 700;
     color: $COLOR_ORANGE;
     a {
         color: $COLOR_ORANGE !important;
