@@ -454,7 +454,7 @@ msgid ""
 "    <p><strong>Player report</strong>: The player report shows a breakdown of statistics per player. Use the filters to refine the report.</p>\n"
 "    <p><strong>Daily Earnings</strong>: The commission report shows you your daily commission earnings, per site / product.</p>"
 msgstr ""
-"<p><strong>Detailed report</strong>:このレポートではサイトトラフィックと報酬の分析データ���ご参照頂けます。フィルター機能によって所望のデータを絞り込むこともできます。</p>\n"
+"<p><strong>Detailed report</strong>:このレポートではサイトトラフィックと報酬の分析データをご参照頂けます。フィルター機能によって所望のデータを絞り込むこともできます。</p>\n"
 "    <p><strong>Player report</strong>：このレポートでは、各獲得会員に関する分析データをご参照頂けます。フィルター機能によって所望のデータを絞り込むこともできます。</p>\n"
 "    <p><strong>Daily Earnings</strong>：このレポートでは、ご登録済みのサイト及び商品ごとの報酬データを日毎単位でご参照頂けます。</p>"
 
@@ -463,7 +463,7 @@ msgstr ""
 msgid ""
 "<p>A client is someone who has been referred through one of your marketing tools and who has deposited money into their %1 account. They must fulfill the following criteria: </p>\n"
 "\n"
-"    <ul class='bullet'>\n"
+"    <ul class='checked'>\n"
 "        <li>Have not previously been a %1 customer.</li>\n"
 "        <li>Have made the minimum deposit.</li>\n"
 "        <li>Are over 18.</li>\n"
@@ -471,7 +471,7 @@ msgid ""
 msgstr ""
 "<p>獲得会員とは、お客様のアフィリエイトリンクを経由して%1にご口座を開設しご入金をされた方のことです。また、下記の基準を満たす必要があります。 </p>\n"
 "\n"
-"    <ul class='bullet'>\n"
+"    <ul class='checked'>\n"
 "        <li>過去に%1に口座を開いたことが無い</li>\n"
 "        <li>最低金額のご入金を完了</li>\n"
 "        <li>１８歳以上</li>\n"
@@ -517,7 +517,7 @@ msgstr ""
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:85
 msgid ""
 "<p>Yes. Please contact your account manager if you would like a customized banner and provide him/her with the following information:</p>\n"
-"    <ul class='bullet'>\n"
+"    <ul class='checked'>\n"
 "        <li>Pixel size.</li>\n"
 "        <li>File format.</li>\n"
 "        <li>Desired language.</li>\n"
@@ -528,7 +528,7 @@ msgid ""
 "    </ul>"
 msgstr ""
 "<p>はい、承っております。バナーのカスタマイズなどをご希望される場合は、以下の情報と共にアフィリエイトチームまでご相談下さい。</p>\n"
-"<ul class='bullet'>\n"
+"<ul class='checked'>\n"
 "<li>ピクセルサイズ</li>\n"
 "<li>ファイルフォーマットの種類</li>\n"
 "<li>ご希望の言語（日本語、英語など）</li>\n"
@@ -811,7 +811,7 @@ msgstr "<strong>市場が荒れている時</strong>：one-touch、goes-outside�
 #. (broker_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:32
 msgid ""
-"<ul class='bullet'>\n"
+"<ul class='checked'>\n"
 "    <li>%1 is the leading binary option trading platform.</li>\n"
 "    <li>With an interface in English, Spanish, French, Japanese, Portuguese, Russian and Indonesian it has an internationally wide appeal.</li>\n"
 "    <li>The %1 platform is 100% web based making it instantly available for clients.</li>\n"
@@ -820,7 +820,7 @@ msgid ""
 "    </ul>\n"
 "    <p>If you want to profit from this high demand product then your best option is to partner with the market leader; %1. We've been in the business since 1999, and we know what we're doing.</p>"
 msgstr ""
-"<ul class='bullet'>\n"
+"<ul class='checked'>\n"
 "    <li>%1はバイナリー業界を牽引するトレードシステム</li>\n"
 "    <li>日本語、英語、フランス語、ドイツ語、スペイン語、ロシア語、ポルトガル語、及びインドネシア語に対応済みで、幅広く国際的にサービスを提供しています。</li>\n"
 "    <li>100%ウェブベースで提供されている%1のプラットフォームは、簡単に利用可能</li>\n"
@@ -1427,7 +1427,7 @@ msgstr "数々のご入金方法"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3957
 msgid "Bank/Credit Union/Building Society/Credit/Debit Card statement or passbook (within last 3 months)."
-msgstr "銀行口座の残高証明、信用金庫の残高証明、住宅金融組合の残高証明、クレジットカードの支払い通知、デビットカードの支払い通知、または通帳の原本(３ヶ月以内に発行さ���たもの)。"
+msgstr "銀行口座の残高証明、信用金庫の残高証明、住宅金融組合の残高証明、クレジットカードの支払い通知、デビットカードの支払い通知、または通帳の原本(３ヶ月以内に発行されたもの)。"
 
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:97
@@ -2931,7 +2931,7 @@ msgstr "変化の激しい市場（著しい市場変動を示す期間）にお
 
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:127
 msgid "During the term of this Agreement, you may be entrusted with confidential information relating to the business, operations, or underlying technology of the Company and/or the Company's affiliate program. You agree to avoid disclosure or unauthorised use of the confidential information to third persons or outside parties unless you have the Company's prior written consent and that you will use the Confidential Information only for purposes necessary to further the purposes of this Agreement. Your obligations with regards to confidential information shall survive the termination of this Agreement."
-msgstr "このご利用規約の下では、当社のビジネス、オペレーション、顧客に適用しているテクノロジー、及びアフィリエイトプログラムに関する情報に関する機密情報はアフィリエイト会員に託されます。アフィリエイト会員は当社との間で書面による承認が無い限り、これらの機密情報を第三者や他の関係者に漏洩したり、許可無しに利用しないことに同意します。またこれらの機密情報は、この規約の���意よりも重要である状況が発生した場合にのみ利用することができます。アフィリエイト会員の機密情報に対する義務は、この規約を承諾している間は常に生じるものとします。"
+msgstr "このご利用規約の下では、当社のビジネス、オペレーション、顧客に適用しているテクノロジー、及びアフィリエイトプログラムに関する情報に関する機密情報はアフィリエイト会員に託されます。アフィリエイト会員は当社との間で書面による承認が無い限り、これらの機密情報を第三者や他の関係者に漏洩したり、許可無しに利用しないことに同意します。またこれらの機密情報は、この規約の同意よりも重要である状況が発生した場合にのみ利用することができます。アフィリエイト会員の機密情報に対する義務は、この規約を承諾している間は常に生じるものとします。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:225
 msgid "E-cash"
@@ -3287,7 +3287,7 @@ msgstr "きめ細かな顧客サービス"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/benefits_of_trading_binaries.html.haml:1
 msgid "Flexibility"
-msgstr "柔���性"
+msgstr "柔軟性"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Flexible trades"
@@ -3440,7 +3440,7 @@ msgstr "GMT"
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "GMT stands for Greenwich Mean Time, the official time used in the UK during winter. In summer, the UK changes to British Summer Time, which is GMT + 1 hour. All times on the Binary.com site use GMT all year round."
-msgstr "グリニッ���標準時とは、イギリスの冬時間を示します。イギリスの夏時間はグリニッジ標準時に１時間プラスされGMT+１と表記されます。夏時間、冬時間に関係なくBinary.comではグリニッジ標準時（GMT+0）を採用しています。"
+msgstr "グリニッジ標準時とは、イギリスの冬時間を示します。イギリスの夏時間はグリニッジ標準時に１時間プラスされGMT+１と表記されます。夏時間、冬時間に関係なくBinary.comではグリニッジ標準時（GMT+0）を採用しています。"
 
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:68
@@ -3654,7 +3654,7 @@ msgstr "横軸グリッド"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:62
 msgid "How and when will I receive my affiliate earnings?"
-msgstr "アフ���リエイト報酬の受領方法と受領スケジュールについて教えて下さい。"
+msgstr "アフィリエイト報酬の受領方法と受領スケジュールについて教えて下さい。"
 
 #. (broker_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:49
@@ -4245,7 +4245,7 @@ msgstr "BetOnMarkets.comのメンテナンスと改善を目的とし、マレ�
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:250
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:620
 msgid "J. Welles Wilder has developed the Average Directional Index - ADX to define trend force, whether the trend will develop further or will gradually weaken. The indicator allows to analyse tendencies of the market and to make trading decisions in the market forex."
-msgstr "J. Welles Wilder氏によってAverage Directional Index (ADX)は考案されました。トレンドの強さを測るための指標であり、トレンドが強まるか弱まるかを測ります。この指標に���って市場のトレンド分析、及び外国為替市場での意思決定が可能になります。"
+msgstr "J. Welles Wilder氏によってAverage Directional Index (ADX)は考案されました。トレンドの強さを測るための指標であり、トレンドが強まるか弱まるかを測ります。この指標によって市場のトレンド分析、及び外国為替市場での意思決定が可能になります。"
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:74
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2304
@@ -6724,7 +6724,7 @@ msgstr "申し訳ございませんが現在、新規にご口座の開設を承
 
 #: /home/git/regentmarkets/bom-app/f_onlineid.cgi:38
 msgid "Sorry, only UK residents can authenticate their identity online."
-msgstr "申し訳ございませんが、イギリスに居住のお客様に限りオンライン上で身分証明���認証手続きを承っております。"
+msgstr "申し訳ございませんが、イギリスに居住のお客様に限りオンライン上で身分証明の認証手続きを承っております。"
 
 #: /home/git/regentmarkets/bom-app/paymentagent_transfer.cgi:122
 msgid "Sorry, only USD is allowed."
@@ -7438,7 +7438,7 @@ msgstr "当社はアフィリエイト会員に販促材料としてアフィリ
 
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:18
 msgid "The Company will, at its sole discretion, determine whether or not your application has been successful. The Company's decision is final and is not open to appeal."
-msgstr "当社は当プログラムへの参加の許可を与える権限を有します。故に、当プログラムへの参加の可否に関する当社の決定���、最終的かつ絶対的なものになります。"
+msgstr "当社は当プログラムへの参加の許可を与える権限を有します。故に、当プログラムへの参加の可否に関する当社の決定は、最終的かつ絶対的なものになります。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:62
 msgid "The Company's Obligations"
@@ -7701,7 +7701,7 @@ msgstr "このフィルタリング・アルゴリズムは、テクニカル指
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:15
 msgid "The financial trading services contained within this site are only suitable for Clients who are able to bear the loss of all the money they invest and who understand and have experience of the risks involved in the acquisition of financial contracts."
-msgstr "当社における金融トレードは、投資された資金が全て失われる可能性があることをご理解出来る方、及び金融トレードにお���るあらゆるリスクを熟知されご経験されている方に対してのみ適切なサービスになります。"
+msgstr "当社における金融トレードは、投資された資金が全て失われる可能性があることをご理解出来る方、及び金融トレードにおけるあらゆるリスクを熟知されご経験されている方に対してのみ適切なサービスになります。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/risk_disclaimer.html.tt:5
 msgid "The financial trading services contained within this site are only suitable for customers who are able to bear the loss of all the money they invest and who understand and have experience of the risks involved in the acquisition of financial contracts.  Transactions in financial contracts carry a high degree of risk.  If the purchased contracts expire worthless, you will suffer a total loss of your investment, which will consist of the contract premium.  If you are contemplating purchasing deep-out-of-the-money contracts (where the strike/barrier price is far away from the current underlying spot price), you should be aware that the chance of such contracts becoming profitable ordinarily is remote."
@@ -8584,7 +8584,7 @@ msgstr "三角移動平均"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:532
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:628
 msgid "Triangular moving averages place the majority of the weight on the middle portion of the price series. They are actually double-smoothed simple moving averages. The periods used in the simple moving averages varies depending on if you specify an odd or even number of time periods."
-msgstr "三角移動平均線では中央の値により大きい重みをかけ中央部分を重視して���り、単純移動平均を2回適用したものになります。単純移動平均で用いる期間は、選択した期間が奇数であるか偶数であるかによって異なってきます。"
+msgstr "三角移動平均線では中央の値により大きい重みをかけ中央部分を重視しており、単純移動平均を2回適用したものになります。単純移動平均で用いる期間は、選択した期間が奇数であるか偶数であるかによって異なってきます。"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/why_us.html.haml:1
 msgid "Trust"
@@ -8990,7 +8990,7 @@ msgstr "ログインIDまたはパスワードを復旧することができま�
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4375
 msgid "We were unable to verify your identity and prove your residential address using our automated verification procedure."
-msgstr "ご本人様確認、及びご住所の確認をオンライン上の認証手続きシ���テムにて完了することができませんでした。"
+msgstr "ご本人様確認、及びご住所の確認をオンライン上の認証手続きシステムにて完了することができませんでした。"
 
 #. (site_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:21
@@ -9160,7 +9160,7 @@ msgstr "どのような予想もトレード戦略も%1でのトレードに活�
 #. (broker_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/main.html.tt:68
 msgid "When a prospect visits %1 by clicking on your affiliate link, we set a \"cookie\" to identify them as your client when they open an account with %1."
-msgstr "見込み���が%1のアフィリエイトリンクをクリックした際、\"Cookie（クッキー）\" が設定されますので、アフィリエイトリンク経由で口座を開設した場合にアフィリエイト様の獲得会員として確実に認証されます。"
+msgstr "見込み客が%1のアフィリエイトリンクをクリックした際、\"Cookie（クッキー）\" が設定されますので、アフィリエイトリンク経由で口座を開設した場合にアフィリエイト様の獲得会員として確実に認証されます。"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/careers.html.haml:1
 msgid "When it’s time to kick back, you’ll find beautiful beaches, islands and mountains to explore, just a short flight away. From Malta, you’ll have Europe, the Mediterranean and North Africa on your doorstep. And from Malaysia, you’ll be within easy reach of some of Asia’s most spectacular scenery."
@@ -9658,7 +9658,7 @@ msgstr "この内容のトレードを売りました："
 #. (site_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:43
 msgid "You may not purchase or register keywords, search terms or other identifiers for use in any search engine, portal, sponsored advertising service or other search or referral service which are identical or similar to any of the Company's trademarks or trade names that include the word \"%1\" or any variation thereof. However, this does not extend to the use of Meta tag keywords on your site which are identical or similar to any of the Company's trademarks or trade names including the term %1."
-msgstr "検索エンジン、ポータルサイト、スポンサーを持つ広告サービス、その他の検索サービス、及び%1や類似語句、及び当社のトレードマークやトレードネームと同一または類似した内容を含む紹介サービスでの利用を目的としたキーワード、検索語句、または識別子を購入することは禁止します。尚、%1という単語を含むような、当社のトレードマークやトレードネームと同一または類似したメタタグを自身のプロモーションサイトで利用することに関しては、前述のような制限���設けません。"
+msgstr "検索エンジン、ポータルサイト、スポンサーを持つ広告サービス、その他の検索サービス、及び%1や類似語句、及び当社のトレードマークやトレードネームと同一または類似した内容を含む紹介サービスでの利用を目的としたキーワード、検索語句、または識別子を購入することは禁止します。尚、%1という単語を含むような、当社のトレードマークやトレードネームと同一または類似したメタタグを自身のプロモーションサイトで利用することに関しては、前述のような制限を設けません。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:129
 msgid "You may only open an account at this site on condition that:"
@@ -9745,7 +9745,7 @@ msgstr "追加証拠金（マージンコール）は不要、ノンストップ
 
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:63
 msgid "You will receive your earnings by the 15th of every month, for the commission earned during the previous calendar month."
-msgstr "毎月中頃に確定済みの前月分の報酬を振込させて頂き���す。"
+msgstr "毎月中頃に確定済みの前月分の報酬を振込させて頂きます。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/explanation/winning/runbet-quick10.html.tt:2
 msgid "You win the payout if the market price does not end in the digit you have selected."
@@ -9899,7 +9899,7 @@ msgstr "キャッシャーはロックされています。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/session_expired.html.tt:7
 msgid "Your cashier session has expired"
-msgstr "キャッシャー処理の期限が���れました"
+msgstr "キャッシャー処理の期限が切れました"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3999
 msgid "Your current self-exclusion settings are as follows:"
@@ -10045,7 +10045,7 @@ msgstr "お客様のご口座での累計でのご出金上限金額は現在、
 #. (num_of_days_limit_monetary, num_of_days_limit_equivalent)
 #: /home/git/translations/binary-static/src/templates/toolkit/account/trading_withdrawal_limit.html.tt:17
 msgid "Your withdrawal limit is <strong>EUR %1</strong> (or %2 in other currency)."
-msgstr "お客様のご出金上限金額は、<strong>EUR%1</strong>で��� (他の通貨では%2です。)。"
+msgstr "お客様のご出金上限金額は、<strong>EUR%1</strong>です (他の通貨では%2です。)。"
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/benefits_of_trading_binaries.html.haml:1
 msgid "You’ll be surprised by the returns you can make."
@@ -11851,7 +11851,7 @@ msgstr "Lower"
 #~ msgstr "カスタマーサポートのスタッフより早急にご連絡いたします。"
 
 #~ msgid "All email inquiries will be responded to within 2 business days whenever possible."
-#~ msgstr "メールへの回答は２���業日以内に承らさせて頂きます。"
+#~ msgstr "メールへの回答は２営業日以内に承らさせて頂きます。"
 
 #~ msgid "Asia"
 #~ msgstr "アジア地域"
@@ -12778,7 +12778,7 @@ msgstr "Lower"
 #~ msgstr "<strong>補足：</strong>　1.5%の手数料を徴収させて頂きます。"
 
 #~ msgid "<strong>Note:</strong> There is no commission on any winnings."
-#~ msgstr "<strong>補足：</strong>　払い戻し金額に対して手数料は一切発生い���しません。"
+#~ msgstr "<strong>補足：</strong>　払い戻し金額に対して手数料は一切発生いたしません。"
 
 #, fuzzy
 #~| msgid "Trades where the client predicts that the last decimal digit of a market after 5 Ticks will NOT be the number selected."
@@ -14703,7 +14703,7 @@ msgstr "Lower"
 #~ msgstr "トレード終了時間"
 
 #~ msgid "Contract is not available after close of the world's equity markets. Select a duration of 4 or more days."
-#~ msgstr "世界の株式市場が閉場した後、トレードを実施することはできません。４日以上の取引期間���選択して下さい。"
+#~ msgstr "世界の株式市場が閉場した後、トレードを実施することはできません。４日以上の取引期間を選択して下さい。"
 
 #~ msgid "Effective Date"
 #~ msgstr "発効日"
@@ -16426,7 +16426,7 @@ msgstr "Lower"
 #~ msgstr "この口座番号に登録されているメールアドレスに、メールが送信されました。お客様の口座番号とパスワードは両方とも、口座のログイン時に必要であることにご留意下さい。"
 
 #~ msgid "Go the <a href=\"http://login.betonmarkets.com/password-retrieve.php\">password retrieval page</a>, and enter your username and e-mail address in the form fields provided to have your password e-mailed to you."
-#~ msgstr "<a href=\"http://login.betonmarkets.com/password-retrieve.php\">こちらから</a>ユーザネームとメールアドレスをご���力し、パスワードの再発行手続きを完了して下さい。"
+#~ msgstr "<a href=\"http://login.betonmarkets.com/password-retrieve.php\">こちらから</a>ユーザネームとメールアドレスをご入力し、パスワードの再発行手続きを完了して下さい。"
 
 #~ msgid "Go to Resources"
 #~ msgstr "「取引参考情報」まで移動"
@@ -16553,7 +16553,7 @@ msgstr "Lower"
 #~ msgstr "共有"
 
 #~ msgid "Unable to generate share link at the moment."
-#~ msgstr "現在、���有リンクを作成することができません。"
+#~ msgstr "現在、共有リンクを作成することができません。"
 
 #~ msgid "Contracts which start and end within the same day cannot end in the final 2 minutes of the trading session."
 #~ msgstr "同一日に開始、及び終了するトレードは、終了時間を閉場２分以内に指定することはできません。"

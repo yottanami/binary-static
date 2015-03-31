@@ -457,7 +457,7 @@ msgstr ""
 msgid ""
 "<p>A client is someone who has been referred through one of your marketing tools and who has deposited money into their %1 account. They must fulfill the following criteria: </p>\n"
 "\n"
-"    <ul class='bullet'>\n"
+"    <ul class='checked'>\n"
 "        <li>Have not previously been a %1 customer.</li>\n"
 "        <li>Have made the minimum deposit.</li>\n"
 "        <li>Are over 18.</li>\n"
@@ -465,7 +465,7 @@ msgid ""
 msgstr ""
 "<p>客户即通过您的营销工具推介加入并已向其 %1 账户存入资金的人，必须满足以下条件：</p>\n"
 "\n"
-" <ul class='bullet'>\n"
+" <ul class='checked'>\n"
 "   <li>以前不是 %1 的客户。</li>\n"
 "   <li>已存入最低金额。</li>\n"
 "   <li>18 岁以上。</li>\n"
@@ -511,7 +511,7 @@ msgstr ""
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:85
 msgid ""
 "<p>Yes. Please contact your account manager if you would like a customized banner and provide him/her with the following information:</p>\n"
-"    <ul class='bullet'>\n"
+"    <ul class='checked'>\n"
 "        <li>Pixel size.</li>\n"
 "        <li>File format.</li>\n"
 "        <li>Desired language.</li>\n"
@@ -522,7 +522,7 @@ msgid ""
 "    </ul>"
 msgstr ""
 "<p>可以。如需定制横幅广告，请联系您的客户经理，并提供以下信息：</p>\n"
-" <ul class='bullet'>\n"
+" <ul class='checked'>\n"
 "  <li>像素大小。</li>\n"
 "  <li>文件格式。</li>\n"
 "  <li>所需的语言。</li>\n"
@@ -779,7 +779,7 @@ msgstr "<strong>震荡的市场</strong> - 可选择一触即付交易或收于�
 #. (broker_name)
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:32
 msgid ""
-"<ul class='bullet'>\n"
+"<ul class='checked'>\n"
 "    <li>%1 is the leading binary option trading platform.</li>\n"
 "    <li>With an interface in English, Spanish, French, Japanese, Portuguese, Russian and Indonesian it has an internationally wide appeal.</li>\n"
 "    <li>The %1 platform is 100% web based making it instantly available for clients.</li>\n"
@@ -788,7 +788,7 @@ msgid ""
 "    </ul>\n"
 "    <p>If you want to profit from this high demand product then your best option is to partner with the market leader; %1. We've been in the business since 1999, and we know what we're doing.</p>"
 msgstr ""
-"<ul class='bullet'>\n"
+"<ul class='checked'>\n"
 " <li>%1 是领先的二元期权交易平台。</li>\n"
 " <li>拥有多语种界面，包括英语、西班牙语、法语、日本语、葡萄牙语、俄语和印度尼西亚语，交易无国界。</li>\n"
 " <li>%1 平台完全基于网页，客户使用更便捷。</li>\n"
@@ -1255,7 +1255,7 @@ msgstr "亚洲期权"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/bet/explanation/winning/asian.html.tt:1
 msgid "Asian options settle by comparing the <strong>last tick</strong> with the average spot over the period."
-msgstr "通过把<strong>退出点</strong>���同期的平均点相比较来结算亚洲期权。"
+msgstr "通过把<strong>退出点</strong>与同期的平均点相比较来结算亚洲期权。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet.pm:1174
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet.pm:1181
@@ -1624,7 +1624,7 @@ msgstr "Binary.com 提供新的交易方式"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/open_source_projects.html.haml:1
 msgid "Binary.com open-source projects"
-msgstr "Binary.com ���源项目"
+msgstr "Binary.com 开源项目"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/group_history.html.haml:1
 msgid "Binary.com reaches $2 billion turnover since starting in 1999"
@@ -2519,7 +2519,7 @@ msgstr ""
 "\n"
 "这封邮件是关于您的Binary.com账户。\n"
 "\n"
-"根据法律规定，���们需要确认客户已经年满18岁，因此，我们需要您将以下任一证件的扫描件发送至helpdesk@binary.com：\n"
+"根据法律规定，我们需要确认客户已经年满18岁，因此，我们需要您将以下任一证件的扫描件发送至helpdesk@binary.com：\n"
 "\n"
 "-有效护照、驾照或身份证\n"
 "\n"
@@ -3878,7 +3878,7 @@ msgstr "在这种情况下，公司可自行（不论通知与否）以其认为
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:178
 msgid "In the 'Further Instructions' field please specify the payment method and account number to which the Agent will send the funds to."
-msgstr "请在“详细说明”字段指明支付方式及代理���转账的账号。"
+msgstr "请在“详细说明”字段指明支付方式及代理将转账的账号。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/betting_rules.html.tt:42
 msgid "In the case of single stock and stock index prices, the final closing price as reported by the relevant official Exchange shall apply for all settlements (this final settlement price may, at times, be reported by the relevant Exchange 30-90 minutes after the official closing time of the market, and may differ from the latest tick price that occurred at the closing time)."
@@ -5701,7 +5701,7 @@ msgstr "投资组合"
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1186
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:432
 msgid "Postal Code / ZIP"
-msgstr "邮���"
+msgstr "邮编"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1167
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1174
@@ -7123,7 +7123,7 @@ msgstr "%1 团队。"
 #. (SITENAME)
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/copyright.html.tt:6
 msgid "The %1 website is protected by certain copyrights."
-msgstr "%1网站受版权���护。"
+msgstr "%1网站受版权保护。"
 
 #. ('POST')
 #: /home/git/translations/binary-static/src/templates/haml/static/devguide.html.haml:1
@@ -7218,7 +7218,7 @@ msgstr "CCI （商品通道指数）是最适合商品合约（具有周期性�
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:305
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:648
 msgid "The CLV is an indicator based on the location of close related to low and high for the period. It is used to spot the tendency in the price movements."
-msgstr "CLV 是衡量收盘价相对于期限内最高价和最低价���位置的指标，用于发现价格变动趋势。"
+msgstr "CLV 是衡量收盘价相对于期限内最高价和最低价的位置的指标，用于发现价格变动趋势。"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:290
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:645
@@ -12306,7 +12306,7 @@ msgstr "低于"
 #~ msgstr "您没有支付权限。"
 
 #~ msgid "Your balance is over your allowed limit."
-#~ msgstr "您的余额已超过允���的限制。"
+#~ msgstr "您的余额已超过允许的限制。"
 
 #~ msgid "%1 minute quotes"
 #~ msgstr "%1 分钟行情"
@@ -13062,7 +13062,7 @@ msgstr "低于"
 #~ msgstr "帐户支持美元、英磅和欧元。"
 
 #~ msgid "All credit/debit card transactions are protected by"
-#~ msgstr "所有的信用卡/借记卡交易都受保���"
+#~ msgstr "所有的信用卡/借记卡交易都受保护"
 
 #~ msgid "Available Payment Methods"
 #~ msgstr "可用支付方式"
@@ -16963,7 +16963,7 @@ msgstr "低于"
 #~ msgstr "对客户在特定时段买入交易的任何限制。"
 
 #~ msgid "when, as a result of political, economic, military or monetary events (including unusual market volatility or illiquidity) or any circumstances outside the control, responsibility and power of the Company, the continued operation of this site is not reasonably practicable without materially and adversely affecting and prejudicing the interests of customers or the Company, or if, in the opinion of the Company, a price cannot be calculated for financial contracts; or"
-#~ msgstr "当政治、经济、军事或货币事件（包括市场非正常波动或丧失流动性）或其它不在本公司控制、责任及权力范围之内的任何情形导致本网站在不对客户或本公司利益产生重大负面影响或侵害的情况���无法继续合理可行地运转时，或者依公司之见，无法计算财务交易合约的价格时；或"
+#~ msgstr "当政治、经济、军事或货币事件（包括市场非正常波动或丧失流动性）或其它不在本公司控制、责任及权力范围之内的任何情形导致本网站在不对客户或本公司利益产生重大负面影响或侵害的情况下无法继续合理可行地运转时，或者依公司之见，无法计算财务交易合约的价格时；或"
 
 #, fuzzy
 #~ msgid "S&P Global Agribusiness Index USD"
@@ -18796,7 +18796,7 @@ msgstr "低于"
 #~ msgstr "要查看您的余额和提款，请登陆您的帐户，然后转到 <strong>“出纳部分”</strong>。"
 
 #~ msgid "To view your current outstanding positions and to claim your winnings, please view your <a href=\"%1\">Portfolio</a>"
-#~ msgstr "要查看您当前未处理的头寸并领取交���额，请查看您的<a href=\"%1\">组合</a>"
+#~ msgstr "要查看您当前未处理的头寸并领取交易额，请查看您的<a href=\"%1\">组合</a>"
 
 #~ msgid "Town / Village"
 #~ msgstr "城镇/村庄"
