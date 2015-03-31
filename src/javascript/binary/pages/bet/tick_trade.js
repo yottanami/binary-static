@@ -108,7 +108,12 @@ var TickDisplay = function() {
                     labels: { enabled: false, }
                 },
                 yAxis: {
-                    title: '',
+                    opposite: false,
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                    },
+                    title: ''
                 },
                 series: [{
                     data: [],
@@ -157,6 +162,9 @@ var TickDisplay = function() {
                                     $self.evaluate_contract_outcome();
                                     return;
                                 } else {
+                                    if (!$self.chart && !$self.chart.series) {
+                                        return;
+                                    }
                                     $self.chart.series[0].addPoint([$self.counter, tick.quote], true, false);
                                     $self.applicable_ticks.push(tick);
                                     var indicator_key = '_' + $self.counter;

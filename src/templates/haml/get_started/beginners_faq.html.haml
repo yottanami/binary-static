@@ -8,7 +8,7 @@
     %br
     %h3= l("I'm new to binaries, where do I start?")
     %p
-      != l("The first step is to open an account. You can <a target='_blank' href='[_1]'>apply online</a> in just a few minutes.", url_for('open_account.cgi'))
+      != l("The first step is to open an account. You can <a target='_blank' href='[_1]'>apply online</a> in just a few minutes.", url_for('/user/open_account'))
     %h3= l('Do I need to send any documents?')
     %p= l("We don't usually require any documents as we can verify your identity online.")
   .grd-grid-12
@@ -46,4 +46,4 @@
     %p= l('[_1] is entirely web-based and requires no software installation.', stash->{website_name})
     %h3= l('How soon can I start trading?')
     %p
-      != l('You can <a class="pjaxload" href="[_1]">open an account</a>, deposit funds and begin trading within minutes.', url_for('open_account.cgi'))
+      != l('You can <a class="pjaxload" href="[_1]">open an account</a>, deposit funds and begin trading within minutes.', url_for('/user/open_account'))

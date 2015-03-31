@@ -29,7 +29,7 @@
                         <h1>[% l('Partners') %]</h1>
                         <ul>
                             <li class="affiliate">
-                                <a class="pjaxload" href="[% request.url_for('affiliate_signup.cgi') %]"[% IF target %]
+                                <a class="pjaxload" href="[% request.url_for('/affiliate/signup') %]"[% IF target %]
                                 target="[% target %]"[% END %]>[% l('Affiliate Program') %]</a>
                             </li>
                             <li>
@@ -97,7 +97,7 @@
                     <h1>[% l('Banking') %]</h1>
                     <ul>
                         <li>
-                            <a class="pjaxload" href="[% request.url_for('available_payment_methods.cgi') %]"[% IF
+                            <a class="pjaxload" href="[% request.url_for('/cashier/available_payment_methods') %]"[% IF
                             target %]
                             target="[% target %]"[% END %]>[% l('Payment Methods') %]</a>
                         </li>
@@ -131,14 +131,14 @@
                     <h1>[% l('Market Data') %]</h1>
                     <ul>
                         <li>
-                            <a class="pjaxload" href="[% request.url_for('chart_application.cgi') %]"[% IF target %] target="[% target %]"[% END %]>[% l('Chart Application') %]</a>
+                            <a class="pjaxload" href="[% request.url_for('/charting/application') %]"[% IF target %] target="[% target %]"[% END %]>[% l('Chart Application') %]</a>
                         </li>
                         <li>
                             <a class="pjaxload" href="[% request.url_for('smartchart.cgi') %]"[% IF target %] target="[%
                             target %]"[% END %]>[% l('Light Charts') %]</a>
                         </li>
                         <li>
-                            <a class="pjaxload" href="[% request.url_for('livechart.cgi') %]"[% IF target %] target="[%
+                            <a class="pjaxload" href="[% request.url_for('/charting/livechart') %]"[% IF target %] target="[%
                             target %]"[% END %]>[% l('Live Charts') %]</a>
                         </li>
                     </ul>
@@ -157,7 +157,7 @@
                             %]"[% END %]>[% l('Group History') %]</a>
                         </li>
                         <li>
-                            <a href="[% request.url_for('us_patents.cgi') %]" class="us_patent_link pjaxload">[% l('Patents') %]</a>
+                            <a href="[% request.url_for('/legal/us_patents') %]" class="us_patent_link pjaxload">[% l('Patents') %]</a>
                         </li>
                         <li>
                             <a class="pjaxload" href="[% request.url_for('careers') %]">[% l('Careers') %]</a>

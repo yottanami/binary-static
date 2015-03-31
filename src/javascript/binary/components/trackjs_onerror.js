@@ -6,6 +6,12 @@ window._trackJs = {
             return false;
         }
 
+        // this error is reported when a post request returns error, i.e. html body
+        // the details provided in this case are completely useless, thus discarded
+        if (payload.message.indexOf("Unexpected token <") > 0) {
+            return false;
+        }
+
         payload.network = payload.network.filter(function(item) {
 
             // ignore random errors from Intercom

@@ -33,7 +33,7 @@
       %h1.center= l('The easiest way to get started in the financial markets')
       %p.center= l('Trade in the world\'s financial markets in a simple, user-friendly platform.')
       .grd-grid-7.grd-grid-mobile-12.grd-parent
-        %img.responsive{:alt => "", :src => url_for("images/pages/home3/trade-tutorial_1.svg")}
+        %img.responsive{:alt => "", :src => url_for("images/pages/tour/trade-tutorial_1.svg")}
       .grd-grid-5.grd-grid-mobile-12.grd-parent
         %ul
           %li!= l('<span>All markets:</span> currencies, stock indices, and commodities.')
@@ -47,7 +47,7 @@
   #xreason
     .grd-container
       .grd-row-padding
-        %h1.center-aligned.xhead= l('Why 1,000,000 people around the world trust us')
+        %h1.center-aligned.xhead= l('Why choose us')
         .grd-grid-6.grd-grid-mobile-12.grd-grid-phablet-12
           %ul
             %li.xlist1
@@ -90,7 +90,7 @@
     .grd-row-padding
       %h1.center-aligned.xhead2= l('Payment methods')
       .grd-grid-12
-        %a.pjaxload{:href => url_for('available_payment_methods.cgi')}
+        %a.pjaxload{:href => url_for('/cashier/available_payment_methods')}
           #visa.inlined
           #mastercard.inlined
           #int_bank_wire.inlined

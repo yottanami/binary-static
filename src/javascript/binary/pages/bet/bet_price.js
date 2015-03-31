@@ -120,6 +120,7 @@ var BetPrice = function() {
                 this.display_buy_error(data.error);
             } else if (data.display) {
                 this.display_buy_results(data);
+                BetSell.register();
             } else {
                 throw new Error("Invalid server response: " + data);
             }
@@ -180,6 +181,7 @@ var BetPrice = function() {
                     $self.ev.close();
                     $self.digit_tick_count = 0;
                     $self.applicable_ticks = [];
+                    $self.info_for_display = [];
                 },
                 process: function(start_moment) {
                     var $self = this;
@@ -189,9 +191,8 @@ var BetPrice = function() {
                     $self.info_for_display = [];
                     var symbol = BetForm.attributes.underlying();
                     var how_many_ticks = $('#tick-count').data('count');
-                    var end = start_moment.clone().add(3, 'minutes');
                     var stream_url = window.location.protocol + '//' + page.settings.get('streaming_server');
-                    stream_url += "/stream/ticks/" + symbol + "/" + start_moment.unix() + "/" + end.unix();
+                    stream_url += "/stream/ticks/" + symbol + "/" + start_moment.unix();
                     $self.ev = new EventSource(stream_url, { withCredentials: true });
 
                     $self.ev.onmessage = function(msg) {
@@ -223,6 +224,7 @@ var BetPrice = function() {
                                         if ($self.applicable_ticks.length === how_many_ticks) {
                                             $self.evaluate_digit_outcome();
                                             $self.reset();
+                                            break; // need to break the loop else it will keep on processing the extra tick
                                         }
                                     }
                                 }

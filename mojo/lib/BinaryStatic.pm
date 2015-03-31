@@ -66,6 +66,9 @@ sub startup {
     $r->get('/partnerapi')->to('page#haml');
     $r->get('/devguide')->to('page#haml');
 
+    #CRO - Matjaz
+    $r->get('/home5')->to('page#haml');
+
     # Routing for this rather than adding the file to public/ as everything
     # in public/ will be served by our CDN. We want this served by Mojo.
     $r->get('/robots.txt')->to('page#robots_txt');
@@ -102,16 +105,17 @@ sub startup {
     $r->post('/login')->to('page#login');
     $r->get('/logout')->to('page#logout');
 
-    $r->get('/c/open_account.cgi')->to('page#toolkit');
-    $r->get('/c/affiliate_signup.cgi')->to('page#toolkit');
+    $r->get('/user/open_account')->to('page#toolkit');
+    $r->get('/affiliate/signup')->to('page#toolkit');
     $r->get('/c/pricing_table.cgi')->to('page#toolkit');
     # $r->get('/c/asset_index.cgi')->to('page#toolkit');
-    $r->get('/c/chart_application.cgi')->to('page#toolkit');
-    $r->get('/c/livechart.cgi')->to('page#toolkit');
+    $r->get('/charting/application')->to('page#toolkit');
+    $r->get('/charting/livechart')->to('page#toolkit');
     $r->get('/c/rise_fall_table.cgi')->to('page#toolkit');
 
     $r->route('/exception')->to('page#exception');
     $r->route('/*')->to('page#not_found');
+
 }
 
 1;

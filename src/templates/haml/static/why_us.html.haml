@@ -18,7 +18,7 @@
           %li#sidebar-link-section-6
             %a{:href => "#trust"}= l('Trust')
         .open-account{:class => 'by_client_type client_logged_out client_virtual'}
-          %a.button.important.pjaxload{:href => url_for('open_account.cgi')}= l('Open a free account')
+          %a.button.pjaxload{:href => url_for('/user/open_account')}= l('Open a free account')
     .grd-grid-9.grd-grid-mobile-12.grd-parent
       .section
         %a#sharp-prices
@@ -31,7 +31,7 @@
               %ul.checked
                 %li= l('Real-time prices, benchmarked against interbank options markets.')
                 %li
-                  != l("Returns above 100% on simple [_1] contracts.", pjax_link_for(l('rise/fall'), url_for('trade.cgi?market=forex&form_name=risefall')))
+                  != l("Returns above 100% on simple <a href='[_1]' class='pjaxload'>rise/fall</a> contracts.", url_for('trade.cgi?market=forex&form_name=risefall'))
                 %li
                   != l("Returns above 1000% on <a href='[_1]' class='pjaxload'>higher/lower</a> and <a href='[_2]' class='pjaxload'>touch/no-touch</a> trades.", url_for('trade.cgi?market=forex&form_name=higherlower'), url_for('trade.cgi?market=forex&form_name=touchnotouch'))
                 %li= l('No hidden fees or commissions.')

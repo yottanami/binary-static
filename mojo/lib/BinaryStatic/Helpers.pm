@@ -239,7 +239,7 @@ sub _main_menu_myaccount {
 
     my $my_account_ref = {
         id         => 'topMenuMyAccount',
-        url        => $self->c->url_for('/my_account.cgi'),
+        url        => $self->c->url_for('/user/my_account'),
         text       => $self->c->l('My Account'),
         class      => 'by_client_type client_real client_virtual',
         link_class => 'with_login_cookies pjaxload',
@@ -266,7 +266,7 @@ sub _main_menu_myaccount {
     push @{$my_account_ref->{sub_items}},
       {
         id         => 'topMenuStatement',
-        url        => $self->c->url_for('/statement.cgi'),
+        url        => $self->c->url_for('/user/statement'),
         text       => $self->c->l('Statement'),
         link_class => 'with_login_cookies pjaxload',
       };
@@ -291,7 +291,7 @@ sub _main_menu_myaccount {
     push @{$my_account_ref->{sub_items}},
       {
         id   => 'topMenuBecomeAffiliate',
-        url  => $self->c->url_for('/affiliate_signup.cgi'),
+        url  => $self->c->url_for('/affiliate/signup'),
         text => $self->c->l('Affiliate'),
       };
 
@@ -312,7 +312,7 @@ sub _main_menu_cashier {
 
     my $cashier_items_ref = {
         id         => 'topMenuCashier',
-        url        => $self->c->url_for('/available_payment_methods.cgi'),
+        url        => $self->c->url_for('/cashier/available_payment_methods'),
         text       => $self->c->l('Cashier'),
         link_class => 'pjaxload',
     };
@@ -383,7 +383,7 @@ sub _main_menu_charting {
     };
 
     my $bomchart_ref = {
-        url        => $self->c->url_for('/chart_application.cgi'),
+        url        => $self->c->url_for('/charting/application'),
         text       => $self->c->l('Java Charts'),
         id         => 'topMenuInteractiveChartid',
         link_class => 'pjaxload',
@@ -406,7 +406,7 @@ sub _main_menu_charting {
     # live charts
     my $live_charts_ref = {
         id         => 'topMenuLiveCharts',
-        url        => $self->c->url_for('/livechart.cgi'),
+        url        => $self->c->url_for('/charting/livechart'),
         text       => $self->c->l('Live Charts'),
         link_class => 'pjaxload',
     };

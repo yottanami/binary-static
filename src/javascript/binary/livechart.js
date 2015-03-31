@@ -23,13 +23,13 @@ function updateLiveChart(config) {
 var LiveChart = function(config) {
     //Required for inheritence.
     if (!config) return;
-    
+
     this.config = config;
     this.shift = false;
     if (!config.trade_visualization) {
         this.on_duration_change();
         this.highlight_duration();
-    }    
+    }
 };
 
 LiveChart.prototype = {
@@ -169,7 +169,10 @@ LiveChart.prototype = {
                 min: this.config.from * 1000,
             },
             yAxis: {
+                opposite: false,
                 labels: {
+                    align: 'left',
+                    x: 0,
                     formatter: function() { return this.value; }
                 },
                 title: {

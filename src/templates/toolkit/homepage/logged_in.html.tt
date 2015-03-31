@@ -65,13 +65,13 @@
     <div class='grd-grid-6 grd-grid-mobile-12 grd-parent'>
         <div class='grd-grid-6 grd-parent'>
             <div class='grd-grid-8 grd-with-padding'>
-                <a href="[% request.url_for('statement.cgi') %]" class="pjaxload">
+                <a href="[% request.url_for('/user/statement') %]" class="pjaxload">
                     <img class='responsive' src="[% request.url_for('images/pages/my_account/statement-icon.svg') %]"/>
                 </a>
             </div>
             <div class='grd-grid-12'>
                 <h4>
-                    <a href="[% request.url_for('statement.cgi') %]" class="pjaxload">[% l('Statement') %]</a>
+                    <a href="[% request.url_for('/user/statement') %]" class="pjaxload">[% l('Statement') %]</a>
                 </h4>
                 <p>
                     [% l('View your historical transactions.') %]
@@ -82,13 +82,13 @@
     <div class='grd-grid-6 grd-grid-mobile-12 grd-parent'>
         <div class='grd-grid-6 grd-parent by_client_type client_real'>
             <div class='grd-grid-8 grd-with-padding'>
-                <a href="[% request.url_for('available_payment_methods.cgi') %]" class="pjaxload">
+                <a href="[% request.url_for('/cashier/available_payment_methods') %]" class="pjaxload">
                     <img class='responsive' src="[% request.url_for('images/pages/my_account/cashier-icon.svg') %]"/>
                 </a>
             </div>
             <div class='grd-grid-12'>
                 <h4>
-                    <a href="[% request.url_for('available_payment_methods.cgi') %]" class="pjaxload">[% l('Cashier') %]</a>
+                    <a href="[% request.url_for('/cashier/available_payment_methods') %]" class="pjaxload">[% l('Cashier') %]</a>
                 </h4>
                 <p>
                     [% l('Make a deposit or withdraw') %]

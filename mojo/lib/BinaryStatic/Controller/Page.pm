@@ -13,12 +13,12 @@ sub toolkit {
 
     # template, layout, code
     my %url_map = (
-        'c/open_account.cgi' => ['account/open_account', 'default'],
-        'c/affiliate_signup.cgi' => ['affiliates/main', 'default'],
+        'user/open_account' => ['account/open_account', 'default'],
+        'affiliate/signup' => ['affiliates/main', 'default'],
         'c/pricing_table.cgi' => ['resources/pricing_table_form', 'default'],
         # 'c/asset_index.cgi' => ['resources/pricing_table_form', 'default'],
-        'c/chart_application.cgi' => ['charting/chart_application', 'default'],
-        'c/livechart.cgi' => ['charting/livechart', 'default'],
+        'charting/application' => ['charting/chart_application', 'default'],
+        'charting/livechart' => ['charting/livechart', 'default'],
         'c/rise_fall_table.cgi' => ['resources/rise_fall_table', 'default'],
     );
     my $m = $url_map{$curr_path};
@@ -43,7 +43,6 @@ sub toolkit {
 
     $c->render(
         template => $m->[0],
-        handler => 'haml',
         defined $m->[1] ? (layout => $m->[1] ? $c->layout($m->[1]) : '') : (),
         $m->[2] ? (status => $m->[2]) : (),
 
@@ -70,6 +69,10 @@ sub haml {
     my %url_map = (
         '/' => ['home/index', 'full_width', '', 1],
         'home' => ['home/index', 'full_width', '', 1],
+
+        'home5' => ['home5/index', 'full_width', '', 1],
+
+
         'ticker' => ['home/ticker', ''],
 
         'why-us' => ['static/why_us', 'full_width'],
@@ -188,7 +191,7 @@ sub login {
             { success => 1, session_cookie => Mojo::Cookie->new(value => 'abcdefghijklmn')} : {};
         if ($response->{success}) {
             $self->stash(just_logged_in => 1);
-            $redirect = 'my_account.cgi';
+            $redirect = '/user/my_account';
             $redirect_params->{login} = 'true';
             my $options = $self->cookie_options;
             $options->{expires} = time + 86400 * 30;

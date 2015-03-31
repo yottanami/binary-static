@@ -34,9 +34,9 @@
               %h1= l('How does it work?')
             .grd-grid-12.grd-parent
               .grd-grid-9.grd-grid-mobile-12
-                %p!= l('To create a White Label, first <a href="[_1]">sign up as an affiliate</a>. This will allow you to earn commissions from clients of your White Label.', url_for('affiliate_signup.cgi'))
+                %p!= l('To create a White Label, first <a href="[_1]">sign up as an affiliate</a>. This will allow you to earn commissions from clients of your White Label.', url_for('/affiliate/signup'))
               .grd-grid-3.grd-grid-mobile-10.grd-centered-mobile
-                %a.pjaxload{:href => url_for('affiliate_signup.cgi')}
+                %a.pjaxload{:href => url_for('/affiliate/signup')}
                   %img.responsive{:src => url_for('images/pages/white-label/how-does-it-work-1.svg')}
             .grd-grid-12.grd-parent
               .grd-grid-4.grd-grid-mobile-10.grd-centered-mobile

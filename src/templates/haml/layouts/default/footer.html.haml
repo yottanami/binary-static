@@ -14,7 +14,7 @@
             %h1= l('Partners')
               %ul
                 %li.affiliate
-                  %a.pjaxload{:href=>url_for("affiliate_signup.cgi")}= l('Affiliate Program')
+                  %a.pjaxload{:href=>url_for("/affiliate/signup")}= l('Affiliate Program')
                 %li
                   %a.pjaxload{:href=>url_for("white-labels")}= l('White Labels')
                 %li
@@ -48,7 +48,7 @@
           %h1= l('Banking')
           %ul
             %li
-              %a.pjaxload{:href=>url_for("available_payment_methods.cgi")}= l('Payment Methods')
+              %a.pjaxload{:href=>url_for("/cashier/available_payment_methods")}= l('Payment Methods')
           .grd-row-padding
             %h1= l('Terms')
               %ul
@@ -64,11 +64,11 @@
           %h1= l('Market Data')
           %ul
             %li
-              %a.pjaxload{:href=>url_for("chart_application.cgi")}= l('Chart Application')
+              %a.pjaxload{:href=>url_for("/charting/application")}= l('Chart Application')
             %li
               %a.pjaxload{:href=>url_for("smartchart.cgi")}= l('Light Charts')
             %li
-              %a.pjaxload{:href=>url_for("livechart.cgi")}= l('Live Charts')
+              %a.pjaxload{:href=>url_for("/charting/livechart")}= l('Live Charts')
         .grd-grid-4
           %h1= l('About Us')
           %ul
@@ -77,7 +77,7 @@
             %li
               %a.pjaxload{:href=>url_for("group-history"), :class => 'pjaxload'}= l('Group History')
             %li
-              %a.pjaxload{:href=>url_for("us_patents.cgi"), :class=>"us_patent_link"}= l('Patents')
+              %a.pjaxload{:href=>url_for("/legal/us_patents"), :class=>"us_patent_link"}= l('Patents')
             %li
               %a.pjaxload{:href=>url_for("careers")}= l('Careers')
             %li.blog

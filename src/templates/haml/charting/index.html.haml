@@ -8,11 +8,11 @@
 .grd-grid-6.grd-grid-mobile-12.grd-parent
   .grd-grid-6.grd-parent
     .grd-grid-8.grd-with-padding
-      %a.pjaxload{:href => url_for('chart_application.cgi')}
+      %a.pjaxload{:href => url_for('/charting/application')}
         %img.responsive.chart-type-icon{:src => url_for('images/pages/charting/interactive-charts.svg')}
     .grd-grid-12
       %h4
-        %a.pjaxload{:href => url_for('chart_application.cgi')}= l('Java Charts')
+        %a.pjaxload{:href => url_for('/charting/application')}= l('Java Charts')
       %p= l('Try our downloadable charting application with an extensive range of indicators.')
   .grd-grid-6.grd-parent
     .grd-grid-8.grd-with-padding
@@ -25,9 +25,9 @@
 .grd-grid-6.grd-grid-mobile-12.grd-parent
   .grd-grid-6.grd-parent
     .grd-grid-8.grd-with-padding
-      %a.pjaxload{:href => url_for('livechart.cgi')}
+      %a.pjaxload{:href => url_for('/charting/livechart')}
         %img.responsive.chart-type-icon{:src => url_for('images/pages/charting/popup-charts.svg')}
     .grd-grid-12
       %h4
-        %a.pjaxload{:href => url_for('livechart.cgi')}= l('Live Charts')
+        %a.pjaxload{:href => url_for('/charting/livechart')}= l('Live Charts')
       %p= l('This is our \'next generation\' charting tool.')

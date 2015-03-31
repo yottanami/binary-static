@@ -294,15 +294,6 @@ fieldset .error-msg {
     position: absolute;
     top: -9999px;
 }
-.indicate-loading {
-    opacity: 0.6;
-    filter:alpha(opacity=60);
-    /* For IE */
-    clip: rect(0 0 0 0);
-    margin: -1px;
-    padding: 0;
-    border: 0;
-}
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -382,4 +373,14 @@ ul.checked {
     border-bottom: 1px solid $COLOR_GRAY;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content-holder {
+    flex: 1 1 auto;
 }
