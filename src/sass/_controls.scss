@@ -3,13 +3,13 @@ input[type=submit],
 input[type=button],
 a.button {
     border: 0;
-    border-radius: 100px;
+    border-radius: $BORDER_RADIUS;
     cursor: pointer;
     color: $COLOR_WHITE;
     background: linear-gradient(lighten($COLOR_ORANGE, 2%), darken($COLOR_ORANGE, 2%));
     text-transform: capitalize;
     line-height: 1;
-    padding: .4em 1.2em;
+    padding: .5em 1em;
     font-weight: normal;
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: 0 2px 0 rgba(0, 0, 0, .1);
@@ -17,7 +17,7 @@ a.button {
         outline: none;
     }
     &:hover {
-        border: 1px solid rgba(0, 0, 0, .2);
+        border: 1px solid rgba(0, 0, 0, .3);
     }
 }
 a.button {

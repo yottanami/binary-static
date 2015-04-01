@@ -31,7 +31,7 @@
 @mixin menu-left {
   ul {
     border-radius: $BORDER-RADIUS;
-    overflow: hidden;
+    overflow: hidden;    
     li {
       list-style-image: none;
       margin: 0;
@@ -67,7 +67,9 @@
     background: $COLOR_LIGHT_GRAY;
     border-bottom: $COLOR_GRAY;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 1em;
+    border-radius: $BORDER_RADIUS;
+    overflow: hidden;
     text-align: center;
     p {
       margin: 0;
