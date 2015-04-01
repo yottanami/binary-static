@@ -200,11 +200,10 @@
       }
     }
     #bet_cost_container {
-      font-size: 0.8em;
       display: inline-block;
       background: white;
       .rbox-wrap {
-        border-bottom: 1px solid $COLOR_GRAY_SHADE;
+        border-bottom: 1px solid $COLOR_LIGHT_GRAY;
       }
       form {
         width: 40%;

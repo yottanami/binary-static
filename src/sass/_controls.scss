@@ -6,7 +6,7 @@ a.button {
     border-radius: $BORDER_RADIUS;
     cursor: pointer;
     color: $COLOR_WHITE;
-    background: linear-gradient(lighten($COLOR_ORANGE, 2%), darken($COLOR_ORANGE, 2%));
+    background: linear-gradient(lighten($COLOR_BLUE, 2%), darken($COLOR_BLUE, 2%));
     text-transform: capitalize;
     line-height: 1;
     padding: .5em 1em;

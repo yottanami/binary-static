@@ -23,6 +23,29 @@
         </div>
     </div>
 
+    <header>
+        <a id="logo" href="[% request.url_for('/') %]"[% target %]>
+            <img class='responsive' src="[% request.url_for('images/pages/binary-symbol-logo.svg') %]"/>
+            <img class='responsive' src="[% request.url_for('images/pages/binary-type-logo.svg') %]"/>
+        </a>
+        <ul id="menu-top">
+            <li>
+                <a class="pjaxload" href="[% request.url_for('why-us') %]"[% target %]>[% l("Why Us?") %]</a>
+            </li>
+            <li>
+                <a class="pjaxload" href="[% request.url_for('get-started') %]"[% target %]>[% l("Get Started") %]</a>
+            </li>
+            <li>
+                <a class="pjaxload" href="[% request.url_for('tour') %]"[% target %]>[% l("Tour") %]</a>
+            </li>
+            <li id="trading_link">
+                <a class="pjaxload" href="[% request.url_for('trade.cgi') %]"[% target %]>[% l("Trade") %]</a>
+            </li>
+        </ul>
+        [% language_select %]
+        <a href="[% request.url_for('login') %]" class="button">[% l("Log in") %]</a>
+    </header>
+
     <div id="header">
         <div class='grd-container'>
                 <div class='grd-grid-3 grd-grid-mobile-2 grd-grid-phablet-1'>

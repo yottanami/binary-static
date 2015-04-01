@@ -73,7 +73,6 @@
       @extend li.hover;
       a {
         color: $COLOR_ORANGE;
-        border-bottom: 2px solid $COLOR_ORANGE;
       }
       ul {
         z-index: 1;
@@ -84,7 +83,9 @@
     }
   }
 }
-
+#main-menu .active > a {
+    border-bottom: 2px solid $COLOR_ORANGE;
+}
 #content {
   ul.tm-ul {
     @include tab-list;
