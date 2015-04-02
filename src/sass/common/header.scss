@@ -143,3 +143,10 @@
 #login-form {
     display: none;
 }
+
+header {
+    display: flex;
+    padding: 1em;
+    height: 2em;
+    background: $COLOR_BLUE;
+}

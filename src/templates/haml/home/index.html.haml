@@ -12,7 +12,7 @@
     %hgroup
       %h2!= l('<i>The Premier Platform for</i>')
       %h1= l('Binary Options Trading')
-    %p!= l('<i>Trade 24/7</i>, even on weekends. <i>Customize your trades</i> to meet your needs.')
+      %p!= l('<i>Trade 24/7</i>, even on weekends. <i>Customize your trades</i> to meet your needs.')
 
     %form#open-account{:name => 'oppAccForm', :action => url_for('create_account.cgi'), :method => 'post'}
       %legend= l('Get your free $10k virtual money account')
@@ -28,7 +28,7 @@
   .home-body
     %hgroup
       %h1!= l('<i>The Easiest Way</i> to Get Started')
-      %h3= l('Trade in the world\'s financial markets in a simple, user-friendly platform.')
+      %h3= l('Trade With The Most Simple, User-Friendly Platform')
     .row
       .col
         %img{ :src => url_for("images/pages/home/trade-tutorial.svg")}
@@ -40,7 +40,7 @@
         %h4= l('All Durations')
         %p= l('From 10 Seconds To 365 Days')
         %h4= l('All Payouts')
-        %p= l('From $1 To $100,000.')
+        %p= l('From $1 To $100,000')
         %a.button.pjaxload{:href => url_for('linkto_acopening.cgi?actype=real')}= l('View Trading Platform')
 
 .home-container
@@ -50,29 +50,32 @@
     .row
       .col
         %img{:src => url_for("images/pages/home/icon1.svg")}
-        %h3= l('Sharp prices')
-        %p= l('Binary.com\'s patented pricing technology allows you to benefit from the same rates of return as traders in the interbank market.')
-      .col
-        %img{:src => url_for("images/pages/home/icon2.svg")}
-        %h3= l('Your funds are safe')
-        %p= l('With Binary.com, your money is secure. We segregate and hold client funds in secure AAA-rated banks.')
+        %h3= l('Sharp Prices')
+        %p= l('Our patented pricing technology helps you benefit from the same rates of return as traders in the interbank market.')
       .col
         %img{:src => url_for("images/pages/home/icon3.svg")}
-        %h3= l('Trade your way')
-        %p= l('Don\'t limit yourself! Whatever your market view, Binary.com allows you to put your strategy to work and profit from your predictions.')
+        %h3= l('Trade Your Way')
+        %p= l('Whatever your market view, you can always put your strategy to work and profit from your predictions.')
+      .col
+        %img{:src => url_for("images/pages/home/icon2.svg")}
+        %h3= l('Safe Funds')
+        %p= l('With us, your money is secure. We segregate and hold client funds in secure AAA-rated banks.')
       .col
         %img{:src => url_for("images/pages/home/icon4.svg")}
-        %h3= l('Go with the leader')
+        %h3= l('Go With the Leader')
         %p= l('Binary.com is the award-winning industry pioneer in online options trading.')
 
 .home-container
   .home-body
     %hgroup
       %h1!= l('What Our <i>Clients</i> Think of Us?')
-    %blockquote!= l('We have used www.binary.com for the last 8 years and highly recommend binary to all our members worldwide')
-      %cite!= l('Joshua Cavallaro <span> Markets And You Trader.</span>')
-    %blockquote!= l('Binary.com is one of the oldest and trustworthy partners we ever had. We have worked together for many years.')
-      %cite!= l('Andrei Asavei <span>Top Binary Options Brokers</span>')
+    .row
+      %blockquote.col
+        != l('We have used www.binary.com for the last 8 years and highly recommend binary to all our members worldwide')
+        %cite!= l('Joshua Cavallaro <span> Markets And You Trader.</span>')
+      %blockquote.col
+        != l('Binary.com is one of the oldest and trustworthy partners we ever had. We have worked together for many years.')
+        %cite!= l('Andrei Asavei <span>Top Binary Options Brokers</span>')
 
 .home-container
   .home-body
