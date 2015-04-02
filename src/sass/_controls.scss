@@ -20,6 +20,9 @@ a.button {
         border: 1px solid rgba(0, 0, 0, .3);
     }
 }
+.inverse, .login-btn, .logout-btn {
+    background: linear-gradient(lighten($COLOR_ORANGE, 2%), darken($COLOR_ORANGE, 2%)) !important;
+}
 a.button {
     text-decoration: none;
     display: inline-block;

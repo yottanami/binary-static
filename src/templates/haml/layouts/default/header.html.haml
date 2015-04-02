@@ -3,6 +3,19 @@
 -    pwdholder   => l('Password'),
 -    logintext   => l('Log in'),
 - );
+
+%header
+  .header-content
+    %a#logo{:href=>url_for("/")}
+      %img{:src => url_for('images/pages/binary-symbol-logo.svg')}
+      %img{:src => url_for('images/pages/binary-text.svg')}
+    %nav
+      %a.pjaxload{:href=>url_for('why-us')}= l('Why Us?')
+      %a.pjaxload{:href=>url_for('get-started')}= l('Get Started')
+      %a.pjaxload{:href=>url_for('tour')}= l('Tour')
+      %a.pjaxload{:href=>url_for('trade.cgi')}= l('Trade')
+    %a.button.login-btn.pjaxload{:href=>url_for('login')}= l('Log in')
+
 #header
   .grd-container
       .grd-grid-3.grd-grid-mobile-2.grd-grid-phablet-1

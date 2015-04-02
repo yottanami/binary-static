@@ -1,6 +1,7 @@
 /* Logo and top bar */
 
 #topbar {
+  display: none;
   width: 100%;
   background: $COLOR_DARK_BLUE;
   color: $COLOR_WHITE;
@@ -140,13 +141,6 @@
   }
 }
 
-#login-form {
+#login-form, #header {
     display: none;
-}
-
-header {
-    display: flex;
-    padding: 1em;
-    height: 2em;
-    background: $COLOR_BLUE;
 }

@@ -1,0 +1,38 @@
+header {
+    background: $COLOR_BLUE;
+    display: flex;
+    justify-content: center;
+}
+.header-content {
+    display: flex;
+    padding: .5em 0;
+    height: 2em;
+    width: 100%;
+    max-width: 940px;
+}
+#logo {
+    img:nth-child(1) {
+        height: 2em;
+    }
+    img:nth-child(2) {
+        height: 1.5em;
+        margin-left: .2em;
+        margin-top: .2em;
+    }
+}
+nav {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    a {
+        padding: 0 1em;
+        line-height: 2;
+        color: white !important;
+        text-align: center;
+        font-weight: normal;
+    }
+}
+.login-btn, .logout-btn {
+    font-size: $FONT_SIZE_S;
+    margin: .2em 0;
+}

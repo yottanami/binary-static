@@ -179,9 +179,6 @@ label {
 .right {
     float: right;
 }
-.push {
-    clear: both;
-}
 .required_asterisk {
     color: $COLOR_ORANGE;
 }
@@ -271,7 +268,7 @@ ul.bullet li {
     margin-top: 3px;
 }
 #content {
-    margin: 20px 0;
+    margin: 1em 0;
 }
 
 .separator-line {

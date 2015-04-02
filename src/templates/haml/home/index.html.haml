@@ -49,19 +49,19 @@
       %h1!= l('Why <i>Choose</i> Us')
     .row
       .col
-        %img{:src => url_for("images/pages/home/icon1.svg")}
+        %img.iconic{:src => url_for("images/pages/home/icon1.svg")}
         %h3= l('Sharp Prices')
         %p= l('Our patented pricing technology helps you benefit from the same rates of return as traders in the interbank market.')
       .col
-        %img{:src => url_for("images/pages/home/icon3.svg")}
+        %img.iconic{:src => url_for("images/pages/home/icon3.svg")}
         %h3= l('Trade Your Way')
         %p= l('Whatever your market view, you can always put your strategy to work and profit from your predictions.')
       .col
-        %img{:src => url_for("images/pages/home/icon2.svg")}
+        %img.iconic{:src => url_for("images/pages/home/icon2.svg")}
         %h3= l('Safe Funds')
         %p= l('With us, your money is secure. We segregate and hold client funds in secure AAA-rated banks.')
       .col
-        %img{:src => url_for("images/pages/home/icon4.svg")}
+        %img.iconic{:src => url_for("images/pages/home/icon4.svg")}
         %h3= l('Go With the Leader')
         %p= l('Binary.com is the award-winning industry pioneer in online options trading.')
 
@@ -71,11 +71,15 @@
       %h1!= l('What Our <i>Clients</i> Think of Us?')
     .row
       %blockquote.col
-        != l('We have used www.binary.com for the last 8 years and highly recommend binary to all our members worldwide')
-        %cite!= l('Joshua Cavallaro <span> Markets And You Trader.</span>')
+        %p!= l('We have used www.binary.com for the last 8 years and highly recommend binary to all our members worldwide')
+        %cite
+          %h4= l('Joshua Cavallaro')
+          %span= l('Markets And You Trader')
       %blockquote.col
-        != l('Binary.com is one of the oldest and trustworthy partners we ever had. We have worked together for many years.')
-        %cite!= l('Andrei Asavei <span>Top Binary Options Brokers</span>')
+        %p!= l('Binary.com is one of the oldest and trustworthy partners we ever had. We have worked together for many years.')
+        %cite
+          %h4= l('Andrei Asavei')
+          %span= l('Top Binary Options Brokers')
 
 .home-container
   .home-body

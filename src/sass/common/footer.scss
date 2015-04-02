@@ -1,5 +1,6 @@
 #footer-menu {
     background: #f5f5f6;
+    padding: 1em 0;
     h1 {
         color: $COLOR_BLUE;
         font-weight: bold;
@@ -18,6 +19,7 @@
     }
 }
 #footer-regulatory {
+    padding: 1em 0;
     a,
     span {
         display: inline-block;
