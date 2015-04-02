@@ -1,16 +1,14 @@
-[% google_tag_tracking_code %]
-[% google_tag_declaration_code %]
-<div id="page_info" style="display:none;">
-    <title>[% title %]</title>
-    <div id="body_id">[% body_id %]</div>
-</div>
+      <div id="content">
+          [% google_tag_tracking_code %]
+          [% google_tag_declaration_code %]
+          <div id="page_info" style="display:none;">
+              <title>[% title %]</title>
+              <div id="body_id">[% body_id %]</div>
+          </div>
+          [% IF !full_width %]
+          <div class="grd-container">
+          [% END %]
 
-<div id="content">
-
-    [% IF !full_width %]
-    <div class="grd-container">
-    [% END %]
-
-    [% content %]
-    </div>
-</div>
+          [% content %]
+          </div>
+      </div>
