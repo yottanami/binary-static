@@ -1,0 +1,82 @@
+footer {
+
+}
+.sitemap, .regulatory {
+    margin: 0 auto;
+    padding: 2em 0;
+    max-width: 940px;
+}
+.sitemap {
+    font-size: $FONT_SIZE_S;
+    h4 {
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    a {
+        color: $COLOR_TEXT;
+        font-weight: normal;
+        display: block;
+        line-height: 1.5;
+    }
+}
+.regulatory {
+    font-size: $FONT_SIZE_XS;
+    img {
+        height: 5em;
+    }
+    a + a {
+        margin-left: 1em;
+    }
+}
+.regulatory-text {
+    text-align: justify;
+    flex: 5;
+}
+.social-icons {
+    text-align: right;
+}
+.social-icons img {
+    width: 2em;
+    padding: .25em;
+}
+.fb-gplus-follow {
+    margin-top: 10px;
+    .fb-like {
+        margin-right: 5px;
+    }
+    .gplus {
+        position: relative;
+        display: inline-block;
+        top: 3px;
+    }
+}
+#appcache-reload-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $COLOR_YELLOW;
+    z-index: 999;
+    text-align: center;
+    .message {
+        margin: 12px;
+        font-style: italic;
+        color: $COLOR_RED;
+        a {
+            color: $COLOR_GREEN;
+        }
+    }
+}
+#suspend-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $COLOR_YELLOW;
+    z-index: 999;
+    text-align: center;
+    .message {
+        margin: 12px;
+        font-style: italic;
+        color: $COLOR_RED;
+    }
+}
