@@ -1,6 +1,11 @@
 .home-content#content {
     width: 100%;
 }
+.hero {
+    background-image: url('/images/pages/home2/map.png');
+    backgroud-repeat: no-repeat;
+    background-size: cover;
+}
 blockquote {
     p {
         quotes: "\201C""\201D""\2018""\2019";
