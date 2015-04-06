@@ -50,7 +50,6 @@
     display: block;
     padding: 0.1em 1em;
     a, a:visited {
-      color: $COLOR_GREEN;
       text-decoration: none;
       &:hover, &:active {
         text-decoration: underline;
@@ -176,7 +175,6 @@
   text-indent: -9999px;
   outline: none;
 }
-
 
 .li-boxes-content-extra-height {
   min-height: 12em;

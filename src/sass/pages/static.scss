@@ -7,13 +7,6 @@
     .section {
         display: block;
         overflow: hidden;
-        .section-content {
-            #section-1, #section-2, #section-3, #section-4, #section-5, #section-6 {
-                .heading {
-                    font-weight: bold;
-                }
-            }
-        }
     }
     .sidebar-button {
         margin-top: 1em;
