@@ -5,7 +5,6 @@ header {
 }
 .header-content {
     display: flex;
-    padding: .75em 0;
     width: 100%;
     max-width: 940px;
 }
@@ -23,15 +22,87 @@ nav {
     flex: 1;
     justify-content: center;
     display: flex;
-    a {
+    div, a {
         padding: 0 1em;
         line-height: 2;
         color: white !important;
         text-align: center;
         font-weight: normal;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
+
+
 .login-btn, .logout-btn {
     font-size: $FONT_SIZE_S;
     margin: .2em 0;
+}
+
+
+.language-selector {
+    select {
+        text-indent: 100px;
+        border: none;
+        width: 20px;
+        height: 15px;
+        margin: 1em;
+        background-position: 0 0;
+        padding: 0;
+        &:hover, &:focus { box-shadow: none; }
+    }
+}
+.flag {
+    background: url('../images/flags.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.header nav {
+    color: white;
+}
+.header nav a {
+    color: white;
+    font-weight: normal;
+}
+.header nav a:hover {
+    text-decoration: none;
+}
+.nav1st li.active div {
+    //color: #717880;
+}
+.nav1st > li, .logo {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.nav1st > li:hover, .logo:hover {
+    box-shadow: inset 0px 3px 0px 0px $COLOR_ORANGE;
+    background-color: $COLOR_NAV_ACTIVE;
+    border-left: 1px solid $COLOR_NAV_BORDER;
+    border-right: 1px solid $COLOR_NAV_BORDER;
+}
+.nav2nd {
+    margin-left: -1px;
+    background-color: $COLOR_NAV_ACTIVE;
+    border-left: 1px solid $COLOR_NAV_BORDER;
+    border-right: 1px solid $COLOR_NAV_BORDER;
+    border-bottom: 1px solid $COLOR_NAV_BORDER;
+}
+.nav2nd li:hover {
+    color: white;
+    background: $COLOR_GRAY;
+
+}
+.nav-trade,
+.nav-cashier,
+.nav-resources,
+.nav-charts,
+.nav-help {
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: center center;
+}
+.nav-trade {
+    font-weight: bold;
+
 }

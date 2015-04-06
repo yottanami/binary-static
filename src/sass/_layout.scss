@@ -1,0 +1,221 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+}
+body, .msgbar, .header, #content, .sitemap,
+.msgbar-wrapper, .header-wrapper, .content-wrapper, .sitemap-wrapper, .footer-wrapper {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+}
+
+.header-wrapper {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+}
+
+.content-wrapper {
+    flex: 1;
+    margin: 3em 0;
+}
+
+.header-wrapper, .content-wrapper, .footer-wrapper {
+    justify-content: center;
+    padding: 0 1em;
+}
+
+.msgbar, .header, #content, .sitemap, .footer {
+    max-width: 940px;
+    width: 100%;
+}
+
+#content {
+    flex-direction: column;
+}
+
+.msgbar {
+    align-items: center;
+    justify-content: center
+}
+
+.msg, .gmt-clock {
+    padding: .5em .5em .5em 0;
+}
+
+
+.msgbar {
+    font-size: $FONT_SIZE_S;
+}
+
+.msgbar, .header, .sitemap {
+    flex-flow: row wrap;
+}
+
+.gmt-clock {
+    text-align: center;
+}
+
+.header nav {
+    display: flex;
+    flex: 1;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.nav2nd {
+    z-index: 100;
+}
+
+.nav2nd li {
+    justify-content: space-around;
+}
+
+.header nav li {
+    cursor: pointer;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav1st {
+    display: flex;
+    flex: 1;
+}
+
+.header nav a {
+    display: block;
+}
+
+.nav1st > li {
+    text-align: center;
+    height: $HEADER_HEIGHT;
+    max-width: 8em;
+}
+
+.nav1st li div {
+    line-height: $HEADER_HEIGHT;
+}
+
+.nav2nd {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    flex-direction: column;
+    min-width: 200px;
+    transform: translateY(100px);
+}
+
+.nav2nd li {
+    text-align: center;
+}
+
+.nav2nd a {
+    padding: 1em;
+}
+
+.nav1st li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.login-embed {
+    display: flex;
+    flex: 2;
+    max-width: 480px;
+}
+
+.login-embed input {
+    flex: 2
+}
+
+.login-embed button {
+    flex: 1;
+}
+
+.login-embed input {
+    margin-right: 0.5em;
+}
+
+
+.header {
+    height: 3em;
+    flex-direction: row;
+}
+
+.login-button {
+    margin: .5em 0;
+    line-height: 0;
+}
+
+.logo {
+    margin-left: -.5em;
+    padding: .5em;
+    width: 3em;
+}
+
+.logo-text {
+    padding: .5em 0;
+}
+
+.sitemap {
+    margin-top: 1em;
+}
+
+.sitemap li {
+    flex: 1;
+}
+
+.sitemap li > * {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .25em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.licenses {
+    flex: 1;
+    display: flex;
+    margin: 1em 0;
+}
+
+.licenses img {
+    height: 3em;
+    margin-right: 1em;
+}
+
+.regulatory {
+    flex: 4;
+}
+
+.social a {
+    width: 20%;
+}
+
+.open-real-money-account {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.vcentered {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    padding: 1em;
+}
