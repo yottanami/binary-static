@@ -55,10 +55,10 @@
     <div class="row regulatory">
         <div class="col">
             <a href="http://www.gov.im/gambling/">
-                <img id="iom_icon_footer" src="[% request.url_for('images/pages/footer/isle-of-man.png') %]"/>
+                <img src="[% request.url_for('images/pages/footer/isle-of-man.png') %]"/>
             </a>
             <a href="http://www.mga.org.mt/">
-                <img id="lga_icon_footer" class="responsive" src="[% request.url_for('images/pages/footer/mga-logo-footer.svg') %]"/>
+                <img src="[% request.url_for('images/pages/footer/mga-logo-footer.svg') %]"/>
             </a>
         </div>
         <div class="col regulatory-text">

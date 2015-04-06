@@ -1,18 +1,26 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 html {
+    box-sizing: border-box;
     height: 100%;
     font-size: 18px;
     text-rendering: geometricPrecision;
 }
 body {
-    background: #FFFFFF;
+    background: #fff;
     color: $COLOR_TEXT;
     font-family: proxima-nova, arial;
 }
-a, a:visited {
+a,
+a:visited {
     color: $COLOR_BLUE;
     text-decoration: none;
     font-weight: bold;
-    &:hover, &:active {
+    &:hover,
+    &:active {
         text-decoration: underline;
     }
 }
@@ -20,13 +28,18 @@ p {
     margin: 1em 0;
     line-height: 1.4em;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 300;
 }
 h4 {
     font-weight: bold;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: $COLOR_BLUE;
     a {
         color: $COLOR_BLUE !important;
@@ -47,22 +60,32 @@ h4 {
 hgroup {
     margin-bottom: 2em;
 }
-select, input, button, textarea {
+select,
+input,
+button,
+textarea {
     background: $COLOR_WHITE;
     border: 1px solid $COLOR_GRAY;
-    padding: 2px 3px 2px 3px;
+    padding: 2px 3px;
     color: $COLOR_TEXT;
 }
-input, button, textarea, select, optgroup, option {
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
     font-family: inherit;
     font-size: inherit;
     font-style: inherit;
     font-weight: inherit;
 }
-input, textarea {
+input,
+textarea {
     vertical-align: middle;
 }
-ul, ol {
+ul,
+ol {
     margin: 0;
     li {
         line-height: 1.4em;
@@ -74,9 +97,10 @@ ol li {
 }
 img {
     vertical-align: middle;
-    border: 0px;
+    border: 0;
 }
-acronym, abbr {
+acronym,
+abbr {
     cursor: help;
 }
 .button.button-disabled button.button-disabled {
@@ -86,7 +110,7 @@ acronym, abbr {
 }
 form {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 /* form styles */
 .extra_tooltip_container {
@@ -111,19 +135,22 @@ label {
 #profit-table-form {
     background: $COLOR_WHITE;
 }
-.row.focus input, .row.focus textarea {
+.row.focus input,
+.row.focus textarea {
     background-color: $COLOR_YELLOW;
 }
-.errorrow, .errorfield {
+.errorrow,
+.errorfield {
     color: $COLOR_RED;
 }
 .text-only {
     color: $COLOR_TEXT;
 }
 .errorfield {
-    margin: 0 0 0 0%;
+    margin: 0;
 }
-.errorrow, .errorfield {
+.errorrow,
+.errorfield {
     font-size: 93%;
     font-style: italic;
     margin-top: 8px;
@@ -156,7 +183,6 @@ label {
     font-size: 76%;
     line-height: 0.8em;
 }
-
 /* global styles */
 * {
     margin: 0;
@@ -166,9 +192,9 @@ label {
     margin: 0 auto;
 }
 .clearfix {
-    clear:both;
-    visibility:hidden;
-    content:'.';
+    clear: both;
+    visibility: hidden;
+    content: '.';
 }
 .hidden {
     display: none;
@@ -193,7 +219,6 @@ label {
     padding: 10px;
 }
 /* hacks - avoid! */
-
 /* using pixel as we need it to make footer sticky */
 .scrollbar-measure {
     width: 100px;
@@ -232,8 +257,7 @@ ul.bullet li {
         right: -10px;
     }
     .inpage_popup_content {
-        margin: 10px;
-        margin-top: 30px;
+        margin: 30px 10px 10px;
         padding: 0;
     }
     .inpage_popup_content_box {
@@ -251,39 +275,34 @@ ul.bullet li {
         }
     }
 }
-
-.reset_ol{
-  counter-reset: item;
-  li {
+.reset_ol {
+    counter-reset: item;
+    li {
         display: block;
-  }
-  li:before {
+    }
+    li:before {
         content: counters(item, ".") ". ";
         counter-increment: item;
-  }
+    }
 }
-.hint{
+.hint {
     font-size: 14px;
-    color: #58595B;
+    color: #58595b;
     margin-top: 3px;
 }
-
 .separator-line {
     border-bottom: 1px solid $COLOR_GRAY;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 #page-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 #content-holder {
     flex: 1 1 auto;
 }
-
 i {
     color: $COLOR_ORANGE;
 }
