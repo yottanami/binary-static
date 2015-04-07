@@ -4,7 +4,7 @@
   border-bottom: 1px solid $COLOR_GRAY;
   margin-bottom: 40px;
   a.a-active, span.a-active {
-    color: $COLOR_ORANGE;
+    color: $COLOR_BRAND_ORANGE;
   }
 }
 
@@ -27,7 +27,7 @@
         position: relative;
         text-transform: capitalize;
         a.a-active, span.a-active {
-          color: $COLOR_WHITE;
+          color: white;
         }
       }
       ul.sub_items {
@@ -65,7 +65,7 @@
             display: inline-block;
           }
           a.a-active, span.a-active {
-            color: $COLOR_ORANGE;
+            color: $COLOR_BRAND_ORANGE;
           }
         }
       }
@@ -73,7 +73,7 @@
     li.active {
       @extend li.hover;
       a {
-        color: $COLOR_ORANGE;
+        color: $COLOR_BRAND_ORANGE;
       }
       ul {
         z-index: 1;
@@ -85,7 +85,7 @@
   }
 }
 #main-menu .active > a {
-    border-bottom: 2px solid $COLOR_ORANGE;
+    border-bottom: 2px solid $COLOR_BRAND_ORANGE;
 }
 #content {
   ul.tm-ul {
@@ -126,7 +126,7 @@
             font-size: 100%;
             li {
                 margin-right: 2em;
-                color: $COLOR_ORANGE;
+                color: $COLOR_BRAND_ORANGE;
                 a {
                     &:hover {
                         text-decoration: none;
@@ -135,8 +135,8 @@
                 &.active {
                     background: none;
                     a {
-                        color: $COLOR_ORANGE;
-                        border-bottom: 2px solid $COLOR_ORANGE;
+                        color: $COLOR_BRAND_ORANGE;
+                        border-bottom: 2px solid $COLOR_BRAND_ORANGE;
                     }
                 }
             }
@@ -148,7 +148,7 @@
               background: none;
             }
             a.a-active {
-              color: $COLOR_ORANGE;
+              color: $COLOR_BRAND_ORANGE;
               background: none;
             }
           }

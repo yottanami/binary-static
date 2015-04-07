@@ -4,7 +4,7 @@
 }
 
 #popup {
-  background-color: $COLOR_WHITE;
+  background-color: white;
 }
 
 /*------------------------------------------------------------------------------------
@@ -15,11 +15,11 @@
 }
 
 .rbox-wrap {
-  background-color: $COLOR_WHITE;
+  background-color: white;
 }
 
 .rbox-bg-alt {
-  background-color: $COLOR_WHITE;
+  background-color: white;
 }
 
 .rbox-lowpad {
@@ -181,7 +181,7 @@ table.half-2 {
   .rbox-shadow-popup-wrap {
     position: relative;
     left: -12em;  /* half the width of rbox-shadow-popup */
-    background-color: $COLOR_WHITE;
+    background-color: white;
     padding-bottom: 0.5em;
     text-align: center;
     #bom-confirm-popup {
@@ -211,7 +211,7 @@ table.half-2 {
 
 #transparent-cover {
   position: fixed;
-  background-color: $COLOR_BLACK;
+  background-color: black;
   opacity: 0.30;
   filter: alpha(opacity = 30);
   width: 100%;

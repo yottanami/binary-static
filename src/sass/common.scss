@@ -16,7 +16,7 @@ body {
 }
 a,
 a:visited {
-    color: $COLOR_BLUE;
+    color: $COLOR_BRAND_BLUE;
     text-decoration: none;
     font-weight: bold;
     &:hover,
@@ -40,9 +40,9 @@ h1,
 h2,
 h3,
 h4 {
-    color: $COLOR_BLUE;
+    color: $COLOR_BRAND_BLUE;
     a {
-        color: $COLOR_BLUE !important;
+        color: $COLOR_BRAND_BLUE !important;
     }
 }
 h1 {
@@ -64,7 +64,7 @@ select,
 input,
 button,
 textarea {
-    background: $COLOR_WHITE;
+    background: white;
     border: 1px solid $COLOR_GRAY;
     padding: 2px 3px;
     color: $COLOR_TEXT;
@@ -133,7 +133,7 @@ label {
     width: 94%;
 }
 #profit-table-form {
-    background: $COLOR_WHITE;
+    background: white;
 }
 .row.focus input,
 .row.focus textarea {
@@ -206,7 +206,7 @@ label {
     float: right;
 }
 .required_asterisk {
-    color: $COLOR_ORANGE;
+    color: $COLOR_BRAND_ORANGE;
 }
 .error-msg {
     color: $COLOR_RED;
@@ -244,7 +244,7 @@ ul.bullet li {
     margin: 0;
     padding: 10px;
     text-align: center;
-    border: solid 1px $COLOR_ORANGE;
+    border: solid 1px $COLOR_BRAND_ORANGE;
     background: $COLOR_LIGHT_GRAY;
     z-index: 1000;
     max-width: 90%;
@@ -263,7 +263,7 @@ ul.bullet li {
     .inpage_popup_content_box {
         padding: 0;
         margin: 0;
-        background: $COLOR_WHITE;
+        background: white;
         border: solid 2px $COLOR_GRAY;
         text-align: center;
     }
@@ -304,5 +304,5 @@ ul.bullet li {
     flex: 1 1 auto;
 }
 i {
-    color: $COLOR_ORANGE;
+    color: $COLOR_BRAND_ORANGE;
 }

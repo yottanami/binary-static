@@ -52,7 +52,7 @@ $grow-effect-duration: 0.4s;
 
     &:hover {
       transform: scale($grow-effect-factor);
-      background: $COLOR_ORANGE;
+      background: $COLOR_BRAND_ORANGE;
       color: $COLOR_LIGHT_GRAY;
     }
 
@@ -63,7 +63,7 @@ $grow-effect-duration: 0.4s;
     float: left;
     clear: left;
     width: $event-column-width;
-    background: $COLOR_WHITE;
+    background: white;
     text-align: left;
     margin-bottom: 20px;
     box-shadow: 0 0 2px $COLOR_GRAY;
@@ -81,17 +81,17 @@ $grow-effect-duration: 0.4s;
 
     &.featured {
       .header {
-        background: $COLOR_ORANGE;
+        background: $COLOR_BRAND_ORANGE;
         color: $COLOR_LIGHT_GRAY;
       }
       &.right {
         &:after {
-          border-right: $arrow-size solid $COLOR_ORANGE;
+          border-right: $arrow-size solid $COLOR_BRAND_ORANGE;
         }
       }
       &:after {
         @media all and (min-width: $width-break-point) {
-          border-left: $arrow-size solid $COLOR_ORANGE;
+          border-left: $arrow-size solid $COLOR_BRAND_ORANGE;
         }
       }
     }

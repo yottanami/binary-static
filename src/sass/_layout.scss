@@ -32,7 +32,7 @@ body {
 }
 
 .msgbar, .header, #content, .sitemap, .footer {
-    max-width: 940px;
+    max-width: $CONTENT_WIDTH;
     width: 100%;
 }
 

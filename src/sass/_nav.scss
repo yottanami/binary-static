@@ -1,12 +1,12 @@
 header {
-    background: $COLOR_BLUE;
+    background: $COLOR_BRAND_BLUE;
     display: flex;
     justify-content: center;
 }
 .header-content {
     display: flex;
     width: 100%;
-    max-width: 940px;
+    max-width: $CONTENT_WIDTH;
 }
 #logo {
     img:nth-child(1) {
@@ -76,7 +76,7 @@ nav {
     border-right: 1px solid transparent;
 }
 .nav1st > li:hover, .logo:hover {
-    box-shadow: inset 0px 3px 0px 0px $COLOR_ORANGE;
+    box-shadow: inset 0px 3px 0px 0px $COLOR_BRAND_ORANGE;
     background-color: $COLOR_NAV_ACTIVE;
     border-left: 1px solid $COLOR_NAV_BORDER;
     border-right: 1px solid $COLOR_NAV_BORDER;

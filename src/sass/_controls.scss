@@ -5,8 +5,8 @@ a.button {
     border: 0;
     border-radius: $BORDER_RADIUS;
     cursor: pointer;
-    color: $COLOR_WHITE;
-    background: linear-gradient(lighten($COLOR_ORANGE, 3%), darken($COLOR_ORANGE, 3%));
+    color: white;
+    background: linear-gradient(lighten($COLOR_BRAND_ORANGE, 3%), darken($COLOR_BRAND_ORANGE, 3%));
     text-transform: capitalize;
     line-height: 1;
     padding: .5em 1em;
@@ -17,13 +17,13 @@ a.button {
     }
     &:hover {
         border: 1px solid rgba(0, 0, 0, .3);
-        background: linear-gradient(darken($COLOR_ORANGE, 3%), darken($COLOR_ORANGE, 6%));
+        background: linear-gradient(darken($COLOR_BRAND_ORANGE, 3%), darken($COLOR_BRAND_ORANGE, 6%));
     }
 }
 .inverse {
-    background: linear-gradient(lighten($COLOR_BLUE, 3%), darken($COLOR_BLUE, 3%)) !important;
+    background: linear-gradient(lighten($COLOR_BRAND_BLUE, 3%), darken($COLOR_BRAND_BLUE, 3%)) !important;
     &:hover {
-        background: linear-gradient(darken($COLOR_BLUE, 3%), darken($COLOR_BLUE, 6%)) !important;
+        background: linear-gradient(darken($COLOR_BRAND_BLUE, 3%), darken($COLOR_BRAND_BLUE, 6%)) !important;
     }
 }
 a.button {

@@ -1,16 +1,5 @@
 /* GLOBAL RULES */
 
-@mixin topspace {
-  margin-top:40px;
-}
-
-@mixin section-background {
-  background: -moz-linear-gradient(top, $COLOR_WHITE 30%, $COLOR_LIGHT_GRAY 90%);
-  background: -webkit-linear-gradient(top, $COLOR_WHITE 30%, $COLOR_LIGHT_GRAY 90%);
-  background: -ms-linear-gradient(top, $COLOR_WHITE 30%, $COLOR_LIGHT_GRAY 90%);
-  border-bottom: 1px solid transparent;
-}
-
 @mixin section-separator {
     .section {
         border-bottom: 1px solid $COLOR_GRAY;
@@ -48,9 +37,9 @@
       }
     }
     li.selected {
-      background: $COLOR_BLUE;
+      background: $COLOR_BRAND_BLUE;
       a {
-        color: $COLOR_WHITE;
+        color: white;
         text-decoration: none;
       }
     }
@@ -74,9 +63,9 @@
       color: $COLOR_TEXT;
       font-weight: normal;
       &.disabled {
-        color: $COLOR_ORANGE;
+        color: $COLOR_BRAND_ORANGE;
         font-weight: bold;
-        border-bottom: 4px solid $COLOR_ORANGE;
+        border-bottom: 4px solid $COLOR_BRAND_ORANGE;
       }
     }
   }
@@ -105,11 +94,11 @@
       }
     }
     li.active, li.ui-tabs-active {
-      background: $COLOR_BLUE;
-      color: $COLOR_WHITE;
+      background: $COLOR_BRAND_BLUE;
+      color: white;
       a {
         background: none;
-        color: $COLOR_WHITE;
+        color: white;
         font-weight: normal;
         text-decoration: none;
         padding: 0;
@@ -131,7 +120,7 @@
           width: auto;
         }
         a.a-active {
-          color: $COLOR_ORANGE;
+          color: $COLOR_BRAND_ORANGE;
         }
         a:hover {
           text-decoration: underline;

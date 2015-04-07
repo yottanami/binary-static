@@ -3,7 +3,6 @@
 }
 
 .static_full {
-    @include topspace;
     .sidebar {
       @include menu-left;
     }

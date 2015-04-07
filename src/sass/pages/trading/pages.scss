@@ -36,7 +36,7 @@
 }
 
 @mixin chart-element-width {
-    width: 940px;
+    width: $CONTENT_WIDTH;
     margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@
     padding-top: 2px;
   }
   select {
-    background: $COLOR_WHITE;
+    background: white;
     border: 1px solid $COLOR_GRAY;
     margin-right: 5px;
   }
@@ -280,7 +280,7 @@
   left: auto;
   top: 27px;
   position: absolute;
-  background-color: $COLOR_WHITE;
+  background-color: white;
   display: none;
   z-index: 999;
 }
@@ -298,7 +298,7 @@
 #intraday_interval {
   position: absolute;
   display: none;
-  background-color: $COLOR_WHITE;
+  background-color: white;
   padding: 0 0.7em 0.7em;
   border: 1px solid $COLOR_GRAY_SHADE;
   width: 8em;
@@ -331,14 +331,14 @@
 
 .desc_box {
   padding: 8px;
-  background-color: $COLOR_WHITE;
+  background-color: white;
   border: 1px solid $COLOR_GRAY;
 }
 
 #chart_compare_underlying li {
   background: url("../images/pages/light_chart/linechart_legends_1.png");
   background-repeat: no-repeat;
-  background-color: $COLOR_WHITE;
+  background-color: white;
   padding: 0 15px;
 }
 
@@ -414,7 +414,7 @@
 }
 
 .finder {
-  background-color: $COLOR_WHITE;
+  background-color: white;
   margin-bottom: 5px;
   position: relative;
   left: 1px;
@@ -426,7 +426,7 @@ h2.finder {
   margin-right: 3px;
   margin-left: 3px;
   border-top: 1px solid $COLOR_GRAY;
-  color: $COLOR_BLUE;
+  color: $COLOR_BRAND_BLUE;
 }
 
 #desc {
@@ -455,7 +455,7 @@ h2.finder {
   }
   select {
     border: 1px solid $COLOR_GRAY;
-    background: $COLOR_WHITE;
+    background: white;
   }
 }
 
@@ -588,7 +588,7 @@ form#rise_fall_form {
 
 #content #settings_message {
     font-weight: bold;
-    color: $COLOR_ORANGE;
+    color: $COLOR_BRAND_ORANGE;
     .success_msg {
         font-size: 100%;
     }

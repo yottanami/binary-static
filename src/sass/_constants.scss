@@ -1,5 +1,8 @@
 // Brand colors and derivatives
 
+$COLOR_BRAND_BLUE: #2a3052;
+$COLOR_BRAND_ORANGE: #e98024;
+
 $COLOR_TEXT: #404448;
 $COLOR_CONTROL_BORDER: #dadada;
 $COLOR_ACTIVE: #ff992a;
@@ -8,18 +11,6 @@ $COLOR_NAV: #a1aab3;
 $COLOR_NAV_ACTIVE: #929ca6;
 $COLOR_NAV_BORDER: #2a3052;
 
-
-$COLOR_ORANGE: #e98024;
-$COLOR_LIGHT_BLUE: #29abe2;
-$COLOR_BLUE: #2a3052;
-$COLOR_BLUE_SHADE: #394171;
-$COLOR_DARK_BLUE: #15212d;
-
-// Utility colors
-
-$COLOR_BLACK: #000;
-$COLOR_WHITE: #fff;
-$COLOR_DARK_WHITE: #ccc;
 
 // Colors used for secondary purposes. To be used sparingly
 
@@ -32,7 +23,11 @@ $COLOR_GREEN         : #2E8836;
 
 // colors to remove
 
+$COLOR_LIGHT_BLUE: #29abe2;
 $COLOR_GRAY_SHADE: #C2C2C2;
+
+
+$CONTENT_WIDTH: 940px;
 
 $BORDER_RADIUS: 2px;
 $CONTROL_PADDING: .25em;

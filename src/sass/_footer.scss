@@ -4,7 +4,7 @@ footer {
 .sitemap, .regulatory {
     margin: 0 auto;
     padding: 2em 0;
-    max-width: 940px;
+    max-width: $CONTENT_WIDTH;
 }
 .sitemap {
     font-size: $FONT_SIZE_S;

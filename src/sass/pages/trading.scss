@@ -89,7 +89,7 @@
       position: relative;
       #page_timeout_notice {
         padding: 10px;
-        background: $COLOR_WHITE;
+        background: white;
       }
       .rbox-content {
         padding: 0;
@@ -307,12 +307,12 @@
 
 .price_moved_up {
   background-color: $COLOR_LIGHT_BLUE;
-  color: $COLOR_WHITE;
+  color: white;
 }
 
 .price_moved_down {
   background-color: $COLOR_RED;
-  color: $COLOR_WHITE;
+  color: white;
 }
 
 .bet_cost {
@@ -356,7 +356,7 @@
   margin-top: 20;
   border: 1px solid $COLOR_DARK_GRAY;
   a {
-    color: $COLOR_BLUE;
+    color: $COLOR_BRAND_BLUE;
   }
 }
 
@@ -378,7 +378,7 @@
   }
   select {
     border: 1px solid $COLOR_GRAY;
-    background: $COLOR_WHITE;
+    background: white;
   }
   button {
     height: 1.5em;
@@ -390,7 +390,7 @@
       }
   }
   h4 {
-    color: $COLOR_BLUE;
+    color: $COLOR_BRAND_BLUE;
     font-weight: bold;
     margin: 10px 0;
   }
@@ -408,11 +408,11 @@ a.close {
     margin-right: 0;
     padding: 10px 8px;
     cursor: pointer;
-    color: $COLOR_WHITE;
-    border: solid 1px $COLOR_ORANGE;
+    color: white;
+    border: solid 1px $COLOR_BRAND_ORANGE;
     border-radius: 0;
     border-bottom-left-radius: 4px;
-    background: $COLOR_ORANGE;
+    background: $COLOR_BRAND_ORANGE;
     font-size: 24px;
     font-weight: bold;
     line-height: 0px;
@@ -457,7 +457,7 @@ a.close {
         padding: 10px 5px;
         text-align: justify;
         border: solid 2px $COLOR_GRAY;
-        background: $COLOR_WHITE;
+        background: white;
     }
 
     .account_balance {
@@ -465,8 +465,8 @@ a.close {
         width: 100%;
         padding: 0;
         margin: 0;
-        background: $COLOR_ORANGE;
-        color: $COLOR_WHITE;
+        background: $COLOR_BRAND_ORANGE;
+        color: white;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -512,8 +512,8 @@ a.close {
         }
 
         .success {
-            background: $COLOR_ORANGE;
-            color:      $COLOR_WHITE;
+            background: $COLOR_BRAND_ORANGE;
+            color:      white;
             padding-left: 1px;
             padding-right: 1px;
             margin-left: 8px;
@@ -525,7 +525,7 @@ a.close {
 .standout {
     font-weight: bold;
     .price {
-        color: $COLOR_ORANGE;
+        color: $COLOR_BRAND_ORANGE;
     }
 }
 .standin {
@@ -539,10 +539,10 @@ a.close {
     color: $COLOR_RED;
 }
 .with_right_border {
-    border-right: solid 1px $COLOR_BLACK;
+    border-right: solid 1px black;
 }
 .with_left_border {
-    border-left: solid 1px $COLOR_BLACK;
+    border-left: solid 1px black;
 }
 #buy_confirm_container {
     position: absolute;

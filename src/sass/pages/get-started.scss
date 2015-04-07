@@ -1,6 +1,5 @@
 /* GET-STARTED PAGES RULES */
 .get-started {
-  @include topspace;
   overflow: hidden;
   .sidebar-left {
     @include menu-left;
@@ -42,11 +41,11 @@
     }
     a {
       display: block;
-      color: $COLOR_WHITE;
+      color: white;
       font-weight: bold;
       padding-bottom: 0.5em;
       text-align: center;
-      background: $COLOR_BLACK;
+      background: black;
       text-decoration: none;
       font-size: 90%;
     }
@@ -91,7 +90,7 @@
   }
   .section-content {
     h2 {
-      color: $COLOR_ORANGE;
+      color: $COLOR_BRAND_ORANGE;
       padding-top: 20px;
       &.center {
         width: 63.8297872%;

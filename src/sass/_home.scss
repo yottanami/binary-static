@@ -12,7 +12,7 @@ blockquote {
         margin: 0 2em 1em 2em;
         &:before,
         &:after {
-            color: $COLOR_ORANGE;
+            color: $COLOR_BRAND_ORANGE;
             font-size: 5em;
             line-height: 0;
             vertical-align: -.4em;
@@ -34,14 +34,14 @@ blockquote {
 #open-account {
     border-radius: $BORDER_RADIUS;
     overflow: hidden;
-    color: $COLOR_WHITE;
-    background: $COLOR_ORANGE;
+    color: white;
+    background: $COLOR_BRAND_ORANGE;
     max-width: 30em;
     margin: 0 auto;
     legend {
         margin: 0;
         padding: .5em;
-        background: $COLOR_BLUE;
+        background: $COLOR_BRAND_BLUE;
     }
     input + input {
         margin-left: 2em;
