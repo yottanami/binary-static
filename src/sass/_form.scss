@@ -22,8 +22,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 select, textarea, input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], input[type=date], input[type=datepicker] {
-    padding: $CONTROL_PADDING;
-    height: 1.75em;
+    padding: .5em;
+    height: 2em;
 }
 
 select, textarea, input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], input[type=date], input[type=datepicker], .dob  {

@@ -51,6 +51,9 @@ nav {
         background-position: 0 0;
         padding: 0;
         &:hover, &:focus { box-shadow: none; }
+        background: url('../images/common/flags.png');
+        background-size: 20px;
+        background-repeat: no-repeat;
     }
 }
 .flag {
@@ -90,7 +93,7 @@ nav {
 }
 .nav2nd li:hover {
     color: white;
-    background: $COLOR_GRAY;
+    background: $COLOR_BRAND_ORANGE;
 
 }
 .nav-trade,
@@ -98,6 +101,7 @@ nav {
 .nav-resources,
 .nav-charts,
 .nav-help {
+    cursor: pointer;
     background-repeat: no-repeat;
     background-size: auto 70%;
     background-position: center center;

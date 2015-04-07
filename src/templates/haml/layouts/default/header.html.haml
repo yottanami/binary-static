@@ -9,5 +9,5 @@
     %a#logo{:href=>url_for("/")}
       %img{:src => url_for('images/pages/binary-symbol-logo.svg')}
       %img{:src => url_for('images/pages/binary-text.svg')}
-      = include('layouts/default/nav')
+    = include('layouts/default/nav')
     %a.button.login-btn.pjaxload{:href=>url_for('login')}= l('Log in')

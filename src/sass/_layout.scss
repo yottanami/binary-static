@@ -31,13 +31,14 @@ body {
     padding: 0 1em;
 }
 
-.msgbar, .header, #content, .sitemap, .footer {
+.msgbar, .header, .sitemap, .footer {
     max-width: $CONTENT_WIDTH;
     width: 100%;
 }
 
 #content {
     flex-direction: column;
+    margin: 2em auto;
 }
 
 .msgbar {
@@ -71,12 +72,17 @@ body {
     display: flex;
 }
 
+#logo, .login-btn {
+    padding: .5em 0;
+}
+
 .nav2nd {
     z-index: 100;
 }
 
 .nav2nd li {
     justify-content: space-around;
+    line-height: 2em;
 }
 
 .header nav li {
@@ -90,6 +96,7 @@ body {
 .nav1st {
     display: flex;
     flex: 1;
+    justify-content: center;
 }
 
 .header nav a {
