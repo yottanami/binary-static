@@ -12,7 +12,7 @@
 }
 .hero hgroup {
     flex: 2;
-    padding: 2em;
+    padding: 2em 0;
     text-align: left;
 }
 blockquote {
@@ -44,9 +44,11 @@ blockquote {
     width: 1em;
     margin: 0 .5em;
 }
+.homerow {
+    margin: 1.5em 0;
+}
 #open-account {
     padding: 2em;
-    border-radius: $BORDER_RADIUS;
     background: rgba($COLOR_BRAND_BLUE, 0.1);
     legend {
         margin: 0;
@@ -64,7 +66,7 @@ blockquote {
     }
 }
 .home-container {
-    padding: 2em;
+    padding: 2em 0;
 }
 .darkish {
     background: #f5f5f6;

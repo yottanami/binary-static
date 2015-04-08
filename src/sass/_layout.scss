@@ -72,8 +72,11 @@ body {
     display: flex;
 }
 
-#logo, .login-btn {
+#logo {
     padding: .5em 0;
+}
+.login-btn {
+    margin: .7rem 0;
 }
 
 .nav2nd {

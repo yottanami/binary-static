@@ -12,14 +12,14 @@
       %hgroup.col
         %h2!= l('<i>The Premier Platform for</i>')
         %h1= l('Binary Options Trading')
-        %p!= l('<i>Trade 24/7</i>, even on weekends.')
-        %p!= l('<i>Customize your trades</i> to meet your needs.')
-        %p
-          != l('Real-time Prices')
-          %img.iconic{:src => url_for("images/pages/home/icon1.svg")}
-          !=l('Returns above 100%')
-          %img.iconic{:src => url_for("images/pages/home/icon1.svg")}
-          !=l('No HIdden Fees')
+        .homerow
+          %h3!= l('<i>Trade 24/7,</i> even on weekends.')
+          %h3!= l('<i>Customize your trades</i> to meet your needs.')
+        = l('Real-time Prices')
+        %img.inlinico{:src => url_for("images/pages/home/icon1.svg")}
+        = l('Returns above 100%')
+        %img.inlinico{:src => url_for("images/pages/home/icon1.svg")}
+        = l('No Hidden Fees')
 
       %form.col#open-account{:name => 'oppAccForm', :action => url_for('create_account.cgi'), :method => 'post'}
         %h3= l('Get Your Free $10k')
