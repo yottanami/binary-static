@@ -24,7 +24,7 @@ blockquote {
             color: $COLOR_BRAND_ORANGE;
             font-size: 5rem;
             line-height: 0;
-            vertical-align: -.4rem;
+            position: relative;
         }
         &:before {
             content: open-quote;

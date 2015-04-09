@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead, tbody {
+    border-bottom: 2px solid $COLOR_CONTROL_BORDER;
+}
+th, td {
+    padding: .5rem;
+}
+th {
+    color: #2a3052;
+}
+tr {
+    border-bottom: 1px solid $COLOR_CONTROL_BORDER;
+}
+table ul {
+    padding-left: 0;
+    list-style: none;
+}
