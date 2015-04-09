@@ -7,7 +7,8 @@
       .nav-cashier
         %a.pjaxload{:href => url_for('available_payment_methods.cgi')}= l('Cashier')
     %li
-      .nav-resources Resources
+      .nav-resources
+        %a= l('Resources')
       %ul.nav2nd
         %li
           %a.pjaxload{:href=>url_for("asset_index.cgi")}= l('Asset Index')
@@ -26,7 +27,8 @@
         %li
           %a.pjaxload{:href=>url_for("livechart.cgi")}= l('Live Charts')
     %li
-      .nav-help Help
+      .nav-help
+        %a= l('Help')
       %ul.nav2nd
         %li
           %a.pjaxload{:href=>url_for("/why-us")}= l('Why Us?')

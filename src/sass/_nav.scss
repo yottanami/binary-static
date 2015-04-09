@@ -23,22 +23,24 @@ nav {
     flex: 1;
     justify-content: center;
     display: flex;
-    div, a {
-        padding: 0 1em;
-        line-height: 2;
-        color: white !important;
-        text-align: center;
-        font-weight: normal;
-        &:hover {
-            text-decoration: none;
-        }
+}
+nav div {
+    padding: 0 1rem;
+    line-height: 2;
+    text-align: center;
+}
+nav a {
+    font-weight: normal;
+    color: white !important;
+    &:hover {
+        text-decoration: none;
     }
 }
 
 
 .login-btn, .logout-btn {
     font-size: $FONT_SIZE_S;
-    margin: .2em 0;
+    margin: .2rem 0;
 }
 
 
@@ -100,7 +102,6 @@ nav {
 .nav-trade,
 .nav-cashier,
 .nav-resources,
-.nav-charts,
 .nav-help {
     cursor: pointer;
     background-repeat: no-repeat;

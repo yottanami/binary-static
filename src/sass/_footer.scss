@@ -9,7 +9,7 @@ footer {
 .sitemap {
     font-size: $FONT_SIZE_S;
     h4 {
-        font-weight: bold;
+        font-weight: normal;
         line-height: 1.5;
     }
     a {
@@ -25,8 +25,12 @@ footer {
         height: 5em;
     }
     a + a {
-        margin-left: 1em;
+        margin-left: 1rem;
     }
+}
+.regulatory-logos {
+    display: flex;
+    justify-content: space-between;
 }
 .regulatory-text {
     text-align: justify;

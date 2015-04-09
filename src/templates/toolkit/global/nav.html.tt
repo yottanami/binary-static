@@ -11,7 +11,9 @@
             </div>
         </li>
         <li>
-            <div class="nav-resources">Resources</div>
+            <div class="nav-resources">
+                <a>[% l("Resources") %]</a>
+            </div>
             <ul class="nav2nd">
                 <li>
                     <a class="pjaxload" href="[% request.url_for('asset_index.cgi') %]" [% target %]>[% l("Asset Index") %]</a>
@@ -40,7 +42,9 @@
             </ul>
         </li>
         <li>
-            <div class="nav-help">Help</div>
+            <div class="nav-help">
+                <a>[% l("Help") %]</a>
+            </div>
             <ul class="nav2nd">
                 <li>
                     <a class="pjaxload" href="[% request.url_for('why-us') %]" [% target %]>[% l("Why Us?") %]</a>

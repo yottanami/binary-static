@@ -28,7 +28,7 @@ body {
 
 .header-wrapper, .content-wrapper, .footer-wrapper {
     justify-content: center;
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
 .msgbar, .header, .sitemap, .footer {
@@ -100,6 +100,7 @@ body {
     display: flex;
     flex: 1;
     justify-content: center;
+    padding: 0 .5rem;
 }
 
 .header nav a {
@@ -130,7 +131,7 @@ body {
 }
 
 .nav2nd a {
-    padding: 1em;
+    padding: 1rem;
 }
 
 .nav1st li:hover > ul {
@@ -179,7 +180,7 @@ body {
 }
 
 .sitemap {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .sitemap li {
@@ -200,12 +201,12 @@ body {
 .licenses {
     flex: 1;
     display: flex;
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 .licenses img {
-    height: 3em;
-    margin-right: 1em;
+    height: 3rem;
+    margin-right: 1rem;
 }
 
 .regulatory {
@@ -227,5 +228,5 @@ body {
     height: 100vh;
     justify-content: center;
     display: flex;
-    padding: 1em;
+    padding: 1rem;
 }
