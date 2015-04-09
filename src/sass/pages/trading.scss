@@ -372,28 +372,7 @@
 }
 
 #bet_bottom_content {
-  padding-top: 2em;
-  input {
-    border: 1px solid $COLOR_GRAY;
-  }
-  select {
-    border: 1px solid $COLOR_GRAY;
-    background: white;
-  }
-  button {
-    height: 1.5em;
-    line-height: 0;
-  }
-  ul {
-      > li {
-          list-style-image: none;
-      }
-  }
-  h4 {
-    color: $COLOR_BRAND_BLUE;
-    font-weight: bold;
-    margin: 10px 0;
-  }
+  padding-top: 2rem;  
 }
 
 /* added for the underlying highlight */
