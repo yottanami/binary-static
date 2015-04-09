@@ -19,20 +19,23 @@ blockquote {
     p {
         quotes: "\201C""\201D""\2018""\2019";
         margin: 0 2rem 1rem 2rem;
+        text-indent: 3rem;
         &:before,
         &:after {
             color: $COLOR_BRAND_ORANGE;
             font-size: 5rem;
             line-height: 0;
-            position: relative;
+            position: absolute;
         }
         &:before {
             content: open-quote;
-            margin-right: .1rem;
+            margin-left: -5rem;
+            margin-top: 1.5rem;
         }
         &:after {
             content: close-quote;
-            margin-left: .1rem;
+            margin-left: -3rem;
+            margin-top: 2.2rem;
         }
     }
 }
