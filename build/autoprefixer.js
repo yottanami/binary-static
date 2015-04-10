@@ -3,8 +3,9 @@ module.exports = {
         options: {
             browsers: ['last 2 versions']
         },
-        single_file: {
-            src: 'dist/css/binary.css'
+        files: {
+            'dist/css/binary.css': 'dist/css/binary.css',
+            'dist/css/binary_rtl.css': 'dist/css/binary_rtl.css',
         }
     }
 };

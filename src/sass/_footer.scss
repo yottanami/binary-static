@@ -33,12 +33,13 @@ footer {
     text-align: justify;
     flex: 5;
 }
-.social-icons {
-    text-align: right;
+.social-col {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
 }
-.social-icons img {
-    width: 2em;
-    padding: .25em;
+.social-col img {
+    width: 2.5rem;
 }
 .fb-gplus-follow {
     margin-top: 10px;
