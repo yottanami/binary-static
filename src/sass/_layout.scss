@@ -84,8 +84,8 @@ body {
 }
 
 .nav2nd li {
-    justify-content: space-around;
-    line-height: 2em;
+    line-height: 2.5;
+    text-align: left;
 }
 
 .header nav li {
@@ -126,10 +126,6 @@ body {
     transform: translateY(100px);
 }
 
-.nav2nd li {
-    text-align: center;
-}
-
 .nav2nd a {
     padding: 1rem;
 }
@@ -156,12 +152,6 @@ body {
 
 .login-embed input {
     margin-right: 0.5em;
-}
-
-
-.header {
-    height: 3em;
-    flex-direction: row;
 }
 
 .login-button {
