@@ -1,5 +1,5 @@
 <div id="asset-tabs" class='has-tabs'>
-    <ul>
+    <ul role="tabs">
         [% FOREACH market IN fullinfo %]
         <li>
             <a href="#[% market.tabid %]">[% market.name %]</a>
