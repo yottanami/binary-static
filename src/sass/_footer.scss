@@ -3,7 +3,7 @@ footer {
 }
 .sitemap, .regulatory {
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 2rem 0;
     max-width: $CONTENT_WIDTH;
 }
 .sitemap {
@@ -39,7 +39,11 @@ footer {
     justify-content: space-between;
 }
 .social-col img {
-    width: 2.5rem;
+    width: 2rem;
+    opacity: .8;
+    &:hover {
+        opacity: 1;
+    }
 }
 .fb-gplus-follow {
     margin-top: 10px;

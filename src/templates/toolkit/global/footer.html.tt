@@ -21,7 +21,6 @@
                 <a class="pjaxload" href="[% request.url_for('pricing_table.cgi') %]">[% l('Pricing Table') %]</a>
                 <a class="pjaxload" href="[% request.url_for('rise_fall_table.cgi') %]">[% l('Rise/Fall Table') %]</a>
                 <a class="pjaxload" href="[% request.url_for('asset_index.cgi') %]">[% l('Asset Index') %]</a>
-                <a class="pjaxload" href="[% request.url_for('/cashier/available_payment_methods') %]">[% l('Payment Methods') %]</a>
                 <a class="pjaxload" href="[% request.url_for('/charting/application') %]">[% l('Chart Application') %]</a>
                 <a class="pjaxload" href="[% request.url_for('smartchart.cgi') %]">[% l('Light Charts') %]</a>
                 <a class="pjaxload" href="[% request.url_for('/charting/livechart') %]">[% l('Live Charts') %]</a>

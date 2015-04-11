@@ -2,24 +2,17 @@
     width: 100%;
 }
 
-.static_full {
-    .sidebar {
-      @include menu-left;
-    }
-    @include section-separator;
-    .section {
-        display: block;
-        overflow: hidden;
-    }
-    .sidebar-button {
-        margin-top: 1em;
-    }
-    .code-sample {
-        background-color: $COLOR_LIGHT_GRAY;
-        overflow-x: auto;
-        width: 90%;
-        font-family: monospace;
-        white-space: pre;
-        padding: 18px;
-    }
+.sidebar {
+  @include menu-left;
+}
+.sidebar-button {
+    margin-top: 1rem;
+}
+.code-sample {
+    background-color: $COLOR_LIGHT_GRAY;
+    overflow-x: auto;
+    width: 90%;
+    font-family: monospace;
+    white-space: pre;
+    padding: 1rem;
 }

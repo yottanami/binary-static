@@ -1,21 +1,5 @@
 /* GLOBAL RULES */
 
-@mixin section-separator {
-    .section {
-        border-bottom: 1px solid $COLOR_GRAY;
-    }
-    .section:first-child {
-        padding-bottom: 50px;
-    }
-    .section:not(:first-child) {
-        padding: 50px 0;
-    }
-    .section:last-child {
-        padding-bottom: 0;
-        border-bottom: none;
-    }
-}
-
 @mixin menu-left {
   ul {
     border-radius: $BORDER_RADIUS;
