@@ -24,7 +24,7 @@ sub startup {
         $self->home->rel_dir('../src')
     ]);
 
-    $self->plugin('haml_renderer', { cache => 0 });
+    $self->plugin('haml_renderer', { cache => 0, format => 'html5' });
     $self->plugin('tt_renderer' => {
         template_options => {
             ENCODING     => 'utf8',
