@@ -33,17 +33,13 @@ footer {
     text-align: justify;
     flex: 5;
 }
-.social-col {
-    display: flex;
-    flex: 2;
-    justify-content: space-between;
-}
 .social-col img {
-    width: 2rem;
+    width: 1.5rem;
     opacity: .8;
-    &:hover {
-        opacity: 1;
-    }
+    padding: 0 .25rem .25rem 0;
+}
+.social-col a:hover img {
+    opacity: 1;
 }
 .fb-gplus-follow {
     margin-top: 10px;
