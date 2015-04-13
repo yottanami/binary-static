@@ -590,8 +590,9 @@ Page.prototype = {
         }
     },
     flag: function() {
-        var idx = $('.language-selector select option:selected').index();
-        $('.language-selector select').css('background-position', '0 -' + idx * 15 + 'px');
+        var idx = $('.language-selector select option:selected').index(),
+            offset = (idx + 1) * 15;
+        $('.language-selector select').css('background-position', '0 -' + offset + 'px');
     },
     on_load: function() {
         this.url.reset();
@@ -610,7 +611,7 @@ Page.prototype = {
     on_change_language: function() {
         var that = this;
         $('.language-selector').on('change', 'select', function() {
-            var language = $(this).val();
+            var language = $(this).find('option:selected').val();
             document.location = that.url_for_language(language);
         });
     },
