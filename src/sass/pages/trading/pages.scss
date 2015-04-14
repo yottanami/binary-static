@@ -164,17 +164,36 @@
 
 /* Light chart */
 #form_chart_director fieldset {
-  position: relative;
-  &#chart_compare_underlying, &#chart_period {
-    background: none;
-    font-size: 0.9em;
-    border: none;
-    ul {
-        li {
-            @include chart-day-selector;
+    position: relative;
+    &#chart_compare_underlying,
+    &#chart_period {
+        background: none;
+        font-size: 0.9em;
+        border: none;
+        ul {
+            li {
+                float: left;
+                list-style-image: none;
+                list-style-position: inherit;
+                label.button {
+                    width: auto;
+                    .button {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 2px solid $COLOR_GRAY_SHADE;
+                        border-radius: 0;
+                        color: $COLOR_TEXT;
+                        font-weight: normal;
+                        &.disabled {
+                            color: $COLOR_BRAND_ORANGE;
+                            font-weight: bold;
+                            border-bottom: 4px solid $COLOR_BRAND_ORANGE;
+                        }
+                    }
+                }
+            }
         }
     }
-  }
 }
 
 #form_chart_director h5 {

@@ -1,142 +1,53 @@
-/* GET-STARTED PAGES RULES */
 .get-started {
-  overflow: hidden;
-  .sidebar-left {
-    @include menu-left;
-  }
-  .sidebar-right {
-    div {
-      background: $COLOR_LIGHT_GRAY;
-      border-bottom: $COLOR_GRAY;
-      margin-bottom: 20px;
-      padding: 1rem;
-      border-radius: $BORDER_RADIUS;
-      overflow: hidden;
-      text-align: center;
-      p {
-        margin-top: 0;
-      }
-      a {
-        font-weight: normal;
-      }
+    .sections {
+        flex: 3;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
-  }
+    section {
+        min-width: 10rem;
+        flex: 1;
+    }
+}
 
-  dl {
+.sidebar-right div {
+    margin-top: 1rem;
     text-align: center;
-    .section {
-      min-height: 210px;
-      background: $COLOR_LIGHT_GRAY;
-      margin:0 20px 20px 0;
-    }
-    .section-header {
-      padding: 10px;
-    }
-    .section-info {
-      width: auto;
-      text-align: center;
-      padding: 10px;
-      min-height:50px;
-      font-size: 90%;
-    }
-    a {
-      display: block;
-      color: white;
-      font-weight: bold;
-      padding-bottom: 0.5em;
-      text-align: center;
-      background: black;
-      text-decoration: none;
-      font-size: 90%;
-    }
-    div {
-      &#what-is-binary-trading {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 0 0;
-      }
-      &#binary-options-basics {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 0;
-      }
-      &#how-to-trade-binaries {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 24%;
-      }
-      &#types-of-trades {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 0 47%;
-      }
-      &#benefits-of-trading-binaries {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 0 24%;
-      }
-      &#beginners-faq {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 0 71%;
-      }
-      &#glossary {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 71%;
-      }
-      &#random-trades {
-        height: 80px;
-        background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 93%;
-      }
-      &#smart-indices {
-        height: 80px;
-        background: url("../images/pages/smart-indices/smart-indices-1.svg") no-repeat 50% 0%;
-      }
-    }
-  }
-  .section-content {
-    h2 {
-      color: $COLOR_BRAND_ORANGE;
-      padding-top: 20px;
-      &.center {
-        width: 63.8297872%;
-      }
-    }
-  }
-  .subsection-navigation {
-    clear: both;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    a.disabled {
-      color: $COLOR_GRAY_SHADE;
-      background: $COLOR_LIGHT_GRAY;
-      cursor: default;
-    }
-  }
-  .section-5 {
-    ol, ul {
-      ol {
-        list-style-type: lower-alpha;
-      }
-    }
-    .subsection {
-      p {
-        .highlight {
-          font-style: italic;
-          margin: 0.625em 0;
-        }
-      }
-    }
-  }
+}
 
-  .section-7 {
-    h4 {
-      font-weight: bold;
-      margin-top: 1.875em;
-    }
-    p {
-      margin: 0.625em 0 1.25em 0;
-    }
-    a {
-      font-weight: bold;
-    }
-  }
-  .trade-type-flash{
-    padding-bottom:25px;
-  }
+#what-is-binary-trading {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 0 0;
+}
+#binary-options-basics {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 0;
+}
+#how-to-trade-binaries {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 24%;
+}
+#types-of-trades {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 0 47%;
+}
+#benefits-of-trading-binaries {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 0 24%;
+}
+#beginners-faq {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 0 71%;
+}
+#glossary {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 71%;
+}
+#random-trades {
+    height: 80px;
+    background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 93%;
+}
+#smart-indices {
+    height: 80px;
+    background: url("../images/pages/smart-indices/smart-indices-1.svg") no-repeat 50% 0;
 }
