@@ -1,7 +1,5 @@
 - stash(title => l('Login'));
-.grd-row-padding
 %h1= stash->{title}
-%br
 %form{:action => url_for('/login'), :method => 'POST'}
   %fieldset
     %legend= l('Your details')
