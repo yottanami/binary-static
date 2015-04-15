@@ -44,3 +44,11 @@
     white-space: pre;
     padding: 1rem;
 }
+.contact-content > .row {
+    .col:nth-child(2) {
+        flex: 2;
+    }
+    .col:nth-child(3) {
+        flex: 3;
+    }
+}

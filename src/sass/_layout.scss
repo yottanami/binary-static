@@ -39,9 +39,8 @@ body {
 #content {
     flex-direction: column;
     margin: 2rem auto;
-    max-width: $CONTENT_WIDTH;
 }
-
+// .content-something:  max-width: $CONTENT_WIDTH;
 .msgbar {
     align-items: center;
     justify-content: center
@@ -172,6 +171,10 @@ body {
 
 .sitemap {
     margin-top: 1rem;
+}
+
+.sitemap h4 {
+    margin-bottom: .4rem;
 }
 
 .sitemap li {

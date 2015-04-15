@@ -10,39 +10,51 @@
         - my $faq_url = "https://binary.desk.com/customer/" . lc($selected_language) . "/portal/articles";
 
         %p!= l("You'll find answers to most of your questions on the <a href='[_1]' target='_blank'>FAQ</a> page.", $faq_url)
-        %p!= l("Email: <span id='cs_contact_eaddress'></span>")
 
-        %label= l('Telephone:')
+        .row
+            .col
+                %label= l('Email:')
+            .col
+                %span#cs_contact_eaddress
+        .row
+            .col
+                %label= l('Telephone:')
         - my $contact_number = customer_support_telephone();
         - my $tollfree_number = customer_support_tollfree();
         - my $default_country = customer_support_default_telephone();
         - my $default_number = $contact_number->{$default_country};
-        %select#cs_telephone_number
-            %option{:disabled => true}= l('Select Country')
-            - foreach (sort keys %{ $contact_number }) {
-                - my $number = $contact_number->{$_};
-                - if ($_ eq $default_country) {
-                    %option{:value => $number, :selected => true}= $_
-                - } else {
-                    %option{:value => $number}= $_
-                - }
-            - }
-            %option{:disabled => true}= l('== Toll Free ==')
-            - foreach (sort keys %{ $tollfree_number }) {
-                - my $tollfree = $tollfree_number->{$_};
-                %option{:value => $tollfree}= $_
-            - }
-        %span#display_cs_telephone
-            = $default_number
-        %label= l('Skype:')
-            - my $skype_helpline = customer_support_skype_helpline();
-            - my $helpline = $skype_helpline->{$selected_language} || $skype_helpline->{'EN'};
-            - $helpline = "skype:" . $helpline . "?call";
-            %a{:href => $helpline}
-            %img.responsive{:src => url_for('images/pages/contact/skype-icon.svg')}
-        #live-chat-container
-            %label= l('Live chat:')
-            %span{:id => "live-chat-icon"}
+            .col
+                %select#cs_telephone_number
+                    %option{:disabled => true}= l('Select Country')
+                    - foreach (sort keys %{ $contact_number }) {
+                        - my $number = $contact_number->{$_};
+                        - if ($_ eq $default_country) {
+                            %option{:value => $number, :selected => true}= $_
+                        - } else {
+                            %option{:value => $number}= $_
+                        - }
+                    - }
+                    %option{:disabled => true}= l('== Toll Free ==')
+                    - foreach (sort keys %{ $tollfree_number }) {
+                        - my $tollfree = $tollfree_number->{$_};
+                    %option{:value => $tollfree}= $_
+                    - }
+                #display_cs_telephone
+                    = $default_number
+        .row
+            .col
+                %label= l('Skype:')
+            .col
+                - my $skype_helpline = customer_support_skype_helpline();
+                - my $helpline = $skype_helpline->{$selected_language} || $skype_helpline->{'EN'};
+                - $helpline = "skype:" . $helpline . "?call";
+                %a{:href => $helpline}
+                %img{:src => url_for('images/pages/contact/skype-icon.svg')}
+        .row
+            .col
+                %label= l('Live chat:')
+            .col
+                %span{:id => "live-chat-icon"}
     .col
         %h1= l("Company addresses")
         %h4= l('Malta')
