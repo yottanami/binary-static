@@ -31,13 +31,13 @@
                     <a class="pjaxload" href="[% request.url_for('rise_fall_table.cgi') %]" [% target %]>[% l("Rise/Fall Table") %]</a>
                 </li>
                 <li>
-                    <a class="pjaxload" href="[% request.url_for('chart_application.cgi') %]" [% target %]>[% l("Chart Application") %]</a>
+                    <a class="pjaxload" href="[% request.url_for('charting/application') %]" [% target %]>[% l("Chart Application") %]</a>
                 </li>
                 <li>
                     <a class="pjaxload" href="[% request.url_for('smartchart.cgi') %]" [% target %]>[% l("Light Charts") %]</a>
                 </li>
                 <li>
-                    <a class="pjaxload" href="[% request.url_for('livechart.cgi') %]" [% target %]>[% l("Live Charts") %]</a>
+                    <a class="pjaxload" href="[% request.url_for('charting/livechart') %]" [% target %]>[% l("Live Charts") %]</a>
                 </li>
             </ul>
         </li>
