@@ -16,11 +16,11 @@
     flash.updown          = static_url.copy.append("flash/betguide-updown.swf")
 %]
 
-<div class='grd-grid-12 grd-parent'>
+<div class='row'>
 
     [% IF show_flash %]
         [% IF flash.$form_name %]
-        <div class='grd-grid-4 grd-grid-mobile-12'>
+        <div class='col'>
             <div id="bet-guide-demo">
                 <object width="245" height="160" type="application/x-shockwave-flash" data="[% flash.$form_name %]">
                     <param name="movie" value="[% flash.$form_name %]" />
@@ -35,25 +35,21 @@
     [% END %]
 
     [% IF show_winning && show_flash && flash.$form_name  %]
-        <div class='grd-grid-8 grd-grid-mobile-12'>
-            <h4>
-                [% l("Winning the contract") %]
-            </h4>
+        <div class=col'>
+            <h4>[% l("Winning the contract") %]</h4>
             [% INCLUDE "$winning" %]
         </div>
     [% ELSIF show_winning %]
-        <div class='grd-grid-12'>
-            <h4>
-                [% l("Winning the contract") %]
-            </h4>
+        <div class='col'>
+            <h4>[% l("Winning the contract") %]</h4>
             [% INCLUDE "$winning" %]
         </div>
     [% END %]
     [% IF show_explain %]
-    <div class='grd-grid-12'>
+    <div class='col'>
         <div id='explanation-content'>
             [% INCLUDE "$explanation" %]
         </div>
     </div>
     [% END %]
-</div><!-- grd-parent closes -->
+</div>
