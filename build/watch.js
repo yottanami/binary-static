@@ -7,6 +7,10 @@ module.exports = {
         files: ['src/javascript/**/*.js'],
         tasks: ['js']
     },
+    templates: {
+        files: ['src/templates/**/*.*'],
+        tasks: ['copy']
+    },
     options: {
         spawn: false,
         interrupt: true,

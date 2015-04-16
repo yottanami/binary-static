@@ -35,33 +35,6 @@
   }
 }
 
-@mixin chart-element-width {
-    width: $CONTENT_WIDTH;
-    margin: 0 auto;
-}
-
-/* landing page icon */
-
-#internet_explorer {
-  background-image: url("../images/pages/logintrouble/ielogo-icon_1.png");
-}
-
-#firefox {
-  background-image: url("../images/pages/logintrouble/firefoxlogo-icon_1.png");
-}
-
-#safari {
-  background-image: url("../images/pages/logintrouble/safarilogo-icon_1.png");
-}
-
-#opera {
-  background-image: url("../images/pages/logintrouble/operalogo-icon_1.png");
-}
-
-#chrome {
-  background-image: url("../images/pages/logintrouble/chromelogo-icon_1.png");
-}
-
 #risefall {
   background-image: url("../images/pages/contract_guide/rise-fall.svg");
 }
@@ -241,9 +214,6 @@
         .rbox.rbox-bg-alt {
             margin: 0;
             border: 1px solid $COLOR_DARK_GRAY;
-            .rbox-heading h4 {
-                background-color: $COLOR_GRAY;
-            }
             ul.button-menu {
                 list-style: none;
                 height: 3em;
@@ -630,4 +600,9 @@ form#rise_fall_form {
             }
         }
     }
+}
+
+.logintrouble-content a {
+    display: block;
+    text-align: center;
 }

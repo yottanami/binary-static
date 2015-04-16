@@ -1,6 +1,3 @@
-[% IF !full_width %]
-</div> [% # closes grd-container %]
-[% END %]
 </div> [% # closes div#content %]
 </div>[% #closes div#content-holder %]
 
