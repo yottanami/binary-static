@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: I 18N\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-04-09 11:58+0200\n"
+"PO-Revision-Date: 2015-04-14 05:52+0200\n"
 "Last-Translator: Putri Kumala <putri@regentmarkets.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/binary/static/id/>\n"
 "Language: id\n"
@@ -248,10 +248,8 @@ msgstr "%1 menyediakan aplikasi pemrograman antarmuka (Inggris: application prog
 
 #. (stash->{website_name}, url_for('self_exclusion.cgi')
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-#, fuzzy
-#| msgid "%1 provides you with the opportunity to either self exclude or <a href=\"%2\">set limits on your trading activities</a> on this website. You may also <a href=\"%3\">contact us</a> to state the limits you wish to set via live chat, email or phone. Available limits are:"
 msgid "%1 provides you with the opportunity to either self-exclude or <a href=\"%2\">set limits on your trading activities</a> on this website. You may also <a href=\"%3\">contact us</a> to state the limits you wish to set via live chat, email or phone. Available limits are:"
-msgstr "%1 memiliki fasilitas untuk mengecualikan diri baik itu untuk mengecualikan diri anda atau <a href=\"%2\">memasang batasan aktifitas trading anda</a> pada website ini. Anda juga dapat <a href=\"%3\">menghubungi kami</a> untuk menyampaikan batasan yang anda inginkan melalui bantuan chatting langsung, email atau telepon. Batasan yang tersedia adalah sebagai berikut:"
+msgstr "%1 memiliki fasilitas untuk mengecualikan diri baik itu untuk mengecualikan-diri Anda atau <a href=\"%2\">tentukan batasan aktifitas trading Anda</a> pada website ini. Anda juga dapat <a href=\"%3\">menghubungi kami</a> untuk menyampaikan batasan yang anda inginkan melalui bantuan chatting langsung, email atau telepon. Batasan yang tersedia adalah sebagai berikut:"
 
 #. ($currency)
 #: lib/BOM/Product/Transaction.pm:869
@@ -410,10 +408,8 @@ msgid "2w"
 msgstr "2minggu"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1394
-#, fuzzy
-#| msgid "3 - 30 characters and alphanumeric only."
 msgid "3 - 30 characters."
-msgstr "3-30 karakter dan hanya alfanumerik."
+msgstr "3 - 30 karakter."
 
 #: /home/git/translations/binary-static/src/templates/haml/home5/index.html.haml:1
 msgid "3) Watch markets and get result real-time"
@@ -432,10 +428,8 @@ msgid "4. Choose your Payout"
 msgstr "4. Pilih Hasil"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:656
-#, fuzzy
-#| msgid "5 - 25 characters and alphanumeric only."
 msgid "5 - 25 characters."
-msgstr "5-25 karakter dan hanya alfanumerik."
+msgstr "5 - 25 karakter."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/charting/livechart_duration.html.tt:22
 msgid "5d"
@@ -929,7 +923,7 @@ msgstr "Masalah terjadi"
 msgid "A problem occurred while connecting to the server. Please try again later."
 msgstr "Masalah terdeteksi pada saat menghubungi server. Silakan coba kembali sebentar lagi."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4251
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4249
 msgid "A recent (less than 3 months old) scanned copy of your paper utility bill, or your paper bank, credit union, building society, credit, or debit card statement, or passbook"
 msgstr "Salinan terbaru (kurang dari 3 bulan) tagihan utilitas, atau rekening koran, tagihan kartu kredit atau debit atau buku tabungan"
 
@@ -937,7 +931,7 @@ msgstr "Salinan terbaru (kurang dari 3 bulan) tagihan utilitas, atau rekening ko
 msgid "A scanned copy of a utility bill showing your current residential address (utility bill must not be more than 3 months old)."
 msgstr "Salinan scan dari tagihan utilitas yang menunjukkan alamat tempat tinggal anda saat ini (tagihan utilitas tidak boleh lebih dari 3 bulan)."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4248
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4246
 msgid "A scanned copy of your current valid passport, current driving license (provisional or full), or identity card"
 msgstr "Salinan paspor, SIM atau KTP yang masih berlaku"
 
@@ -1088,7 +1082,7 @@ msgstr "Tambahkan baris"
 msgid "Add Overlay"
 msgstr "Tambah Arsiran"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:227
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:236
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1537
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:803
 msgid "Address"
@@ -1377,7 +1371,7 @@ msgstr "pembuktian rekening"
 msgid "Authenticated"
 msgstr "Telah terbukti"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4184
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4182
 msgid "Authentication"
 msgstr "Pembuktian"
 
@@ -1700,7 +1694,7 @@ msgstr "Binary.com mencapai 1 juta pengguna"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
 msgid "Binary.com supports the <a target=\"_blank\" href=\"http://www.responsiblegamblingtrust.org.uk/\">Responsible Gambling Trust</a> (RGT) which is the leading charity in Britain committed to minimising gambling-related harm. The RGT funds education, prevention and treatment services and commissions research to help people understand more about gambling-related harm. It also offers a national gambling helpline to offer confidential advice and emotional support to those that seek help about their gambling."
-msgstr ""
+msgstr "Binary.com mendukung <a target=\"_blank\" href=\"http://www.responsiblegamblingtrust.org.uk/\">Responsible Gambling Trust</a> (RGT) yang merupakan badan amal terkemuka di Inggris untuk mengurangkan akibat buruk dari kecanduan trading. Dana pendidikan RGT, pencegahan dan layanan perawatan dan bagian penelitian membantu orang umum untuk lebih mengerti tentang akibat kecanduan trading. Juga menawarkan bantuan online dalam memberi saran dan bantuan bagi mereka yang telah mengalami masalah kecanduan trading."
 
 #: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
@@ -1931,8 +1925,8 @@ msgstr "Merubah Informasi Akun"
 msgid "Change Password"
 msgstr "Ubah Kata Sandi"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:259
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:267
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:268
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:276
 msgid "Change in account settings"
 msgstr "Perubahan pengaturan akun"
 
@@ -2126,10 +2120,8 @@ msgid "Clients shall not hold or pool third party funds into their own account h
 msgstr "Klien dilarang keras untuk mengumpulkan dana beberapa pihak kedalam akun yang mereka miliki pada Perusahaan."
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-#, fuzzy
-#| msgid "Clients who do not wish to renew the self-exclusion and make a request to begin trading again, the client shall be given one day to cool off before being allowed access to the website. It is important to note that contact must be to our customer services via telephone. Email contact is not sufficient."
 msgid "Clients who do not wish to renew the self-exclusion and make a request to begin trading again, shall be given one day to cool off before being allowed access to the website. It is important to note that contact must be made to our customer services via telephone. Email contact is not sufficient."
-msgstr "Bagi Klien yang tidak ingin memperbarui pengecualian diri dan ingin bertrading kembali, klien perlu memberi satu hari waktu tenggang sebelum dibenarkan untuk mengakses website. Permohonan hanya dibenarkan melalui telpon bukan email."
+msgstr "Bagi Pelanggan yang tidak ingin memperbarui pengecualian diri dan ingin bertrading kembali, maka akan diberikan satu hari waktu tenggang sebelum dibenarkan untuk mengakses website. Pemberitahuan harus dilakukan dengan menghubungi customer service melalui telpon. Email tidak mencukupi."
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
 msgid "Clients who wish to self-exclude should be aware that the self-exclusion period is a minimum of six months and are given the option to extend it to a total of at least five years, immediately without any cooling-off period. When the self-exclusion period is set, the balance of funds in the client's account will be refunded to the client. At the end of the self-exclusion period, the self-exclusion remains in place, unless positive action is taken by the client in order to trade again."
@@ -2406,7 +2398,7 @@ msgstr "Hak Cipta"
 msgid "Costs"
 msgstr "Biaya"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:225
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:234
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1045
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:467
 msgid "Country of Residence"
@@ -2468,7 +2460,7 @@ msgid "Current password"
 msgstr "Kata sandi saat ini"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3955
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4271
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4269
 msgid "Current photocard Driving Licence (Provisional or Full)"
 msgstr "SIM (Surat Ijin Mengemudi) yang masih berlaku"
 
@@ -2476,7 +2468,7 @@ msgstr "SIM (Surat Ijin Mengemudi) yang masih berlaku"
 msgid "Current signed Passport"
 msgstr "Paspor terkini"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4270
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4268
 msgid "Current signed Passport OR"
 msgstr "KTP atau Paspor yang masih berlaku"
 
@@ -2555,7 +2547,7 @@ msgstr "Yth."
 #. (BOM::View::Language::translate_salutation($client->salutation)
 #. ($client_to->salutation, $client_to->first_name, $client_to->last_name,)
 #. ($pa_client->salutation, $pa_client->first_name, $pa_client->last_name)
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:216
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:225
 #: /home/git/regentmarkets/bom-app/paymentagent_transfer.cgi:238
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:356
 msgid "Dear %1 %2 %3,"
@@ -2644,7 +2636,7 @@ msgstr ""
 "\n"
 "Berikut adalah informasi mengenai pengajuan bonus anda. Mohon diketahui bahwa kami tidak dapat meluluskan permohonan bonus anda berhubung:"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:209
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:218
 msgid "Dear Client,"
 msgstr "Pelanggan Yth.,"
 
@@ -2992,8 +2984,8 @@ msgstr "Tinggalkan bagian kasir untuk sementara atau anda akan mengalami masalah
 msgid "Email"
 msgstr "Email"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:213
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:224
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:222
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:233
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1054
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2180
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:496
@@ -3198,7 +3190,7 @@ msgstr "Artis favorit"
 msgid "Favourite dish"
 msgstr "Makanan favorit"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:236
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:245
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1283
 msgid "Fax"
 msgstr "Fax"
@@ -3704,7 +3696,7 @@ msgstr "Bagaimana cara bertrading market random?"
 msgid "How to use a payment agent?"
 msgstr "Bagaimana cara menggunakan agen pembayaran?"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4265
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4263
 msgid "However, in order to increase your withdrawal limits, you are kindly requested to follow the instructions below."
 msgstr "Namun, untuk meningkatkan batasan penarikan dana silahkan ikuti instruksi berikut ini."
 
@@ -3738,7 +3730,7 @@ msgstr "Scan ID dikirimkan"
 msgid "IP Address"
 msgstr "Alamat IP"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:237
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:246
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1557
 msgid "IP Security"
 msgstr "Keamanan IP"
@@ -4400,10 +4392,8 @@ msgid "Limit"
 msgstr "Batas"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-#, fuzzy
-#| msgid "Limits 1 to 3 may only be changed or increased after 7 days notice."
 msgid "Limits 1 to 3 may only be changed or increased after 7 days' notice."
-msgstr "Batas 1 hingga 3 hanya dapat dirubah atau meningkat setelah 7 hari."
+msgstr "Batas 1 hingga 3 hanya dapat dirubah setelah 7 hari pemberitahuan."
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:426
 msgid "Line"
@@ -5041,10 +5031,6 @@ msgstr "Nota: Perusahaan berhak untuk membatalkan komisi yang tidak diambil mele
 msgid "Note: You will be able to withdraw your bonus of %1%2 only once your aggregate volume of trades exceeds %1%3. This restriction applies only to the bonus and profits derived therefrom.  All other deposits and profits derived therefrom can be withdrawn at any time."
 msgstr "Nota: Anda dapat mencairkan bonus sejumlah %1%2 jika volume trading melebihi %1%3. Aturan ini hanya berlaku bagi nominal bonus dan profit yang dihasilkannya, jika ada dana diluar bonus dan profit yang dihasilkannya maka anda bisa mencairkannya kapan saja."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4047
-msgid "Note: limits will apply to all currency segments on your account individually."
-msgstr "Pesan: batasan akan berlaku juga untuk setiap jenis mata uang pada rekening anda secara terpisah."
-
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3941
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:115
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:97
@@ -5105,11 +5091,11 @@ msgstr "OAuth2.0 adalah internet standard untuk tujuan ini. Lihat <a href=\"http
 msgid "OK"
 msgstr "OK"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4275
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4273
 msgid "ORIGINAL Bank/Credit Union/Building Society/Credit/Debit Card statement or passbook (within last 3 months)"
 msgstr "Kartu Keluarga/Tagihan/Rekening Koran yang mencantumkan nama dan alamat anda (tidak melebihi tempo 3 bulan setelah tanggal pengeluaran)"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4274
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4272
 msgid "ORIGINAL Utility bill (within last 3 months) ; or"
 msgstr "Tagihan utilitas ASLI (dalam tempo 3 bulan) atau"
 
@@ -5321,7 +5307,7 @@ msgid "Our data feed may at times differ slightly from other data feeds found on
 msgstr "Kutipan data kami mungkin akan mengalami sedikit perbedaan dibandingkan dengan kutipan data yang tersedia pada internet. Mengapa demikian:"
 
 #. ($cs_email)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4277
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4275
 msgid "Our email address is %1."
 msgstr "Alamat email kami adalah %1."
 
@@ -5715,8 +5701,8 @@ msgstr "Mohon diketahui bahwa kutipan akhir pekan adalah tidak dipertimbangkan d
 msgid "Please note that you may update your personal information at any time by logging into the \"Settings\" section of your account. It is your responsibility to ensure that %1 is promptly and continually informed of any change in your personal information."
 msgstr "Anda dapat melakukan perbaikan data dengan mengakses bagian \"Pengaturan\" pada akun Anda. Merupakan tanggung jawab Anda untuk memastikan %1 mengetahui tentang perubahan yang Anda lakukan pada data pribadi Anda."
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:211
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:219
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:220
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:228
 msgid "Please note that your settings have been updated as follows:"
 msgstr "Mohon diketahui bahwa pengaturan anda telah diperbarui sebagai berikut:"
 
@@ -5755,7 +5741,7 @@ msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr "Pilih \"Hasil\" atau \"Modal\"."
 
 #. (qq(<a href="mailto:$cs_email">$cs_email</a>)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4254
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4252
 msgid "Please send this email to %1."
 msgstr "Silahkan kirim email ini ke %1."
 
@@ -6088,10 +6074,8 @@ msgid "Read the answers to some common questions."
 msgstr "Baca berbagai jawaban dari pertanyaan umum."
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:139
-#, fuzzy
-#| msgid "real money"
 msgid "Real Money"
-msgstr "uang riil"
+msgstr "Uang Riil"
 
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:389
 #: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:12
@@ -6424,7 +6408,7 @@ msgstr "Lihat demo"
 msgid "See our "
 msgstr "Lihat "
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4294
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4292
 #: /home/git/translations/binary-static/src/templates/haml/static/contact.html.haml:1
 msgid "Select Country"
 msgstr "Pilih Negara"
@@ -6502,7 +6486,7 @@ msgstr "Batas durasi per trading adalah <strong>%1 menit.</strong>"
 msgid "Session duration limit, in minutes"
 msgstr "Batasan waktu berlangsung, dalam menit"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:94
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:96
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3884
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:99
 #: /home/git/regentmarkets/bom-app/settings.cgi:15
@@ -6672,7 +6656,7 @@ msgstr "Maaf, telah terjadi error"
 msgid "Sorry, an error occurred while loading the form. Please contact customer support if this problem persists"
 msgstr "Maaf, error terjadi pada saat meloading formulir. Silakan hubungi Customer Support jika masalah ini masih terjadi"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:171
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:180
 msgid "Sorry, an error occurred while processing your account."
 msgstr "Maaf, error terjadi ketika memproses rekening anda."
 
@@ -7105,7 +7089,7 @@ msgstr "Pemimpin teknologi dengan lebih dari 10 tahun pengalaman"
 msgid "Tel"
 msgstr "Tel"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:235
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:244
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1241
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:524
 msgid "Telephone"
@@ -7204,7 +7188,7 @@ msgstr "%1 mensimulasikan market yang aktif pada siang hari (namun kurang aktif 
 
 #. (request()
 #. ($website->display_name)
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:251
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:260
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:367
 msgid "The %1 team."
 msgstr "Tim %1."
@@ -7808,7 +7792,7 @@ msgstr "Mata uang %1 bukan merupakan mata uang asal"
 #. ($email)
 #. ($new_email)
 #: /home/git/regentmarkets/bom-app/create_account.cgi:113
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:133
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:138
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "Alamat email %1 sudah pernah digunakan oleh Login ID lain."
 
@@ -8094,7 +8078,7 @@ msgstr "Kontrak ini untung"
 msgid "This document (the \"Agreement\") sets out the terms and conditions between \"the Company\" which is Binary Ltd, and you (the person who applied for this program; \"you\" or \"your\"), in relation to your application to setup an affiliate account (and membership of the affiliate program if your application is deemed successful) to promote the website %1"
 msgstr "Dokumen ini (\"Perjanjian\") ini menjabarkan syarat dan kondisi antara \"Perusahaan\" Binary Ltd, dan anda (orang yang menggunakan program ini; \"anda\" atau \"milik anda\"), dalam kaitannya dengan aplikasi untuk setup akun afiliasi (dan keanggotaan dari program afiliasi jika aplikasi anda dianggap sukses) untuk mempromosikan situs %1"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4180
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4178
 msgid "This function is not relevant to Virtual money accounts"
 msgstr "Fasilitas ini tidak tersedia untuk Akun Uang Virtual"
 
@@ -8103,8 +8087,8 @@ msgstr "Fasilitas ini tidak tersedia untuk Akun Uang Virtual"
 msgid "This is a virtual-money account. Please click <a class=\"pjaxload\" href=\"%1\">here</a> to open a real-money account and deposit funds."
 msgstr "Ini adalah akun uang virtual. Silakan klik <a class=\"pjaxload\" href=\"%1\">disini</a> untuk mendaftar akun riil dan mendeposit dana."
 
-#. ($client->loginid,                        $ENV{'REMOTE_ADDR'})
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:89
+#. ($client->loginid,                                $ENV{'REMOTE_ADDR'})
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:91
 msgid "This is an automated message to alert you to the fact that there was a failed attempt to unlock the Cashier/Settings section of your account %1 from IP address %2"
 msgstr "Ini adalah pesan otomatis untuk mengingatkan Anda bahwa telah terjadi kegagalan pada pengaksesan bagian Kasir/Pengaturan account Anda %1 dari alamat IP %2"
 
@@ -8269,7 +8253,7 @@ msgstr "Untuk membuat White Label, pertama silahkan <a href=\"%1\">daftar sebaga
 msgid "To enable cookies, follow the instructions below for the browser version that you are using."
 msgstr "Untuk mengaktifkan cookie, ikuti petunjuk di bawah ini untuk versi browser yang anda gunakan."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4269
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4267
 msgid "To fully authenticate your account, please email scanned copies of the document listed below."
 msgstr "Untuk membuktikan kebenaran akun Anda, silahkan email scan copy dokumen berikut ini."
 
@@ -8791,7 +8775,7 @@ msgid "View the operating hours of the markets you can trade."
 msgstr "Lihat waktu operasi dan market yang dapat anda tradingkan."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4187
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4185
 msgid "View your <a href=\"%1\">withdrawal limits</a>."
 msgstr "Lihat batasan <a href=\"%1\">penarikan</a> anda."
 
@@ -8822,10 +8806,8 @@ msgid "Virtual Account"
 msgstr "Akun Virtual"
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:138
-#, fuzzy
-#| msgid "virtual money"
 msgid "Virtual Money"
-msgstr "uang virtual"
+msgstr "Uang Virtual"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3769
 msgid "Virtual Money Account Opening"
@@ -8967,7 +8949,7 @@ msgstr "Kami ingin memudahkan anda didalam mencari prospek. Setelah anda memperk
 msgid "We were unable to recover your Login ID or Password with the provided information. <a href=\"%1\">Return to Password Recovery</a>, or <a href=\"%2\"><strong>contact us</strong></a> should you need further assistance."
 msgstr "Kami tidak dapat memulihkan Login ID atau kata sandi menggunakan informasi yang anda berikan. <a href=\"%1\">Kembali ke Pemulihan Kata Sandi</a>, atau <a href=\"%2\"><strong>hubungi kami</strong></a> jika anda memerlukan bantuan lebih lanjut."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4244
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4242
 msgid "We were unable to verify your identity and prove your residential address using our automated verification procedure."
 msgstr "Kami tidak dapat membuktikan identitas dan alamat anda menggunakan prosedur pembuktian otomatis."
 
@@ -9520,7 +9502,7 @@ msgstr "Anda dapat menjual kembali kontrak jangka panjang untuk profit dari peru
 msgid "You can set the length of your trade, from 10 seconds to 365 days."
 msgstr "Anda dapat menentukan lama kontrak, dari 10 detik hingga 365 hari."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4246
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4244
 msgid "You can still authenticate your account by sending us scans of the following documents by email"
 msgstr "Anda masih dapat membuktikan kebenaran akun anda dengan mengirimkan kami scan dokumentasi berikut melalui email"
 
@@ -9801,7 +9783,7 @@ msgstr "Saldo akun Anda"
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "Saldo anda (%1%2) tidak mencukupi untuk membeli kontrak (%1%3) ini."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4279
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4277
 msgid "Your account does not require authentication at this time."
 msgstr "Akun Anda tidak memerlukan otentikasi untuk saat ini."
 
@@ -9819,11 +9801,11 @@ msgid "Your account is fully authenticated and your withdrawal limit of EUR %1 h
 msgstr "Akun anda telah terbukti dan batasan penarikan sebesar EUR %1 telah dihapuskan."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4213
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4211
 msgid "Your account is fully authenticated. You can view your <a href=\"%1\">trading limits here</a>."
 msgstr "Akun anda telah melengkapi proses pembuktian. Anda dapat melihat <a href=\"%1\">batasan trading disini</a>."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4263
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4261
 msgid "Your account is fully operational and you may begin depositing money and buying contracts."
 msgstr "Akun anda saat ini sepenuhnya aktif, anda dapat mulai melakukan deposit, trading dan melakukan penarikan dana."
 
@@ -9945,17 +9927,13 @@ msgid "Your password and login ID are unique and passwords are hashed so that no
 msgstr "Kata sandi dan login ID Anda adalah unik dan kata sandi dalam bentuk potongan dimana pegawai %1pun tidak dapat mengetahui kata sandi Anda. Hal ini mengapa kami tidak dapat memberikan kata sandi asli dan harus memberikan link baru ke alamat email Anda."
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1354
-#, fuzzy
-#| msgid "Your password should contain only characters and digits."
 msgid "Your password contains invalid characters"
-msgstr "Kata sandi anda harus terdiri dari kombinasi huruf dan angka saja."
+msgstr "Kata sandi Anda mengandung karakter yang tidak dibenarkan"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1826
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:619
-#, fuzzy
-#| msgid "Your password should contain only characters and digits."
 msgid "Your password contains invalid characters."
-msgstr "Kata sandi anda harus terdiri dari kombinasi huruf dan angka saja."
+msgstr "Kata sandi Anda mengandung karakter yang tidak dibenarkan."
 
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:312
 msgid "Your password has been changed."
@@ -10016,7 +9994,7 @@ msgstr "Resiko anda jelas"
 msgid "Your secret answer is too short.  Please enter at least 4 characters."
 msgstr "Jawaban rahasia anda terlalu pendek. Masukkan minimal 4 karakter."
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:277
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:286
 msgid "Your settings have been updated successfully."
 msgstr "Pengaturan anda telah sukses diperbarui."
 
@@ -10064,7 +10042,7 @@ msgstr "batas jumlah yang dapat anda tradingkan dalam periode waktu tertentu;"
 msgid "a limit on the losses you may incur within a specified period of time;"
 msgstr "batas kerugian yang mungkin akan anda alami dalam periode waktu tertentu,"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4272
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4270
 msgid "and"
 msgstr "dan"
 
@@ -11641,6 +11619,9 @@ msgstr "Hasil %1 <strong>%2</strong> jika <strong>tik terakhir</strong> dari %3 
 #: Translation for contract type "PUT"
 msgid "lower"
 msgstr "lebih rendah"
+
+#~ msgid "Note: limits will apply to all currency segments on your account individually."
+#~ msgstr "Pesan: batasan akan berlaku juga untuk setiap jenis mata uang pada rekening anda secara terpisah."
 
 #~ msgid "Binary.com supports %1. GamCare has a commitment to promote responsible attitudes to gambling and to work for the provision of proper care for those who have been harmed by gambling dependency."
 #~ msgstr "Binary.com mendukung %1. GamCare memiliki komitmen untuk mempromosikan sikap bertanggung jawab pada trading dan bekerja untuk penyediaan perawatan yang tepat bagi mereka yang telah dirugikan oleh ketergantungan trading."

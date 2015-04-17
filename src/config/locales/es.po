@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-04-09 09:33+0200\n"
+"PO-Revision-Date: 2015-04-13 15:35+0200\n"
 "Last-Translator: olga borg <olga@binary.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/binary/static/es/>\n"
 "Language: es\n"
@@ -249,8 +249,6 @@ msgstr "%1 proporciona a sus afiliados y socios aprobados una interfaz de progra
 
 #. (stash->{website_name}, url_for('self_exclusion.cgi')
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-#, fuzzy
-#| msgid "%1 provides you with the opportunity to either self exclude or <a href=\"%2\">set limits on your trading activities</a> on this website. You may also <a href=\"%3\">contact us</a> to state the limits you wish to set via live chat, email or phone. Available limits are:"
 msgid "%1 provides you with the opportunity to either self-exclude or <a href=\"%2\">set limits on your trading activities</a> on this website. You may also <a href=\"%3\">contact us</a> to state the limits you wish to set via live chat, email or phone. Available limits are:"
 msgstr "%1 le ofrece la oportunidad de autoexclusión o <a href=\"%2\">límites para sus actividades comerciales</a> en este sitio web. Usted puede también <a href=\"%3\">contactactar con nosotros</a> para indicar los límites que desee establecer a través de chat, correo electrónico o teléfono. Sus límites disponibles son:"
 
@@ -411,10 +409,8 @@ msgid "2w"
 msgstr "2sem"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1394
-#, fuzzy
-#| msgid "3 - 30 characters and alphanumeric only."
 msgid "3 - 30 characters."
-msgstr "3 a 30 caracteres alfanuméricos solamente."
+msgstr "3 a 30 caracteres."
 
 #: /home/git/translations/binary-static/src/templates/haml/home5/index.html.haml:1
 msgid "3) Watch markets and get result real-time"
@@ -433,10 +429,8 @@ msgid "4. Choose your Payout"
 msgstr "4. Elija el pago"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:656
-#, fuzzy
-#| msgid "5 - 25 characters and alphanumeric only."
 msgid "5 - 25 characters."
-msgstr "5 a 25 caracteres y solo alfanuméricos."
+msgstr "5 a 25 caracteres."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/charting/livechart_duration.html.tt:22
 msgid "5d"
@@ -929,7 +923,7 @@ msgstr "Ha ocurrido un problema"
 msgid "A problem occurred while connecting to the server. Please try again later."
 msgstr "Ocurrió un problema al conectarse al servidor. Inténtelo de nuevo más tarde."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4251
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4249
 msgid "A recent (less than 3 months old) scanned copy of your paper utility bill, or your paper bank, credit union, building society, credit, or debit card statement, or passbook"
 msgstr "Una reciente (menos de 3 meses de edad) copia escaneada de su factura de servicios públicos en papel, un extracto bancario o de la tarjeta de débito/crédito o de la libreta de ahorros"
 
@@ -937,7 +931,7 @@ msgstr "Una reciente (menos de 3 meses de edad) copia escaneada de su factura de
 msgid "A scanned copy of a utility bill showing your current residential address (utility bill must not be more than 3 months old)."
 msgstr "Una copia escaneada de una factura que muestra su dirección residencial actual (factura de servicios públicos tiene que haber sido emitida no antes de hace 3 meses)."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4248
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4246
 msgid "A scanned copy of your current valid passport, current driving license (provisional or full), or identity card"
 msgstr "Una copia escaneada del pasaporte válido actual, del carnet de conducción actual (provisional o completo) o de la tarjeta de identidad"
 
@@ -1088,7 +1082,7 @@ msgstr "Añadir líneas"
 msgid "Add Overlay"
 msgstr "Añadir superposición"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:227
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:236
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1537
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:803
 msgid "Address"
@@ -1377,7 +1371,7 @@ msgstr "Autenticar su cuenta"
 msgid "Authenticated"
 msgstr "Autenticada"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4184
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4182
 msgid "Authentication"
 msgstr "Autenticación"
 
@@ -1700,7 +1694,7 @@ msgstr "Binary.com alcanza un millón de usuarios registrados"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
 msgid "Binary.com supports the <a target=\"_blank\" href=\"http://www.responsiblegamblingtrust.org.uk/\">Responsible Gambling Trust</a> (RGT) which is the leading charity in Britain committed to minimising gambling-related harm. The RGT funds education, prevention and treatment services and commissions research to help people understand more about gambling-related harm. It also offers a national gambling helpline to offer confidential advice and emotional support to those that seek help about their gambling."
-msgstr ""
+msgstr "Binary.com apoya a <a target=\"_blank\" href=\"http://www.responsiblegamblingtrust.org.uk/\">Responsible Gambling Trust</a> (RGT) que es la organización benéfica líder en Gran Bretaña se compromete a reducir al mínimo los daños relacionados con los juegos de azar. RGT patrocina educación, prevención y tratamientos, y también las investigaciones para ayudar a entender más los daños relacionados con los juegos de azar. También ofrece una línea telefónica nacional para ofrecer asesoramiento confidencial y apoyo emocional a las personas que buscan ayuda relacionada con su adicción al juego."
 
 #: /home/git/translations/binary-static/src/templates/haml/home/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/home2/index.html.haml:1
@@ -1931,8 +1925,8 @@ msgstr "Cambiar la información de la cuenta"
 msgid "Change Password"
 msgstr "Cambiar contraseña"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:259
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:267
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:268
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:276
 msgid "Change in account settings"
 msgstr "Cambiar en configuración de cuenta"
 
@@ -2126,8 +2120,6 @@ msgid "Clients shall not hold or pool third party funds into their own account h
 msgstr "3.1.7 Clientes no retendrán ni juntarán los fondos de otros clientes o de terceros en su propia cuenta con la Compañía."
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-#, fuzzy
-#| msgid "Clients who do not wish to renew the self-exclusion and make a request to begin trading again, the client shall be given one day to cool off before being allowed access to the website. It is important to note that contact must be to our customer services via telephone. Email contact is not sufficient."
 msgid "Clients who do not wish to renew the self-exclusion and make a request to begin trading again, shall be given one day to cool off before being allowed access to the website. It is important to note that contact must be made to our customer services via telephone. Email contact is not sufficient."
 msgstr "A los clientes que no deseen renovar la auto-exclusión y hacen una solicitud para volver a operar en su cuenta, se les dará un día para reflexión antes de poder acceder a la página web. Es importante tener en cuenta que el contacto con nuestro servicio al cliente debe hacerse a través del teléfono. Contacto por correo electrónico no se considera suficiente."
 
@@ -2406,7 +2398,7 @@ msgstr "Copyright"
 msgid "Costs"
 msgstr "Costos"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:225
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:234
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1045
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:467
 msgid "Country of Residence"
@@ -2468,7 +2460,7 @@ msgid "Current password"
 msgstr "Contraseña actual"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3955
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4271
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4269
 msgid "Current photocard Driving Licence (Provisional or Full)"
 msgstr "Tarjeta fotográfica del carnet de conducción (provisional o permanente) actual"
 
@@ -2476,7 +2468,7 @@ msgstr "Tarjeta fotográfica del carnet de conducción (provisional o permanente
 msgid "Current signed Passport"
 msgstr "Pasaporte firmado actual"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4270
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4268
 msgid "Current signed Passport OR"
 msgstr "Pasaporte firmado actual O"
 
@@ -2555,7 +2547,7 @@ msgstr "Estimado/a"
 #. (BOM::View::Language::translate_salutation($client->salutation)
 #. ($client_to->salutation, $client_to->first_name, $client_to->last_name,)
 #. ($pa_client->salutation, $pa_client->first_name, $pa_client->last_name)
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:216
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:225
 #: /home/git/regentmarkets/bom-app/paymentagent_transfer.cgi:238
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:356
 msgid "Dear %1 %2 %3,"
@@ -2645,7 +2637,7 @@ msgstr ""
 "\n"
 "Le queremos comunicar que hemos recibido su solicitud de bonificación. Por desgracia, no hemos podido procesar su solicitud por una de las siguientes razones:"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:209
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:218
 msgid "Dear Client,"
 msgstr "Estimado cliente,"
 
@@ -2991,8 +2983,8 @@ msgstr "O ha dejado el cajero inactivo durante un tiempo o no hemos podido inici
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:213
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:224
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:222
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:233
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1054
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2180
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:496
@@ -3197,7 +3189,7 @@ msgstr "Artista favorito"
 msgid "Favourite dish"
 msgstr "Plato favorito"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:236
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:245
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1283
 msgid "Fax"
 msgstr "Fax"
@@ -3701,7 +3693,7 @@ msgstr "¿Cómo se comercie con los mercados Random?"
 msgid "How to use a payment agent?"
 msgstr "¿Cómo usar un agente de pago?"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4265
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4263
 msgid "However, in order to increase your withdrawal limits, you are kindly requested to follow the instructions below."
 msgstr "No obstante, para poder aumentar sus límites de retiro, se le solicita que siga las instrucciones a continuación."
 
@@ -3735,7 +3727,7 @@ msgstr "Digitalizaciones de identificación entregadas"
 msgid "IP Address"
 msgstr "Dirección IP"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:237
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:246
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1557
 msgid "IP Security"
 msgstr "Seguridad de IP"
@@ -4397,8 +4389,6 @@ msgid "Limit"
 msgstr "Límite"
 
 #: /home/git/translations/binary-static/src/templates/haml/static/responsible_trading.html.haml:1
-#, fuzzy
-#| msgid "Limits 1 to 3 may only be changed or increased after 7 days notice."
 msgid "Limits 1 to 3 may only be changed or increased after 7 days' notice."
 msgstr "Los límites de 1 a 3 sólo pueden ser modificados o aumentados con antelación de 7 días."
 
@@ -5036,10 +5026,6 @@ msgstr "Nota: La compañía se reserva el derecho a cancelar las comisiones que 
 msgid "Note: You will be able to withdraw your bonus of %1%2 only once your aggregate volume of trades exceeds %1%3. This restriction applies only to the bonus and profits derived therefrom.  All other deposits and profits derived therefrom can be withdrawn at any time."
 msgstr "Nota: usted podrá retirar su bonificación de %1%2 solo cuando su volumen de inversiones agregado supere %1%3. Esta restricción aplica solo a las bonificaciones y los beneficios derivados de ello. Todos los otros depósitos y beneficios se pueden retirar en cualquier momento."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4047
-msgid "Note: limits will apply to all currency segments on your account individually."
-msgstr "Nota: los límites se aplicarán a todos los segmentos de divisas en su cuenta individualmente."
-
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3941
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:115
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:97
@@ -5100,11 +5086,11 @@ msgstr "OAuth2.0 es el estándar de Internet emergente para este propósito. Vea
 msgid "OK"
 msgstr "Aceptar"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4275
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4273
 msgid "ORIGINAL Bank/Credit Union/Building Society/Credit/Debit Card statement or passbook (within last 3 months)"
 msgstr "Libreta de banco/unión de crédito/sociedad constructora o extracto de tarjeta de crédito/débito ORIGINAL (de los últimos 3 meses)"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4274
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4272
 msgid "ORIGINAL Utility bill (within last 3 months) ; or"
 msgstr "Factura de servicios públicos ORIGINAL (de los últimos 3 meses), o"
 
@@ -5316,7 +5302,7 @@ msgid "Our data feed may at times differ slightly from other data feeds found on
 msgstr "Nuestro sistema de flujo de datos puede diferir un poco de otros sistemas de flujo de datos que se encuentran en Internet (que incluso pueden diferir entre sí). Las razones de esas diferencias pueden incluir:"
 
 #. ($cs_email)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4277
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4275
 msgid "Our email address is %1."
 msgstr "Nuestra dirección de correo electrónico es %1."
 
@@ -5710,8 +5696,8 @@ msgstr "Tenga en cuenta que las cotizaciones de ese fin de semana se ignoran con
 msgid "Please note that you may update your personal information at any time by logging into the \"Settings\" section of your account. It is your responsibility to ensure that %1 is promptly and continually informed of any change in your personal information."
 msgstr "Tenga en cuenta que puede actualizar su información personal en cualquier momento al ingresar a la sección \"Configuración\" en su cuenta. Es su responsabilidad asegurar que %1 esté siempre informado de cualquier cambio en su información personal."
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:211
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:219
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:220
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:228
 msgid "Please note that your settings have been updated as follows:"
 msgstr "Tenga en cuenta que sus configuraciones deben actualizarse como se muestra a continuación:"
 
@@ -5750,7 +5736,7 @@ msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr "Seleccione la opcion de \"Pago\" o \"Apuesta\"."
 
 #. (qq(<a href="mailto:$cs_email">$cs_email</a>)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4254
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4252
 msgid "Please send this email to %1."
 msgstr "Por favor envíe este correo a %1."
 
@@ -6083,10 +6069,8 @@ msgid "Read the answers to some common questions."
 msgstr "Lea las respuestas a algunas preguntas comunes."
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:139
-#, fuzzy
-#| msgid "real money"
 msgid "Real Money"
-msgstr "una cuenta real"
+msgstr "Сuenta real"
 
 #: /home/git/regentmarkets/bom-app/lost_password.cgi:389
 #: /home/git/translations/binary-static/src/templates/toolkit/account/open_account.html.tt:12
@@ -6419,7 +6403,7 @@ msgstr "Ver demo"
 msgid "See our "
 msgstr "Ver "
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4294
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4292
 #: /home/git/translations/binary-static/src/templates/haml/static/contact.html.haml:1
 msgid "Select Country"
 msgstr "Seleccionar país"
@@ -6497,7 +6481,7 @@ msgstr "Actualmente el límite de duración de la sesión está establecido en <
 msgid "Session duration limit, in minutes"
 msgstr "Límite de la duración de la sesión, en minutos"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:94
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:96
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3884
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:99
 #: /home/git/regentmarkets/bom-app/settings.cgi:15
@@ -6667,7 +6651,7 @@ msgstr "Lo sentimos, ha ocurrido un error"
 msgid "Sorry, an error occurred while loading the form. Please contact customer support if this problem persists"
 msgstr "Lo sentimos, ha ocurrido un error mientras cargando el formulario. Contáctese con el servicio de atención al cliente si el problema persiste"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:171
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:180
 msgid "Sorry, an error occurred while processing your account."
 msgstr "Lo sentimos, ha ocurrido un error mientras se procesaba su cuenta."
 
@@ -7100,7 +7084,7 @@ msgstr "El líder en tecnología con más de 10 años de experiencia"
 msgid "Tel"
 msgstr "Tel"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:235
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:244
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1241
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:524
 msgid "Telephone"
@@ -7199,7 +7183,7 @@ msgstr "Los %1 simulan un mercado que es activo durante el día (pero se hace me
 
 #. (request()
 #. ($website->display_name)
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:251
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:260
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:367
 msgid "The %1 team."
 msgstr "El equipo de %1."
@@ -7803,7 +7787,7 @@ msgstr "La divisa proporcionada de %1 no es la moneda por defecto"
 #. ($email)
 #. ($new_email)
 #: /home/git/regentmarkets/bom-app/create_account.cgi:113
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:133
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:138
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "La dirección de correo electrónico ingresada %1 ya está en uso."
 
@@ -8089,7 +8073,7 @@ msgstr "Este contrato ganó"
 msgid "This document (the \"Agreement\") sets out the terms and conditions between \"the Company\" which is Binary Ltd, and you (the person who applied for this program; \"you\" or \"your\"), in relation to your application to setup an affiliate account (and membership of the affiliate program if your application is deemed successful) to promote the website %1"
 msgstr "Este documento (el \"Acuerdo\") expone los términos y condiciones entre \"la Compañía\", Binary Ltd., y usted (la persona que aplicó para este programa; \"usted\" o \"su\"), en relación a su solicitud para crear una cuenta de afiliado (y afiliación al programa de afiliados si su solicitud es estimada con éxito) para promocionar el sitio web %1"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4180
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4178
 msgid "This function is not relevant to Virtual money accounts"
 msgstr "Esta función no es relevante para cuentas de dinero virtual"
 
@@ -8098,8 +8082,8 @@ msgstr "Esta función no es relevante para cuentas de dinero virtual"
 msgid "This is a virtual-money account. Please click <a class=\"pjaxload\" href=\"%1\">here</a> to open a real-money account and deposit funds."
 msgstr "Esta es una cuenta de dinero virtual. Haga clic <a class=\"pjaxload\" href=\"%1\">aquí</a> para abrir una cuenta de dinero real y depositar fondos."
 
-#. ($client->loginid,                        $ENV{'REMOTE_ADDR'})
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:89
+#. ($client->loginid,                                $ENV{'REMOTE_ADDR'})
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:91
 msgid "This is an automated message to alert you to the fact that there was a failed attempt to unlock the Cashier/Settings section of your account %1 from IP address %2"
 msgstr "Este es un mensaje automático para alertarlo de que hubo un intento sin éxito de desbloquear la sección Cajero/Configuración de su cuenta %1 desde la dirección IP %2"
 
@@ -8262,7 +8246,7 @@ msgstr "Para crear una etiqueta blanca, primero <a href=\"%1\">suscríbase como 
 msgid "To enable cookies, follow the instructions below for the browser version that you are using."
 msgstr "Para habilitar cookies, siga las indicaciones a continuación para la versión de navegador que utiliza."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4269
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4267
 msgid "To fully authenticate your account, please email scanned copies of the document listed below."
 msgstr "Para autenticar por completo su cuenta, envíe por correo electrónico copias digitalizadas del documento solicitado a continuación."
 
@@ -8784,7 +8768,7 @@ msgid "View the operating hours of the markets you can trade."
 msgstr "Ver el horario de apretura de mercados en los cuales se puede operar."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4187
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4185
 msgid "View your <a href=\"%1\">withdrawal limits</a>."
 msgstr "Vea sus <a href=\"%1\">límites de retiro</a>."
 
@@ -8815,10 +8799,8 @@ msgid "Virtual Account"
 msgstr "Cuenta virtual"
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:138
-#, fuzzy
-#| msgid "virtual money"
 msgid "Virtual Money"
-msgstr "dinero virtual"
+msgstr "Dinero virtual"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3769
 msgid "Virtual Money Account Opening"
@@ -8960,7 +8942,7 @@ msgstr "Deseamos que le sea lo más fácil posible captar potenciales clientes. 
 msgid "We were unable to recover your Login ID or Password with the provided information. <a href=\"%1\">Return to Password Recovery</a>, or <a href=\"%2\"><strong>contact us</strong></a> should you need further assistance."
 msgstr "No es posible recuperar su identificación de acceso o contraseña con la información ingresada. <a href=\"%1\" target=\"_blank\">Volver a recuperación de contraseña</a>, o <a href=\"%2\" target=\"_blank\"><strong>contáctenos</strong></a> si necesita más ayuda."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4244
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4242
 msgid "We were unable to verify your identity and prove your residential address using our automated verification procedure."
 msgstr "No podemos verificar su identidad ni comprobar su domicilio de residencia con nuestro procedimiento de verificación en línea."
 
@@ -9513,7 +9495,7 @@ msgstr "Puede vender sus contratos a largo plazo a precios de mercado antes para
 msgid "You can set the length of your trade, from 10 seconds to 365 days."
 msgstr "Puede establecer la duración de su contrato, desde 10 segundos hasta 365 días."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4246
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4244
 msgid "You can still authenticate your account by sending us scans of the following documents by email"
 msgstr "Puede autenticar su cuenta enviándonos copias digitalizadas de los siguientes documentos por correo electrónico"
 
@@ -9794,7 +9776,7 @@ msgstr "Balance de su cuenta"
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "El balance de su cuenta (%1%2) es insuficiente para adquirir este convenio (%1%3)."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4279
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4277
 msgid "Your account does not require authentication at this time."
 msgstr "Su cuenta no requiere verificación en este momento."
 
@@ -9812,11 +9794,11 @@ msgid "Your account is fully authenticated and your withdrawal limit of EUR %1 h
 msgstr "Su cuenta está totalmente autenticada y su límite de extracciones de EUR %1 ha sido aumentado."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4213
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4211
 msgid "Your account is fully authenticated. You can view your <a href=\"%1\">trading limits here</a>."
 msgstr "Su cuenta está totalmente autenticada. Usted puede ver sus límites de inversiones <a href=\"%1\">aquí</a>."
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4263
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4261
 msgid "Your account is fully operational and you may begin depositing money and buying contracts."
 msgstr "Su cuenta es totalmente operativa y usted puede comenzar a depositar dinero y adquirir convenios."
 
@@ -9938,17 +9920,13 @@ msgid "Your password and login ID are unique and passwords are hashed so that no
 msgstr "Su identificación de acceso y contraseña son únicas y están encriptadas por lo que ni siquiera el personal del equipo de %1 puede leerlos. Esta es la razón por la que no podemos recuperar su contraseña y emitimos una nueva a su dirección de correo electrónico si no puede recordarla."
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1354
-#, fuzzy
-#| msgid "Your password should contain only characters and digits."
 msgid "Your password contains invalid characters"
-msgstr "Su contraseña debe contener solamente letras y números."
+msgstr "Su contraseña contiene caracteres inválidos"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1826
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:619
-#, fuzzy
-#| msgid "Your password should contain only characters and digits."
 msgid "Your password contains invalid characters."
-msgstr "Su contraseña debe contener solamente letras y números."
+msgstr "Su contraseña contiene caracteres inválidos."
 
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:312
 msgid "Your password has been changed."
@@ -10009,7 +9987,7 @@ msgstr "Sus riesgos se conocen de antemano"
 msgid "Your secret answer is too short.  Please enter at least 4 characters."
 msgstr "Su respuesta secreta es muy corta. Por favor introduzca al menos 4 caracteres."
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:277
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:286
 msgid "Your settings have been updated successfully."
 msgstr "Su configuración se ha actualizado exitosamente."
 
@@ -10057,7 +10035,7 @@ msgstr "un límite en la cantidad con la que usted puede operar dentro de un per
 msgid "a limit on the losses you may incur within a specified period of time;"
 msgstr "un límite en la cantidad de pérdidas que puede incurrir dentro de un período específico de tiempo;"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4272
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4270
 msgid "and"
 msgstr "y"
 
@@ -11635,6 +11613,9 @@ msgstr "Pago de %1 <strong>%2</strong> si el <strong>último intervalo</strong> 
 #: Translation for contract type "PUT"
 msgid "lower"
 msgstr "inferior"
+
+#~ msgid "Note: limits will apply to all currency segments on your account individually."
+#~ msgstr "Nota: los límites se aplicarán a todos los segmentos de divisas en su cuenta individualmente."
 
 #~ msgid "Binary.com supports %1. GamCare has a commitment to promote responsible attitudes to gambling and to work for the provision of proper care for those who have been harmed by gambling dependency."
 #~ msgstr "Binary.com apoya a %1. GamCare se compromete a promover actitudes responsables respecto al juego y a trabajar para proveer de cuidados adecuados para aquellos que han sido perjudicados por la dependencia al juego."

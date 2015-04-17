@@ -930,7 +930,7 @@ msgstr "出现问题"
 msgid "A problem occurred while connecting to the server. Please try again later."
 msgstr "连接服务器时出现问题。请稍后重试。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4251
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4249
 msgid "A recent (less than 3 months old) scanned copy of your paper utility bill, or your paper bank, credit union, building society, credit, or debit card statement, or passbook"
 msgstr "您近期（3个月内）的水电煤或银行、信用合作社、房屋抵押贷款协会、信用卡或借记卡纸质账单或存折的扫描件"
 
@@ -938,7 +938,7 @@ msgstr "您近期（3个月内）的水电煤或银行、信用合作社、房�
 msgid "A scanned copy of a utility bill showing your current residential address (utility bill must not be more than 3 months old)."
 msgstr "您目前居住地址的水电煤账单扫描件（账单不得超过3个月）。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4248
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4246
 msgid "A scanned copy of your current valid passport, current driving license (provisional or full), or identity card"
 msgstr "当前有效护照、当前驾照（临时或永久）或身份证的扫描件"
 
@@ -1089,7 +1089,7 @@ msgstr "添加线"
 msgid "Add Overlay"
 msgstr "添加覆盖"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:227
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:236
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1537
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:803
 msgid "Address"
@@ -1378,7 +1378,7 @@ msgstr "验证您的账户"
 msgid "Authenticated"
 msgstr "已验证"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4184
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4182
 msgid "Authentication"
 msgstr "验证"
 
@@ -1932,8 +1932,8 @@ msgstr "更改账户信息"
 msgid "Change Password"
 msgstr "更改密码"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:259
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:267
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:268
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:276
 msgid "Change in account settings"
 msgstr "账户设置更改"
 
@@ -2409,7 +2409,7 @@ msgstr "版权"
 msgid "Costs"
 msgstr "成本"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:225
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:234
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1045
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:467
 msgid "Country of Residence"
@@ -2471,7 +2471,7 @@ msgid "Current password"
 msgstr "当前密码"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3955
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4271
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4269
 msgid "Current photocard Driving Licence (Provisional or Full)"
 msgstr "当前照片卡驾照（临时或正式）"
 
@@ -2479,7 +2479,7 @@ msgstr "当前照片卡驾照（临时或正式）"
 msgid "Current signed Passport"
 msgstr "有效签字护照"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4270
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4268
 msgid "Current signed Passport OR"
 msgstr "有效签字护照或"
 
@@ -2558,7 +2558,7 @@ msgstr "尊敬的"
 #. (BOM::View::Language::translate_salutation($client->salutation)
 #. ($client_to->salutation, $client_to->first_name, $client_to->last_name,)
 #. ($pa_client->salutation, $pa_client->first_name, $pa_client->last_name)
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:216
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:225
 #: /home/git/regentmarkets/bom-app/paymentagent_transfer.cgi:238
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:356
 msgid "Dear %1 %2 %3,"
@@ -2647,7 +2647,7 @@ msgstr ""
 "\n"
 "特此通知我们已收到您的奖金请求。很遗憾，由于以下某个原因，我们无法处理您的请求："
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:209
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:218
 msgid "Dear Client,"
 msgstr "尊敬的客户，"
 
@@ -2995,8 +2995,8 @@ msgstr "要么是您选择让收银台闲置一段时间，要么就是我们无
 msgid "Email"
 msgstr "电子邮件"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:213
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:224
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:222
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:233
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1054
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2180
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:496
@@ -3201,7 +3201,7 @@ msgstr "最喜欢的艺术家"
 msgid "Favourite dish"
 msgstr "最喜欢的菜肴"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:236
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:245
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1283
 msgid "Fax"
 msgstr "传真"
@@ -3705,7 +3705,7 @@ msgstr "如何在随机市场上交易？"
 msgid "How to use a payment agent?"
 msgstr "如何使用支付代理?"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4265
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4263
 msgid "However, in order to increase your withdrawal limits, you are kindly requested to follow the instructions below."
 msgstr "但是，为了提高取款限额，请您务必遵照以下要求行事。"
 
@@ -3739,7 +3739,7 @@ msgstr "ID 扫描件已提交"
 msgid "IP Address"
 msgstr "IP 地址"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:237
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:246
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1557
 msgid "IP Security"
 msgstr "IP 安全"
@@ -5042,10 +5042,6 @@ msgstr "注：公司有权取消逾期两年未申领的佣金。请阅读我们
 msgid "Note: You will be able to withdraw your bonus of %1%2 only once your aggregate volume of trades exceeds %1%3. This restriction applies only to the bonus and profits derived therefrom.  All other deposits and profits derived therefrom can be withdrawn at any time."
 msgstr "注：仅当您的交易总额超过 %1%3时，您才能够提取您的奖金  %1%2。此限制仅适用于由此产生的奖金和收益。由此产生的所有其他存款和收益可随时提取。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4047
-msgid "Note: limits will apply to all currency segments on your account individually."
-msgstr "注：将单独对您账户的所有货币应用限额。"
-
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3941
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:115
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Cashier.pm:97
@@ -5106,11 +5102,11 @@ msgstr "OAuth2.0 是为达此目的而新兴的互联网标准。正式的定义
 msgid "OK"
 msgstr "确定"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4275
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4273
 msgid "ORIGINAL Bank/Credit Union/Building Society/Credit/Debit Card statement or passbook (within last 3 months)"
 msgstr "银行/信用合作社/房屋抵押贷款协会/信用卡/借记卡账单或存折原件（最近 3 个月内）"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4274
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4272
 msgid "ORIGINAL Utility bill (within last 3 months) ; or"
 msgstr "水电煤账单原件（最近 3 个月内）；或"
 
@@ -5322,7 +5318,7 @@ msgid "Our data feed may at times differ slightly from other data feeds found on
 msgstr "我们的数据源有时可能与互联网上其他数据源（各种互联网数据源可能本身就有差异）存在差异。数据源提供商之间存在差异的原因包括："
 
 #. ($cs_email)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4277
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4275
 msgid "Our email address is %1."
 msgstr "我们的电子邮件地址为%1。"
 
@@ -5716,8 +5712,8 @@ msgstr "请注意，为进行合约结算，周末报价将忽略不计。周末
 msgid "Please note that you may update your personal information at any time by logging into the \"Settings\" section of your account. It is your responsibility to ensure that %1 is promptly and continually informed of any change in your personal information."
 msgstr "请注意，您可以随时登录账户的“设置”部分更新您的个人信息。您应确保始终及时向%1告知您个人信息的任何变化。"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:211
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:219
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:220
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:228
 msgid "Please note that your settings have been updated as follows:"
 msgstr "请注意，您的设置已进行以下更新："
 
@@ -5756,7 +5752,7 @@ msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr "请选择“赔付额”或“投注额”选项。"
 
 #. (qq(<a href="mailto:$cs_email">$cs_email</a>)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4254
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4252
 msgid "Please send this email to %1."
 msgstr "请发送此电子邮件至%1。"
 
@@ -6425,7 +6421,7 @@ msgstr "查看演示"
 msgid "See our "
 msgstr "请参考我们的 "
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4294
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4292
 #: /home/git/translations/binary-static/src/templates/haml/static/contact.html.haml:1
 msgid "Select Country"
 msgstr "选择国家"
@@ -6503,7 +6499,7 @@ msgstr "交易期持续时间限制当前设置为  <strong>%1 分钟。</strong
 msgid "Session duration limit, in minutes"
 msgstr "交易期持续时间限制，单位分钟"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:94
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:96
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3884
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Menu.pm:99
 #: /home/git/regentmarkets/bom-app/settings.cgi:15
@@ -6673,7 +6669,7 @@ msgstr "对不起，出错了"
 msgid "Sorry, an error occurred while loading the form. Please contact customer support if this problem persists"
 msgstr "对不起，在加载表格时出错了。如果问题持续出现，请联系客户支持人员"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:171
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:180
 msgid "Sorry, an error occurred while processing your account."
 msgstr "对不起，在处理您的账户时出错。"
 
@@ -7106,7 +7102,7 @@ msgstr "拥有 10 多年经验的技术领先者"
 msgid "Tel"
 msgstr "电话"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:235
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:244
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1241
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:524
 msgid "Telephone"
@@ -7205,7 +7201,7 @@ msgstr "%1 所模拟的市场白天很活跃（但在晚间较稳定）。 %2 �
 
 #. (request()
 #. ($website->display_name)
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:251
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:260
 #: /home/git/regentmarkets/bom-app/paymentagent_withdraw.cgi:367
 msgid "The %1 team."
 msgstr "%1 团队。"
@@ -7809,7 +7805,7 @@ msgstr "所提供的货币 %1不是预设货币"
 #. ($email)
 #. ($new_email)
 #: /home/git/regentmarkets/bom-app/create_account.cgi:113
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:133
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:138
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "所提供的电邮地址%1已被另一登录 ID 使用。"
 
@@ -8095,7 +8091,7 @@ msgstr "此合约获利"
 msgid "This document (the \"Agreement\") sets out the terms and conditions between \"the Company\" which is Binary Ltd, and you (the person who applied for this program; \"you\" or \"your\"), in relation to your application to setup an affiliate account (and membership of the affiliate program if your application is deemed successful) to promote the website %1"
 msgstr "本文件（“协议”）规定了“公司”（即 Binary Ltd.）与“您”（本项目申请人；“您”或“您的”）之间关于您申请设立联盟会员账户（申请成功后还包括联盟项目的会员资格）以推广网站%1的条款和条件"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4180
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4178
 msgid "This function is not relevant to Virtual money accounts"
 msgstr "此功能不适用虚拟资金账户"
 
@@ -8104,8 +8100,8 @@ msgstr "此功能不适用虚拟资金账户"
 msgid "This is a virtual-money account. Please click <a class=\"pjaxload\" href=\"%1\">here</a> to open a real-money account and deposit funds."
 msgstr "这是虚拟账户。请点击 <a class=\"pjaxload\" href=\"%1\">这里</a>开立真实账户并存入资金。"
 
-#. ($client->loginid,                        $ENV{'REMOTE_ADDR'})
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:89
+#. ($client->loginid,                                $ENV{'REMOTE_ADDR'})
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:91
 msgid "This is an automated message to alert you to the fact that there was a failed attempt to unlock the Cashier/Settings section of your account %1 from IP address %2"
 msgstr "这是一个自动消息，提醒您下列情况：有一个来自 IP 地址 %2 的失败尝试，试图解除您账户 %1的收银台/设置部分的锁定"
 
@@ -8268,7 +8264,7 @@ msgstr "请先<a href=\"%1\">注册成为联盟会员</a>，以创建白色标�
 msgid "To enable cookies, follow the instructions below for the browser version that you are using."
 msgstr "要启用 cookie，请按下面符合您浏览器版本的指示说明进行操作。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4269
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4267
 msgid "To fully authenticate your account, please email scanned copies of the document listed below."
 msgstr "为了充分验证您的账户，请通过电子邮件提交下列文件的扫描件。"
 
@@ -8790,7 +8786,7 @@ msgid "View the operating hours of the markets you can trade."
 msgstr "查看您可以进行交易的市场开放时间。"
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4187
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4185
 msgid "View your <a href=\"%1\">withdrawal limits</a>."
 msgstr "查看您的<a href=\"%1\">取款限额</a>。"
 
@@ -8966,7 +8962,7 @@ msgstr "我们希望尽可能创造条件，以方便您介绍潜在客户。一
 msgid "We were unable to recover your Login ID or Password with the provided information. <a href=\"%1\">Return to Password Recovery</a>, or <a href=\"%2\"><strong>contact us</strong></a> should you need further assistance."
 msgstr "我们无法根据您提供的信息找回您的登录 ID 或密码。<a href=\"%1\">返回“找回密码”页面</a>，或<a href=\"%2\"><strong>联系我们</strong></a>获取进一步帮助。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4244
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4242
 msgid "We were unable to verify your identity and prove your residential address using our automated verification procedure."
 msgstr "我们未能通过自动验证程序验证您的身份和您的住址。"
 
@@ -9521,7 +9517,7 @@ msgstr "您可以在任何时间卖出您的长线交易合约，根据市场变
 msgid "You can set the length of your trade, from 10 seconds to 365 days."
 msgstr "您可设定交易期限，从10 秒至 365 天。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4246
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4244
 msgid "You can still authenticate your account by sending us scans of the following documents by email"
 msgstr "您还是可以通过把下列文件的扫描件以电子邮件发送过来，以验证您的账户"
 
@@ -9802,7 +9798,7 @@ msgstr "您的账户余额"
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "您的账户余额(%1%2)不足以买入该合约 (%1%3)。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4279
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4277
 msgid "Your account does not require authentication at this time."
 msgstr "目前您的账户不需要认证。"
 
@@ -9820,11 +9816,11 @@ msgid "Your account is fully authenticated and your withdrawal limit of EUR %1 h
 msgstr "您的账户已经得到完全验证，且您 EUR %1 的取款限额已经取消。"
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4213
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4211
 msgid "Your account is fully authenticated. You can view your <a href=\"%1\">trading limits here</a>."
 msgstr "您的账户已经得到完全验证，且您 <a href=\"%1\">% 的取款限额已经取消</a>。"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4263
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4261
 msgid "Your account is fully operational and you may begin depositing money and buying contracts."
 msgstr "您的账户完全可用，您可以开始存入金额并买入合约。"
 
@@ -10017,7 +10013,7 @@ msgstr "您的风险是已知的"
 msgid "Your secret answer is too short.  Please enter at least 4 characters."
 msgstr "您的密码保护问题答案过短。请输入至少 4 个字符。"
 
-#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:277
+#: /home/git/regentmarkets/bom-app/f_writepartics.cgi:286
 msgid "Your settings have been updated successfully."
 msgstr "您的设置已成功更新。"
 
@@ -10065,7 +10061,7 @@ msgstr "在指定时间期限内您可以交易的金额限制；"
 msgid "a limit on the losses you may incur within a specified period of time;"
 msgstr "在指定时间期限内您可遭受的损失限额；"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4272
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:4270
 msgid "and"
 msgstr "以及"
 
@@ -11643,6 +11639,9 @@ msgstr "如果<strong>%3</strong>的最新<strong>跳动点</strong>严格<stron
 #: Translation for contract type "PUT"
 msgid "lower"
 msgstr "低于"
+
+#~ msgid "Note: limits will apply to all currency segments on your account individually."
+#~ msgstr "注：将单独对您账户的所有货币应用限额。"
 
 #~ msgid "Binary.com supports %1. GamCare has a commitment to promote responsible attitudes to gambling and to work for the provision of proper care for those who have been harmed by gambling dependency."
 #~ msgstr "Binary.com支持%1。GamCare致力于促进以负责任的态度进行投机交易，努力为深受投机成瘾之苦的人们提供适当关怀。"

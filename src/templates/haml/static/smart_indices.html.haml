@@ -6,32 +6,43 @@
       .sidebar
         %ul#sidebar-nav
           %li#sidebar-link-section-1.selected
-            %a{:href => "#what-are-the-smart-indices"}= l('What are the Smart Indices?')
+            %a{:href => "#what-are-the-smart-markets"}= l('What are the Smart Markets?')
           %li#sidebar-link-section-2
-            %a{:href => "#world-fx-indices"}= l('World FX indices')
+            %a{:href => "#smart-indices"}= l('Smart Indices')
           %li#sidebar-link-section-3
+            %a{:href => "#world-fx-indices"}= l('Smart FX')
+          %li#sidebar-link-section-4
             %a{:href => "#out-performance-indices"}= l('Outperformance Indices')
         .sidebar-button
-          %a.button.pjaxload{:href => url_for('trade.cgi?market=smarties')}= l('Trade the Smart Indices')
+          %a.button.pjaxload{:href => url_for('trade.cgi?market=smarties')}= l('Trade Smart Markets')
     .grd-grid-9.grd-grid-mobile-12.grd-parent
       .section
-        %a#what-are-the-smart-indices
+        %a#what-are-the-smart-markets
         .section-content
           #section-1
             .grd-grid-12
-              %h1= l('What are the Smart Indices?')
+              %h1= l('What are Smart Markets?')
             .grd-grid-8.grd-grid-mobile-12
-              %p= l('[_1]’s exclusive Smart Indices are built to key on a particular subset of the world’s markets. With a price derived from related assets, Smart Indices allow traders to take positions on a variety of market action.', stash->{website_name});
+              %p= l('[_1]’s exclusive Smart Markets are built to key on a particular subset of the world’s markets. With a price derived from related assets, Smart Markets allow traders to take positions on a variety of market action.', stash->{website_name});
             .grd-grid-2.grd-hide-mobile
             .grd-grid-2.grd-grid-mobile-4.grd-centered-mobile
               %img.responsive{:src => url_for('images/pages/smart-indices/smart-indices-1.svg')}
+      .section
+        %a#smart-indices
+        .section-content
+          .grd-grid-12
+            %h1= l("Smart Indices")
+          .grd-grid-8.grd-grid-mobile-12
+            %p= l('[_1]’s Smart Indices are created using relevant market data like Futures to track the Index. With real time quotes and live charts, availability of short term contracts and extended market hours,  they provide more exciting opportunities to trade on financial markets',stash->{website_name});
+           .grd-grid-2.grd-hide-mobile
+           .grd-grid-2.grd-grid-mobile-4.grd-centered-mobile
       .section
         %a#world-fx-indices
         .section-content
           #section-2
             .grd-grid-12
-              %h1= l('World FX indices')
-              %p= l('[_1]’s World FX Indices are smart indices that measure the value of a currency against a basket of major currencies.', stash->{website_name})
+              %h1= l('Smart FX')
+              %p= l('[_1]’s Smart FX are smart markets that measure the value of a currency against a basket of major currencies.', stash->{website_name})
             .grd-grid-4
               %p= ' '
               %img.responsive{:src => url_for('images/pages/smart-indices/smart-indices-2.svg')}
