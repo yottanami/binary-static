@@ -380,26 +380,6 @@
     background-color: $COLOR_GRAY_SHADE;
 }
 
-a.close {
-    display: inline-block;
-    float:right;
-    margin-top: 0;
-    margin-right: 0;
-    padding: 10px 8px;
-    cursor: pointer;
-    color: white;
-    border: solid 1px $COLOR_BRAND_ORANGE;
-    border-radius: 0;
-    border-bottom-left-radius: 4px;
-    background: $COLOR_BRAND_ORANGE;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 0px;
-    &:hover {
-        text-decoration: none;
-    }
-}
-
 .trade_confirm_container {
     overflow: display;
     margin: 0;

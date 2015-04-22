@@ -242,33 +242,51 @@ ul.bullet li {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyMCI+DQo8cG9seWdvbiBmaWxsPSIjRTk4MDI1IiBwb2ludHM9IjguNjIzLDE5LjU1NyAwLDEwLjkzNiAzLjczNiw3LjE5OCA4LjYyMywxMi4wODIgMjAuMjYyLDAuNDQzIDI0LDQuMTggOC42MjMsMTkuNTU3Ii8+DQo8L3N2Zz4NCg==") no-repeat;
     padding-left: 1.25em;
 }
+a.close {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 10px 8px;
+    cursor: pointer;
+    color: white;
+    background: $COLOR_BRAND_ORANGE;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: .5;
+    z-index: 1001;
+    top: -10px;
+    right: -10px;
+    float: right;
+    border-radius: 0 0 0 $BORDER_RADIUS;
+    &:hover {
+        text-decoration: none;
+    }
+}
 .inpage_popup_container {
     position: fixed;
     margin: 0;
     padding: 10px;
     text-align: center;
     border: solid 1px $COLOR_BRAND_ORANGE;
-    background: $COLOR_LIGHT_GRAY;
+    background: white;
     z-index: 1000;
     max-width: 90%;
+    border-radius: $BORDER_RADIUS;
     .drag-handle {
         cursor: pointer;
     }
-    a.close {
-        position: relative;
-        top: -10px;
-        right: -10px;
-    }
-    .inpage_popup_content {
-        margin: 30px 10px 10px;
-        padding: 0;
-    }
+
     .inpage_popup_content_box {
         padding: 0;
         margin: 0;
         background: white;
         border: solid 2px $COLOR_GRAY;
         text-align: center;
+    }
+    .ui-widget-content {
+        background: none;
+        border: none;
     }
 }
 .paging-navigation {
