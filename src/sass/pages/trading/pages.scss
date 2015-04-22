@@ -606,3 +606,23 @@ form#rise_fall_form {
     display: block;
     text-align: center;
 }
+
+.about-us-content {
+    .about-col {
+        flex: 7;
+    }
+    img {
+        height: 5rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .binary-logo {
+        height: 7em;
+    }
+    .mga-logo {
+        padding: 1rem;
+    }
+    h1 {
+        margin-top: 0;
+    }
+}

@@ -63,13 +63,13 @@ sub haml {
     $curr_path =~ s/^\/|\/$//g;
 
     $curr_path = '/' if $curr_path eq '';
-
+P
     # template, layout, code
     my %url_map = (
-        '/' => ['home/index', 'default', '', 1],
-        'home' => ['home/index', 'default', '', 1],
+        '/' => ['home/index', $c->layout, '', 1],
+        'home' => ['home/index', $c->layout, '', 1],
 
-        'home5' => ['home5/index', 'default'],
+        'home5' => ['home5/index', $c->layout, '', 1],
 
         'why-us' => ['static/why_us', 'default'],
         'partnerapi' => ['static/devguide', 'default'],
