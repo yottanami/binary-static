@@ -16,7 +16,7 @@
             </div>
             <ul class="nav2nd">
                 <li>
-                    <a class="pjaxload" href="[% request.url_for('asset_index.cgi') %]" [% target %]>[% l("Asset Index") %]</a>
+                    <a class="pjaxload" href="[% request.url_for('/resources/asset_index') %]" [% target %]>[% l("Asset Index") %]</a>
                 </li>
                 <li>
                     <a class="pjaxload" href="[% request.url_for('trading_times.cgi') %]" [% target %]>[% l("Trading Times") %]</a>
