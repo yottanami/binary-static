@@ -11,4 +11,4 @@
     <div id="body_id">[% body_id %]</div>
 </div>
 
-<div id="content">
+<div id="content"[% IF h.current_route +%] class="[% h.current_route %]-content"[% END %]>

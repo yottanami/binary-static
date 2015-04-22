@@ -298,7 +298,7 @@ sub _main_menu_myaccount {
     push @{$my_account_ref->{sub_items}},
       {
         id         => 'topMenuAuthenticateAccount',
-        url        => $self->c->url_for('/authenticate.cgi')->query({o => 'id'}),
+        url        => $self->c->url_for('/cashier/authenticate')->query({o => 'id'}),
         text       => $self->c->l('Authenticate'),
         class      => 'by_client_type client_real',
         link_class => 'with_login_cookies pjaxload',
@@ -332,7 +332,7 @@ sub _main_menu_resources {
 
     my $asset_index_ref = {
         id         => 'topMenuAssetIndex',
-        url        => $self->c->url_for('/asset_index.cgi'),
+        url        => $self->c->url_for('/resources/asset_index'),
         text       => $self->c->l('Asset Index'),
         link_class => 'pjaxload',
     };
@@ -353,7 +353,7 @@ sub _main_menu_resources {
 
     my $pricing_table_ref = {
         id         => 'topMenuPricingTable',
-        url        => $self->c->url_for('/pricing_table.cgi'),
+        url        => $self->c->url_for('/resources/pricing_table'),
         text       => $self->c->l('Pricing Table'),
         link_class => 'pjaxload',
         id         => 'pricing_table_lnk',
@@ -361,7 +361,7 @@ sub _main_menu_resources {
 
     my $forward_start_ref = {
         id         => 'topMenuRiseFallTable',
-        url        => $self->c->url_for('/rise_fall_table.cgi'),
+        url        => $self->c->url_for('/resources/rise_fall_table'),
         text       => $self->c->l('Rise / Fall Table'),
         link_class => 'pjaxload',
         id         => 'risefall_table_lnk',
