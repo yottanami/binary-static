@@ -575,7 +575,7 @@ form#rise_fall_form {
     }
 }
 
-#content #settings_message {
+#settings_message {
     font-weight: bold;
     color: $COLOR_BRAND_ORANGE;
     .success_msg {
@@ -583,7 +583,7 @@ form#rise_fall_form {
     }
 }
 
-#content #client_message.errorbox {
+#client_message.errorbox {
     background-image: none;
     text-align: center;
     .rbox-wrap {
@@ -624,5 +624,10 @@ form#rise_fall_form {
     }
     h1 {
         margin-top: 0;
+    }
+}
+.get-started-content {
+    .button {
+        width: 100%;
     }
 }
