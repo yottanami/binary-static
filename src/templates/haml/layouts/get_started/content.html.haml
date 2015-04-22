@@ -2,9 +2,10 @@
 != google_tag_tracking_code
 = include('layouts/default/page_info')
 
-#content.$content_class
-    .row.get-started
-        .col
-            = include('layouts/get_started/nav')
-        .col.row.sections
-            = content
+#content
+    .$content_class
+        .row.get-started
+            .col
+                = include('layouts/get_started/nav')
+            .col.row.sections
+                = content

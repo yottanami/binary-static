@@ -66,30 +66,27 @@ sub haml {
 
     # template, layout, code
     my %url_map = (
-        '/' => ['home/index', 'full_width', '', 1],
-        'home' => ['home/index', 'full_width', '', 1],
+        '/' => ['home/index', 'default', '', 1],
+        'home' => ['home/index', 'default', '', 1],
 
-        'home5' => ['home5/index', 'full_width', '', 1],
+        'home5' => ['home5/index', 'default'],
 
-
-        'ticker' => ['home/ticker', ''],
-
-        'why-us' => ['static/why_us', 'full_width'],
-        'partnerapi' => ['static/devguide', 'full_width'],
-        'devguide' => ['static/partner_api', 'full_width'],
-        'tour' => ['static/tour', 'full_width'],
-        'responsible-trading' => ['static/responsible_trading', 'full_width'],
-        'careers' => ['static/careers', 'full_width'],
-        'group-history' => ['static/group_history', 'full_width'],
-        'smart-indices' => ['static/smart_indices', 'full_width'],
-        'open-source-projects' => ['static/open_source_projects', 'full_width'],
-        'contact' => ['static/contact', 'full_width'],
+        'why-us' => ['static/why_us', 'default'],
+        'partnerapi' => ['static/devguide', 'default'],
+        'devguide' => ['static/partner_api', 'default'],
+        'tour' => ['static/tour', 'default'],
+        'responsible-trading' => ['static/responsible_trading', 'default'],
+        'careers' => ['static/careers', 'default'],
+        'group-history' => ['static/group_history', 'default'],
+        'smart-indices' => ['static/smart_indices', 'default'],
+        'open-source-projects' => ['static/open_source_projects', 'default'],
+        'contact' => ['static/contact', 'default'],
 
         'resources' => ['resources/index', $c->layout],
         'charting'  => ['charting/index', $c->layout],
         'about-us'  => ['about/index', $c->layout],
 
-        'styles' => ['home/styles', 'full_width', '', 1],
+        'styles' => ['home/styles', 'default', '', 1],
 
         'get-started' => ['get_started/index', 'get_started'],
         'get-started/what-is-binary-trading' => ['get_started/what_is_binary_trading', 'get_started'],
@@ -99,7 +96,7 @@ sub haml {
         'get-started/types-of-trades' => ['get_started/types_of_trades', 'get_started'],
         'get-started/beginners-faq' => ['get_started/beginners_faq', 'get_started'],
         'get-started/glossary' => ['get_started/glossary', 'get_started'],
-        'get-started/random-markets' => ['get_started/random_markets', 'full_width'],
+        'get-started/random-markets' => ['get_started/random_markets', 'default'],
 
         'login' => ['home/login', $c->layout, '', 1],
 

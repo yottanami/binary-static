@@ -31,7 +31,7 @@ body {
     padding: 0 1rem;
 }
 
-.msgbar, .header, .sitemap, .footer {
+#content, .msgbar, .header, .sitemap, .footer {
     max-width: $CONTENT_WIDTH;
     width: 100%;
 }
