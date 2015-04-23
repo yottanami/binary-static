@@ -4,11 +4,8 @@
 
 <p>
 
-<a href="[% request.url_for('linkto_acopening.cgi', {actype => " real "}) %]" class="button important by_client_type client_logged_out">
+<a href="[% request.url_for('/', {actype => " real "}) %]" class="button important by_client_type client_logged_out">
     [% l('Open An Account Now') %]
-</a>
-<a href="[% request.url_for('linkto_acopening.cgi', {actype => real}) %]" class="virtual-upgrade-link button important by_client_type client_virtual">
-    <span>[% l('Open Real Account') %]</span>
 </a>
 <a href="[% deposit_url %]" class="button button_large by_client_type client_real with_login_cookies">
     <span>[% l('Deposit') %]</span>
