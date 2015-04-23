@@ -2,7 +2,7 @@
 //http://stackoverflow.com/questions/11487216/cors-with-jquery-and-xdomainrequest-in-ie8-9
 //
 $(document).ajaxSuccess(function () {
-    var contents = new Contents(page.client);
+    var contents = new Contents(page.client, page.user);
     contents.on_load();
 });
 

@@ -186,7 +186,6 @@ sub login {
         my $response = ($loginid eq 'DEMO123' and $password eq 'demo') ?
             { success => 1, session_cookie => Mojo::Cookie->new(value => 'abcdefghijklmn')} : {};
         if ($response->{success}) {
-            $self->stash(just_logged_in => 1);
             $redirect = '/user/my_account';
             $redirect_params->{login} = 'true';
             my $options = $self->cookie_options;

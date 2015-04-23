@@ -28,8 +28,8 @@
     100% {opacity: 1;}
 }
 .pulser {
-    -webkit-animation: pulsing .2s * 5 infinite ease;
-    animation: pulsing .2s * 5 infinite ease;
+    -webkit-animation: pulsing 3s infinite ease;
+    animation: pulsing 3s infinite ease;
 }
 
 .overlay {
