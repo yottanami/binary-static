@@ -646,8 +646,10 @@ Contents.prototype = {
     },
     update_content_class: function() {
         //This is required for our css to work.
-        $('#content').removeClass();
-        $('#content').addClass($('#content_class').html());
+        var contentClass = $('#content_class').html();
+        $('#content').parent()
+            .removeClass()
+            .addClass(contentClass);
     },
     init_draggable: function() {
         $('.draggable').draggable();
