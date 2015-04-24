@@ -1,0 +1,6 @@
+- my $content_class = current_route.'-content';
+!= google_tag_tracking_code
+= include('layouts/default/page_info')
+#content
+    .$content_class
+        = content
