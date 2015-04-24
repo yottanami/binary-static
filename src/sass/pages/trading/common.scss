@@ -37,13 +37,21 @@
     width: 0;
     height: 0;
 }
+.market_higher, .market_lower {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    //border-color: red blue green yellow;
+    border-style: solid;
+    border-width: .5rem;
+}
 .market_higher {
-    background: transparent url("../images/javascript/up_arrow_1.gif") no-repeat 0 0;
-    padding-left: 15px;
+    border-color: transparent transparent green transparent;
+    padding-bottom: .25rem;
 }
 .market_lower {
-    background: transparent url("../images/javascript/down_arrow_1.gif") no-repeat 0 0;
-    padding-left: 15px;
+    border-color: red transparent transparent transparent;
+    padding-top: .25rem;
 }
 .title {
     text-transform: capitalize;
