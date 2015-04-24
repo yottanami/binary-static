@@ -1,24 +1,5 @@
 - stash(title => l('Binary.com Open-Source Projects'));
 
-.sidebar
-    %ul#sidebar-nav
-        %li#sidebar-link-section-1.selected
-            %a{:href => "#open-source-projects-section"}= l('Open-Source projects')
-        %li#sidebar-link-section-2
-            %a{:href => "#extjs-frontend-section"}= l('ExtJS front-end')
-        %li#sidebar-link-section-3
-            %a{:href => "#static-content"}= l('Static content')
-        %li#sidebar-link-section-4
-            %a{:href => "#perl-modules"}= l('Perl modules')
-        %li#sidebar-link-section-5
-            %a{:href => "#translations"}= l('Translations')
-        %li#sidebar-link-section-6
-            %a{:href => "#mobile-application"}= l('Mobile application')
-        %li#sidebar-link-section-7
-            %a{:href => "#bulk-trader"}= l('Bulk Trader')
-    .sidebar-button
-        %a.button.pjaxload{:href => url_for('contact')}= l('Contact us')
-
 %section
     %a#open-source-projects-section
     %h2= l('Binary.com open-source projects')

@@ -1,8 +1,10 @@
-.get-started {
+.get-started-content {
     .sections {
         flex: 3;
-        flex-wrap: wrap;
-        align-content: space-between;
+        .row {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
     }
     section {
         min-width: 10rem;

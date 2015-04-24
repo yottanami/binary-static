@@ -4,8 +4,9 @@
 
 .$content_class
     #content
-        .row.get-started
+        .row
             .col
                 = include('layouts/get_started/nav')
-            .col.row.sections
-                = content
+            .col.sections
+                .row
+                    = content
