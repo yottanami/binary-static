@@ -24,9 +24,13 @@ a:visited {
         text-decoration: underline;
     }
 }
-p {
+p, code {
     margin-bottom: 1rem;
     line-height: 1.4;
+}
+code {
+    background: rgba($COLOR_BRAND_BLUE, 0.1);
+    padding: .5rem 1rem;
 }
 h1,
 h2,
