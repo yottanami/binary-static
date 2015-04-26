@@ -91,7 +91,6 @@
     <li>Specific colors the banner should include.</li>
     <li>Specific message the banner should include.</li>
 </ul>") %]
-<br><br>
 <h2>[% l("Contact") %]</h2>
 <p>
 <h3>[% l("Where can I send my questions, comments and suggestions?") %]</h3>

@@ -101,6 +101,9 @@ ol li {
     list-style-type: decimal;
     list-style-image: none;
 }
+ol {
+    margin: 0 0 1rem 1.5rem;
+}
 img {
     vertical-align: middle;
     border: 0;
@@ -238,9 +241,6 @@ label {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-ol {
-    margin: 1.25em 0 1.25em 1.25em;
 }
 ul.bullet li {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyMCI+DQo8cG9seWdvbiBmaWxsPSIjRTk4MDI1IiBwb2ludHM9IjguNjIzLDE5LjU1NyAwLDEwLjkzNiAzLjczNiw3LjE5OCA4LjYyMywxMi4wODIgMjAuMjYyLDAuNDQzIDI0LDQuMTggOC42MjMsMTkuNTU3Ii8+DQo8L3N2Zz4NCg==") no-repeat;

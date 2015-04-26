@@ -1,6 +1,6 @@
 !!! 5
   - if(stash('appcache_manifest')) {
-    - my $manifest = stash->{language} . '_appcache.appcache';
+  -   my $manifest = stash->{language} . '_appcache.appcache';
 %html{:manifest => url_for($manifest)}
   - } else {
 %html
