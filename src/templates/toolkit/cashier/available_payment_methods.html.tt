@@ -29,7 +29,7 @@
 <p>
 
 <h2>[% l('Payment agents') %]</h2>
-<h3>[% l('You can use an authorized payment agent to process deposits and withdrawals for e-cash methods or local currencies not supported by') %] [% website_name %].</h3>
+<p>[% l('You can use an authorized payment agent to process deposits and withdrawals for e-cash methods or local currencies not supported by') %] [% website_name %].</p>
 
 <p>
 

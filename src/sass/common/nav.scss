@@ -91,9 +91,9 @@
 #main-menu .active > a {
     border-bottom: 2px solid $COLOR_BRAND_ORANGE;
 }
+/*
 .ui-tabs-nav,
-.tm-ul,
-*[role=tabs] {
+.tm-ul {
     border: none;
     border-radius: 0;
     padding: 0;
@@ -152,6 +152,7 @@
         }
     }
 }
+*/
 #content .page-section {
     width: 100%;
     & > .tab-menu {

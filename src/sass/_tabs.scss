@@ -1,0 +1,49 @@
+ul[role=tabs], ul[role=segmented] {
+    display: flex;
+    margin-bottom: 1rem;
+    a {
+        font-weight: normal;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+ul[role=tabs] {
+    background: $COLOR_BRAND_BLUE;
+    a {
+        color: white;
+    }
+    li {
+        padding: .25rem 1rem;
+        cursor: pointer;
+    }
+    li.active {
+        box-shadow: inset 0px 3px 0px 0px $COLOR_BRAND_ORANGE;
+        background-color: $COLOR_NAV_ACTIVE;
+    }
+}
+
+ul[role=segmented] {
+    border: 1px solid $COLOR_BRAND_BLUE;
+    border-radius: $BORDER_RADIUS;
+    color: $COLOR_BRAND_BLUE;
+    li {
+        padding: .25rem 1rem;
+        cursor: pointer;
+    }
+    li.active {
+        background-color: $COLOR_BRAND_BLUE;
+        a {
+            color: white;
+        }
+    }
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block !important;
+}

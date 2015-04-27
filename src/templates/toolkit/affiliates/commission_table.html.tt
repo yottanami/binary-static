@@ -24,7 +24,7 @@
             <td>3</td>
             <td>[% commission_data.third_tier.min %] - [% commission_data.third_tier.max %]</td>
             <td>[% commission_data.third_tier.rate %] %</td>
-        </div>
+        </tr>
 
         <tr>
             <td>4</td>
@@ -32,4 +32,4 @@
             <td>[% commission_data.max_commission %] %</td>
         </tr>
     </tbody>
-</div>
+</table>
