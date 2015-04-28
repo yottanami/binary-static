@@ -15,8 +15,6 @@
         %li
           %a.pjaxload{:href => url_for('trading_times.cgi')}= l('Trading Times')
         %li
-          %a.pjaxload{:href => url_for('contract_guide.cgi')}= l('Trading Guide')
-        %li
           %a.pjaxload{:href=>url_for('/resources/pricing_table')}= l('Pricing Table')
         %li
           %a.pjaxload{:href=>url_for('/resources/rise_fall_table')}= l('Rise/Fall Table')
@@ -31,6 +29,8 @@
         %a= l('Help')
       %ul.nav2nd
         %li
+          %a.pjaxload{:href => url_for('contract_guide.cgi')}= l('Trading Guide')
+        %li
           %a.pjaxload{:href=>url_for('/why-us')}= l('Why Us?')
         %li
           %a.pjaxload{:href=>url_for('/get-started')}= l('Get Started')
@@ -40,8 +40,6 @@
           %a{:href=>'http://blog.binary.com/en/webinar/'}= l('Webinars')
         %li
           %a{:href=>'http://blog.binary.com'}= l('Blog')
-        %li
-          %a{:href=>'http://www.gamcare.org.uk/'}= l('GamCare')
         %li
           %a.pjaxload{:href=>url_for('responsible-trading')}= l('Responsible Trading')
         %li

@@ -22,9 +22,6 @@
                     <a class="pjaxload" href="[% request.url_for('trading_times.cgi') %]" [% target %]>[% l("Trading Times") %]</a>
                 </li>
                 <li>
-                    <a class="pjaxload" href="[% request.url_for('contract_guide.cgi') %]" [% target %]>[% l("Trading Guide") %]</a>
-                </li>
-                <li>
                     <a class="pjaxload" href="[% request.url_for('/resources/pricing_table') %]" [% target %]>[% l("Pricing Table") %]</a>
                 </li>
                 <li>
@@ -47,6 +44,9 @@
             </div>
             <ul class="nav2nd">
                 <li>
+                    <a class="pjaxload" href="[% request.url_for('contract_guide.cgi') %]" [% target %]>[% l("Trading Guide") %]</a>
+                </li>            
+                <li>
                     <a class="pjaxload" href="[% request.url_for('why-us') %]" [% target %]>[% l("Why Us?") %]</a>
                 </li>
                 <li>
@@ -60,9 +60,6 @@
                 </li>
                 <li>
                     <a href="http://blog.binary.com">[% l("Blog") %]</a>
-                </li>
-                <li>
-                    <a href="http://www.gamcare.org.uk">[% l("GamCare") %]</a>
                 </li>
                 <li>
                     <a class="pjaxload" href="[% request.url_for('responsible-trading') %]">[% l('Responsible Trading') %]</a>
