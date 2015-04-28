@@ -51,7 +51,7 @@
   background-image: url("../images/pages/contract_guide/in-out.svg");
 }
 
-#duration_amount, #strike_type, #amount, #expiry_step, #from_expiry, #pricingtable_bet_type {
+#strike_type, #amount, #expiry_step, #from_expiry, #pricingtable_bet_type {
     width: 100%;
 }
 
@@ -503,16 +503,6 @@ div#price_table_notes {
     }
 }
 
-form#rise_fall_form {
-    fieldset {
-        padding-top: 1em;
-        margin-bottom: 1em;
-    }
-    label {
-        width: auto;
-    }
-}
-
 /* Terms and conditions */
 .tab-menu-wrap {
     ul#legal-menu {
@@ -637,4 +627,22 @@ form#rise_fall_form {
     padding: 1rem 0;
     display: block;
     margin: auto;
+}
+
+.resourcesrise_fall_table-content {
+    #duration_container {
+        flex: 2;
+    }
+    #atleast, #bet_currency {
+        width: 100%;
+    }
+    form {
+        padding-bottom: 1rem;
+    }
+    label {
+        display: block;
+    }
+    #duration_container input, #duration_container select {
+        width: 40%;
+    }
 }
