@@ -38,9 +38,8 @@ nav a {
 }
 
 
-.login-btn, .logout-btn {
+.login-btn, .logout-btn, #client_loginid {
     font-size: $FONT_SIZE_S;
-    margin: .2rem 0;
 }
 
 
@@ -50,7 +49,7 @@ nav a {
         border: none;
         width: 20px;
         height: 15px;
-        margin: 1em;
+        margin: 1.1rem;
         background-position: 0 0;
         padding: 0;
         &:hover, &:focus { box-shadow: none; }
@@ -107,5 +106,8 @@ nav a {
 }
 .nav-trade {
     font-weight: bold;
+}
 
+#client-logged-in, #client-logged-out {
+    // display: none;
 }
