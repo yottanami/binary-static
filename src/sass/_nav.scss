@@ -73,11 +73,11 @@ nav a {
 .header nav a:hover {
     text-decoration: none;
 }
-.nav1st > li, .logo {
+.submenu {
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
 }
-.nav1st > li:hover, .logo:hover {
+.submenu:hover {
     box-shadow: inset 0px 3px 0px 0px $COLOR_BRAND_ORANGE;
     background-color: $COLOR_NAV_ACTIVE;
     border-left: 1px solid $COLOR_NAV_BORDER;
@@ -93,21 +93,18 @@ nav a {
 .nav2nd li:hover {
     color: white;
     background: $COLOR_BRAND_ORANGE;
-
 }
 .nav-trade,
 .nav-cashier,
 .nav-resources,
-.nav-help {
+.nav-help,
+.nav-account {
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: auto 70%;
     background-position: center center;
 }
-.nav-trade {
-    font-weight: bold;
-}
 
 #client-logged-in, #client-logged-out {
-    // display: none;
+    display: none;
 }

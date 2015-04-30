@@ -4,8 +4,3 @@
             %img{:src => url_for('images/pages/binary-symbol-logo.svg')}
             %img{:src => url_for('images/pages/binary-text.svg')}
         = include('layouts/default/nav')
-        .language-selector
-            = include('layouts/default/language-select')
-        #client-logged-out
-            %a.button.login-btn{:href=>url_for('login')}= l('Log in')
-        = include('layouts/default/account_menu')
