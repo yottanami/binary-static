@@ -91,6 +91,9 @@ nav a {
     border-right: 1px solid $COLOR_NAV_BORDER;
     border-bottom: 1px solid $COLOR_NAV_BORDER;
 }
+.nav-trade a, .nav-cashier a {
+    display: block;
+}
 .nav2nd li:hover {
     color: white;
     background: $COLOR_BRAND_ORANGE;
