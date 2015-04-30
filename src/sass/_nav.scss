@@ -38,8 +38,9 @@ nav a {
 }
 
 
-.login-btn, .logout-btn, #client_loginid {
+.login-btn {
     font-size: $FONT_SIZE_S;
+    margin: .7rem 0;
 }
 
 
