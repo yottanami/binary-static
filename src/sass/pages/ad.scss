@@ -1,10 +1,10 @@
 /* HOME PAGE RULES */
-.home2-content#content {
+.ad-content#content {
   width: 100%;
 }
-.home2-content {
+.ad-content {
    #banner {
-    background: url("../images/pages/home2/map.png") repeat 0 0;
+    background: url("../images/pages/ad/map.png") repeat 0 0;
     background-size: contain;
    }
    .xtopseparator{
@@ -59,8 +59,10 @@
   p{
     font-size:110%
   }
-  ul li {
-    padding-left: 10px;
+  ul{
+    margin-left:50px;
+    } 
+    li {
     margin: 1em 0 0;
     span {
       color: $COLOR_GREEN;
@@ -156,6 +158,9 @@
         }
     }
 }
+#xtestimonial{
+    padding-top:40px;
+}
 .xquote {
     background-color: $COLOR_LIGHT_GRAY;
     padding: 20px 40px;
@@ -220,7 +225,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .home2-content{
+    .ad-content{
         #xtop {
             padding-top: 30px;
         }

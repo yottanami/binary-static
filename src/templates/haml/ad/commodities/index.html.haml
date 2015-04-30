@@ -10,12 +10,12 @@
   .grd-container
       .grd-grid-12.grd-row-padding
         #xtop
-          %h1.dark= l('The Premier Platform for Binary Options Trading')
-          %p= l('Trade 24/7, even on weekends. Customize your trades to meet your needs.')
+          %h1.dark= l('The Premier Platform for Trading Commodities Online')
+          %p= l('Trade Oil, Gold, Silver, Palladium and Platinum from one account. Start from only $1.')
       .grd-grid-12.grd-grid-mobile-12.grd-grid-phablet-12.grd-parent
       .grd-grid-2.grd-hide-mobile.grd-hide-phablet
       #open-account.grd-grid-8.grd-grid-mobile-12.grd-grid-phablet-12
-        %p= l('Get started now')
+        %p= l('Get your free $10,000 virtual money')
         %form#virtual-acc-form{ :name => 'oppAccForm', :action => url_for('create_account.cgi'), :method => 'post' }
           %span#virtual-fields
             %span.grd-grid-12.grd-no-gutter
@@ -30,15 +30,15 @@
   %hr.xtopseparator
   #xsection1
     .grd-grid-12.grd-parent
-      %h1.center= l('The easiest way to get started in the financial markets')
+      %h1.center= l('Join our community of 1,000,000+ traders')
       %p.center= l('Trade in the world\'s financial markets in a simple, user-friendly platform.')
       .grd-grid-7.grd-grid-mobile-12.grd-parent
-        %img.responsive{:alt => "", :src => url_for("images/pages/home2/rises-falls.png")}
+        %img.responsive{:alt => "", :src => url_for("images/pages/ad/commodities.png")}
       .grd-grid-5.grd-grid-mobile-12.grd-parent
-        %ul
-          %li!= l('<span>All markets:</span> currencies, stock indices, and commodities.')
-          %li!= l('<span>All market conditions:</span> up/down, touch/no-touch, stays in/goes out.')
-          %li!= l('<span>All durations:</span> from 10 seconds to 365 days.')
+        %ul.bullet
+          %li!= l('Trade precious metals and energy')
+          %li!= l('<span>All market conditions:</span> up/down, touch/no-touch, stays in/goes out etc.')
+          %li!= l('<span>All durations:</span> from 5 minutes to 365 days.')
           %li!= l('<span>All payouts:</span> from $1 to $100,000.')
 #xcta
   #xreason
