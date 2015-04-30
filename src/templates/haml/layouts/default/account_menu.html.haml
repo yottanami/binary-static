@@ -1,0 +1,4 @@
+#client-logged-in
+    %form#loginid-switch-form{:action => "[% request.url_for('user/loginid_switch?l=EN') %]", :method => "post"}
+        %select#client_loginid
+        %a.button.logout-btn{:href=>url_for('logout')}= l('Log out')
