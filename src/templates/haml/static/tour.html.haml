@@ -7,17 +7,15 @@
 
 %h1= l('2-way pricing')
 %p= l('Simply change any of your parameters and the trade price instantly changes, giving you real-time knowledge of your stake. [_1] ensures fair and transparent pricing by showing you both sides of the trade.', stash->{website_name})
-  .grd-grid-6.grd-grid-mobile-12
+.row
     %a.pjaxload{:href => url_for('trade.cgi')}
-      %img#new-trader-icon{:src => url_for('images/pages/tour/tour-live-trade.svg')}
-  .grd-grid-6.grd-grid-mobile-12
+        %img#new-trader-icon{:src => url_for('images/pages/tour/tour-live-trade.svg')}
     %a.pjaxload{:href => url_for('trade.cgi')}
-      %img#new-trader-icon{:src => url_for('images/pages/tour/tour-opposite-trade.svg')}
+        %img#new-trader-icon{:src => url_for('images/pages/tour/tour-opposite-trade.svg')}
 
 %h1= l('Then, make your trade')
 %p= l('As soon as you click on the ‘PURCHASE’ button, your trade registers in your account. The price of your trade continues to update in real time.')
 %img#new-trader-icon{:src => url_for('images/pages/tour/tour-portfolio-snapshot_1.svg')}
-
 
 %h1= l('Do you want to lock in profits?')
 %p= l('If you do, no worries. With Binary.com, you can sell your trades before expiry to lock in profits. There’s no need to wait until the end time.')

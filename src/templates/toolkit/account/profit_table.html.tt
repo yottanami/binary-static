@@ -74,46 +74,36 @@
     </div>
 [%- END -%]
 
-<div class="grd-grid-12">
-    <h1>[% l('Profit Table') %]</h1><br>
+<h1>[% l('Profit Table') %]</h1><br>
 
-    <div id="profit-table">
-    [% pagination_links(position='top') %]
-    [% IF sold_contracts.size == 0 %]
-        <p>[% l('There are no items during this period') %]</p>
-    [% ELSE %]
-            <div class="grd-parent grd-grid-12 table-header grd-row-padding">
-                <div class="grd-grid-4 grd-hide-mobile grd-grid-phablet-3">
-                    <div class="grd-grid-6 grd-hide-phablet">[% l("Purchase Date") %]</div>
-                    <div class="grd-grid-6 grd-grid-phablet-12">[% l("Ref.") %]</div>
-                </div>
-                <div class="grd-grid-3 grd-grid-mobile-8 grd-grid-phablet-6">[% l("Contract") %]</div>
-                <div class="grd-grid-5 grd-hide-mobile grd-hide-phablet">
-                    <div class="grd-grid-3 grd-no-gutter">[% l("Purchase Price") %]</div>
-                    <div class="grd-grid-5 ">[% l("Sale Date") %]</div>
-                    <div class="grd-grid-2 grd-no-gutter">[% l("Sale Price") %]</div>
-                    <div class="grd-grid-2 grd-no-gutter">[% l("Profit/<wbr/>Loss") %]</div>
-                </div>
-            </div>
+[% pagination_links(position='top') %]
+[% IF sold_contracts.size == 0 %]
+    <p>[% l('There are no items during this period') %]</p>
+[% ELSE %]
+    <table>
+        <thead>
+            <tr>
+                <th>[% l("Purchase Date") %]</th>
+                <th>[% l("Ref.") %]</th>
+                <th>[% l("Contract") %]</th>
+                <th>[% l("Purchase Price") %]</th>
+                <th>[% l("Sale Date") %]</th>
+                <th>[% l("Sale Price") %]</th>
+                <th>[% l("Profit/<wbr/>Loss") %]</th>
+            </tr>
+        </thead>
+        <tbody>
         [% total_pl = 0 %]
         [% FOREACH contract IN sold_contracts %]
-                [% display_contract(contract) %]
-                [% total_pl = total_pl + (contract.sell_price - contract.buy_price) %]
+            [% display_contract(contract) %]
+            [% total_pl = total_pl + (contract.sell_price - contract.buy_price) %]
         [% END %]
-        <div class="grd-parent grd-grid-12 table-header grd-row-padding">
-                <div class="grd-grid-8 grd-grid-mobile-12 grd-grid-phablet-12">
-                    [% sold_contracts.first.purchase_date.date_yyyymmdd %] - [% sold_contracts.last.purchase_date.date_yyyymmdd %]
-                </div>
-                <div class="grd-grid-4 grd-grid-mobile-12 grd-grid-phablet-12">
-                    <div class="grd-grid-8 grd-grid-mobile-6 grd-grid-phablet-6 right-aligned">
-                        [% l("Total Profit/Loss") %]
-                    </div>
-                    <div class="grd-grid-4 grd-grid-mobile-6 grd-grid-phablet-6 right-aligned">
-                        [% display_amount(total_pl) %]
-                    </div>
-                </div>
-        </div>
-    [% END %]
-    [% pagination_links(position='bottom') %]
-    </div>
-</div>
+            <tr>
+                <td>[% sold_contracts.first.purchase_date.date_yyyymmdd %] - [% sold_contracts.last.purchase_date.date_yyyymmdd %]</td>
+                <td>[% l("Total Profit/Loss") %]</td>
+                <td>[% display_amount(total_pl) %]</td>
+            </tr>
+        </tbody>
+    </table>
+[% END %]
+[% pagination_links(position='bottom') %]
