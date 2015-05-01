@@ -652,3 +652,24 @@ div#price_table_notes {
         height: 10rem;
     }
 }
+
+.login-content {
+    #content {
+        width: 20rem;
+    }
+    form {
+        text-align: center;
+    }
+    .form-logo {
+        width: 7rem;
+    }
+    input, button {
+        width: 100%;
+    }
+    .errorfield {
+        margin-top: -1rem;
+    }
+    .bigerror {
+        margin-top: 1rem;
+    }
+}

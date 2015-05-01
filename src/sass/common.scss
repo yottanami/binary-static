@@ -151,60 +151,18 @@ label {
 }
 .errorrow,
 .errorfield {
-    color: $COLOR_RED;
+    color: white;
+    background: $COLOR_RED;
+    border-radius: $BORDER_RADIUS;
+    padding: .125rem;
 }
 .text-only {
     color: $COLOR_TEXT;
 }
-.errorfield {
-    margin: 0;
-}
-.errorrow,
-.errorfield {
-    font-size: 93%;
-    font-style: italic;
-    margin-top: 8px;
-}
-.last-row {
-    margin-bottom: 0;
-}
-.form_button {
-    text-align: center;
-}
-.form_button .errorfield {
-    margin: 0;
-}
-.comment {
-    font-size: 93%;
-    font-style: italic;
-}
-.non_input {
-    color: $COLOR_TEXT;
-    line-height: 1.7em;
-}
-.non_input label {
-    line-height: 1.6em;
-}
-.gray {
-    color: $COLOR_DARK_GRAY;
-}
-.form_link {
-    display: block;
-    font-size: 76%;
-    line-height: 0.8em;
-}
 /* global styles */
-* {
-    margin: 0;
-}
 #popup {
     width: 95%;
     margin: 0 auto;
-}
-.clearfix {
-    clear: both;
-    visibility: hidden;
-    content: '.';
 }
 .hidden {
     display: none;

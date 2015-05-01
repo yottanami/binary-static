@@ -98,3 +98,7 @@ onLoad.queue_for_url(function() {
         return false;
     });
 }, '/c/paymentagent_list');
+
+$('.login-content button').on('click', function() {
+    $('.form-logo').addClass('spinner');
+});
