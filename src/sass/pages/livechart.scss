@@ -5,38 +5,6 @@
   }
 }
 
-#live_chart_form_wrapper {
-  margin: 0 auto;
-  a {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  input[type=button] {
-    padding: 6px 15px 6px 15px;
-    font-size: 14px;
-  }
-  #live_chart_options {
-      display: block;
-      min-height: 50px;
-      #live_chart_duration {
-        li {
-          float: left;
-          text-align: center;
-          min-width: 7%;
-          .button {
-              margin: 0 5px;
-              color: $COLOR_TEXT;
-              font-weight: bold;
-              border-bottom: 2px solid $COLOR_TEXT;
-              &.current {
-                color: $COLOR_BRAND_ORANGE;
-                border-bottom: 4px solid $COLOR_BRAND_ORANGE;
-              }
-          }
-        }
-      }
-  }
-}
 .chart-notice {
     text-align: left;
     font-size: 80%;

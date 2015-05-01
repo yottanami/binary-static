@@ -451,13 +451,14 @@ function initTabs() {
         });
     }
 
-    var $tabs = $('*[role=tabs] li,*[role=segmented] li');
+    var tabSelector = '*[role=tabs] li,*[role=segmented] li',
+        $tabs = $(tabSelector);
 
     if (!$tabs.hasClass('active')) $tabs.first().addClass('active');
 
     updateTabs($tabs);
 
-    $tabs.on('click', function(e) {
+    $('body').on('click', tabSelector, function(e) {
         var $tabs = $(this).parent().find('li');
         $tabs.removeClass('active');
         $(this).addClass('active');
