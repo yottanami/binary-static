@@ -33,9 +33,10 @@
 
 %p= l('[_1] offers the world\'s financial markets in a simple, user-friendly platform.', stash->{website_name})
 
-%img{:src => url_for('images/pages/why-us/trade-sample.svg')}
-%img{:src => url_for('images/pages/why-us/trade-direct-value.svg')}
-%img{:src => url_for('images/pages/why-us/trade-opposite-value.svg')}
+.row
+    %img{:src => url_for('images/pages/why-us/trade-sample.svg')}
+    %img{:src => url_for('images/pages/why-us/trade-direct-value.svg')}
+    %img{:src => url_for('images/pages/why-us/trade-opposite-value.svg')}
 
 %ul.bullet
     %li= l('Find the right trade for every market condition.')
@@ -50,9 +51,10 @@
     %li= l('We are fully licensed in the British Isles and Malta.')
     %li= l('We have a proven track record since starting in 2000.')
 
-%img{:src => url_for('images/pages/why-us/mga-logo.svg')}
-%img{:src => url_for('images/pages/why-us/why-us-proven-record_1.svg')}
-%img{:src => url_for('images/pages/footer/isle-of-man.png')}
+.row
+    %img{:src => url_for('images/pages/why-us/mga-logo.svg')}
+    %img{:src => url_for('images/pages/why-us/why-us-proven-record_1.svg')}
+    %img{:src => url_for('images/pages/footer/isle-of-man.png')}
 
 %h1= l('Go with the leader')
 .row
