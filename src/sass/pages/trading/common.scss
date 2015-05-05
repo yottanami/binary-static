@@ -45,14 +45,25 @@
     border-style: solid;
     border-width: .5rem;
 }
-.market_higher {
-    border-color: transparent transparent green transparent;
-    padding-bottom: .25rem;
+
+/* show more button */
+.more {
+  margin-top: 15px;
+  text-align: right;
 }
-.market_lower {
-    border-color: red transparent transparent transparent;
-    padding-top: .25rem;
+
+/* same as p, to act as an empty container */
+.div-p {
+  margin-bottom: 15px;
 }
+
+/* special notice (f_trade.cgi), currently align center */
+
+.centerText,
+.notice-1 {
+  text-align: center;
+}
+
 .title {
     text-transform: capitalize;
 }
