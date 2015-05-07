@@ -40,24 +40,7 @@
                 <br> [% l('Withdraw: [_1] working day', 1) %]
             </td>
         </tr>
-
-        <tr>
-            <td>
-                <img id="cashu"></div>
-            </td>
-            <td>
-                USD
-            </td>
-            <td>
-                5 - 1,000
-            </td>
-            <td>
-            </td>
-            <td>
-                [% l('Deposit: Instant')%]
-            </td>
-        </tr>
-
+        
         <tr>
             <td>
                 <img id="fastpay"></div>
