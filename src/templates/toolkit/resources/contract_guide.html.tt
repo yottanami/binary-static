@@ -9,7 +9,7 @@
         <p>
         [% bet_type.explanation %]
         <p>
-        <a class="button bet_demo_link" href="[%= request.url_for('contract_demo.cgi', { bet_type =>  bet_type.default}) =%]">[% bet_type.title %]</a>
+        <a class="button bet_demo_link" href="[%= request.url_for('/resources/contract_demo', { bet_type =>  bet_type.default}) =%]">[% bet_type.title %]</a>
     </div>
     [% END %]
 </div>

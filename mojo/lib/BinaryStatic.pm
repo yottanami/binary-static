@@ -111,6 +111,7 @@ sub startup {
     $r->get('/charting/application')->to('page#toolkit')->name('charting-application');
     $r->get('/charting/livechart')->to('page#toolkit')->name('charting-livechart');
     $r->get('/resources/rise_fall_table')->to('page#toolkit');
+    $r->get('/terms-and-conditions')->to('page#toolkit')->name('terms-and-conditions');
 
     $r->route('/exception')->to('page#exception');
     $r->route('/*')->to('page#not_found');

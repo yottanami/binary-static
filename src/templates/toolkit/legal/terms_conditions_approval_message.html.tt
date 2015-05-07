@@ -1,5 +1,4 @@
-[% tnc_page_url = request.url_for("c_template.cgi", {filecode => "legal"}) %]
-
+[% tnc_page_url = request.url_for("/terms-and-conditions") %]
 
 <p><img src="[% request.url_for('images/pages/cashier/protection-icon.svg') %]"/></p>
 
@@ -7,5 +6,5 @@
     <p>[% l('Binary (Europe) Ltd has updated its <a class="pjaxload" href="[_1]">Terms & Conditions</a>. By clicking OK, you confirm that you have read and accepted the updated <a class="pjaxload" href="[_1]">Terms & Conditions</a>.', tnc_page_url) %]</p>
     <input name="act" value="[% action %]" type="hidden"/>
     <input name="currency" value="[% currency %]" type="hidden"/>
-    <button name="tnc_approval" class="button" value="ok" type="submit">[% l('Ok') %]</button>    
+    <button name="tnc_approval" class="button" value="ok" type="submit">[% l('Ok') %]</button>
 </form>

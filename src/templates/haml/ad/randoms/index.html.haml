@@ -5,7 +5,6 @@
 -   emailtext   => l('Enter your email'),
 -   passwordstext   => l('Choose a password'),
 - );
-- my $lang = stash->{language};
 #banner
   .grd-container
       .grd-grid-12.grd-row-padding
@@ -22,7 +21,7 @@
               %input.xemail{:name => 'Email', :id => 'Email', :type => 'email', :required => true, :placeholder => stash('emailtext')}
               %input#chooseapassword.xpass{:name => 'chooseapassword', :type => 'password', :maxlength => '25', :required => true, :placeholder => stash('passwordstext')}
               %input#actype{:type => 'hidden', :name => 'actype', :value => 'virtual'}
-              %input{:type => 'hidden', :name => 'l', :value => $lang}
+              %input{:type => 'hidden', :name => 'l', :value => stash('language')}
             %span.grd-grid-12.grd-no-gutter
               %input.button.xtopcta{:id => 'btn_registration',:type => 'submit', :value => stash('createacc')}
       .grd-grid-2.grd-hide-mobile.grd-hide-phablet

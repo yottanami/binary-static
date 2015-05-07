@@ -19,6 +19,7 @@ sub toolkit {
         'charting/application' => ['charting/chart_application', 'default'],
         'charting/livechart' => ['charting/livechart', 'default'],
         'resources/rise_fall_table' => ['resources/rise_fall_table', 'default'],
+        'terms-and-conditions' => ['legal/tac', 'default'],
     );
     my $m = $url_map{$curr_path};
 
@@ -162,10 +163,9 @@ sub open_account_with_promocode {
     my $promo_code     = $self->param('promo');
     my $affilate_token = $self->param('t');
     return $self->redirect_to(
-        'linkto_acopening.cgi',
+        '/user/upgrade',
         {
             actype          => 'real',
-            promotionalcode => $promo_code,
             t               => $affilate_token
         });
 }

@@ -339,14 +339,14 @@ sub _main_menu_resources {
 
     my $trading_times_ref = {
         id         => 'topMenuTradingTimes',
-        url        => $self->c->url_for('/trading_times.cgi')->query({date => today_yyyymmdd()}),
+        url        => $self->c->url_for('/resources/trading_times')->query({date => today_yyyymmdd()}),
         text       => $self->c->l('Trading Times'),
         link_class => 'pjaxload',
     };
 
     my $bet_guide_ref = {
         id         => 'topMenuContractGuide',
-        url        => $self->c->url_for('/contract_guide.cgi'),
+        url        => $self->c->url_for('/resources/contract_guide'),
         text       => $self->c->l('Trading Guide'),
         link_class => 'pjaxload',
     };
