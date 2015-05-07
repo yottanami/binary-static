@@ -1,6 +1,10 @@
 ul[role=tabs], ul[role=segmented] {
     display: flex;
     margin-bottom: 1rem;
+    li {
+        flex: 1;
+        text-align: center;
+    }
     a {
         font-weight: normal;
         &:hover {
