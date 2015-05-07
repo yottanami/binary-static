@@ -7,7 +7,7 @@ function showLoadingImage(container)
 {
     var image_link = page.settings.get('image_link');
 
-    container.empty().append('<div id="std_loading_img"><p>'+text.localize('loading...')+'</p><img src="'+image_link['hourglass']+'" /></div>');
+    container.html('<div class="progress"></div>');
 }
 
 /////////////////////////////////////////////////////////////////

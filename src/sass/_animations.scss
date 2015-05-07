@@ -52,3 +52,12 @@
     transition: transform .2s, height 0 .2s;
     transform: scale(.9);
 }
+
+.progress {
+    @extend .spinner;
+    background-image: url('../images/pages/binary-symbol-logo.svg');
+    background-repeat: none;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+}
