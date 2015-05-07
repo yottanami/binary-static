@@ -32,10 +32,10 @@
                 [% l("High barrier") %]
                 <input type="text" size="11" id="live_charts_high_barrier" class="live_charts_clear_on_update" />
             </div>
-            <span class='grd-grid 4 grd-grid-mobile-12'>
+            <div>
                 [% l("Low barrier") %]
                 <input type="text" size="11" id="live_charts_low_barrier" class="live_charts_clear_on_update" />
-            </span>
+            </div>
             <div>
                 <a href="" id="live_charts_show_spot">[% l("Show last spot") %]</a>
                 <a href="" id="live_charts_hide_spot" disabled="disabled">[% l("Hide last spot") %]</a>

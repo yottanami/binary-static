@@ -515,21 +515,6 @@ div#price_table_notes {
     }
 }
 
-/* Payment Agent Deposit */
-#paymentagent_deposit {
-    ul.recursive_list {
-        margin-left: 1.5em;
-        li {
-            list-style-image: url("../images/pages/get-started/list-circle_1.png");
-        }
-    }
-    table.rbox-table.rbox-table-full {
-        tr.rbox-table-heading th {
-            text-align: left;
-        }
-    }
-}
-
 #payment-agent-registration ul.circles {
     margin-left: 60px;
     list-style-image: url("../images/pages/get-started/list-circle_1.png");
