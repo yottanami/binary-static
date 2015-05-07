@@ -1077,7 +1077,7 @@ msgstr ""
 msgid "After the user authenticates to %1; their browser will be re-directed to your callback handler with a call like this:"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:833
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:850
 msgid "All"
 msgstr ""
 
@@ -1108,7 +1108,7 @@ msgstr ""
 msgid "Amount"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:268
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:271
 msgid "Amount must be a positive number."
 msgstr ""
 
@@ -2084,8 +2084,9 @@ msgstr ""
 msgid "Clients registered with Binary (C.R.) S.A. can raise their unresolved disputes with management by submitting an email to complaints@binary.com."
 msgstr ""
 
+#. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
+msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
 msgstr ""
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
@@ -3290,7 +3291,7 @@ msgid "Forgot Login ID or Password?"
 msgstr ""
 
 #. ($underlying->market->translated_display_name)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:556
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:573
 msgid "Forward starting intraday and daily contracts are available on some %1"
 msgstr ""
 
@@ -3938,7 +3939,7 @@ msgstr ""
 msgid "In/out trades"
 msgstr ""
 
-#: lib/BOM/Platform/User.pm.tidyup:140 lib/BOM/Platform/User.pm:142
+#: lib/BOM/Platform/User.pm:140 lib/BOM/Platform/User.pm:149
 msgid "Incorrect email or password."
 msgstr ""
 
@@ -4060,7 +4061,7 @@ msgstr ""
 msgid "Invalid Building No./Name"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:470
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:486
 msgid "Invalid Input"
 msgstr ""
 
@@ -4447,8 +4448,7 @@ msgstr ""
 msgid "Login Trouble"
 msgstr ""
 
-#: lib/BOM/Platform/Client/Login.pm:43 lib/BOM/Platform/User.pm.tidyup:123
-#: lib/BOM/Platform/User.pm:124
+#: lib/BOM/Platform/Client/Login.pm:43 lib/BOM/Platform/User.pm:124
 msgid "Login to this account has been temporarily disabled due to system maintenance. Please try again in 30 minutes."
 msgstr ""
 
@@ -5010,7 +5010,7 @@ msgstr ""
 msgid "November"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:548
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:565
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/Trade.pm:503
 msgid "Now"
 msgstr ""
@@ -5410,7 +5410,7 @@ msgstr ""
 msgid "Payments"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:709
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:726
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "Payout"
 msgstr ""
@@ -5664,7 +5664,7 @@ msgstr ""
 msgid "Please select"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:282
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:285
 msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr ""
 
@@ -6243,7 +6243,7 @@ msgstr ""
 msgid "Rise/Fall Table"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:557
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:574
 msgid "Rise/Fall contracts of less than 5 minutes duration are only available when you select \"Now\" as the start time."
 msgstr ""
 
@@ -6586,8 +6586,8 @@ msgstr ""
 msgid "Sorry, an error occurred"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:618
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:644
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:635
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:661
 msgid "Sorry, an error occurred while loading the form. Please contact customer support if this problem persists"
 msgstr ""
 
@@ -6701,7 +6701,7 @@ msgstr ""
 msgid "Sorry, you cannot withdraw."
 msgstr ""
 
-#: lib/BOM/Platform/User.pm.tidyup:128 lib/BOM/Platform/User.pm:132
+#: lib/BOM/Platform/User.pm:131
 msgid "Sorry, you have already had too many unsuccessful attempts. Please try again in 5 minutes."
 msgstr ""
 
@@ -6774,7 +6774,7 @@ msgstr ""
 msgid "Spread"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:713
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:730
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "Stake"
 msgstr ""
@@ -8789,7 +8789,9 @@ msgstr ""
 msgid "We could not authenticate your account online. please proceed to the <a href=\"%1\">manual authentication section</a>. If you would like to register additional credit cards, please contact <a class=\"pjaxload\" href=\"%2\">customer support</a>."
 msgstr ""
 
-#: lib/BOM/Product/Contract.pm:1304 lib/BOM/Product/Role/BarrierBuilder.pm:25
+#: lib/BOM/Product/Contract.pm:1304 lib/BOM/Product/Contract/Digitdiff.pm:49
+#: lib/BOM/Product/Contract/Digitmatch.pm:50
+#: lib/BOM/Product/Role/BarrierBuilder.pm:25
 msgid "We could not process this contract at this time."
 msgstr ""
 
@@ -10196,7 +10198,7 @@ msgstr ""
 msgid "starting in"
 msgstr ""
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:760
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:777
 msgid "ticks"
 msgstr ""
 
@@ -10374,24 +10376,24 @@ msgstr ""
 msgid "EUR/INR"
 msgstr ""
 
-#: Underlying Symbol frxGBPCNY
-msgid "GBP/CNY"
-msgstr ""
-
 #: Underlying Symbol frxAUDBRL
 msgid "AUD/BRL"
+msgstr ""
+
+#: Underlying Symbol frxGBPCNY
+msgid "GBP/CNY"
 msgstr ""
 
 #: Underlying Symbol frxUSDJPY
 msgid "USD/JPY"
 msgstr ""
 
-#: Underlying Symbol frxUSDSGD
-msgid "USD/SGD"
-msgstr ""
-
 #: Underlying Symbol frxGBPBRL
 msgid "GBP/BRL"
+msgstr ""
+
+#: Underlying Symbol frxUSDSGD
+msgid "USD/SGD"
 msgstr ""
 
 #: Underlying Symbol frxAUDNOK
@@ -10438,12 +10440,12 @@ msgstr ""
 msgid "EUR/BRL"
 msgstr ""
 
-#: Underlying Symbol frxUSDDKK
-msgid "USD/DKK"
-msgstr ""
-
 #: Underlying Symbol frxNZDUSD
 msgid "NZD/USD"
+msgstr ""
+
+#: Underlying Symbol frxUSDDKK
+msgid "USD/DKK"
 msgstr ""
 
 #: Underlying Symbol frxAUDNZD
@@ -10522,12 +10524,12 @@ msgstr ""
 msgid "GBP/NZD"
 msgstr ""
 
-#: Underlying Symbol frxUSDPLN
-msgid "USD/PLN"
-msgstr ""
-
 #: Underlying Symbol frxNZDJPY
 msgid "NZD/JPY"
+msgstr ""
+
+#: Underlying Symbol frxUSDPLN
+msgid "USD/PLN"
 msgstr ""
 
 #: Underlying Symbol frxAUDSEK
@@ -10546,12 +10548,12 @@ msgstr ""
 msgid "EUR/HKD"
 msgstr ""
 
-#: Underlying Symbol frxGBPPLN
-msgid "GBP/PLN"
-msgstr ""
-
 #: Underlying Symbol frxGBPAUD
 msgid "GBP/AUD"
+msgstr ""
+
+#: Underlying Symbol frxGBPPLN
+msgid "GBP/PLN"
 msgstr ""
 
 #: Underlying Symbol frxUSDSEK
@@ -10726,12 +10728,12 @@ msgstr ""
 msgid "Reliance Industries Ltd"
 msgstr ""
 
-#: Underlying Symbol JPTE
-msgid "Tokyo Electric Power Co. Inc"
-msgstr ""
-
 #: Underlying Symbol AUBHP
 msgid "BHP Billiton Ltd"
+msgstr ""
+
+#: Underlying Symbol JPTE
+msgid "Tokyo Electric Power Co. Inc"
 msgstr ""
 
 #: Underlying Symbol JPTM
@@ -10754,12 +10756,12 @@ msgstr ""
 msgid "Air Liquide"
 msgstr ""
 
-#: Underlying Symbol UKIAG
-msgid "ICAG (British Airways)"
-msgstr ""
-
 #: Underlying Symbol NOYAR
 msgid "Yara International"
+msgstr ""
+
+#: Underlying Symbol UKIAG
+msgid "ICAG (British Airways)"
 msgstr ""
 
 #: Underlying Symbol DEALV
@@ -10795,7 +10797,7 @@ msgid "Iberdrola SA"
 msgstr ""
 
 #: Underlying Symbol FPSAN
-msgid "Sanofi"
+msgid "SANOFI"
 msgstr ""
 
 #: Underlying Symbol FPSGO
@@ -10814,12 +10816,12 @@ msgstr ""
 msgid "SoftBank Co."
 msgstr ""
 
-#: Underlying Symbol FPDG
-msgid "Vinci"
-msgstr ""
-
 #: Underlying Symbol FPEDF
 msgid "Electricite de France"
+msgstr ""
+
+#: Underlying Symbol FPDG
+msgid "Vinci"
 msgstr ""
 
 #: Underlying Symbol NOSTL
@@ -10922,12 +10924,12 @@ msgstr ""
 msgid "ASML Holding"
 msgstr ""
 
-#: Underlying Symbol FPKER
-msgid "Kering"
-msgstr ""
-
 #: Underlying Symbol KRSFG
 msgid "Shinhan Financial"
+msgstr ""
+
+#: Underlying Symbol FPKER
+msgid "Kering"
 msgstr ""
 
 #: Underlying Symbol UKBARC
@@ -10966,12 +10968,12 @@ msgstr ""
 msgid "Vodafone"
 msgstr ""
 
-#: Underlying Symbol JPHT
-msgid "Hitachi Ltd"
-msgstr ""
-
 #: Underlying Symbol KRSS
 msgid "Samsung Electronics"
+msgstr ""
+
+#: Underlying Symbol JPHT
+msgid "Hitachi Ltd"
 msgstr ""
 
 #: Underlying Symbol USXOM
@@ -11011,19 +11013,19 @@ msgid "Carrefour"
 msgstr ""
 
 #: Underlying Symbol FPFP
-msgid "Total"
+msgid "TOTAL"
 msgstr ""
 
 #: Underlying Symbol FPCS
 msgid "AXA"
 msgstr ""
 
-#: Underlying Symbol NOTEL
-msgid "Telenor"
-msgstr ""
-
 #: Underlying Symbol USKO
 msgid "The Coca-Cola Company"
+msgstr ""
+
+#: Underlying Symbol NOTEL
+msgid "Telenor"
 msgstr ""
 
 #: Underlying Symbol BBUCB
@@ -11038,12 +11040,12 @@ msgstr ""
 msgid "Glencore Xstrat"
 msgstr ""
 
-#: Underlying Symbol KRSKH
-msgid "SK Hynix Inc."
-msgstr ""
-
 #: Underlying Symbol UKDGE
 msgid "Diageo plc"
+msgstr ""
+
+#: Underlying Symbol KRSKH
+msgid "SK Hynix Inc."
 msgstr ""
 
 #: Underlying Symbol FPRI
@@ -11179,7 +11181,7 @@ msgid "Random Sun"
 msgstr ""
 
 #: Underlying Symbol SYNFCHI
-msgid "French Fast Index"
+msgid "French Smart Index"
 msgstr ""
 
 #: Underlying Symbol SYNN225
@@ -11206,12 +11208,12 @@ msgstr ""
 msgid "Wall Street Smart Index"
 msgstr ""
 
-#: Underlying Symbol SYNBFX
-msgid "Belgian Smart Index"
-msgstr ""
-
 #: Underlying Symbol SYNPSI20
 msgid "Portuguese Smart Index"
+msgstr ""
+
+#: Underlying Symbol SYNBFX
+msgid "Belgian Smart Index"
 msgstr ""
 
 #: Underlying Symbol SYNAEX
@@ -11490,16 +11492,12 @@ msgstr ""
 msgid "Predict the ending market level relative to the average market prices throughout the course of the contract"
 msgstr ""
 
-#: Explanation for contract category Stays Between/Goes Outside
-msgid "Predict whether or not the market will touch either of 2 chosen levels before expiration."
-msgstr ""
-
 #: Explanation for contract category Touch/No Touch
 msgid "Predict whether or not the market will touch a chosen level before expiration."
 msgstr ""
 
-#: Explanation for contract category Digits
-msgid "Predict the last digit of the market price at expiration."
+#: Explanation for contract category Stays Between/Goes Outside
+msgid "Predict whether or not the market will touch either of 2 chosen levels before expiration."
 msgstr ""
 
 #: Translation for contract category "callput"
@@ -11508,6 +11506,10 @@ msgstr ""
 
 #: Explanation for contract category Up/Down
 msgid "Predict the ending market level relative to a chosen barrier."
+msgstr ""
+
+#: Explanation for contract category Digits
+msgid "Predict the last digit of the market price at expiration."
 msgstr ""
 
 #: Translation for contract type "ASIAND"

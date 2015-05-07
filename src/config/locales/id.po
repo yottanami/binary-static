@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: I 18N\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-05-05 11:18+0200\n"
+"PO-Revision-Date: 2015-05-06 05:44+0200\n"
 "Last-Translator: Putri Kumala <putri@regentmarkets.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/binary/static/id/>\n"
 "Language: id\n"
@@ -295,10 +295,8 @@ msgstr "Smart FX %1 adalah market yang diukur berdasarkan nilai mata uang berban
 
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/static/smart_indices.html.haml:1
-#, fuzzy
-#| msgid "%1’s Smart Indices are created using %1’s proprietary algorithms and relevant market data, and are designed to tick at higher frequency and have extended market hours. With real time quotes and live charts, availability of short term contracts and extended hours, they provide more exciting opportunities to trade on financial markets."
 msgid "%1’s Smart Indices are created using the relevant market data and %1’s proprietary algorithms to represent the equities market movement for a country. These instruments are designed to tick at higher frequency and have extended market hours. With real time quotes and live charts, availability of short term contracts and extended hours, they provide more exciting opportunities to trade on financial markets."
-msgstr "Smart Index %1 diciptakan menggunakan algoritma %1 dan market data yang relevan dan dirancang untuk bergerak pada frekuensi yang lebih tinggi dan memiliki perpanjangan jam pasar. Dengan kutipan real time dan grafik langsung, ketersediaan kontrak jangka pendek dan perpanjangan jam pasar, mereka memberikan kesempatan lebih menarik untuk bertrading pada market financial."
+msgstr "Indeks Smart %1 dibuat menggunakan data market relevan dan algoritma %1 yang mewakili pergerakan pasar saham sebuah negara. Instrumen ini dirancang untuk tik pada frekuensi yang lebih tinggi dan memiliki periode yang lebih panjang. Dengan kutipan real time dan grafik langsung, ketersediaan kontrak jangka pendek dan perpanjangan jam pasar, mereka memberikan kesempatan lebih menarik untuk bertrading pada market financial."
 
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/static/smart_indices.html.haml:1
@@ -997,10 +995,8 @@ msgstr "Akses kedalam data pribadi Anda adalah sangat terbatas kepada petugas ut
 
 #. (request()
 #: /home/git/regentmarkets/bom-app/create_account.cgi:131
-#, fuzzy
-#| msgid "According to our terms and conditions, you may only register for one real money account through our site. If you have forgotten the Login ID or password of your existing account, please <a href=\"%1\">try our password recovery tool</a> or contact customer service."
 msgid "According to our terms and conditions, you may only register once through our site. If you have forgotten the password of your existing account, please <a href=\"%1\">try our password recovery tool</a> or contact customer service."
-msgstr "Menurut syarat dan ketentuan, anda hanya dapat mendaftar satu akun uang riil pada situs kami. Jika anda lupa Login ID atau kata sandi akun anda, silahkan <a href=\"%1\">coba alat pembuat kata sandi baru</a> atau hubungi customer service."
+msgstr "Menurut syarat dan ketentuan, anda hanya dapat mendaftar satu akun uang riil pada situs kami. Jika anda lupa kata sandi akun Anda, silahkan <a href=\"%1\">coba alat pembuat kata sandi baru</a> atau hubungi customer service."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:166
 msgid "Account Closure"
@@ -1116,7 +1112,7 @@ msgstr "Setelah masuk ke binary.com, anda dapat mendaftar sebagai API Developer"
 msgid "After the user authenticates to %1; their browser will be re-directed to your callback handler with a call like this:"
 msgstr "Setelah pengguna dibuktikan oleh %1;browser mereka akan diarahkan kepada pengatur panggilan balik dengan panggilan seperti:"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:833
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:850
 msgid "All"
 msgstr "Semua"
 
@@ -1147,7 +1143,7 @@ msgstr "Meskipun Perusahaan memiliki dan menguasai semua hak untuk menolak atau 
 msgid "Amount"
 msgstr "Jumlah"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:268
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:271
 msgid "Amount must be a positive number."
 msgstr "Jumlah harus angka positif."
 
@@ -2123,8 +2119,11 @@ msgstr "Klien harus mengisi formulir pendaftaran akun sesuai dengan identitas me
 msgid "Clients registered with Binary (C.R.) S.A. can raise their unresolved disputes with management by submitting an email to complaints@binary.com."
 msgstr "Pelanggan yang terdaftar dibawah Binary (C.R.) S.A. dapat melanjutkan sengketa yang belum terselesaikan dengan manajemen dengan mengirimkan email ke complaints@binary.com."
 
+#. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
+#, fuzzy
+#| msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
+msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
 msgstr "Pelanggan yang terdaftar di Binary (Europe) Ltd dapat meningkatkan sengketa yang belum terselesaikan dengan Otoritas Trading Malta di"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
@@ -3379,7 +3378,7 @@ msgid "Forgot Login ID or Password?"
 msgstr "Lupa Login ID atau Kata Sandi?"
 
 #. ($underlying->market->translated_display_name)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:556
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:573
 msgid "Forward starting intraday and daily contracts are available on some %1"
 msgstr "Intraday dengan waktu mulai di hadapan tersedia pada beberapa %1"
 
@@ -4029,7 +4028,7 @@ msgstr "Kontrak didalam/keluar"
 msgid "In/out trades"
 msgstr "Kontrak Didalam/Keluar"
 
-#: lib/BOM/Platform/User.pm.tidyup:140 lib/BOM/Platform/User.pm:142
+#: lib/BOM/Platform/User.pm:140 lib/BOM/Platform/User.pm:149
 msgid "Incorrect email or password."
 msgstr "Email atau kata sandi salah."
 
@@ -4151,7 +4150,7 @@ msgstr "Pendahuluan"
 msgid "Invalid Building No./Name"
 msgstr "Nomor/Nama Bangunan salah"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:470
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:486
 msgid "Invalid Input"
 msgstr "Input tidak valid"
 
@@ -4538,8 +4537,7 @@ msgstr "Login ID (%1) tidak tersedia."
 msgid "Login Trouble"
 msgstr "Kesulitan Akses"
 
-#: lib/BOM/Platform/Client/Login.pm:43 lib/BOM/Platform/User.pm.tidyup:123
-#: lib/BOM/Platform/User.pm:124
+#: lib/BOM/Platform/Client/Login.pm:43 lib/BOM/Platform/User.pm:124
 msgid "Login to this account has been temporarily disabled due to system maintenance. Please try again in 30 minutes."
 msgstr "Maaf, Transfer Agen Pembayaran dihentikan untuk sementara berhubung perbaikan sistem. Silahkan coba kembali 30 menit lagi."
 
@@ -5103,7 +5101,7 @@ msgstr "Nov"
 msgid "November"
 msgstr "Nopember"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:548
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:565
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/Trade.pm:503
 msgid "Now"
 msgstr "Sekarang"
@@ -5511,7 +5509,7 @@ msgstr "Pembayaran komisi akan dilakukan secara bulanan pada atau sekitar tangga
 msgid "Payments"
 msgstr "Pembayaran"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:709
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:726
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "Payout"
 msgstr "Hasil"
@@ -5765,7 +5763,7 @@ msgstr "Mohon diingat setiap waktu bahwa trading opsi binary dapat menjadi aktif
 msgid "Please select"
 msgstr "Tolong pilih"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:282
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:285
 msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr "Pilih \"Hasil\" atau \"Modal\"."
 
@@ -6344,7 +6342,7 @@ msgstr "Naik/Turun"
 msgid "Rise/Fall Table"
 msgstr "Tabel Naik/Turun"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:557
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:574
 msgid "Rise/Fall contracts of less than 5 minutes duration are only available when you select \"Now\" as the start time."
 msgstr "Kontrak Naik/Turun dengan durasi kurang dari 5 menit hanya tersedia jika anda memilih waktu mulai \"Sekarang\"."
 
@@ -6687,8 +6685,8 @@ msgstr "Maaf, telah terjadi error pada trading ini. Silahkan coba kembali bebera
 msgid "Sorry, an error occurred"
 msgstr "Maaf, telah terjadi error"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:618
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:644
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:635
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:661
 msgid "Sorry, an error occurred while loading the form. Please contact customer support if this problem persists"
 msgstr "Maaf, error terjadi pada saat meloading formulir. Silakan hubungi Customer Support jika masalah ini masih terjadi"
 
@@ -6802,7 +6800,7 @@ msgstr "Maaf, anda tidak dapat memiliki lebih dari %1 kontrak dalam jangka waktu
 msgid "Sorry, you cannot withdraw."
 msgstr "Maaf, anda tidak dapat mencairkan."
 
-#: lib/BOM/Platform/User.pm.tidyup:128 lib/BOM/Platform/User.pm:132
+#: lib/BOM/Platform/User.pm:131
 msgid "Sorry, you have already had too many unsuccessful attempts. Please try again in 5 minutes."
 msgstr "Maaf, Anda telah gagal mengakses beberapa kali. Silakan coba kembali dalam waktu 5 menit lagi."
 
@@ -6875,7 +6873,7 @@ msgstr "Harga spot"
 msgid "Spread"
 msgstr "Spread"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:713
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:730
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "Stake"
 msgstr "Modal"
@@ -8890,7 +8888,9 @@ msgstr "Kami diwajibkan oleh lisensi kami untuk memberitahu Anda tentang apa yan
 msgid "We could not authenticate your account online. please proceed to the <a href=\"%1\">manual authentication section</a>. If you would like to register additional credit cards, please contact <a class=\"pjaxload\" href=\"%2\">customer support</a>."
 msgstr "Kami tidak dapat membuktikan kebenaran akun anda secara online. Silakan lanjutkan ke bagian <a href=\"%1\">pembuktian manual</a>. Jika anda ingin mendaftarkan kartu kredit baru, silakan hubungi <a class=\"pjaxload\" href=\"%2\">customer support</a>."
 
-#: lib/BOM/Product/Contract.pm:1304 lib/BOM/Product/Role/BarrierBuilder.pm:25
+#: lib/BOM/Product/Contract.pm:1304 lib/BOM/Product/Contract/Digitdiff.pm:49
+#: lib/BOM/Product/Contract/Digitmatch.pm:50
+#: lib/BOM/Product/Role/BarrierBuilder.pm:25
 msgid "We could not process this contract at this time."
 msgstr "Kami tidak dapat memproses kontrak saat ini."
 
@@ -10303,7 +10303,7 @@ msgstr "detik"
 msgid "starting in"
 msgstr "dimulai pada"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:760
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:777
 msgid "ticks"
 msgstr "tick"
 
@@ -10480,25 +10480,25 @@ msgstr "AUD/SGD"
 msgid "EUR/INR"
 msgstr "EUR/INR"
 
-#: Underlying Symbol frxGBPCNY
-msgid "GBP/CNY"
-msgstr "GBP/CNY"
-
 #: Underlying Symbol frxAUDBRL
 msgid "AUD/BRL"
 msgstr "AUD/BRL"
+
+#: Underlying Symbol frxGBPCNY
+msgid "GBP/CNY"
+msgstr "GBP/CNY"
 
 #: Underlying Symbol frxUSDJPY
 msgid "USD/JPY"
 msgstr "USD/JPY"
 
-#: Underlying Symbol frxUSDSGD
-msgid "USD/SGD"
-msgstr "USD/SGD"
-
 #: Underlying Symbol frxGBPBRL
 msgid "GBP/BRL"
 msgstr "GBP/BRL"
+
+#: Underlying Symbol frxUSDSGD
+msgid "USD/SGD"
+msgstr "USD/SGD"
 
 #: Underlying Symbol frxAUDNOK
 msgid "AUD/NOK"
@@ -10544,13 +10544,13 @@ msgstr "EUR/CNY"
 msgid "EUR/BRL"
 msgstr "EUR/BRL"
 
-#: Underlying Symbol frxUSDDKK
-msgid "USD/DKK"
-msgstr "USD/DKK"
-
 #: Underlying Symbol frxNZDUSD
 msgid "NZD/USD"
 msgstr "NZD/USD"
+
+#: Underlying Symbol frxUSDDKK
+msgid "USD/DKK"
+msgstr "USD/DKK"
 
 #: Underlying Symbol frxAUDNZD
 msgid "AUD/NZD"
@@ -10628,13 +10628,13 @@ msgstr "GBP/HKD"
 msgid "GBP/NZD"
 msgstr "GBP/NZD"
 
-#: Underlying Symbol frxUSDPLN
-msgid "USD/PLN"
-msgstr "USD/PLN"
-
 #: Underlying Symbol frxNZDJPY
 msgid "NZD/JPY"
 msgstr "NZD/JPY"
+
+#: Underlying Symbol frxUSDPLN
+msgid "USD/PLN"
+msgstr "USD/PLN"
 
 #: Underlying Symbol frxAUDSEK
 msgid "AUD/SEK"
@@ -10652,13 +10652,13 @@ msgstr "GBP/DKK"
 msgid "EUR/HKD"
 msgstr "EUR/HKD"
 
-#: Underlying Symbol frxGBPPLN
-msgid "GBP/PLN"
-msgstr "GBP/PLN"
-
 #: Underlying Symbol frxGBPAUD
 msgid "GBP/AUD"
 msgstr "GBP/AUD"
+
+#: Underlying Symbol frxGBPPLN
+msgid "GBP/PLN"
+msgstr "GBP/PLN"
 
 #: Underlying Symbol frxUSDSEK
 msgid "USD/SEK"
@@ -10832,13 +10832,13 @@ msgstr "Safran"
 msgid "Reliance Industries Ltd"
 msgstr "Reliance Industries Ltd"
 
-#: Underlying Symbol JPTE
-msgid "Tokyo Electric Power Co. Inc"
-msgstr "Tokyo Electric Power Co. Inc"
-
 #: Underlying Symbol AUBHP
 msgid "BHP Billiton Ltd"
 msgstr "BHP Billiton Ltd"
+
+#: Underlying Symbol JPTE
+msgid "Tokyo Electric Power Co. Inc"
+msgstr "Tokyo Electric Power Co. Inc"
 
 #: Underlying Symbol JPTM
 msgid "Toyota Motor"
@@ -10860,13 +10860,13 @@ msgstr "BG Group plc"
 msgid "Air Liquide"
 msgstr "Air Liquide"
 
-#: Underlying Symbol UKIAG
-msgid "ICAG (British Airways)"
-msgstr "ICAG (British Airways)"
-
 #: Underlying Symbol NOYAR
 msgid "Yara International"
 msgstr "Yara International"
+
+#: Underlying Symbol UKIAG
+msgid "ICAG (British Airways)"
+msgstr "ICAG (British Airways)"
 
 #: Underlying Symbol DEALV
 msgid "Allianz SE"
@@ -10901,8 +10901,8 @@ msgid "Iberdrola SA"
 msgstr "Iberdrola SA"
 
 #: Underlying Symbol FPSAN
-msgid "Sanofi"
-msgstr "Sanofi"
+msgid "SANOFI"
+msgstr "SANOFI"
 
 #: Underlying Symbol FPSGO
 msgid "Cie de Saint-Gobain"
@@ -10920,13 +10920,13 @@ msgstr "DNB"
 msgid "SoftBank Co."
 msgstr "SoftBank Co."
 
-#: Underlying Symbol FPDG
-msgid "Vinci"
-msgstr "Vinci"
-
 #: Underlying Symbol FPEDF
 msgid "Electricite de France"
 msgstr "Electricite de France"
+
+#: Underlying Symbol FPDG
+msgid "Vinci"
+msgstr "Vinci"
 
 #: Underlying Symbol NOSTL
 msgid "Statoil"
@@ -11028,13 +11028,13 @@ msgstr "ANZ Banking Group Ltd"
 msgid "ASML Holding"
 msgstr "ASML Holding"
 
-#: Underlying Symbol FPKER
-msgid "Kering"
-msgstr "Kering"
-
 #: Underlying Symbol KRSFG
 msgid "Shinhan Financial"
 msgstr "Shinhan Financial"
+
+#: Underlying Symbol FPKER
+msgid "Kering"
+msgstr "Kering"
 
 #: Underlying Symbol UKBARC
 msgid "Barclays plc"
@@ -11072,13 +11072,13 @@ msgstr "Schneider Electric"
 msgid "Vodafone"
 msgstr "Vodafone"
 
-#: Underlying Symbol JPHT
-msgid "Hitachi Ltd"
-msgstr "Hitachi Ltd"
-
 #: Underlying Symbol KRSS
 msgid "Samsung Electronics"
 msgstr "Samsung Electronics"
+
+#: Underlying Symbol JPHT
+msgid "Hitachi Ltd"
+msgstr "Hitachi Ltd"
 
 #: Underlying Symbol USXOM
 msgid "ExxonMobil"
@@ -11117,20 +11117,20 @@ msgid "Carrefour"
 msgstr "Carrefour"
 
 #: Underlying Symbol FPFP
-msgid "Total"
-msgstr "Total"
+msgid "TOTAL"
+msgstr "TOTAL"
 
 #: Underlying Symbol FPCS
 msgid "AXA"
 msgstr "AXA"
 
-#: Underlying Symbol NOTEL
-msgid "Telenor"
-msgstr "Telenor"
-
 #: Underlying Symbol USKO
 msgid "The Coca-Cola Company"
 msgstr "The Coca-Cola Company"
+
+#: Underlying Symbol NOTEL
+msgid "Telenor"
+msgstr "Telenor"
 
 #: Underlying Symbol BBUCB
 msgid "UCB"
@@ -11144,13 +11144,13 @@ msgstr "GlaxoSmithKline plc"
 msgid "Glencore Xstrat"
 msgstr "Glencore Xstrat"
 
-#: Underlying Symbol KRSKH
-msgid "SK Hynix Inc."
-msgstr "SK Hynix Inc."
-
 #: Underlying Symbol UKDGE
 msgid "Diageo plc"
 msgstr "Diageo plc"
+
+#: Underlying Symbol KRSKH
+msgid "SK Hynix Inc."
+msgstr "SK Hynix Inc."
 
 #: Underlying Symbol FPRI
 msgid "Pernod Ricard"
@@ -11285,7 +11285,9 @@ msgid "Random Sun"
 msgstr "Random Sun"
 
 #: Underlying Symbol SYNFCHI
-msgid "French Fast Index"
+#, fuzzy
+#| msgid "French Fast Index"
+msgid "French Smart Index"
 msgstr "French Fast Index"
 
 #: Underlying Symbol SYNN225
@@ -11312,13 +11314,13 @@ msgstr "Smart Index Euro 50"
 msgid "Wall Street Smart Index"
 msgstr "Smart Wall Street Index"
 
-#: Underlying Symbol SYNBFX
-msgid "Belgian Smart Index"
-msgstr "Smart Index Belgian"
-
 #: Underlying Symbol SYNPSI20
 msgid "Portuguese Smart Index"
 msgstr "Smart Index Portugis"
+
+#: Underlying Symbol SYNBFX
+msgid "Belgian Smart Index"
+msgstr "Smart Index Belgian"
 
 #: Underlying Symbol SYNAEX
 msgid "Dutch Smart Index"
@@ -11596,17 +11598,13 @@ msgstr "Opsi vanila biasa"
 msgid "Predict the ending market level relative to the average market prices throughout the course of the contract"
 msgstr "Analisa level akhir market relatif terhadap harga rata-rata market sepanjang periode kontrak"
 
-#: Explanation for contract category Stays Between/Goes Outside
-msgid "Predict whether or not the market will touch either of 2 chosen levels before expiration."
-msgstr "Analisa apakah market akan menyentuh salah satu dari 2 tingkatan yang dipilih sebelum berakhir."
-
 #: Explanation for contract category Touch/No Touch
 msgid "Predict whether or not the market will touch a chosen level before expiration."
 msgstr "Analisa apakah market akan menyentuh tingkat yang dipilih sebelum berakhir."
 
-#: Explanation for contract category Digits
-msgid "Predict the last digit of the market price at expiration."
-msgstr "Menganalisa digit terakhir market pada penutupan."
+#: Explanation for contract category Stays Between/Goes Outside
+msgid "Predict whether or not the market will touch either of 2 chosen levels before expiration."
+msgstr "Analisa apakah market akan menyentuh salah satu dari 2 tingkatan yang dipilih sebelum berakhir."
 
 #: Translation for contract category "callput"
 msgid "Up/Down"
@@ -11615,6 +11613,10 @@ msgstr "Atas/Bawah"
 #: Explanation for contract category Up/Down
 msgid "Predict the ending market level relative to a chosen barrier."
 msgstr "Analisa tingkat akhir market berdasarkan batasan yang dipilih."
+
+#: Explanation for contract category Digits
+msgid "Predict the last digit of the market price at expiration."
+msgstr "Menganalisa digit terakhir market pada penutupan."
 
 #: Translation for contract type "ASIAND"
 msgid "asian down"
@@ -11906,6 +11908,12 @@ msgstr "Hasil %1 <strong>%2</strong> jika %3 <strong>bergerak keluar %7</strong>
 msgid "%1 <strong>%2</strong> payout if %3 <strong>goes outside %7</strong> and <strong>%6</strong> through %5 after %4."
 msgstr "Hasil %1 <strong>%2</strong> jika %3 <strong>bergerak keluar %7</strong> dan <strong>%6</strong> hingga %5 setelah %4."
 
+#~ msgid "Sanofi"
+#~ msgstr "Sanofi"
+
+#~ msgid "Total"
+#~ msgstr "Total"
+
 #~ msgid "A recent (less than 3 months old) scanned copy of your paper utility bill, or your paper bank, credit union, building society, credit, or debit card statement, or passbook"
 #~ msgstr "Salinan terbaru (kurang dari 3 bulan) tagihan utilitas, atau rekening koran, tagihan kartu kredit atau debit atau buku tabungan"
 
@@ -11998,12 +12006,6 @@ msgstr "Hasil %1 <strong>%2</strong> jika %3 <strong>bergerak keluar %7</strong>
 
 #~ msgid "Real Money Account Opening"
 #~ msgstr "Pendaftaran Akun Uang Riil"
-
-#~ msgid "SANOFI"
-#~ msgstr "SANOFI"
-
-#~ msgid "TOTAL"
-#~ msgstr "TOTAL"
 
 #~ msgid "$1 to $100,000 payouts, low-risk to high-leverage, and much more. We offer limitless profit opportunities."
 #~ msgstr "Hasil dari $1 hingga $100,000, resiko rendah hingga keuntungan tinggi dan banyak lagi. Kami menawarkan kesempatan profit tanpa batas."

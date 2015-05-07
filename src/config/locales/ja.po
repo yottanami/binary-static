@@ -1152,7 +1152,7 @@ msgstr "Binary.comにログイン後、API開発者として登録が可能で�
 msgid "After the user authenticates to %1; their browser will be re-directed to your callback handler with a call like this:"
 msgstr "ユーザが%1へ認証した後ユーザのブラウザは、以下のようにあなたのコールバック・ハンドラーへ再接続されます："
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:833
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:850
 msgid "All"
 msgstr "全て"
 
@@ -1183,7 +1183,7 @@ msgstr ""
 msgid "Amount"
 msgstr "金額"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:268
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:271
 msgid "Amount must be a positive number."
 msgstr "ご入力値は正の値である必要があります。"
 
@@ -2163,8 +2163,11 @@ msgstr "お客様はご口座開設時に記入必須項目を全て入力し、
 msgid "Clients registered with Binary (C.R.) S.A. can raise their unresolved disputes with management by submitting an email to complaints@binary.com."
 msgstr "Binary (C.R.) S.A.にご口座を開設されたお客様は、 complaints@binary.comまでご連絡頂くことで当社のマネージメントに苦情を申し立てることができます。"
 
+#. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
+#, fuzzy
+#| msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
+msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
 msgstr "Binary (Europe) Ltdにご口座を開設されたお客様は、 Malta Gaming Authorityに苦情を申し立てることができます。"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
@@ -3439,7 +3442,7 @@ msgid "Forgot Login ID or Password?"
 msgstr "ログインIDまたはパスワードをお忘れの場合"
 
 #. ($underlying->market->translated_display_name)
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:556
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:573
 msgid "Forward starting intraday and daily contracts are available on some %1"
 msgstr "%1の種類によっては、取引時間中の予約トレード、及び日中トレードが可能なものが存在します"
 
@@ -4099,7 +4102,7 @@ msgstr "レンジ内/レンジ外・トレード"
 msgid "In/out trades"
 msgstr "レンジ内/レンジ外・トレード"
 
-#: lib/BOM/Platform/User.pm.tidyup:140 lib/BOM/Platform/User.pm:142
+#: lib/BOM/Platform/User.pm:140 lib/BOM/Platform/User.pm:149
 #, fuzzy
 #| msgid "Incorrect LoginID or password."
 msgid "Incorrect email or password."
@@ -4223,7 +4226,7 @@ msgstr "概要"
 msgid "Invalid Building No./Name"
 msgstr "ビル名または番号が無効です"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:470
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:486
 msgid "Invalid Input"
 msgstr "入力値が不適切です"
 
@@ -4616,8 +4619,7 @@ msgstr "ご入力されたログインID (%1) は存在しません。"
 msgid "Login Trouble"
 msgstr "ログインでお困りの場合"
 
-#: lib/BOM/Platform/Client/Login.pm:43 lib/BOM/Platform/User.pm.tidyup:123
-#: lib/BOM/Platform/User.pm:124
+#: lib/BOM/Platform/Client/Login.pm:43 lib/BOM/Platform/User.pm:124
 msgid "Login to this account has been temporarily disabled due to system maintenance. Please try again in 30 minutes."
 msgstr "申し訳ございませんがシステムメンテナンスのため、この口座へのアクセスは承っておりません。３０分後に改めてお手続きを進めて下さい。"
 
@@ -5189,7 +5191,7 @@ msgstr "１１月"
 msgid "November"
 msgstr "１１月"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:548
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:565
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/Trade.pm:503
 msgid "Now"
 msgstr "Now"
@@ -5599,7 +5601,7 @@ msgstr "アフィリエイト報酬は毎月１５日頃に、ご指定頂いた
 msgid "Payments"
 msgstr "アフィリエイト報酬の支払いについて"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:709
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:726
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "Payout"
 msgstr "払い戻し価格"
@@ -5853,7 +5855,7 @@ msgstr "バイナリーオプションのお取り引きは常に刺激的なも
 msgid "Please select"
 msgstr "選択して下さい"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:282
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/Controller/Bet/PriceBoxParameters.pm:285
 msgid "Please select \"Payout\" or \"Stake\" option."
 msgstr "払い戻し価格、又は購入価格オプションを選択して下さい。"
 
@@ -6444,7 +6446,7 @@ msgstr "ハイ/ロー"
 msgid "Rise/Fall Table"
 msgstr "ハイ/ロー還元率"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:557
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:574
 msgid "Rise/Fall contracts of less than 5 minutes duration are only available when you select \"Now\" as the start time."
 msgstr "Rise/Fallでは開始時間を\"Now\"に指定した場合のみ、５分以下でのトレードが可能です。"
 
@@ -6791,8 +6793,8 @@ msgstr "申し訳ございませんが、このトレードでエラーが発生
 msgid "Sorry, an error occurred"
 msgstr "申し訳ございませんが、エラーが発生しました"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:618
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:644
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:635
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:661
 msgid "Sorry, an error occurred while loading the form. Please contact customer support if this problem persists"
 msgstr "申し訳ございませんが、フォーム読み込み中にエラーが発生しました。状況が改善されない場合はカスタマーサポートまでご連絡下さい"
 
@@ -6910,7 +6912,7 @@ msgstr "申し訳ございませんが、%1件以上のポジションを現在�
 msgid "Sorry, you cannot withdraw."
 msgstr "申し訳ございませんが、ご出金リクエストを承ることができません。"
 
-#: lib/BOM/Platform/User.pm.tidyup:128 lib/BOM/Platform/User.pm:132
+#: lib/BOM/Platform/User.pm:131
 msgid "Sorry, you have already had too many unsuccessful attempts. Please try again in 5 minutes."
 msgstr "所定回数以上、不正なデータを入力されてしまいました。５分後に改めてお手続きを行って下さい。"
 
@@ -6983,7 +6985,7 @@ msgstr "スポット価格"
 msgid "Spread"
 msgstr "Spread"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:713
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:730
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "Stake"
 msgstr "購入価格"
@@ -9044,7 +9046,9 @@ msgstr "We are required by our license to inform you about what happens to funds
 msgid "We could not authenticate your account online. please proceed to the <a href=\"%1\">manual authentication section</a>. If you would like to register additional credit cards, please contact <a class=\"pjaxload\" href=\"%2\">customer support</a>."
 msgstr "お客様のアカウントをオンライン上でアップグレードすることができませんでしたので、<a href=\"%1\">こちらから改めてお手続きをお願いします。</a>もし、他のクレジットカードをご登録されたい場合は、<a class=\"pjaxload\" href=\"%2\">カスタマーサポート</a>までご連絡下さい。"
 
-#: lib/BOM/Product/Contract.pm:1304 lib/BOM/Product/Role/BarrierBuilder.pm:25
+#: lib/BOM/Product/Contract.pm:1304 lib/BOM/Product/Contract/Digitdiff.pm:49
+#: lib/BOM/Product/Contract/Digitmatch.pm:50
+#: lib/BOM/Product/Role/BarrierBuilder.pm:25
 msgid "We could not process this contract at this time."
 msgstr "この時間で当トレードを処理することは不可能でした。"
 
@@ -10499,7 +10503,7 @@ msgstr "秒"
 msgid "starting in"
 msgstr "チャート"
 
-#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:760
+#: /home/git/regentmarkets/bom-app/lib/BOM/View/ContractForm.pm:777
 msgid "ticks"
 msgstr "tick"
 
@@ -10678,25 +10682,25 @@ msgstr "AUD/SGD"
 msgid "EUR/INR"
 msgstr "EUR/INR"
 
-#: Underlying Symbol frxGBPCNY
-msgid "GBP/CNY"
-msgstr "GBP/CNY"
-
 #: Underlying Symbol frxAUDBRL
 msgid "AUD/BRL"
 msgstr "AUD/BRL"
+
+#: Underlying Symbol frxGBPCNY
+msgid "GBP/CNY"
+msgstr "GBP/CNY"
 
 #: Underlying Symbol frxUSDJPY
 msgid "USD/JPY"
 msgstr "USD/JPY"
 
-#: Underlying Symbol frxUSDSGD
-msgid "USD/SGD"
-msgstr "USD/SGD"
-
 #: Underlying Symbol frxGBPBRL
 msgid "GBP/BRL"
 msgstr "GBP/BRL"
+
+#: Underlying Symbol frxUSDSGD
+msgid "USD/SGD"
+msgstr "USD/SGD"
 
 #: Underlying Symbol frxAUDNOK
 msgid "AUD/NOK"
@@ -10742,13 +10746,13 @@ msgstr "EUR/CNY"
 msgid "EUR/BRL"
 msgstr "EUR/BRL"
 
-#: Underlying Symbol frxUSDDKK
-msgid "USD/DKK"
-msgstr "USD/DKK"
-
 #: Underlying Symbol frxNZDUSD
 msgid "NZD/USD"
 msgstr "NZD/USD"
+
+#: Underlying Symbol frxUSDDKK
+msgid "USD/DKK"
+msgstr "USD/DKK"
 
 #: Underlying Symbol frxAUDNZD
 msgid "AUD/NZD"
@@ -10826,13 +10830,13 @@ msgstr "GBP/HKD"
 msgid "GBP/NZD"
 msgstr "GBP/NZD"
 
-#: Underlying Symbol frxUSDPLN
-msgid "USD/PLN"
-msgstr "USD/PLN"
-
 #: Underlying Symbol frxNZDJPY
 msgid "NZD/JPY"
 msgstr "NZD/JPY"
+
+#: Underlying Symbol frxUSDPLN
+msgid "USD/PLN"
+msgstr "USD/PLN"
 
 #: Underlying Symbol frxAUDSEK
 msgid "AUD/SEK"
@@ -10850,13 +10854,13 @@ msgstr "GBP/DKK"
 msgid "EUR/HKD"
 msgstr "EUR/HKD"
 
-#: Underlying Symbol frxGBPPLN
-msgid "GBP/PLN"
-msgstr "GBP/PLN"
-
 #: Underlying Symbol frxGBPAUD
 msgid "GBP/AUD"
 msgstr "GBP/AUD"
+
+#: Underlying Symbol frxGBPPLN
+msgid "GBP/PLN"
+msgstr "GBP/PLN"
 
 #: Underlying Symbol frxUSDSEK
 msgid "USD/SEK"
@@ -11033,13 +11037,13 @@ msgstr ""
 msgid "Reliance Industries Ltd"
 msgstr "Reliance Industries Ltd"
 
-#: Underlying Symbol JPTE
-msgid "Tokyo Electric Power Co. Inc"
-msgstr "東京電力株式会社"
-
 #: Underlying Symbol AUBHP
 msgid "BHP Billiton Ltd"
 msgstr "BHP Billiton Ltd"
+
+#: Underlying Symbol JPTE
+msgid "Tokyo Electric Power Co. Inc"
+msgstr "東京電力株式会社"
 
 #: Underlying Symbol JPTM
 msgid "Toyota Motor"
@@ -11061,13 +11065,13 @@ msgstr "BG Group plc"
 msgid "Air Liquide"
 msgstr ""
 
-#: Underlying Symbol UKIAG
-msgid "ICAG (British Airways)"
-msgstr "ICAG (British Airways)"
-
 #: Underlying Symbol NOYAR
 msgid "Yara International"
 msgstr "Yara International"
+
+#: Underlying Symbol UKIAG
+msgid "ICAG (British Airways)"
+msgstr "ICAG (British Airways)"
 
 #: Underlying Symbol DEALV
 msgid "Allianz SE"
@@ -11103,7 +11107,7 @@ msgid "Iberdrola SA"
 msgstr "Iberdrola SA"
 
 #: Underlying Symbol FPSAN
-msgid "Sanofi"
+msgid "SANOFI"
 msgstr ""
 
 #: Underlying Symbol FPSGO
@@ -11122,12 +11126,12 @@ msgstr "DNB"
 msgid "SoftBank Co."
 msgstr "ソフトバンク株式会社"
 
-#: Underlying Symbol FPDG
-msgid "Vinci"
-msgstr ""
-
 #: Underlying Symbol FPEDF
 msgid "Electricite de France"
+msgstr ""
+
+#: Underlying Symbol FPDG
+msgid "Vinci"
 msgstr ""
 
 #: Underlying Symbol NOSTL
@@ -11240,13 +11244,13 @@ msgstr "ANZ Banking Group Ltd"
 msgid "ASML Holding"
 msgstr "HSBC Holdings plc"
 
-#: Underlying Symbol FPKER
-msgid "Kering"
-msgstr ""
-
 #: Underlying Symbol KRSFG
 msgid "Shinhan Financial"
 msgstr "Shinhan Financial"
+
+#: Underlying Symbol FPKER
+msgid "Kering"
+msgstr ""
 
 #: Underlying Symbol UKBARC
 msgid "Barclays plc"
@@ -11288,13 +11292,13 @@ msgstr "GreeElectric"
 msgid "Vodafone"
 msgstr "Vodafone"
 
-#: Underlying Symbol JPHT
-msgid "Hitachi Ltd"
-msgstr "株式会社日立製作所"
-
 #: Underlying Symbol KRSS
 msgid "Samsung Electronics"
 msgstr "Samsung Electronics"
+
+#: Underlying Symbol JPHT
+msgid "Hitachi Ltd"
+msgstr "株式会社日立製作所"
 
 #: Underlying Symbol USXOM
 msgid "ExxonMobil"
@@ -11333,22 +11337,20 @@ msgid "Carrefour"
 msgstr ""
 
 #: Underlying Symbol FPFP
-#, fuzzy
-#| msgid "Total Cost"
-msgid "Total"
-msgstr "合計金額"
+msgid "TOTAL"
+msgstr ""
 
 #: Underlying Symbol FPCS
 msgid "AXA"
 msgstr ""
 
-#: Underlying Symbol NOTEL
-msgid "Telenor"
-msgstr "Telenor"
-
 #: Underlying Symbol USKO
 msgid "The Coca-Cola Company"
 msgstr "The Coca-Cola Company"
+
+#: Underlying Symbol NOTEL
+msgid "Telenor"
+msgstr "Telenor"
 
 #: Underlying Symbol BBUCB
 msgid "UCB"
@@ -11362,13 +11364,13 @@ msgstr "GlaxoSmithKline plc"
 msgid "Glencore Xstrat"
 msgstr "Glencore Xstrat"
 
-#: Underlying Symbol KRSKH
-msgid "SK Hynix Inc."
-msgstr "SK Hynix Inc."
-
 #: Underlying Symbol UKDGE
 msgid "Diageo plc"
 msgstr "Diageo plc"
+
+#: Underlying Symbol KRSKH
+msgid "SK Hynix Inc."
+msgstr "SK Hynix Inc."
 
 #: Underlying Symbol FPRI
 msgid "Pernod Ricard"
@@ -11509,7 +11511,7 @@ msgstr "ランダム・太陽"
 #: Underlying Symbol SYNFCHI
 #, fuzzy
 #| msgid "French Index"
-msgid "French Fast Index"
+msgid "French Smart Index"
 msgstr "French Index"
 
 #: Underlying Symbol SYNN225
@@ -11544,17 +11546,17 @@ msgstr "Euro 50 Index"
 msgid "Wall Street Smart Index"
 msgstr "Wall Street Index"
 
-#: Underlying Symbol SYNBFX
-#, fuzzy
-#| msgid "Belgian Index"
-msgid "Belgian Smart Index"
-msgstr "Belgian Index"
-
 #: Underlying Symbol SYNPSI20
 #, fuzzy
 #| msgid "Portuguese Index"
 msgid "Portuguese Smart Index"
 msgstr "Portuguese Index"
+
+#: Underlying Symbol SYNBFX
+#, fuzzy
+#| msgid "Belgian Index"
+msgid "Belgian Smart Index"
+msgstr "Belgian Index"
 
 # Start of extra_translations
 #: Underlying Symbol SYNAEX
@@ -11851,17 +11853,13 @@ msgstr "プレーン・バニラ・オプション"
 msgid "Predict the ending market level relative to the average market prices throughout the course of the contract"
 msgstr "Predict the ending market level relative to the average market prices throughout the course of the contract"
 
-#: Explanation for contract category Stays Between/Goes Outside
-msgid "Predict whether or not the market will touch either of 2 chosen levels before expiration."
-msgstr "トレード終了時までの市場価格を上下に設定したバリア値にて予想します。"
-
 #: Explanation for contract category Touch/No Touch
 msgid "Predict whether or not the market will touch a chosen level before expiration."
 msgstr "市場価格が取引終了までに指定した価格にタッチするかどうかを予想するトレードです。"
 
-#: Explanation for contract category Digits
-msgid "Predict the last digit of the market price at expiration."
-msgstr "Predict the last digit of the market price at expiration."
+#: Explanation for contract category Stays Between/Goes Outside
+msgid "Predict whether or not the market will touch either of 2 chosen levels before expiration."
+msgstr "トレード終了時までの市場価格を上下に設定したバリア値にて予想します。"
 
 #: Translation for contract category "callput"
 #, fuzzy
@@ -11872,6 +11870,10 @@ msgstr "ダブル"
 #: Explanation for contract category Up/Down
 msgid "Predict the ending market level relative to a chosen barrier."
 msgstr "トレード終了時の市場価格を設定したバリア値にて予想します。"
+
+#: Explanation for contract category Digits
+msgid "Predict the last digit of the market price at expiration."
+msgstr "Predict the last digit of the market price at expiration."
 
 #: Translation for contract type "ASIAND"
 msgid "asian down"
@@ -12174,6 +12176,11 @@ msgstr "%3が%5で<strong>%7</strong>と<strong>%6の範囲外に存在した場
 #| msgid "%1 <strong>%2</strong> payout if %3 <strong>goes outside %7</strong> and <strong>%6</strong> by %5 after %4."
 msgid "%1 <strong>%2</strong> payout if %3 <strong>goes outside %7</strong> and <strong>%6</strong> through %5 after %4."
 msgstr "%3が%4後の%5までに<strong>%7</strong>と<strong>%6の範囲外に存在した場合</strong>、%1 <strong>%2</strong>が払い戻されます。"
+
+#, fuzzy
+#~| msgid "Total Cost"
+#~ msgid "Total"
+#~ msgstr "合計金額"
 
 #~ msgid "A recent (less than 3 months old) scanned copy of your paper utility bill, or your paper bank, credit union, building society, credit, or debit card statement, or passbook"
 #~ msgstr "現住所を明示している公共料金の支払い通知票（郵送されたもの、かつ発行３ヶ月以内）、銀行の残高証明（書面）、信用組合、住宅組合、またはクレジット・デビットカードのご利用明細、または通帳のスキャン"
