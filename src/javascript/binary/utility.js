@@ -444,10 +444,14 @@ function attach_tabs() {
 function initTabs() {
 
     function updateTabs($tabs) {
+
         $tabs.each(function() {
             var $tab = $(this);
-            var href = $tab.find('a').attr('href');
-            $(href).toggle($tab.hasClass('active'));
+                href = $tab.find('a').attr('href');
+            try {
+                $(href).toggle($tab.hasClass('active'));
+            }
+            catch(err) {}
         });
     }
 

@@ -36,19 +36,19 @@
 }
 
 #risefall {
-  background-image: url("../images/pages/contract_guide/rise-fall.svg");
+    background-image: url("../images/icons/trade-rise-fall.svg");
 }
 
 #higherlower {
-  background-image: url("../images/pages/contract_guide/higher-lower.svg");
+    background-image: url("../images/icons/pages/contract_guide/higher-lower.svg");
 }
 
 #touchnotouch {
-  background-image: url("../images/pages/contract_guide/touch-notouch.svg");
+    background-image: url("../images/icons/trade-touch-notouch.svg");
 }
 
 #inout {
-  background-image: url("../images/pages/contract_guide/in-out.svg");
+    background-image: url("../images/icons/trade-in-out.svg");
 }
 
 #strike_type, #amount, #expiry_step, #from_expiry, #pricingtable_bet_type {
@@ -678,7 +678,7 @@ div#price_table_notes {
 .signup-content {
     #content {
         width: 30rem;
-    }    
+    }
     .form-logo {
         width: 7rem;
     }
