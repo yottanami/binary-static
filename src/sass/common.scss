@@ -291,6 +291,10 @@ a.close {
 i {
     color: $COLOR_BRAND_ORANGE;
 }
-p.media {
+p.media, div.media {
     text-align: center;
+    margin-bottom: 1rem;
+}
+strong {
+    font-weight: bold;
 }

@@ -12,7 +12,7 @@
 <p>[% l("No open positions.") %]</p>
 [% ELSE %]
 
-<table>
+<table id="portfolio-table">
     <thead>
         <tr>
             <th>[% l('Ref.') %]</th>
@@ -36,7 +36,6 @@
                 <td>[% open_bet.buy_id %]</td>
                 <td>[% contract_info.longcode %]</td>
                 <td>[% currency %] <strong>[% to_monetary_number_format(open_bet.buy_price) %]</strong></td>
-                <td>[% l('Indicative') %] :</td>
                 <td>
                     [% IF contract_info.indicative_price.defined %]
                         [% currency %] [% to_monetary_number_format(contract_info.indicative_price) %]
@@ -50,10 +49,11 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>[% l("The cost of your open positions") %]</th>
+            <th></th>
+            <th></th>
             <th>[% currency %] [% to_monetary_number_format(total_in) %]</th>
-            <th>[% l("The value of your open positions") %] :
             <th>[% currency %] [% to_monetary_number_format(total_value_now) %]</th>
+            <th></th>
         </tr>
     </tfoot>
 </table>
