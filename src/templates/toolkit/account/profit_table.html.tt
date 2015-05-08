@@ -4,16 +4,16 @@
     <a class="pjaxload button" href="[% request.url_for('/user/profit_table', { after => sold_contracts.first.purchase_time }) %]"><span>&laquo;[% l('Newer') %]</span></a>
     [% END %]
 
-    <span [% IF position != 'top' %] style="visibility:hidden" [% END %]>
+    <p [% IF position != 'top' %] style="visibility:hidden" [% END %]>
         <form action="[% request.url_for('/user/profit_table') %]">
             <label for='before' class='left-aligned'>[% l('Jump to') %]</label>
-            <input id='profit-table-date' class='has-date-picker' name='before' value='[% before %]'/>
+            <input id='profit-table-date' class='has-date-picker' name='before' value='[% before %]' type="text"/>
             <input type='hidden' name='jump_to' value='1'/>
             <span id="submit-date" class="invisible">
                 <button class="button">[% l('Go') %]</button>
             </span>
         </form>
-    </span>
+    </p>
 
     [% IF has_older %]
     <a class="pjaxload button" href="[% request.url_for('/user/profit_table', { before => sold_contracts.last.purchase_time }) %]"><span>[% l('Older') %]&raquo;</span></a>
@@ -30,28 +30,15 @@
 [%- END -%]
 
 [%- MACRO display_contract(contract) BLOCK -%]
-    <table>
-        <thead>
-            <tr>
-                <th>[% contract.purchase_date.datetime %]</th>
-                <th>[% contract.txn_id %]</th>
-                <th>[% l('Purchase Date'); %]:</th>
-                <th>[% contract.purchase_date.datetime %]</th>
-                <th>[% l('Sale Date'); %]:</th>
-                <th>[% contract.sale_date.datetime %]</th>
-            </tr>
-        </thead>
-        <div>[% bet_info(contract, currency).description %]</div>
-            <div>[% l('Purchase Price') %]:</div>
-            <div>[% to_monetary_number_format(contract.buy_price) %]</div>
-            <div>[% contract.sale_date.datetime %]</div>
-            <div>[% l('Sale Price') %]:
-            </div>
-            <div>[% to_monetary_number_format(contract.sell_price) %]</div>
-            <div>[% l('Profit/Loss') %]:</div>
-            <div>[% display_amount(contract.sell_price - contract.buy_price) %]</div>
-        </div>
-    </table>
+    <tr>
+        <td>[% contract.purchase_date.datetime %]</td>
+        <td>[% contract.txn_id %]</td>
+        <td>[% bet_info(contract, currency).description %]</td>
+        <td>[% to_monetary_number_format(contract.buy_price) %]</td>
+        <td>[% contract.sale_date.datetime %]</td>
+        <td>[% to_monetary_number_format(contract.sell_price) %]</td>
+        <td>[% display_amount(contract.sell_price - contract.buy_price) %]</td>
+    </tr>
 [%- END -%]
 
 <h1>[% l('Profit Table') %]</h1><br>
@@ -78,12 +65,14 @@
             [% display_contract(contract) %]
             [% total_pl = total_pl + (contract.sell_price - contract.buy_price) %]
         [% END %]
-            <tr>
-                <td>[% sold_contracts.first.purchase_date.date_yyyymmdd %] - [% sold_contracts.last.purchase_date.date_yyyymmdd %]</td>
-                <td>[% l("Total Profit/Loss") %]</td>
-                <td>[% display_amount(total_pl) %]</td>
-            </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">[% sold_contracts.first.purchase_date.date_yyyymmdd %] - [% sold_contracts.last.purchase_date.date_yyyymmdd %]</th>
+                <th>[% l("Total Profit/Loss") %]</td>
+                <th>[% display_amount(total_pl) %]</th>
+            </tr>
+        </tfoot>
     </table>
 [% END %]
 [% pagination_links(position='bottom') %]
