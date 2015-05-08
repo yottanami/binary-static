@@ -92,7 +92,6 @@ textarea {
 }
 ul,
 ol {
-    margin: 0;
     li {
         line-height: 1.4em;
     }
@@ -100,6 +99,9 @@ ol {
 ol li {
     list-style-type: decimal;
     list-style-image: none;
+}
+ul {
+    margin: 0 0 1rem 0;
 }
 ol {
     margin: 0 0 1rem 1.5rem;
@@ -288,4 +290,7 @@ a.close {
 }
 i {
     color: $COLOR_BRAND_ORANGE;
+}
+p.media {
+    text-align: center;
 }
