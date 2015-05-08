@@ -1,6 +1,7 @@
 .get-started-content {
+    flex: 3;
     .sections {
-        flex: 3;
+        display: flex;
         flex-wrap: wrap;
         align-content: space-between;
     }
@@ -12,13 +13,8 @@
     }
     img {
         height: 4rem;
-        padding: .5rem;
+        padding: 0.5rem;
         border: 2px solid #eee;
         border-radius: $BORDER-RADIUS;
     }
-}
-
-.sidebar-right div {
-    margin-top: 1rem;
-    text-align: center;
 }
