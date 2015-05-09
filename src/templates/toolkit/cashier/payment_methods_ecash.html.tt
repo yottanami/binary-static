@@ -30,17 +30,17 @@
                 USD
             </td>
             <td>
-                5 - 1,000
+                5&ndash;1,000
             </td>
             <td>
-                5 - 1,000
+                5&ndash;1,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
                 <br> [% l('Withdraw: [_1] working day', 1) %]
             </td>
         </tr>
-        
+
         <tr>
             <td>
                 <img id="fastpay"></div>
@@ -49,10 +49,10 @@
                 USD
             </td>
             <td>
-                5 - 10,000
+                5&ndash;10,000
             </td>
             <td>
-                5 - 10,000
+                5&ndash;10,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -68,10 +68,10 @@
                 USD
             </td>
             <td>
-                5 - 10,000
+                5&ndash;10,000
             </td>
             <td>
-                5 - 10,000
+                5&ndash;10,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -88,10 +88,10 @@
                 <br> EUR AUD
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -108,10 +108,10 @@
                 <br> EUR AUD
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -127,10 +127,10 @@
                 USD EUR
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -146,10 +146,10 @@
                 USD EUR
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
-                5 - 20,000
+                5&ndash;20,000
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -166,14 +166,14 @@
                 <br> EUR AUD
             </td>
             <td>
-                10 - 300 (USD)
-                <br> 10 - 250 (EUR)
-                <br> 10 - 200 (GBP)
+                10&ndash;300 (USD)
+                <br> 10&ndash;250 (EUR)
+                <br> 10&ndash;200 (GBP)
             </td>
             <td>
-                10 - 300 (USD)
-                <br> 10 - 250 (EUR)
-                <br> 10 - 200 (GBP)
+                10&ndash;300 (USD)
+                <br> 10&ndash;250 (EUR)
+                <br> 10&ndash;200 (GBP)
             </td>
             <td>
                 [% l('Deposit: Instant')%]
@@ -189,12 +189,12 @@
                 USD EUR
             </td>
             <td>
-                5 - 200 (USD)
-                <br> 5 - 150 (EUR)
+                5&ndash;200 (USD)
+                <br> 5&ndash;150 (EUR)
             </td>
             <td>
-                5 - 200 (USD)
-                <br> 5 - 150 (EUR)
+                5&ndash;200 (USD)
+                <br> 5&ndash;150 (EUR)
             </td>
             <td>
                 [% l('Deposit: [_1] working day', 1) %]
@@ -210,7 +210,7 @@
                 USD EUR
             </td>
             <td>
-                25 - 640
+                25&ndash;640
             </td>
             <td>
             </td>
@@ -227,7 +227,7 @@
                 USD EUR
             </td>
             <td>
-                5 - 1,000
+                5&ndash;1,000
             </td>
             <td>
             </td>

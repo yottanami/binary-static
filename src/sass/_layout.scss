@@ -207,3 +207,10 @@ body {
     display: flex;
     padding: 1rem;
 }
+
+#client-logged-in {
+    position: relative;
+    .nav2nd {
+        right: 0;
+    }
+}
