@@ -23,4 +23,7 @@
     <li>
         <a class="pjaxload" href="[% request.url_for('/charting/livechart') %]" [% target %]>[% l("Live Charts") %]</a>
     </li>
+    <li>
+        <a class="pjaxload" href="[% request.url_for('//highcharts.binary.com') %]" [% target %]>[% l("HighCharts") %]</a>
+    </li>
 </ul>
