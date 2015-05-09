@@ -2,7 +2,7 @@
 var trade_event_bindings = {};
 
 function contract_guide_popup() {
-    $('#bet_guide_content').on('click', 'a.bet_demo_link', function (e){
+    $('.contract-guide-content').on('click', '.bet_demo_link', function (e){
         e.preventDefault();
         var ip = new InPagePopup();
         ip.ajax_conf = { url: this.href, data: 'ajax_only=1' };

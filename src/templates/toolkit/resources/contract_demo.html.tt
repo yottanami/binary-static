@@ -1,6 +1,6 @@
 [% USE String %]
-<div class="has-tabs" id="contract_demo_container">
-    <ul class="drag-handle">
+<div id="contract_demo_container">
+    <ul role="segmented">
         [% FOREACH bet_type_demo IN bet_type_demos %]
             <li>
                 <a href="#new-tab-[% loop.index + 1 %]">[% bet_type_demo.name %]</a>
