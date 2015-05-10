@@ -69,7 +69,8 @@ hgroup {
 select,
 input,
 button,
-textarea {
+textarea,
+.inputlike {
     background: white;
     border: 1px solid $COLOR_GRAY;
     padding: 2px 3px;
