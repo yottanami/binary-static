@@ -22,7 +22,7 @@
             <label for="pricingtable_currency">[% l('Payout Currency') %]:</label>
             <select id="pricingtable_currency" name="currency">
                 [% FOREACH currency = currencies %]
-                <option value="[% currency %]" [% IF currency == selected_currency %]selected="selected"[% END %]> [% currency %] </option>
+                <option value="[% currency %]" [% IF currency == selected_currency %]selected[% END %]> [% currency %] </option>
                 [% END %]
             </select>
         </div>
@@ -35,27 +35,13 @@
         <div id="lower_strike" [% IF double_barrier == 0 %] style="display:none;" [% END %]>
             <label for="low_strike">[% l('Low barrier') %]:</label>
             <input size="5" type="text" id="low_strike" name="low_strike" [% IF selected_low_strike %] value="[% selected_low_strike %]" [% END %] />
-            <span style="padding-left:10px;">([% l('Absolute barrier') %])</span>
+            <span style="padding-left:.5rem">([% l('Absolute barrier') %])</span>
         </div>
 
         <div>
             <label>[% l('Horizontal') %]:</label>
             <label id="strike_label" [% IF double_barrier == 1 %] style="display:none;" [% END %]>[% l('Barrier') %]</label>
             <label id="high_strike_label" [% IF double_barrier == 0 %] style="display:none;" [% END %]>[% l('High barrier') %]</label>
-        </div>
-    </div>
-
-    <div class="row">
-        <div>
-            <label for="strike_step">[% l('Step') %] (%):</label>
-            <input size="13" type="text" name="strike_step" id="strike_step" [% IF selected_strike_step %] value=[% selected_strike_step %] [% END %] />
-            <select id="strike_type" name="strike_type">
-                [% FOREACH strike_type = strike_types %]
-                <option value="[% strike_type.value %]" [% IF strike_type.value == selected_strike_type %] selected="selected" [% END %]>
-                    [% strike_type.text %]
-                </option>
-                [% END %]
-            </select>
         </div>
 
         <div>
@@ -80,6 +66,20 @@
         <div>
             <label for="from_expiry" id="from_expiry_label">[% l('From') %]:</label>
             <input size="9" type="text" id="from_expiry" name="from_expiry" [% IF selected_from_expiry %] value=[% selected_from_expiry %] [% END %] />
+        </div>        
+
+        <div>
+            <label for="strike_step">[% l('Step') %] (%):</label>
+            <div class="row">
+                <input size="13" type="text" name="strike_step" id="strike_step" [% IF selected_strike_step %] value=[% selected_strike_step %] [% END %] />
+                <select id="strike_type" name="strike_type">
+                    [% FOREACH strike_type = strike_types %]
+                    <option value="[% strike_type.value %]" [% IF strike_type.value == selected_strike_type %] selected="selected" [% END %]>
+                        [% strike_type.text %]
+                    </option>
+                    [% END %]
+                </select>
+            </div>
         </div>
     </div>
 

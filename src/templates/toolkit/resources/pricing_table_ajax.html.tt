@@ -36,19 +36,19 @@
 </div>
 [% END %]
 
-  <div id="pricing_table_tabs" class="has-tabs">
-       <ul>
-          <li>
+<div id="pricing_table_tabs" class="has-tabs">
+    <ul>
+        <li>
             <a href="#straight_prices">[% names.straight %]</a>
-          </li>
-          <li>
+        </li>
+        <li>
             <a href="#opposite_prices">[% names.opposite %]</a>
-          </li>
-       </ul>
-       <div id='straight_prices'>
-            [% PROCESS price_tab tabid='straight' %]
-       </div>
-       <div id='opposite_prices'>
-           [% PROCESS price_tab tabid='opposite' %]
-       </div>
-  </div>
+        </li>
+   </ul>
+   <div id='straight_prices'>
+        [% PROCESS price_tab tabid='straight' %]
+   </div>
+   <div id='opposite_prices'>
+       [% PROCESS price_tab tabid='opposite' %]
+   </div>
+</div>

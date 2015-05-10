@@ -63,15 +63,6 @@
   display: none;
 }
 
-#account_balance td {
-  text-align: right;
-  padding: 0;
-}
-
-#account_balance .currency {
-  padding: 0 2px;
-}
-
 #std_loading_img {
   margin: 0 auto;
   text-align: center;
@@ -106,7 +97,7 @@
     text-align: center;
 }
 
-#content .paging-navigation {
+.paging-navigation {
     .paging-links {
         display: inline-block;
         float: right;
@@ -119,22 +110,6 @@
     }
 }
 
-/* portfolio */
-.portfolio-header-margin {
-    margin-bottom: 20px;
-}
-
-.portfolio-currency-converter {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.button-menu {
-  margin: 5px 0;
-}
-
 /* Light chart */
 #form_chart_director fieldset {
     position: relative;
@@ -143,34 +118,28 @@
         background: none;
         font-size: 0.9em;
         border: none;
-        ul {
-            li {
-                float: left;
-                list-style-image: none;
-                list-style-position: inherit;
-                label.button {
-                    width: auto;
-                    .button {
-                        background: transparent;
-                        border: none;
-                        border-bottom: 2px solid $COLOR_GRAY_SHADE;
-                        border-radius: 0;
-                        color: $COLOR_TEXT;
-                        font-weight: normal;
-                        &.disabled {
-                            color: $COLOR_BRAND_ORANGE;
-                            font-weight: bold;
-                            border-bottom: 4px solid $COLOR_BRAND_ORANGE;
-                        }
+        li {
+            float: left;
+            list-style-image: none;
+            list-style-position: inherit;
+            label.button {
+                width: auto;
+                .button {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 2px solid $COLOR_GRAY_SHADE;
+                    border-radius: 0;
+                    color: $COLOR_TEXT;
+                    font-weight: normal;
+                    &.disabled {
+                        color: $COLOR_BRAND_ORANGE;
+                        font-weight: bold;
+                        border-bottom: 4px solid $COLOR_BRAND_ORANGE;
                     }
                 }
             }
         }
     }
-}
-
-#form_chart_director h5 {
-  padding: 8px;
 }
 
 #form_chart_director {
@@ -681,5 +650,19 @@ div#price_table_notes {
 .contract-guide-content {
     img {
         height: 5rem;
+    }
+}
+.pricing-table-content {
+    label {
+        display: block;
+    }
+    input, select {
+        width: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .row > div {
+        min-width: 20%;
     }
 }

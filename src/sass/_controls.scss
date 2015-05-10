@@ -54,3 +54,8 @@ button:disabled,
     color: white !important;
     background: $COLOR_BRAND_ORANGE !important;
 }
+.ui-widget-header {
+    border: none;
+    background: none;
+    font-weight: normal;
+}
