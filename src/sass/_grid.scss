@@ -1,4 +1,4 @@
-.row {    
+.row {
     display: flex;
     //padding: 0 .5rem;
     //margin: 0 -1rem 1rem -1rem;
@@ -12,4 +12,10 @@
 }
 .col.q {
     flex: .33333333;
+}
+.col.f2 {
+    flex: 2;
+}
+.col.f3 {
+    flex: 3;
 }
