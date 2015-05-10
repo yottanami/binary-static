@@ -10,11 +10,42 @@
         flex: 1;
         padding-bottom: 2rem;
         text-align: center;
+        min-width: 33%;
+        img {
+            height: 100%;
+        }
     }
-    img {
-        height: 4rem;
-        padding: 0.5rem;
-        border: 2px solid #eee;
-        border-radius: $BORDER-RADIUS;
+}
+.baloon {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    padding: 1rem;
+    margin: 0 auto 1rem;
+    border: 2px solid #eee;
+    border-radius: $BORDER-RADIUS;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom: 0;
+    }
+    /* Stroke */
+    &:before {
+        bottom: -15px;
+        left: 37px;
+        border-top-color: #eee;
+        border-width: 15px;
+    }
+    /* Fill */
+    &:after {
+        bottom: -12px;
+        left: 40px;
+        border-top-color: white;
+        border-width: 12px;
     }
 }
