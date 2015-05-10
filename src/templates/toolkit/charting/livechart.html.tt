@@ -1,49 +1,50 @@
-    <h1>[% l('Live charts') %]</h1>
-    <form>
+<h1>[% l('Live charts') %]</h1>
+<form>
+    <div class="row">
         <div>
-            <label for='market'>[% l("Market:") %]</label>
-            <select id="market_select" name="market"></select>
-        </span>
-        <div id="instrument_span">
-            <label for='instrument'>[% l("Instrument:") %]</label>
-            <select id="instrument_select" name="instrument"></select>
-
+            <p>
+                <label for='market'>[% l("Market:") %]</label>
+                <select id="market_select" name="market"></select>
+            </p>
+            <p id="instrument_span">
+                <label for='instrument'>[% l("Instrument:") %]</label>
+                <select id="instrument_select" name="instrument"></select>
+            </p>
         </div>
         <div>
-            <a class="button" id="live_charts_show_extended_options" href="">[% l("Show extended options") %]</a>
+            <p>
+                <label for="live_charts_from_date">[% l("From:") %]</label>
+                <span class="row">
+                    <input type="text" size="11" id="live_charts_from_date" class="live_charts_date_time" />
+                    <input type="text" size="9" id="live_charts_from_time" class="live_charts_date_time" />
+                </span>
+            </p>
+            <p>
+                <label for="live_charts_to_date">[% l("To:") %]</label>
+                <span class="row">
+                    <input type="text" size="11" id="live_charts_to_date" class="live_charts_date_time" />
+                    <input type="text" size="9" id="live_charts_to_time" class="live_charts_date_time" />
+                </span>
+            </p>
         </div>
         <div>
-            [% l("From:") %]
-            <input type="text" size="11" id="live_charts_from_date" class="live_charts_date_time" />
-            <input type="text" size="9" id="live_charts_from_time" class="live_charts_date_time" />
+            <p>
+                <label for="live_charts_high_barrier">[% l("High barrier") %]</label>
+                <input type="number" size="11" id="live_charts_high_barrier" class="live_charts_clear_on_update" />
+            </p>
+            <p>
+                <label for="live_charts_low_barrier">[% l("Low barrier") %]</label>
+                <input type="number" size="11" id="live_charts_low_barrier" class="live_charts_clear_on_update" />
+            </p>
         </div>
-        <div>
-            [% l("To:") %]
-            <input type="text" size="11" id="live_charts_to_date" class="live_charts_date_time" />
-            <input type="text" size="9" id="live_charts_to_time" class="live_charts_date_time" />
-        </div>
-        <div>
-            <button id="live_charts_show_interval" title="[% l("Show chart for the given dates") %]">[% l("Show") %]</button>
-        </div>
-    </form>
-    <div id="live_chart_extended_options">
-        <form>
-            <div>
-                [% l("High barrier") %]
-                <input type="text" size="11" id="live_charts_high_barrier" class="live_charts_clear_on_update" />
-            </div>
-            <div>
-                [% l("Low barrier") %]
-                <input type="text" size="11" id="live_charts_low_barrier" class="live_charts_clear_on_update" />
-            </div>
-            <div>
-                <a href="" id="live_charts_show_spot">[% l("Show last spot") %]</a>
-                <a href="" id="live_charts_hide_spot" disabled="disabled">[% l("Hide last spot") %]</a>
-            </div>
-        </form>
     </div>
-    [% INCLUDE 'charting/livechart_duration.html.tt' %]
-</div>
+    <p>
+        <button id="live_charts_show_interval" title="[% l("Show chart for the given dates") %]">[% l("Update") %]</button>
+        <a class="button" href="" id="live_charts_show_spot">[% l("Show last spot") %]</a>
+        <a class="button" href="" id="live_charts_hide_spot" disabled="disabled">[% l("Hide last spot") %]</a>
+    </p>
+</form>
+[% INCLUDE 'charting/livechart_duration.html.tt' %]
 
 <div class="chart-notice">
     <div class='notice' id="delayed_feed_notice">
