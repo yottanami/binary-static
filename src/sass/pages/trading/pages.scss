@@ -16,9 +16,8 @@
     overflow: auto;
   }
   ul.not-li {
+      color: $COLOR_TEXT;
       display: block;
-      height: auto;
-      margin: 0 0 0 0.7em;
       background: none;
       border: 0;
       line-height: 1em;
@@ -111,45 +110,10 @@
 }
 
 /* Light chart */
-#form_chart_director fieldset {
-    position: relative;
-    &#chart_compare_underlying,
-    &#chart_period {
-        background: none;
-        font-size: 0.9em;
-        border: none;
-        li {
-            float: left;
-            list-style-image: none;
-            list-style-position: inherit;
-            label.button {
-                width: auto;
-                .button {
-                    background: transparent;
-                    border: none;
-                    border-bottom: 2px solid $COLOR_GRAY_SHADE;
-                    border-radius: 0;
-                    color: $COLOR_TEXT;
-                    font-weight: normal;
-                    &.disabled {
-                        color: $COLOR_BRAND_ORANGE;
-                        font-weight: bold;
-                        border-bottom: 4px solid $COLOR_BRAND_ORANGE;
-                    }
-                }
-            }
-        }
-    }
-}
 
 #form_chart_director {
     ul.tm-ul {
-      margin:0;
         li.tm-li {
-            margin: 0;
-            margin-right: 0.2em;
-            font-size:85%;
-            padding: 0;
             a.tm-a {
                 padding: 0 1em;
                 display: block;
@@ -271,9 +235,6 @@
 #chart_period {
   z-index: 2;
   padding-bottom: 25px;
-  li {
-    margin-right: 10px;
-  }
 }
 
 #chart_properties label {
