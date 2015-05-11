@@ -37,6 +37,7 @@
         <td>[% contract.sale_date.datetime %]</td>
         <td>[% to_monetary_number_format(contract.sell_price) %]</td>
         <td>[% display_amount(contract.sell_price - contract.buy_price) %]</td>
+        <td>[% contract_info.analyse_link %]</td>
     </tr>
 [%- END -%]
 
@@ -67,8 +68,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="5">[% sold_contracts.first.purchase_date.date_yyyymmdd %] - [% sold_contracts.last.purchase_date.date_yyyymmdd %]</th>
-                <th>[% l("Total Profit/Loss") %]</td>
+                <th colspan="3">[% sold_contracts.first.purchase_date.date_yyyymmdd %] - [% sold_contracts.last.purchase_date.date_yyyymmdd %]</th>
+                <th colspan="3">[% l("Total Profit/Loss") %]</td>
                 <th>[% display_amount(total_pl) %]</th>
             </tr>
         </tfoot>
