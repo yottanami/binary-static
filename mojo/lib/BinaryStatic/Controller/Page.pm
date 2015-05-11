@@ -72,7 +72,6 @@ sub haml {
 
         'home5' => ['home5/index', 'full_width', '', 1],
 
-
         'ticker' => ['home/ticker', ''],
 
         'why-us' => ['static/why_us', 'full_width'],
@@ -103,6 +102,8 @@ sub haml {
         'get-started/random-markets' => ['get_started/random_markets', 'full_width'],
 
         'login' => ['home/login', $c->layout, '', 1],
+
+        'signup' => ['home/signup', 'full_width', '', 1],
 
         'not_found' => ['not_found', '', 404],
         'exception' => ['exception', 'exception', 500]

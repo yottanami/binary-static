@@ -105,6 +105,9 @@ sub startup {
     $r->post('/login')->to('page#login');
     $r->get('/logout')->to('page#logout');
 
+    $r->get('/signup')->to('page#haml')->name('signup');
+    $r->post('/signup')->to('page#signup');
+
     $r->get('/user/open_account')->to('page#toolkit');
     $r->get('/affiliate/signup')->to('page#toolkit')->name('affiliate-signup');
     $r->get('/resources/pricing_table')->to('page#toolkit');
