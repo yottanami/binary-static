@@ -14,7 +14,7 @@
         [% longcode %]
     </div>
 
-    <div id='confirmation_table' class='grd-parent grd-grid-12 grd-row-padding'>
+    <div id='confirmation_table'>
         <span class="grd-grid-4 grd-no-col-padding standin">
             <span class="grd-grid-12 grd-no-col-padding standin">[% l('Potential Payout') %]</span>
             <span class="grd-grid-12 grd-with-top-padding standin">[% payout %]</span>
@@ -37,7 +37,7 @@
         </span>
         [% END %]
     </div>
-    <div id='contract-outcome-details' class="grd-row-padding" style="display:none">
+    <div id='contract-outcome-details' style="display:none">
         <span class="grd-grid-4 grd-no-col-padding standin">
             <span class="grd-grid-12 grd-no-col-padding standin">[% l('Buy Price') %]</span>
             <span id="contract-outcome-buyprice" class="grd-grid-12 grd-with-top-padding standin">[% price %]</span>

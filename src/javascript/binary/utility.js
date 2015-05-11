@@ -385,13 +385,7 @@ function attach_inpage_popup(element) {
  */
 
 function get_container_width() {
-    var width = 960;
-    if ($('.chart_holder').length > 0) {
-        width = $('.chart_holder').width();
-    } else {
-        width = $('.grd-container').width();
-    }
-    return width;
+    return $('.chart_holder').length > 0 ? $('.chart_holder') : $('#content').width();
 }
 
 /**

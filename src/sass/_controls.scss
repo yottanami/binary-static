@@ -37,7 +37,9 @@ button:disabled,
     background: $COLOR_LIGHT_GRAY;
 }
 
-
+.ui-datepicker {
+    background: white;
+}
 .ui-datepicker-calendar {
     thead, tbody, tr, td, th {
         border: none;

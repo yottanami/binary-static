@@ -1,7 +1,6 @@
 <div id="bet_container">
 
     [% INCLUDE bet/markets.html.tt %]
-
     <div id="gmt-clock"></div>
 
     <div id="bet_container_inner">
