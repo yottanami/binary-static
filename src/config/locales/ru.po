@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: BOM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-05-05 14:25+0200\n"
+"PO-Revision-Date: 2015-05-07 14:06+0200\n"
 "Last-Translator: olga borg <olga@binary.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/binary/static/ru/>\n"
 "Language: ru\n"
@@ -242,7 +242,7 @@ msgid "%1 provides you with the opportunity to either self-exclude or <a href=\"
 msgstr "%1 предоставляет Вам возможность временного самоисключения с сайта или <a href=\"%2\">установки лимитов на свою активность</a>. Вы также можете <a href=\"%3\">cвязаться с нами</a>, чтобы мы установили Ваши лимиты по телефону, чату или электронной почте. Доступные опции установления лимитов:"
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:951
+#: lib/BOM/Product/Transaction.pm:966
 msgid "%1 transactions may not be performed with this account."
 msgstr "Транзакции %1 не могут производиться на данном счету."
 
@@ -890,7 +890,7 @@ msgstr "Бинарный опцион - это опцион с фиксиров�
 msgid "A derivative is a financial instrument whose value is determined by reference to an underlying market. Derivatives are commonly traded in the inter-bank market, and binaries are one of the simplest forms of derivatives."
 msgstr "Производные - это финансовые инструменты, стоимость которых определяется отношением к конкретному рынку. На производных (деривативах) обычно торгуют в межбанковской системе, а бинарные опционы являются самой простой формой производных."
 
-#: lib/BOM/Product/Transaction.pm:506 lib/BOM/Product/Transaction.pm:620
+#: lib/BOM/Product/Transaction.pm:514 lib/BOM/Product/Transaction.pm:631
 msgid "A general error has occurred."
 msgstr "Произошла ошибка."
 
@@ -995,7 +995,7 @@ msgid "Access to your personal data is strictly prohibited with the exception of
 msgstr "Доступ к персональным данным строго запрещено, за исключением ключевого персонала Компании и только по мере необходимости в выполнении ими своих обязанностей."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:131
+#: /home/git/regentmarkets/bom-app/create_account.cgi:134
 msgid "According to our terms and conditions, you may only register once through our site. If you have forgotten the password of your existing account, please <a href=\"%1\">try our password recovery tool</a> or contact customer service."
 msgstr "В соответствии с нашими праивлами и условиями, Вы можете зарегистрироваться на сайте только однажды. Если Вы забыли пароль к своему счету, пожалуйста, <a href=\"%1\">воспользуйтесь инструментом для получения этих данных</a> или свяжитесь с нашей службой поддержки."
 
@@ -1016,9 +1016,9 @@ msgstr "Лимиты счета"
 msgid "Account Management and Tracking"
 msgstr "Управлением счетом и контроль"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:106
-#: /home/git/regentmarkets/bom-app/create_account.cgi:262
-#: /home/git/regentmarkets/bom-app/create_account.cgi:408
+#: /home/git/regentmarkets/bom-app/create_account.cgi:109
+#: /home/git/regentmarkets/bom-app/create_account.cgi:265
+#: /home/git/regentmarkets/bom-app/create_account.cgi:414
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3656
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:145
 msgid "Account Opening"
@@ -2122,10 +2122,8 @@ msgstr "Клиенты, зарегистрированные под юрисди
 
 #. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-#, fuzzy
-#| msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
 msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
-msgstr "Клиенты, зарегистрированные под юрисдикцией Binary (Europe) Ltd, могут возбудить дела по нерешенным спорам, с органом на Мальте Malta Gaming Authority по"
+msgstr "Клиенты, зарегистрированные под юрисдикцией Binary (Europe) Ltd, могут возбудить дела по нерешенным спорам, с органом на Мальте Malta Gaming Authority %1 по"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
 msgid "Clients registered with Binary (IOM) Ltd can raise their unresolved disputes with the Isle of Man Gambling Supervision Commission at gaming@gov.im."
@@ -2572,7 +2570,7 @@ msgid "Dear %1 %2 %3,"
 msgstr "Уважаемый %1 %2 %3,"
 
 #. ($client_name, $ce_broker_name, $support_email)
-#: lib/BOM/Platform/Client/IDAuthentication.pm:140
+#: lib/BOM/Platform/Client/IDAuthentication.pm:143
 msgid ""
 "Dear %1,\n"
 "\n"
@@ -2873,7 +2871,7 @@ msgstr "Хотите удержать полученную прибыль дос
 msgid "Do you want to see Binary.com in other languages, or can you suggest improvements to our current translations?"
 msgstr "Вы желаете видеть Binary.com на других языках или можете предложить улучшения наших настоящих переводов?"
 
-#: lib/BOM/Platform/Client/IDAuthentication.pm:139
+#: lib/BOM/Platform/Client/IDAuthentication.pm:142
 msgid "Documents are required to verify your identity"
 msgstr "Документы для верификации личности"
 
@@ -2936,7 +2934,7 @@ msgstr "Доктор"
 msgid "Draw Chart"
 msgstr "Нарисовать график"
 
-#: lib/BOM/Product/Transaction.pm:1178
+#: lib/BOM/Product/Transaction.pm:1193
 msgid "Due to regulatory requirements, you are required to authenticate your account in order to continue trading."
 msgstr "В связи с требованием закона, Вам необходимо авторизовать свой счет, чтобы продолжить работу."
 
@@ -3104,7 +3102,7 @@ msgstr "Канал (SMA 20 +/- 10%)"
 msgid "Equity Offering"
 msgstr "Предложение акций"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:140
+#: /home/git/regentmarkets/bom-app/create_account.cgi:143
 msgid "Error : password field is blank!"
 msgstr "Ошибка: вы не ввели пароль!"
 
@@ -3902,7 +3900,7 @@ msgstr "Если вы выбираете <strong>время начала</strong
 msgid "If you select a specific <strong>end time</strong>, the <strong>end time</strong> is the selected time."
 msgstr "Если Вы выбираете определенное <strong>время окончания</strong>, <strong>временем окончания</strong> контракта будет выбранное Вами время."
 
-#: lib/BOM/Product/Transaction.pm:699
+#: lib/BOM/Product/Transaction.pm:710
 msgid "If you wish to raise these limits, please authenticate your account."
 msgstr "Если Вы желаете повысить данные лимиты, пожалуйста, авторизуйте свой счет."
 
@@ -3972,7 +3970,7 @@ msgstr "В классическом стиле Силиконовой Долин
 msgid "In foreign exchange markets, traders can enter contracts based on the change in price of one currency as it relates to another currency. For example if a trader selects Rise in the EUR/USD market, they are predicting that the value of the Euro will rise in relation to the value of the US dollar."
 msgstr "На рынке Forex трейдеры могут работать, основываясь на цене одной валюты по отношению к другой. Например, если трейдер выбирает контракт \"Повышение\" на EUR/USD, он делает прогноз, что ценность евро поднимется по отношению к американскому доллару."
 
-#: lib/BOM/Product/Transaction.pm:1231
+#: lib/BOM/Product/Transaction.pm:1246
 msgid "In order for you to place contracts, we need to know your Residence (Country). Please update your settings."
 msgstr "Для того, чтобы Вы могли приобретать контракты, нам необходимо знать Вашу страну проживания. Пожалуйста, обновите свои установки."
 
@@ -5002,7 +5000,7 @@ msgstr "Новый пароль"
 msgid "New Password Request"
 msgstr "Запрос нового пароля"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:216
+#: /home/git/regentmarkets/bom-app/create_account.cgi:219
 msgid "New account registration fail."
 msgstr "Регистрация нового счета не произведена."
 
@@ -6000,17 +5998,17 @@ msgstr "Спот-цена при покупке"
 msgid "Purchase Time"
 msgstr "Время покупки"
 
-#: lib/BOM/Product/Transaction.pm:791
+#: lib/BOM/Product/Transaction.pm:805
 msgid "Purchase of this contract would cause you to exceed our payout limit for open contracts of this type. To continue please consider to sell a few contracts at the market or trade in different contract types."
 msgstr "Покупка этого контракта приведет к превышению нашего предела выплат для открытых контрактов данного типа. Чтобы продолжить, пожалуйста, продайте другие подобные контракты или приобретайте другие типы контрактов."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:887
+#: lib/BOM/Product/Transaction.pm:902
 msgid "Purchase of this contract would cause you to exceed your 7-day turnover limit of %1%2."
 msgstr "Покупка данного контракта приведет к превышению 7-дневного лимита оборота %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:697
+#: lib/BOM/Product/Transaction.pm:708
 msgid "Purchase of this contract would cause you to exceed your daily turnover limit of %1%2."
 msgstr "Покупка данного контракта приведет к первышению дневного торгового лимита %1%2."
 
@@ -6707,11 +6705,11 @@ msgstr "Извините, произошла ошибка."
 msgid "Sorry, an error occurred. Please contact customer support if this problem persists."
 msgstr "Произошла ошибка. Пожалуйста, свяжитесь со службой поддержки, если проблема повторится."
 
-#: lib/BOM/Product/Transaction.pm:1244
+#: lib/BOM/Product/Transaction.pm:1259
 msgid "Sorry, contracts on Random Indices are not available in your country of residence"
 msgstr "Извините, контракты на индексах Random не доступны в стране Вашего проживания"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:86
+#: /home/git/regentmarkets/bom-app/create_account.cgi:89
 msgid "Sorry, new account opening is suspended for the time being."
 msgstr "Извините, открытие нового счета временно невозможно."
 
@@ -6756,7 +6754,7 @@ msgid "Sorry, the Payment Agent's currency "
 msgstr "К сожалению, валюта данного платежного агента "
 
 #. ($limit, $currency)
-#: lib/BOM/Product/Transaction.pm:840
+#: lib/BOM/Product/Transaction.pm:855
 msgid "Sorry, the aggregate payouts of contracts on your account cannot exceed %2%1."
 msgstr "Извините, совокупные выплаты по контрактам на Вашем счете не могут превышать %2%1."
 
@@ -6789,7 +6787,7 @@ msgstr "Извините, эта опция доступна только для
 msgid "Sorry, this feature is not available."
 msgstr "Извините, данная функция недоступна."
 
-#: lib/BOM/Product/Transaction.pm:1404
+#: lib/BOM/Product/Transaction.pm:1422
 msgid "Sorry, this page cannot be refreshed."
 msgstr ", эта страница не может быть обновлена."
 
@@ -6798,7 +6796,7 @@ msgid "Sorry, you are too young to open an account!"
 msgstr "Извините, но Ваш возраст не позволяет Вам открыть счет!"
 
 #. ($limit,                request()
-#: lib/BOM/Product/Transaction.pm:727
+#: lib/BOM/Product/Transaction.pm:739
 msgid "Sorry, you cannot hold more than %1 contracts at a given time. Please visit the <a href=\"%2\" class=\"pjaxload\">statement</a> page to automatically sell your expired contracts."
 msgstr "Извините, у Вас не может быть более %1 контрактов на счету одновременно. Пожалуйста, посетите страницу <a href=\"%2\" class=\"pjaxload\">истории счета</a> для автоматической продажи закончившихся контрактов на Вашем счету."
 
@@ -6843,11 +6841,11 @@ msgid "Sorry, you have open positions. Please close out all open positions befor
 msgstr "Пожалуйста, закройте все открытые позиции до заказа дополнительных средств для счета."
 
 #. ("$currency$balance",                $limit)
-#: lib/BOM/Product/Transaction.pm:816
+#: lib/BOM/Product/Transaction.pm:830
 msgid "Sorry, your account cash balance is too high (%1). <B>Your maximum account balance is %2 </b>. Please withdraw money from your account to bring down your cash balance under that amount. You may not trade until you do so."
 msgstr "Извините, Ваш баланс на счету слишком высокий (%1). <B>Ваш максимальный баланс - %2 </b>. Пожалуйста, выведите часть средств. Вы не сможете совершать операции, пока баланс не будет понижен."
 
-#: lib/BOM/Product/Transaction.pm:1268
+#: lib/BOM/Product/Transaction.pm:1283
 msgid "Sorry, your account is not authorised for any further contract purchases."
 msgstr "Извините, Ваш счет не авторизован для дальнейшей покупки контрактов."
 
@@ -6909,7 +6907,7 @@ msgstr "Начните торговлю"
 msgid "Start time"
 msgstr "Время начала"
 
-#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:367
+#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:372
 msgid "Start time is in the past"
 msgstr "Время начала прошло"
 
@@ -7618,11 +7616,11 @@ msgid "The content on this website is subject to change at any time without noti
 msgstr "Содержание данного сайта может изменяться в любое время без уведомления и является лишь вспомогательным средством для принятия клиентами независимых решений. %1 предпринимает меры для обеспечения точности информации, но компания не может гарантировать абсолютную точность и не несет ответственность за любые потери или убытки, понесенные в связи с использованием этой информации, в связи с нарушением доступа к сайту, в связи с задержкой или нарушением доставки или получения любых сообщений или уведомлений, отправленных в рамках данного сайта."
 
 #. ($currency,                to_monetary_number_format($amount)
-#: lib/BOM/Product/Transaction.pm:1036
+#: lib/BOM/Product/Transaction.pm:1051
 msgid "The contract %4 has changed from %1%2 to %1%3."
 msgstr "%4 на контракт изменилась с %1%2 на %1%3."
 
-#: lib/BOM/Product/Transaction.pm:1024
+#: lib/BOM/Product/Transaction.pm:1039
 msgid "The contract has expired"
 msgstr "Контракт закончился"
 
@@ -7813,17 +7811,17 @@ msgid "The profit is the difference between the purchase price (the stake) and t
 msgstr "Прибыль - это разница между выплатой и ценой покупки (ставкой) выигравшего контракта."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:943
+#: lib/BOM/Product/Transaction.pm:958
 msgid "The provided currency %1 is invalid."
 msgstr "Предоставленная валюта %1 недействительна."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:935
+#: lib/BOM/Product/Transaction.pm:950
 msgid "The provided currency %1 is not the default currency"
 msgstr "Предоставленная валюта %1 не является валютой по умолчанию"
 
 #. ($email)
-#: /home/git/regentmarkets/bom-app/create_account.cgi:127
+#: /home/git/regentmarkets/bom-app/create_account.cgi:130
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "Электронный адрес %1 уже используется на другом счету."
 
@@ -7885,7 +7883,7 @@ msgstr "Транзакции, производимые на данном сай�
 msgid "The two passwords that you entered do not match."
 msgstr "Введенные пароли не совпадают."
 
-#: lib/BOM/Product/Transaction.pm:1032
+#: lib/BOM/Product/Transaction.pm:1047
 msgid "The underlying market has moved too much since you priced the contract. "
 msgstr "Значение рыночных котировок изменилось с того момента, как Вы рассчитали стоимость контракта. "
 
@@ -8066,7 +8064,7 @@ msgstr "Этот вызов вернется с той же структурой
 msgid "This client cashier section is locked."
 msgstr "Секция Касса данного клиента недоступна."
 
-#: lib/BOM/Product/Transaction.pm:1128
+#: lib/BOM/Product/Transaction.pm:1143
 msgid "This contract cannot be properly validated at this time."
 msgstr "Покупка контракта не может быть завершена в настоящее время. Попробуйте снова."
 
@@ -8087,11 +8085,11 @@ msgid "This contract is affected by corporate action."
 msgstr "На данный контракт повлияли корпоративные действия."
 
 #. (to_monetary_number_format($custom_limit)
-#: lib/BOM/Product/Transaction.pm:1206
+#: lib/BOM/Product/Transaction.pm:1221
 msgid "This contract is limited to "
 msgstr "Контракт ограничен для "
 
-#: lib/BOM/Product/Transaction.pm:1204
+#: lib/BOM/Product/Transaction.pm:1219
 msgid "This contract is unavailable on this account."
 msgstr "Данный контракт недоступен для этого счета."
 
@@ -8103,7 +8101,7 @@ msgstr "Контракт проиграл"
 msgid "This contract offers no return."
 msgstr "На данный контракт не может быть предложен выигрыш."
 
-#: lib/BOM/Product/Transaction.pm:626
+#: lib/BOM/Product/Transaction.pm:637
 msgid "This contract was not found among your open positions."
 msgstr "Данный контракт не был найден среди Ваших открытых позиций."
 
@@ -8657,7 +8655,7 @@ msgstr "Неизвестная ошибка при сохранении рабо
 msgid "Unlock Cashier/Settings sections"
 msgstr "Разблокировать раздел Касса/Настройки"
 
-#: lib/BOM/Product/Transaction.pm:420
+#: lib/BOM/Product/Transaction.pm:425
 msgid "Unsupported bet class $bet_params->{bet_class}"
 msgstr "Неподдерживаемый вид ставки $bet_params->{bet_class}"
 
@@ -8742,7 +8740,7 @@ msgstr "Верифицируйте новый пароль"
 
 #. ($c->stash('website_name')
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:311
+#: /home/git/regentmarkets/bom-app/create_account.cgi:318
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:676
 msgid "Verify your email address - %1"
 msgstr "Верифицируйте свой электронный адрес - %1"
@@ -9577,18 +9575,18 @@ msgstr "Вы приобрели контракты на общую сумму в
 msgid "You have entered an invalid login ID"
 msgstr "Вы ввели неправильный логин"
 
-#: lib/BOM/Product/Transaction.pm:763 lib/BOM/Product/Transaction.pm:768
-#: lib/BOM/Product/Transaction.pm:773 lib/BOM/Product/Transaction.pm:860
+#: lib/BOM/Product/Transaction.pm:776 lib/BOM/Product/Transaction.pm:781
+#: lib/BOM/Product/Transaction.pm:786 lib/BOM/Product/Transaction.pm:875
 msgid "You have exceeded the daily limit for contracts of this type."
 msgstr "ВЫ превысили дневной лимит на покупку ставок этого типа."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:902
+#: lib/BOM/Product/Transaction.pm:917
 msgid "You have exceeded your 7-day limit on losses of %1%2."
 msgstr "Вы превысили 7-дневный лимит на проигрыш в размере %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:870
+#: lib/BOM/Product/Transaction.pm:885
 msgid "You have exceeded your daily limit on losses of %1%2."
 msgstr "Вы превысили свой дневной лимит на проигрыш в размере %1%2."
 
@@ -9773,7 +9771,7 @@ msgid "Your account balance"
 msgstr "Баланс вашего счета"
 
 #. ($currency,                to_monetary_number_format($balance)
-#: lib/BOM/Product/Transaction.pm:758
+#: lib/BOM/Product/Transaction.pm:771
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "Баланс Вашего счета (%1%2) недостаточен для покупки данного контракта (%1%3)."
 
@@ -9781,7 +9779,7 @@ msgstr "Баланс Вашего счета (%1%2) недостаточен д�
 msgid "Your account does not require authentication at this time."
 msgstr "Ваш счет не требует верификации на настоящий момент."
 
-#: lib/BOM/Product/Transaction.pm:847
+#: lib/BOM/Product/Transaction.pm:862
 msgid "Your account has exceeded the trading limit with free promo code, please deposit if you wish to continue trading."
 msgstr "Ваш счет превысил лимит торговли от бесплатного бонуса. Пожалуйста, пополните счет, если Вы желаете продолжить торговать на нем."
 
@@ -11299,10 +11297,8 @@ msgid "Random Sun"
 msgstr "Random солнце"
 
 #: Underlying Symbol SYNFCHI
-#, fuzzy
-#| msgid "French Fast Index"
 msgid "French Smart Index"
-msgstr "Французский fast-индекс"
+msgstr "Французский Smart индекс"
 
 #: Underlying Symbol SYNN225
 msgid "Japanese Smart Index"

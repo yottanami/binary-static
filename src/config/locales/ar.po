@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-05-05 19:53+0200\n"
+"PO-Revision-Date: 2015-05-07 21:55+0200\n"
 "Last-Translator: Ehab Gubil <egubil@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/binary/static/ar/>\n"
 "Language: ar\n"
@@ -243,7 +243,7 @@ msgid "%1 provides you with the opportunity to either self-exclude or <a href=\"
 msgstr "%1 تقدم لك فرصة إقصاء نفسك عن الموقع أو <a href=\"%2\"> أن تضع قيودا على أنشطتك التجارية</a> على هذا الموقع. تستطيع أيضاً <a href=\"%3\">أن تتصل بنا</a> لتضع الحدود التى تريدها عبر الدردشة الحية، أو البريد الألكترونى أو الهاتف. الحدود المتاحة هى:"
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:951
+#: lib/BOM/Product/Transaction.pm:966
 msgid "%1 transactions may not be performed with this account."
 msgstr "%1 لا يجوز إجراء معاملات على هذا الحساب."
 
@@ -892,7 +892,7 @@ msgstr "الخيار الثنائى هو خيار ثابت العائد يتم �
 msgid "A derivative is a financial instrument whose value is determined by reference to an underlying market. Derivatives are commonly traded in the inter-bank market, and binaries are one of the simplest forms of derivatives."
 msgstr "المشتق المالى هو أداه مالية يتم تحديد قيمتها بالرجوع للسوق المشمولة. يتم تداول المشتقات المالية عادة فى سوق بين البنوك، والثنائيات هى أحد أبسط أشكال المشتقات المالية."
 
-#: lib/BOM/Product/Transaction.pm:506 lib/BOM/Product/Transaction.pm:620
+#: lib/BOM/Product/Transaction.pm:514 lib/BOM/Product/Transaction.pm:631
 msgid "A general error has occurred."
 msgstr "حدث خطأ عام."
 
@@ -997,7 +997,7 @@ msgid "Access to your personal data is strictly prohibited with the exception of
 msgstr "يحظر الوصول إلى بياناتك الشخصية بصرامة باستثناء كبار الموظفين بالشركة وفقط حسب الحاجة أثناء أداء واجباتهم."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:131
+#: /home/git/regentmarkets/bom-app/create_account.cgi:134
 msgid "According to our terms and conditions, you may only register once through our site. If you have forgotten the password of your existing account, please <a href=\"%1\">try our password recovery tool</a> or contact customer service."
 msgstr "وفقاً لشروطنا وأحكامنا، يمكنك أن تسجل مرة واحدة فقط من خلال موقعنا. إذا نسيت كلمة المرور الخاصة بحسابك الحالى، رجاء <a href=\"%1\">جرب أداة استعادة كلمة المرور الخاصة بنا</a> أو اتصل بخدمة العملاء."
 
@@ -1018,9 +1018,9 @@ msgstr "حدود الحساب"
 msgid "Account Management and Tracking"
 msgstr "إدارة وتتبع الحسابات"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:106
-#: /home/git/regentmarkets/bom-app/create_account.cgi:262
-#: /home/git/regentmarkets/bom-app/create_account.cgi:408
+#: /home/git/regentmarkets/bom-app/create_account.cgi:109
+#: /home/git/regentmarkets/bom-app/create_account.cgi:265
+#: /home/git/regentmarkets/bom-app/create_account.cgi:414
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3656
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:145
 msgid "Account Opening"
@@ -2124,10 +2124,8 @@ msgstr "يمكن للعملاء المسجلين لدى بيناري (.C.R) ال
 
 #. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-#, fuzzy
-#| msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
 msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
-msgstr "يمكن للعملاء المسجلين لدى بيناري (أوروبا) المحدودة رفع خلافاتهم العالقة لهيئة Malta Gaming Authority على"
+msgstr "يمكن للعملاء المسجلين لدى بيناري (أوروبا) المحدودة رفع خلافاتهم العالقة لهيئة Malta Gaming Authority %1 على"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
 msgid "Clients registered with Binary (IOM) Ltd can raise their unresolved disputes with the Isle of Man Gambling Supervision Commission at gaming@gov.im."
@@ -2505,7 +2503,7 @@ msgstr "التقرير اليومى"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2895
 msgid "Daily limit on losses"
-msgstr ""
+msgstr "الحد اليومي على الخسائر"
 
 #. ($client->currency, $self_exclusion->max_losses)
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3913
@@ -2573,7 +2571,7 @@ msgid "Dear %1 %2 %3,"
 msgstr "عزيزى %1 %2 %3،"
 
 #. ($client_name, $ce_broker_name, $support_email)
-#: lib/BOM/Platform/Client/IDAuthentication.pm:140
+#: lib/BOM/Platform/Client/IDAuthentication.pm:143
 msgid ""
 "Dear %1,\n"
 "\n"
@@ -2684,6 +2682,12 @@ msgid ""
 "%1\n"
 "\n"
 msgstr ""
+"عميلنا العزيز،\n"
+"\n"
+"من أجل التحقق من عنوان البريد الإلكتروني الخاص بك، الرجاء الضغط على الرابط التالي:\n"
+"\n"
+"%1\n"
+"\n"
 
 #: /home/git/regentmarkets/bom-app/bin/GenerateStaticData.pm:87
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:2171
@@ -2871,7 +2875,7 @@ msgstr "هل تريد أن تحتفظ بالأرباح؟"
 msgid "Do you want to see Binary.com in other languages, or can you suggest improvements to our current translations?"
 msgstr "هل تود أن ترى Binary.com بلغات أخرى، أو هل يمكنك اقتراح تحسينات للترجمات الراهنة؟"
 
-#: lib/BOM/Platform/Client/IDAuthentication.pm:139
+#: lib/BOM/Platform/Client/IDAuthentication.pm:142
 msgid "Documents are required to verify your identity"
 msgstr "المستندات المطلوبة للتحقق من هويتك"
 
@@ -2934,7 +2938,7 @@ msgstr "د."
 msgid "Draw Chart"
 msgstr "ارسم رسم بيانى"
 
-#: lib/BOM/Product/Transaction.pm:1178
+#: lib/BOM/Product/Transaction.pm:1193
 msgid "Due to regulatory requirements, you are required to authenticate your account in order to continue trading."
 msgstr "بسبب المتطلبات التنظيمية، أنت مطالب بتأكيد صحة حسابك لتستمر فى التداول."
 
@@ -3104,7 +3108,7 @@ msgstr "أغلفة المتوسطات المتحركة (المتوسط المت�
 msgid "Equity Offering"
 msgstr "تقديم حقوق الملكية"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:140
+#: /home/git/regentmarkets/bom-app/create_account.cgi:143
 msgid "Error : password field is blank!"
 msgstr "خطأ : خانة كلمة المرور فارغة!"
 
@@ -3902,7 +3906,7 @@ msgstr "إذا اخترت <strong>وقت بداية </strong> \"الآن\"، ي�
 msgid "If you select a specific <strong>end time</strong>, the <strong>end time</strong> is the selected time."
 msgstr "إذا اخترت وقت <strong>انتهاء معين </strong>، فإن <strong> وقت انتهاء العقد </strong> يكون الوقت المختار."
 
-#: lib/BOM/Product/Transaction.pm:699
+#: lib/BOM/Product/Transaction.pm:710
 msgid "If you wish to raise these limits, please authenticate your account."
 msgstr "إذا كنت ترغب فى زيادة هذه الحدود، رجاءا وثق حسابك."
 
@@ -3972,7 +3976,7 @@ msgstr "بطراز وادي السيليكون الكلاسيكي، بدأ مد�
 msgid "In foreign exchange markets, traders can enter contracts based on the change in price of one currency as it relates to another currency. For example if a trader selects Rise in the EUR/USD market, they are predicting that the value of the Euro will rise in relation to the value of the US dollar."
 msgstr "فى أسواق صرف العملات الأجنبية تستطيع أن تقوم بمعاملات تجارية قائمة على أساس التغيير في سعر عملة واحدة مقارنة بعملة أخرى. على سبيل المثال إذا قمت بتحديد ارتفاع فى سوق الدولار/اليورو ، أنت تتوقع أن قيمة اليورو سترتفع مقارنة  بقيمة الدولار الأمريكي."
 
-#: lib/BOM/Product/Transaction.pm:1231
+#: lib/BOM/Product/Transaction.pm:1246
 msgid "In order for you to place contracts, we need to know your Residence (Country). Please update your settings."
 msgstr "لتتمكن من التداول، نحن بحاجة إلى معرفة مكان إقامتك (الدولة). يرجى تحديث إعداداتك."
 
@@ -4289,7 +4293,7 @@ msgstr "انضم لتحليلنا المباشر مرتين فى الأسبوع 
 #: /home/git/translations/binary-static/src/templates/haml/ad/indices/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/ad/randoms/index.html.haml:1
 msgid "Join our community of 1,000,000+ traders"
-msgstr ""
+msgstr "انضم إلى مجتمعنا البالغ 1,000,000+ من المتداولين"
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/commodities/index.html.haml:1
 #: /home/git/translations/binary-static/src/templates/haml/ad/forex/index.html.haml:1
@@ -4347,7 +4351,7 @@ msgstr "تسجيل الخروج"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:32
 msgid "Languages"
-msgstr ""
+msgstr "اللغات"
 
 #: /home/git/regentmarkets/bom-app/smartchart.cgi:79
 msgid "Large"
@@ -4689,7 +4693,7 @@ msgstr "الأسواق"
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/randoms/index.html.haml:1
 msgid "Markets Never Close Here!"
-msgstr ""
+msgstr "لا تغلق الأسواق أبدا هنا!"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/ChartDirector.pm:368
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/Charting.pm:634
@@ -4993,7 +4997,7 @@ msgstr "كلمة المرور الجديدة"
 msgid "New Password Request"
 msgstr "طلب كلمة مرور جديدة"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:216
+#: /home/git/regentmarkets/bom-app/create_account.cgi:219
 msgid "New account registration fail."
 msgstr "فشل تسجيل الحساب الجديد."
 
@@ -5162,7 +5166,7 @@ msgstr "أكتوبر"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_conditions_approval_message.html.tt:17
 msgid "Ok"
-msgstr ""
+msgstr "حسنا"
 
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:288
 msgid "Old password is wrong."
@@ -5256,7 +5260,7 @@ msgstr "إفتح حساب مجاني"
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/indices/index.html.haml:1
 msgid "Open a free account & get your $10,000 virtual money"
-msgstr ""
+msgstr "افتح حساب مجاني وأحصل على $10,000 من الأموال الافتراضية"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/available_payment_methods.html.tt:10
 msgid "Open an account now"
@@ -5994,17 +5998,17 @@ msgstr "سعر الشراء"
 msgid "Purchase Time"
 msgstr "وقت الشراء"
 
-#: lib/BOM/Product/Transaction.pm:791
+#: lib/BOM/Product/Transaction.pm:805
 msgid "Purchase of this contract would cause you to exceed our payout limit for open contracts of this type. To continue please consider to sell a few contracts at the market or trade in different contract types."
 msgstr ""
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:887
+#: lib/BOM/Product/Transaction.pm:902
 msgid "Purchase of this contract would cause you to exceed your 7-day turnover limit of %1%2."
 msgstr "شراء هذا العقد سيتسبب فى تجاوزك لحد حجم تداول الـ 7 أيام البالغ  %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:697
+#: lib/BOM/Product/Transaction.pm:708
 msgid "Purchase of this contract would cause you to exceed your daily turnover limit of %1%2."
 msgstr "شراء هذا العقد سيتسبب فى تجاوزك لحد حجم التداول اليومي البالغ %1%2."
 
@@ -6697,11 +6701,11 @@ msgstr "عفواً، حدث خطأ أثناء معالجة حسابك."
 msgid "Sorry, an error occurred. Please contact customer support if this problem persists."
 msgstr "عفوا، حدث خطأ. يرجى الاتصال بخدمة العملاء إذا استمرت هذه المشكلة."
 
-#: lib/BOM/Product/Transaction.pm:1244
+#: lib/BOM/Product/Transaction.pm:1259
 msgid "Sorry, contracts on Random Indices are not available in your country of residence"
 msgstr "عفواً، عقود المؤشرات العشوائية غير متاحة فى بلد إقامتك"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:86
+#: /home/git/regentmarkets/bom-app/create_account.cgi:89
 msgid "Sorry, new account opening is suspended for the time being."
 msgstr "عفواً، تم تعليق فتح حساب جديد فى الوقت الحالى."
 
@@ -6746,7 +6750,7 @@ msgid "Sorry, the Payment Agent's currency "
 msgstr "عفواً، عملة وكيل الدفع "
 
 #. ($limit, $currency)
-#: lib/BOM/Product/Transaction.pm:840
+#: lib/BOM/Product/Transaction.pm:855
 msgid "Sorry, the aggregate payouts of contracts on your account cannot exceed %2%1."
 msgstr ""
 
@@ -6778,7 +6782,7 @@ msgstr "عفواً، هذة الخاصية متاحة للحسابات الاف�
 msgid "Sorry, this feature is not available."
 msgstr "عفوا، هذه الميزة غير متوفرة."
 
-#: lib/BOM/Product/Transaction.pm:1404
+#: lib/BOM/Product/Transaction.pm:1422
 msgid "Sorry, this page cannot be refreshed."
 msgstr "عفواً، لا يمكن تنشيط هذة الصفحة."
 
@@ -6787,7 +6791,7 @@ msgid "Sorry, you are too young to open an account!"
 msgstr "عفواً، لم تبلغ السن التى تسمح لك بفتح حساب!"
 
 #. ($limit,                request()
-#: lib/BOM/Product/Transaction.pm:727
+#: lib/BOM/Product/Transaction.pm:739
 msgid "Sorry, you cannot hold more than %1 contracts at a given time. Please visit the <a href=\"%2\" class=\"pjaxload\">statement</a> page to automatically sell your expired contracts."
 msgstr "عفوا، لا يمكنك أن تحتفظ بأكثر من %1 عقود في وقت محدد. يرجى زيارة صفحة <a href=\"%2\" class=\"pjaxload\">كشف الحساب</a> كي تبيع العقود منتهية الصلاحية تلقائيا."
 
@@ -6832,11 +6836,11 @@ msgid "Sorry, you have open positions. Please close out all open positions befor
 msgstr "عفواً، لديك معاملات مفتوحة. يرجى إقفال كل المعاملات المفتوحة قبل أن تطلب أموال إضافية."
 
 #. ("$currency$balance",                $limit)
-#: lib/BOM/Product/Transaction.pm:816
+#: lib/BOM/Product/Transaction.pm:830
 msgid "Sorry, your account cash balance is too high (%1). <B>Your maximum account balance is %2 </b>. Please withdraw money from your account to bring down your cash balance under that amount. You may not trade until you do so."
 msgstr "عفواً، رصيد حسابك مرتفع جداً (%1). <B>الحد الأقصى لرصيد حسابك هو %2 </b>. يرجى أن تسحب أموال من حسابك لخفض رصيد حسابك النقدى  ليصبح أقل من هذا المبلغ. قد لا يمكنك أن تقوم بالتداول قبل القيام بذلك."
 
-#: lib/BOM/Product/Transaction.pm:1268
+#: lib/BOM/Product/Transaction.pm:1283
 msgid "Sorry, your account is not authorised for any further contract purchases."
 msgstr "عفواً، غير مصرح لحسابك القيام بشراء المزيد من العقود."
 
@@ -6898,7 +6902,7 @@ msgstr "بدء التداول"
 msgid "Start time"
 msgstr "وقت البدء"
 
-#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:367
+#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:372
 msgid "Start time is in the past"
 msgstr "وقت البداية  فى الماضى"
 
@@ -7164,7 +7168,7 @@ msgstr "نشكرك على التحقق من بريدك الإلكتروني."
 
 #: /home/git/translations/binary-static/src/templates/haml/user/lost_password_email_sent.html.haml:1
 msgid "Thank you. You're one step closer to being done!"
-msgstr ""
+msgstr "شكرا. أنت على بعد خطوة واحدة من الإنتهاء!"
 
 #: /home/git/regentmarkets/bom-app/paymentagent_application.cgi:78
 msgid "Thank you. Your application has been submitted and will be examined by our team as soon as possible. You will receive a reply by email within 72 hours."
@@ -7366,10 +7370,8 @@ msgid "The Company may impose volume trading limits on Client accounts in its so
 msgstr "يجوز للشركة أن تفرض حدودا للتداول على حسابات العملاء حسب تقديرها الخاص. حدود حجم التداول الحالي عند فتح الحساب هى 30,000 دولار أمريكى أو جنيه استرلينى أو يورو أو دولار أسترالى فى اليوم كحد أقصى لحجم التداول. الحد الأقصى لحجم الحساب (أى الرصيد النقدى) هو 25,000 دولار أمريكى أو جنيه استرلينى أو يورو أو دولار أسترالى والحد الأقصى للعوائد المعلقة لعقد فى وقت ما لكل حساب هو 25,000 دولار أمريكى أو جنيه استرلينى أو يورو أو دولار أسترالى. يتم زيادة هذه الحدود عندما يقوم العميل بتقديم تحقيق كامل لشخصيته حيث سيكون الحد الأقصى للتداول 500,000 دولار أمريكى أو جنيه استرلينى أو يورو أو دولار أسترالى ويكون الحد الأقصى لحجم الرصيد هو 500,000 دولار أمريكى أو جنيه استرلينى أو يورو أو دولار أسترالى والحد الأقصى للعوائد المعلقة لعقد فى وقت ما لكل حساب هو 500,000 دولار أمريكى أو جنيه استرلينى أو يورو أو دولار أسترالى. إذا زاد رصيد الحساب عن الحد الأقصى لحجم الحساب يجب القيام بسحوبات لخفض الرصيد ليكون أقل من هذا الحد."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:87
-#, fuzzy
-#| msgid "The Company may, from time to time, at its sole discretion, require a Client to provide proof of identity (such as notarized copy of passport or other means of identity verification as the Company deems required under the circumstances) and may at its sole discretion suspend an account until such proof has been provided to its satisfaction."
 msgid "The Company may, from time to time, at its sole discretion, or as required by regulations in place to conduct appropriate \"Know Your Customer\" procedures and require a Client to provide proof of identity (such as notarized copy of passport or other means of identity verification as the Company deems required under the circumstances) and may at its sole discretion suspend an account until such proof has been provided to its satisfaction."
-msgstr "يحق للشركة من آن لآخر،حسب تقديرها الخاص، أن تطلب من العميل إثبات شخصية (مثل نسخة موثقة من جواز السفر أو أى وسيلة أخرى من وسائل تحقيق الشخصية كما يترآءى للشركة حسب الظروف) ويحق لها حسب تقديرها الخاص أن تعلق أى حساب لحين تقديم إثبات مُرضى."
+msgstr "يحق للشركة من آن لآخر،حسب تقديرها الخاص، أو حسب الحاجة بموجب لوائح مكان الإجراء \"اعرف عميلك\" أن تطلب من العميل إثبات شخصية (مثل نسخة موثقة من جواز السفر أو أى وسيلة أخرى من وسائل تحقيق الشخصية كما يتراءى للشركة حسب الظروف) ويحق لها حسب تقديرها الخاص أن تعلق أى حساب لحين تقديم إثبات مُرضى."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:24
 msgid "The Company reserves the right in its sole discretion to refuse and/or cancel services, charge deposit and/or withdrawal fees to anyone for any reasons including, but not limited to:"
@@ -7605,11 +7607,11 @@ msgid "The content on this website is subject to change at any time without noti
 msgstr "محتوى هذا الموقع عرضة للتغيير في أي وقت دون إشعار ويتم توفيره فقط لغرض مساعدة المتداولين في اتخاذ قرارات استثمارية مستقلة.  تتخذ %1 تدابير معقولة لضمان دقة المعلومات على الموقع، ومع ذلك، فإن الشركة لا تضمن دقتها ولن تتحمل مسؤولية أي خسارة أو ضرر قد ينشأ بشكل مباشر أو غير مباشر من المحتوى أو بسبب عدم قدرة المتداول على الوصول للموقع أو عن أي تأخير أو فشل في إرسال أو استلام أي تعليمات أو إخطارات من خلال هذا الموقع."
 
 #. ($currency,                to_monetary_number_format($amount)
-#: lib/BOM/Product/Transaction.pm:1036
+#: lib/BOM/Product/Transaction.pm:1051
 msgid "The contract %4 has changed from %1%2 to %1%3."
 msgstr "لقد تغير العقد %4 من %1%2 إلى %1%3."
 
-#: lib/BOM/Product/Transaction.pm:1024
+#: lib/BOM/Product/Transaction.pm:1039
 msgid "The contract has expired"
 msgstr "انتهت صلاحية العقد"
 
@@ -7693,10 +7695,8 @@ msgid "The first tick is the first tick after the contract is processed by our s
 msgstr "الحركة الأولى هي الحركة الأولى بعد معالجة العقد من قبل خوادمنا."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/portfolio/tradecorporate_action.html.tt:1
-#, fuzzy
-#| msgid "The market exit price is the price in effect at the end of the contract period."
 msgid "The following table reflects the corporate actions that happened during the contract period."
-msgstr "سعر خروج السوق هو السعر المعمول به عند وقت نهاية العقد."
+msgstr "يعكس الجدول التالي إجراءات الشركات التي وقعت خلال فترة العقد."
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/glossary.html.haml:1
 msgid "The market exit price is the price in effect at the end of the contract period."
@@ -7802,17 +7802,17 @@ msgid "The profit is the difference between the purchase price (the stake) and t
 msgstr "الربح هو الفرق بين سعر الشراء (الحصة) وعائد التداول الرابح."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:943
+#: lib/BOM/Product/Transaction.pm:958
 msgid "The provided currency %1 is invalid."
 msgstr "العملة المقدمة %1 غير صالحة."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:935
+#: lib/BOM/Product/Transaction.pm:950
 msgid "The provided currency %1 is not the default currency"
 msgstr "العملة المقدمة %1  ليست العملة الافتراضية"
 
 #. ($email)
-#: /home/git/regentmarkets/bom-app/create_account.cgi:127
+#: /home/git/regentmarkets/bom-app/create_account.cgi:130
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "عنوان البريد الإلكترونى %1 الذى أدخلته مستخدم من معرف دخول آخر."
 
@@ -7874,7 +7874,7 @@ msgstr "تخضع المعاملات التي أجريت على هذا الموق
 msgid "The two passwords that you entered do not match."
 msgstr "كلمتى المرور اللذين قمت بإدخالهم لا يتطابقوا."
 
-#: lib/BOM/Product/Transaction.pm:1032
+#: lib/BOM/Product/Transaction.pm:1047
 msgid "The underlying market has moved too much since you priced the contract. "
 msgstr "لقد تحرك السوق كثيراً منذ قمت بتسعير العقد. "
 
@@ -8053,7 +8053,7 @@ msgstr "This call will return the same JSON structure that can be previewed from
 msgid "This client cashier section is locked."
 msgstr "قسم الصراف الخاص بهذاالعميل مغلق."
 
-#: lib/BOM/Product/Transaction.pm:1128
+#: lib/BOM/Product/Transaction.pm:1143
 msgid "This contract cannot be properly validated at this time."
 msgstr "لا يمكن التحقق من صحة هذا العقد بشكل صحيح هذة المرة."
 
@@ -8074,11 +8074,11 @@ msgid "This contract is affected by corporate action."
 msgstr "يتأثر هذا العقد بالعمل المؤسسي."
 
 #. (to_monetary_number_format($custom_limit)
-#: lib/BOM/Product/Transaction.pm:1206
+#: lib/BOM/Product/Transaction.pm:1221
 msgid "This contract is limited to "
 msgstr "هذا العقد محدودة بـ "
 
-#: lib/BOM/Product/Transaction.pm:1204
+#: lib/BOM/Product/Transaction.pm:1219
 msgid "This contract is unavailable on this account."
 msgstr "هذا العقد غير متوفر على هذا الحساب."
 
@@ -8090,7 +8090,7 @@ msgstr "هذا العقد خاسر"
 msgid "This contract offers no return."
 msgstr "لا يقدم هذا العقد عائد."
 
-#: lib/BOM/Product/Transaction.pm:626
+#: lib/BOM/Product/Transaction.pm:637
 msgid "This contract was not found among your open positions."
 msgstr "هذا العقد لا يوجد فى معاملاتك المفتوحة."
 
@@ -8347,7 +8347,7 @@ msgstr "تأكيد التداول"
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/commodities/index.html.haml:1
 msgid "Trade Oil, Gold, Silver, Palladium and Platinum from one account. Start from only $1."
-msgstr ""
+msgstr "تداول النفط والذهب والفضة والبلاديوم والبلاتين من حساب واحد. ابدأ من 1 دولار فقط."
 
 #: /home/git/translations/binary-static/src/templates/haml/static/smart_indices.html.haml:1
 msgid "Trade Smart Markets"
@@ -8400,11 +8400,11 @@ msgstr "تداول فقط بأموال يمكنك تحمل خسارتها. لا 
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/commodities/index.html.haml:1
 msgid "Trade precious metals and energy"
-msgstr ""
+msgstr "تداول المعادن الثمينة والطاقة"
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/indices/index.html.haml:1
 msgid "Trade wide range of global indices from one account. Start from only $1."
-msgstr ""
+msgstr "تداول مجموعة واسعة من المؤشرات العالمية من حساب واحد. ابدأ من 1 دولار فقط."
 
 #. (stash->{website_name})
 #: /home/git/translations/binary-static/src/templates/haml/static/tour.html.haml:1
@@ -8642,7 +8642,7 @@ msgstr "خطأ غير معروف أثناء حفظ مساحة العمل '# 1'."
 msgid "Unlock Cashier/Settings sections"
 msgstr "فتح قسم الصراف/الإعدادات"
 
-#: lib/BOM/Product/Transaction.pm:420
+#: lib/BOM/Product/Transaction.pm:425
 msgid "Unsupported bet class $bet_params->{bet_class}"
 msgstr "فئة رهان غير معتمدة $bet_params->{bet_class}"
 
@@ -8727,7 +8727,7 @@ msgstr "قم بالتأكيد على كلمة المرور الجديدة"
 
 #. ($c->stash('website_name')
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:311
+#: /home/git/regentmarkets/bom-app/create_account.cgi:318
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:676
 msgid "Verify your email address - %1"
 msgstr "تحقق من عنوان بريدك الإلكتروني - %1"
@@ -8925,7 +8925,7 @@ msgstr "نقدم هيكل الأجور القائم في السوق، بالإض
 
 #: /home/git/translations/binary-static/src/templates/haml/ad/indices/index.html.haml:1
 msgid "We offer the most major indices from America, Europe, Asia, Oceania and Africa."
-msgstr ""
+msgstr "نقدم معظم المؤشرات الرئيسية من أمريكا وأوروبا وآسيا وأوقيانوسيا وأفريقيا."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/affiliates/faq.html.tt:74
 msgid "We prohibit the use of unauthorised incentives, gifts and payments to encourage customer sign-ups. In the event that we believe that you have engaged in such activity, we reserve the right to withhold any amounts due to you. However, if you have a specific incentive in mind, then please contact your account manager for further discussion and approval."
@@ -9139,10 +9139,8 @@ msgid "When the Company opens an account for a client, that person or entity wil
 msgstr "عندما تقوم الشركة بفتح حساب للعميل سيصبح هذا الشخص أو الكيان عميلنا وبالتالى تطبق عليه كل القواعد والسياسات الخاصة بالعميل وتطبق عليهم إجراءات التشغيل.  خلال فترة نفاذ هذا الاتفاق، قد يعهد إليك بمعلومات سرية تتعلق بالأعمال والعمليات، أو التكنولوجيا الأساسية الخاصة بالشركة و / أو برنامج الشراكة الخاص بالشركة (التى تتضمن على سبيل المثال رسوم الإحالة التى تتقاضاها بموجب هذا الاتفاق). أنت توافق على تجنب الإفصاح عن أو الاستخدام غير المصرح به لمعلومات سرية  لشخص ثالث أو أطراف خارجية إلا إذا كان لديك موافقة خطية مسبقة من الشركة تفيد أنك سوف تستخدم المعلومات السرية فقط لأغراض ضرورية لتعزيز أهداف هذا الاتفاق. ألتزامك بسرية المعلومات لا ينتهى بإنتهاء هذا الاتفاق."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:102
-#, fuzzy
-#| msgid "when there is a breakdown in the means of communication normally employed in determining the price or value of any of the financial contracts or where the price or value of any of the financial contracts cannot be promptly or accurately ascertained."
 msgid "When there is a breakdown in the means of communication normally employed in determining the price or value of any of the financial contracts or where the price or value of any of the financial contracts cannot be promptly or accurately ascertained."
-msgstr "عندما يحدث انهيار فى وسائل الاتصال التى عادة ما تستخدم فى تحديد قيمة أو سعر أى عقود مالية أو عندما لا يمكن تحديد سعر أو قيمة أى عقود مالية على الفور أو بدقة."
+msgstr "عند وجود انهيار فى وسائل الاتصال المستخدمة عادة في تحديد سعر أو قيمة أي من العقود المالية أو حيث يكون سعر أو قيمة أي من العقود المالية لا يمكن التحقق منه فورا أو بدقة."
 
 #: /home/git/translations/binary-static/src/templates/haml/get_started/how_to_trade_binaries.html.haml:1
 msgid "When you are satisfied with the trade price, instantly execute your trade."
@@ -9573,18 +9571,18 @@ msgstr "لقد قمت بشراء عقود ذات سعر شراء مركب يسا
 msgid "You have entered an invalid login ID"
 msgstr "لقد قمت بإدخال معرف دخول غير صالح"
 
-#: lib/BOM/Product/Transaction.pm:763 lib/BOM/Product/Transaction.pm:768
-#: lib/BOM/Product/Transaction.pm:773 lib/BOM/Product/Transaction.pm:860
+#: lib/BOM/Product/Transaction.pm:776 lib/BOM/Product/Transaction.pm:781
+#: lib/BOM/Product/Transaction.pm:786 lib/BOM/Product/Transaction.pm:875
 msgid "You have exceeded the daily limit for contracts of this type."
 msgstr "لقد تجاوزت الحد اليومى من هذا النوع من العقود."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:902
+#: lib/BOM/Product/Transaction.pm:917
 msgid "You have exceeded your 7-day limit on losses of %1%2."
 msgstr "لقد تجاوزت حد الـ 7 أيام من الخسائر %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:870
+#: lib/BOM/Product/Transaction.pm:885
 msgid "You have exceeded your daily limit on losses of %1%2."
 msgstr "لقد تجاوزت حدك اليومي من الخسائر %1%2."
 
@@ -9721,16 +9719,12 @@ msgstr "ستجد إجابات عن معظم أسئلتك على صفحة <a href
 
 #. ($landing_company)
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:163
-#, fuzzy
-#| msgid " has been credited to your Virtual money account"
 msgid "You're currently logged in to your real money account with %1"
-msgstr " تم إضافته لحساب أموالك الإفتراضي"
+msgstr "أنت تسجل الدخول حاليا إلى حساب أموالك الحقيقي مع %1"
 
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:160
-#, fuzzy
-#| msgid " has been credited to your Virtual money account"
 msgid "You're currently logged in to your virtual money account"
-msgstr " تم إضافته لحساب أموالك الإفتراضي"
+msgstr "أنت تسجل الدخول حاليا إلى حساب أموالك الافتراضية"
 
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/topbar.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/header.html.tt:7
@@ -9773,7 +9767,7 @@ msgid "Your account balance"
 msgstr "رصيد حسابك"
 
 #. ($currency,                to_monetary_number_format($balance)
-#: lib/BOM/Product/Transaction.pm:758
+#: lib/BOM/Product/Transaction.pm:771
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "رصيد حسابك (%1%2) لا يكفى لشراء هذا العقد (%1%3)."
 
@@ -9781,7 +9775,7 @@ msgstr "رصيد حسابك (%1%2) لا يكفى لشراء هذا العقد (%
 msgid "Your account does not require authentication at this time."
 msgstr "لا يتطلب حسابك توثيق فى هذا الوقت."
 
-#: lib/BOM/Product/Transaction.pm:847
+#: lib/BOM/Product/Transaction.pm:862
 msgid "Your account has exceeded the trading limit with free promo code, please deposit if you wish to continue trading."
 msgstr "لقد تجاوز حسابك حد التداول الخاص بكود العرض المجانى، يرجى أن تقوم بالايداع إذا كنت ترغب فى الاستمرار فى التداول."
 
@@ -9925,35 +9919,27 @@ msgid "Your password and login ID are unique and passwords are hashed so that no
 msgstr "كلمة مرورك ومعرف الدخول فريدين من نوعهما ويتم تجزئة كلمات المرور بحيث لا يستطيع أحد حتى موظفي %1 أن يقرؤها. وهذا هو سبب أننا لا نستطيع استعادة كلمة المرور الخاصة بك ويجب أن نصدر واحدة جديدة ونرسلها لبريدك الإلكترونى إذا لم تستطع أن تتذكرها."
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1292
-#, fuzzy
-#| msgid "Your password should contain only characters and digits."
 msgid "Your password contains invalid characters"
-msgstr "يجب أن تتكون كلمة المرور من أحرف وأرقام فقط."
+msgstr "كلمة السر الخاصة بك تحتوي على أحرف غير صالحة"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1743
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1790
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:619
-#, fuzzy
-#| msgid "Your password should contain only characters and digits."
 msgid "Your password contains invalid characters."
-msgstr "يجب أن تتكون كلمة المرور من أحرف وأرقام فقط."
+msgstr "كلمة السر الخاصة بك تحتوي على أحرف غير صالحة."
 
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:312
 msgid "Your password has been changed."
 msgstr "تم تغيير كلمة المرور الخاصة بك."
 
 #: /home/git/regentmarkets/bom-app/reset_password.cgi:270
-#, fuzzy
-#| msgid "Your password has been successfully reset. Your login ID is <strong>%1</strong>.  Please log into your account using your new password."
 msgid "Your password has been successfully reset. Please log into your account using your new password."
-msgstr "تم إعادة تعيين كلمة المرور الخاصة بك بنجاح. معرف الدخول الخاص بك هو <strong>%1</strong>.  يرجى أن تسجل الدخول لحسابك باستخدام كلمة مرورك الجديدة."
+msgstr "تم إعادة تعيين كلمة المرور الخاصة بك بنجاح. يرجى أن تسجل الدخول لحسابك باستخدام كلمة مرورك الجديدة."
 
 #. ($forgot_pass_url, $contact_url)
 #: /home/git/regentmarkets/bom-app/reset_password.cgi:98
-#, fuzzy
-#| msgid "Your password recovery token has expired. Please click <a href=\"%1\"><strong>here</strong></a> to restart the password recovery process.<br /><br /> Your account is important to us. If you require further assistance, please contact our <a href=\"%2\"><strong>Customer Support</strong></a>."
 msgid "Your password recovery token has expired. Please click <a href=\"%1\"><strong>here</strong></a> to restart the password recovery process. Your account is important to us. If you require further assistance, please contact our <a href=\"%2\"><strong>Customer Support</strong></a>"
-msgstr "لقد انتهت صلاحية رمز استعادة كلمة المرور الخاصة بك. يرجى النقر <a href=\"%1\"><strong>هنا</strong></a> لتبدأ عملية استعادة كلمة المرور.<br /><br /> حسابك مهم لنا. إذا احتجت لمزيد من المساعدة، يرجى أن تتصل <a href=\"%2\"><strong>بخدمةالعملاء</strong></a>."
+msgstr "لقد انتهت صلاحية رمز استعادة كلمة المرور الخاصة بك. يرجى النقر <a href=\"%1\"><strong>هنا</strong></a> لتبدأ عملية استعادة كلمة المرور. حسابك مهم لنا. إذا احتجت لمزيد من المساعدة، يرجى أن تتصل <a href=\"%2\"><strong>بخدمةالعملاء</strong></a>"
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1750
 msgid "Your password should be at least 5 characters."
@@ -9962,10 +9948,8 @@ msgstr "يجب أن تكون كلمة المرور الخاصة بك 5 أحرف 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1797
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1936
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:626
-#, fuzzy
-#| msgid "Your password should be at least 5 characters."
 msgid "Your password should be at least 6 characters."
-msgstr "يجب أن تكون كلمة المرور الخاصة بك 5 أحرف على الأقل."
+msgstr "يجب أن تكون كلمة المرور الخاصة بك 6 أحرف على الأقل."
 
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1629
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:1929
@@ -10188,7 +10172,7 @@ msgstr "ساعات"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/cashier/authenticate.html.tt:18
 msgid "is required to verify that all clients are over the age of 18."
-msgstr ""
+msgstr "مطلوب للتحقق من أن جميع العملاء فوق سن الـ 18."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/charting/light_chart.html.tt:7
 msgid "less"
@@ -10361,10 +10345,8 @@ msgid "years"
 msgstr "أعوام"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:159
-#, fuzzy
-#| msgid "you are not resident in a restricted country such as the USA, Japan, Hong Kong, Bahamas, Costa Rica, Malaysia, Malta, Iran, North Korea, Jersey, Iraq or Myanmar;"
 msgid "you are not resident in a restricted country such as the USA, Japan, Hong Kong, Bahamas, Costa Rica, Malaysia, Malta, Iran, North Korea, Jersey, or Iraq;"
-msgstr "أنت لست مقيم فى بلد محظور مثل الولايات المتحدة، اليابان،هونج كونج، جزر البهاما، ماليزيا كوستا ريكا، ماليزيا، مالطا، إيران، كوريا الشمالية، جيرسى، العراق أو ماينمار؛"
+msgstr "أنت لست مقيم فى بلد محظور مثل الولايات المتحدة، اليابان، هونج كونج، جزر البهاما، كوستاريكا، ماليزيا، مالطا، إيران، كوريا الشمالية، جيرسى، أو العراق؛"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:156
 msgid "you are over 18 years of age, unless you are an Estonian resident whereby you would have to be over 21;"
@@ -10739,10 +10721,8 @@ msgid "French Index"
 msgstr "مؤشر فرنسى"
 
 #: Underlying Symbol PSI20
-#, fuzzy
-#| msgid "Portuguese Index"
 msgid "Portuguese Index"
-msgstr "مؤشر برتغالى"
+msgstr "Portuguese Index"
 
 #: Underlying Symbol DJI
 msgid "Wall Street Index"
@@ -10839,7 +10819,7 @@ msgstr "بنك أي سي أي سي أي"
 
 #: Underlying Symbol BBABI
 msgid "AB Inbev"
-msgstr ""
+msgstr "AB Inbev"
 
 #: Underlying Symbol INHDFC
 msgid "HDFC Bank Ltd"
@@ -10851,7 +10831,7 @@ msgstr "Inditex SA"
 
 #: Underlying Symbol FPSAF
 msgid "Safran"
-msgstr ""
+msgstr "Safran"
 
 #: Underlying Symbol INRIL
 msgid "Reliance Industries Ltd"
@@ -10871,11 +10851,11 @@ msgstr "شركة تويوتا للسيارات"
 
 #: Underlying Symbol NAHEIA
 msgid "Heineken"
-msgstr ""
+msgstr "Heineken"
 
 #: Underlying Symbol BBKBC
 msgid "KBC Groep"
-msgstr ""
+msgstr "KBC Groep"
 
 #: Underlying Symbol UKBG
 msgid "BG Group plc"
@@ -10883,7 +10863,7 @@ msgstr "BG Group plc"
 
 #: Underlying Symbol FPAI
 msgid "Air Liquide"
-msgstr ""
+msgstr "Air Liquide"
 
 #: Underlying Symbol NOYAR
 msgid "Yara International"
@@ -10911,15 +10891,15 @@ msgstr "Anglo American plc"
 
 #: Underlying Symbol NAINGA
 msgid "ING"
-msgstr ""
+msgstr "ING"
 
 #: Underlying Symbol FPAIR
 msgid "Airbus Group"
-msgstr ""
+msgstr "Airbus Group"
 
 #: Underlying Symbol FPBNP
 msgid "BNP Paribas"
-msgstr ""
+msgstr "BNP Paribas"
 
 #: Underlying Symbol ESIBE
 msgid "Iberdrola SA"
@@ -10927,11 +10907,11 @@ msgstr "Iberdrola SA"
 
 #: Underlying Symbol FPSAN
 msgid "SANOFI"
-msgstr ""
+msgstr "SANOFI"
 
 #: Underlying Symbol FPSGO
 msgid "Cie de Saint-Gobain"
-msgstr ""
+msgstr "Cie de Saint-Gobain"
 
 #: Underlying Symbol USPG
 msgid "Procter & Gamble Co."
@@ -10947,21 +10927,19 @@ msgstr "شركة سوفتبنك."
 
 #: Underlying Symbol FPEDF
 msgid "Electricite de France"
-msgstr ""
+msgstr "Electricite de France"
 
 #: Underlying Symbol FPDG
 msgid "Vinci"
-msgstr ""
+msgstr "Vinci"
 
 #: Underlying Symbol NOSTL
 msgid "Statoil"
 msgstr "ستات أويل"
 
 #: Underlying Symbol FPBN
-#, fuzzy
-#| msgid "none"
 msgid "Danone"
-msgstr "لا شىء"
+msgstr "Danone"
 
 #: Underlying Symbol JPHM
 msgid "Honda Motor Co. Ltd"
@@ -10976,10 +10954,8 @@ msgid "Infosys Ltd"
 msgstr "Infosys Ltd"
 
 #: Underlying Symbol NARDSA
-#, fuzzy
-#| msgid "Royal Dutch Shell plc"
 msgid "Royal Dutch Shell"
-msgstr "Royal Dutch Shell plc"
+msgstr "Royal Dutch Shell"
 
 #: Underlying Symbol DEDAI
 msgid "Daimler AG"
@@ -11006,14 +10982,12 @@ msgid "POSCO"
 msgstr "POSCO"
 
 #: Underlying Symbol FPEI
-#, fuzzy
-#| msgid "Yara International"
 msgid "Essilor International"
-msgstr "يارا انترناشيونال"
+msgstr "Essilor International"
 
 #: Underlying Symbol FPACA
 msgid "Credit Agricole"
-msgstr ""
+msgstr "Credit Agricole"
 
 #: Underlying Symbol NOSDRL
 msgid "Seadrill"
@@ -11024,10 +10998,8 @@ msgid "National Australia Bank Ltd"
 msgstr "بنك ناشيونال أستراليا ليمتد"
 
 #: Underlying Symbol FPORA
-#, fuzzy
-#| msgid "range"
 msgid "Orange"
-msgstr "مدى"
+msgstr "Orange"
 
 #: Underlying Symbol UKSAB
 msgid "SABMiller plc"
@@ -11058,10 +11030,8 @@ msgid "ANZ Banking Group Ltd"
 msgstr "ANZ Banking Group Ltd"
 
 #: Underlying Symbol NAASML
-#, fuzzy
-#| msgid "HSBC Holdings plc"
 msgid "ASML Holding"
-msgstr "HSBC Holdings plc"
+msgstr "ASML Holding"
 
 #: Underlying Symbol KRSFG
 msgid "Shinhan Financial"
@@ -11069,7 +11039,7 @@ msgstr "شينهان المالية"
 
 #: Underlying Symbol FPKER
 msgid "Kering"
-msgstr ""
+msgstr "Kering"
 
 #: Underlying Symbol UKBARC
 msgid "Barclays plc"
@@ -11077,13 +11047,11 @@ msgstr "Barclays plc"
 
 #: Underlying Symbol BBGBLB
 msgid "Groupe Bruxelles Lambert"
-msgstr ""
+msgstr "Groupe Bruxelles Lambert"
 
 #: Underlying Symbol NAUNA
-#, fuzzy
-#| msgid "Unilever plc"
 msgid "Unilever"
-msgstr "Unilever plc"
+msgstr "Unilever"
 
 #: Underlying Symbol USWFC
 msgid "Wells Fargo & Company"
@@ -11099,11 +11067,11 @@ msgstr "بانكو بيلباو فيزكايا أرجنتاريا"
 
 #: Underlying Symbol FPVIV
 msgid "Vivendi"
-msgstr ""
+msgstr "Vivendi"
 
 #: Underlying Symbol FPSU
 msgid "Schneider Electric"
-msgstr ""
+msgstr "Schneider Electric"
 
 #: Underlying Symbol UKVOD
 msgid "Vodafone"
@@ -11123,11 +11091,11 @@ msgstr "ExxonMobil"
 
 #: Underlying Symbol BBBELG
 msgid "Belgacom"
-msgstr ""
+msgstr "Belgacom"
 
 #: Underlying Symbol FPGSZ
 msgid "GDF Suez"
-msgstr ""
+msgstr "GDF Suez"
 
 #: Underlying Symbol UKSTAN
 msgid "Standard Chartered plc"
@@ -11135,7 +11103,7 @@ msgstr "Standard Chartered plc"
 
 #: Underlying Symbol FPRNO
 msgid "Renault"
-msgstr ""
+msgstr "Renault"
 
 #: Underlying Symbol USCVX
 msgid "Chevron Co."
@@ -11151,15 +11119,15 @@ msgstr ".Merck & Co. Inc"
 
 #: Underlying Symbol FPCA
 msgid "Carrefour"
-msgstr ""
+msgstr "Carrefour"
 
 #: Underlying Symbol FPFP
 msgid "TOTAL"
-msgstr ""
+msgstr "TOTAL"
 
 #: Underlying Symbol FPCS
 msgid "AXA"
-msgstr ""
+msgstr "AXA"
 
 #: Underlying Symbol USKO
 msgid "The Coca-Cola Company"
@@ -11171,7 +11139,7 @@ msgstr "تيلينور"
 
 #: Underlying Symbol BBUCB
 msgid "UCB"
-msgstr ""
+msgstr "UCB"
 
 #: Underlying Symbol UKGSK
 msgid "GlaxoSmithKline plc"
@@ -11191,25 +11159,23 @@ msgstr ".SK Hynix Inc"
 
 #: Underlying Symbol FPRI
 msgid "Pernod Ricard"
-msgstr ""
+msgstr "Pernod Ricard"
 
 #: Underlying Symbol FPOR
 msgid "L'Oreal"
-msgstr ""
+msgstr "L'Oreal"
 
 #: Underlying Symbol ESTEF
 msgid "Telefonica SA"
 msgstr "Telefonica SA"
 
 #: Underlying Symbol FPLG
-#, fuzzy
-#| msgid "Large"
 msgid "Lafarge"
-msgstr "كبير"
+msgstr "Lafarge"
 
 #: Underlying Symbol FPMC
 msgid "Moet Hennessy Louis Vuitton"
-msgstr ""
+msgstr "Moet Hennessy Louis Vuitton"
 
 #: Underlying Symbol FPGLE
 #, fuzzy

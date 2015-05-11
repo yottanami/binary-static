@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: I 18N\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-05-06 07:21+0200\n"
+"PO-Revision-Date: 2015-05-08 04:15+0200\n"
 "Last-Translator: Linguavista <saritar@lingua-vista.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/binary/static/vi/>\n"
 "Language: vi\n"
@@ -242,7 +242,7 @@ msgid "%1 provides you with the opportunity to either self-exclude or <a href=\"
 msgstr "%1 mang đến cơ hội tự loại trừ hoặc đặt giới hạn <a href=\"%2\"> trong hoạt động giao dịch của bạn </a> trên trang web này. Bạn cũng có thể <a href=\"%3\">contact us</a> nhằm đặt giới hạn mong muốn thông qua chat trực tiếp, email hoặc điện thoại. Những giới hạn có sẵn:"
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:951
+#: lib/BOM/Product/Transaction.pm:966
 msgid "%1 transactions may not be performed with this account."
 msgstr "Giao dịch %1 có thể không hoạt động với tài khoản này."
 
@@ -889,7 +889,7 @@ msgstr "Quyền chọn nhị phân là dạng lựa chọn mức tiền thươ
 msgid "A derivative is a financial instrument whose value is determined by reference to an underlying market. Derivatives are commonly traded in the inter-bank market, and binaries are one of the simplest forms of derivatives."
 msgstr "Phái sinh là công cụ tài chính có giá trị được xác định khi liên kết với một thị trường tA derivative is a financial instrument whose value is determined thực. Phái sinh thường được giao dịch trên thị trường ngân hàng quốc tế, và binary chính là một trong những dạng đơn giản của phái sinh."
 
-#: lib/BOM/Product/Transaction.pm:506 lib/BOM/Product/Transaction.pm:620
+#: lib/BOM/Product/Transaction.pm:514 lib/BOM/Product/Transaction.pm:631
 msgid "A general error has occurred."
 msgstr "Đã có lỗi phổ biến xảy ra."
 
@@ -994,7 +994,7 @@ msgid "Access to your personal data is strictly prohibited with the exception of
 msgstr "Đường dẫn tới dữ liệu cá nhân của bạn được bảo mật rất cao, chỉ có nhân sự chủ chốt của công ty có thể truy cập và chỉ trong những trường hợp thật sự cần thiết."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:131
+#: /home/git/regentmarkets/bom-app/create_account.cgi:134
 msgid "According to our terms and conditions, you may only register once through our site. If you have forgotten the password of your existing account, please <a href=\"%1\">try our password recovery tool</a> or contact customer service."
 msgstr "Theo điều kiện và điều khoản của chúng tôi, bạn chỉ có thể đăng ký một lần trên trang của chúng tôi. Nếu bạn quên mật khẩu hoặc tài khoản đã có, vui lòng  <a href=\"%1\">thử công cụ khôi phục mật khẩu</a> hoặc liên hệ dịch vụ chăm sóc khách hàng."
 
@@ -1015,9 +1015,9 @@ msgstr "Giới hạn tài khoản"
 msgid "Account Management and Tracking"
 msgstr "Quản lý và theo dõi tài khoản"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:106
-#: /home/git/regentmarkets/bom-app/create_account.cgi:262
-#: /home/git/regentmarkets/bom-app/create_account.cgi:408
+#: /home/git/regentmarkets/bom-app/create_account.cgi:109
+#: /home/git/regentmarkets/bom-app/create_account.cgi:265
+#: /home/git/regentmarkets/bom-app/create_account.cgi:414
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3656
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:145
 msgid "Account Opening"
@@ -2121,10 +2121,8 @@ msgstr "Khách hàng đã đăng kí với Binary (C.R.) S.A.có thể tr
 
 #. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-#, fuzzy
-#| msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
 msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
-msgstr "Khách hàng đã đăng kí với Công ty TNHH Binary (Châu Âu) có thể trình các vấn đề tranh chấp chưa được giải quyết lên Cơ quan Giám sát Cá cược Malta qua địa chỉ"
+msgstr "Khách hàng đã đăng kí với Công ty TNHH Binary (Châu Âu) có thể trình các vấn đề tranh chấp chưa được giải quyết với Cơ quan Giám sát Cá cược Malta %1 tại"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
 msgid "Clients registered with Binary (IOM) Ltd can raise their unresolved disputes with the Isle of Man Gambling Supervision Commission at gaming@gov.im."
@@ -2570,7 +2568,7 @@ msgid "Dear %1 %2 %3,"
 msgstr "%1 %2 %3 thân mến,"
 
 #. ($client_name, $ce_broker_name, $support_email)
-#: lib/BOM/Platform/Client/IDAuthentication.pm:140
+#: lib/BOM/Platform/Client/IDAuthentication.pm:143
 msgid ""
 "Dear %1,\n"
 "\n"
@@ -2874,7 +2872,7 @@ msgstr "Bạn có muốn chốt lợi nhuận không?"
 msgid "Do you want to see Binary.com in other languages, or can you suggest improvements to our current translations?"
 msgstr "Bạn có muốn xem Binary.com bằng ngôn ngữ khác không, hoặc bạn có thể gợi ý cải thiện cho nguồn dịch thuật của chúng tôi hiện tại không?"
 
-#: lib/BOM/Platform/Client/IDAuthentication.pm:139
+#: lib/BOM/Platform/Client/IDAuthentication.pm:142
 msgid "Documents are required to verify your identity"
 msgstr "Yêu cầu giấy tờ để xác minh nhận diện của bạn"
 
@@ -2939,7 +2937,7 @@ msgstr "Ngài"
 msgid "Draw Chart"
 msgstr "Vẽ Biểu đồ"
 
-#: lib/BOM/Product/Transaction.pm:1178
+#: lib/BOM/Product/Transaction.pm:1193
 msgid "Due to regulatory requirements, you are required to authenticate your account in order to continue trading."
 msgstr "Do yêu cầu quy định, bạn được yêu cầu xác thực tài khoản của mình để tiếp tục giao dịch."
 
@@ -3107,7 +3105,7 @@ msgstr "Phong bì (SMA 20 +/- 10%)"
 msgid "Equity Offering"
 msgstr "Chào bán vốn chủ sở hữu"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:140
+#: /home/git/regentmarkets/bom-app/create_account.cgi:143
 msgid "Error : password field is blank!"
 msgstr "lỗi: trường mật khẩu bị trống!"
 
@@ -3904,7 +3902,7 @@ msgstr "Nếu bạn chọn <strong>thời gian bắt  đầu</strong> \"Ngay
 msgid "If you select a specific <strong>end time</strong>, the <strong>end time</strong> is the selected time."
 msgstr "Nếu bạn chọn <strong>thời gian kết thúc cụ thể</strong>, <strong>thời gian kết thúc</strong> là thời gian đã được lựa chọn."
 
-#: lib/BOM/Product/Transaction.pm:699
+#: lib/BOM/Product/Transaction.pm:710
 msgid "If you wish to raise these limits, please authenticate your account."
 msgstr "Nếu bạn muốn mở rộng những giới hạn này, vui lòng xác minh tài khoản của bạn."
 
@@ -3974,7 +3972,7 @@ msgstr "Trong loại Silicon Valley thông thường, Nhà doanh nghiệp va�
 msgid "In foreign exchange markets, traders can enter contracts based on the change in price of one currency as it relates to another currency. For example if a trader selects Rise in the EUR/USD market, they are predicting that the value of the Euro will rise in relation to the value of the US dollar."
 msgstr "Trong thị trường ngoại tệ, nhà giao dịch có thể giao kết hợp đồng dựa trên sự thay đổi trong giá cả của một đồng tiền vì nó liên quan tới đồng khác. Ví dụ, nếu một nhà giao dịch lựa chọn Tăng trong cặp tiền tệ EUR/USD, họ đang dự đoán rằng giá trị của đồng Euro sẽ tăng tương quan với giá trị của đồng Đô la Mỹ."
 
-#: lib/BOM/Product/Transaction.pm:1231
+#: lib/BOM/Product/Transaction.pm:1246
 msgid "In order for you to place contracts, we need to know your Residence (Country). Please update your settings."
 msgstr "Để bạn có thể đặt hợp đồng, chúng tôi cần biết Đất nước bạn đang cư trú. Vui lòng cập nhật dữ liệu thiết lập."
 
@@ -4995,7 +4993,7 @@ msgstr "Mật khẩu mới"
 msgid "New Password Request"
 msgstr "Yêu cầu Mật khẩu mới"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:216
+#: /home/git/regentmarkets/bom-app/create_account.cgi:219
 msgid "New account registration fail."
 msgstr "Đăng kí tài khoản mới bị lỗi."
 
@@ -5993,17 +5991,17 @@ msgstr "Giá Mua giao ngay"
 msgid "Purchase Time"
 msgstr "Thời Gian mua"
 
-#: lib/BOM/Product/Transaction.pm:791
+#: lib/BOM/Product/Transaction.pm:805
 msgid "Purchase of this contract would cause you to exceed our payout limit for open contracts of this type. To continue please consider to sell a few contracts at the market or trade in different contract types."
 msgstr "Mua hợp đồng này sẽ dẫn đến tình trạng vượt quá giới hạn chi trả của chúng tôi khi mở hợp đồng loại này. Để tiếp tục xin vui lòng bán một vài hợp đồng tại thị trường này hoặc giao dịch các loại hợp đồng khác."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:887
+#: lib/BOM/Product/Transaction.pm:902
 msgid "Purchase of this contract would cause you to exceed your 7-day turnover limit of %1%2."
 msgstr "Mua hợp đồng này sẽ dẫn đến tình trạng vượt quá giới hạn doanh thu 7 ngày của %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:697
+#: lib/BOM/Product/Transaction.pm:708
 msgid "Purchase of this contract would cause you to exceed your daily turnover limit of %1%2."
 msgstr "Mua hợp đồng này sẽ dẫn đến tình trạng vượt quá giới hạn doanh thu hàng ngày %1%2 của bạn."
 
@@ -6696,11 +6694,11 @@ msgstr "Xin lỗi, Lỗi xảy ra trong khi đang xử lý tài khoản cu�
 msgid "Sorry, an error occurred. Please contact customer support if this problem persists."
 msgstr "Xin lỗi, có lỗi xảy ra. Vui lòng liên hệ với bộ phận chăm sóc khách hàng nếu lỗi này tái diễn."
 
-#: lib/BOM/Product/Transaction.pm:1244
+#: lib/BOM/Product/Transaction.pm:1259
 msgid "Sorry, contracts on Random Indices are not available in your country of residence"
 msgstr "Xin lỗi, Hợp đồng Chỉ số Ngẫu nhiên không có trong đất nước bạn cư trú"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:86
+#: /home/git/regentmarkets/bom-app/create_account.cgi:89
 msgid "Sorry, new account opening is suspended for the time being."
 msgstr "Xin lỗi, trong thời gian này việc mở tài khoản bị đình chỉ."
 
@@ -6745,7 +6743,7 @@ msgid "Sorry, the Payment Agent's currency "
 msgstr "Xin lỗi, đồng tiền của Đại lý Thanh toán "
 
 #. ($limit, $currency)
-#: lib/BOM/Product/Transaction.pm:840
+#: lib/BOM/Product/Transaction.pm:855
 msgid "Sorry, the aggregate payouts of contracts on your account cannot exceed %2%1."
 msgstr "Xin lỗi, tổng số tiền thưởng của hợp đồng trong tài khoản của bạn không thể vượt quá %2%1."
 
@@ -6777,7 +6775,7 @@ msgstr "Xin lỗi, đặc tính này chỉ hiển thị cho tài khoản a
 msgid "Sorry, this feature is not available."
 msgstr "Xin lỗi, đặc tính này không có."
 
-#: lib/BOM/Product/Transaction.pm:1404
+#: lib/BOM/Product/Transaction.pm:1422
 msgid "Sorry, this page cannot be refreshed."
 msgstr "Xin lỗi, trang này không thể làm tươi mới được."
 
@@ -6786,7 +6784,7 @@ msgid "Sorry, you are too young to open an account!"
 msgstr "Xin lỗi, bạn quá trẻ để có thể mở tài khoản!"
 
 #. ($limit,                request()
-#: lib/BOM/Product/Transaction.pm:727
+#: lib/BOM/Product/Transaction.pm:739
 msgid "Sorry, you cannot hold more than %1 contracts at a given time. Please visit the <a href=\"%2\" class=\"pjaxload\">statement</a> page to automatically sell your expired contracts."
 msgstr "Xin lỗi, bạn không thể nắm giữ hơn %1 hợp đồng trongg thời gian nhất định. Vui lòng ghé thắm <a href=\"%2\" class=\"pjaxload\">trang </a> diễn giải để tự động bán hợp đồng hết han của bạn."
 
@@ -6831,11 +6829,11 @@ msgid "Sorry, you have open positions. Please close out all open positions befor
 msgstr "Xin lỗi, bạn đã có vị thế mở. Vui lòng đóng tất cả các vị thế mở trước khi được yêu cầu thêm tiền."
 
 #. ("$currency$balance",                $limit)
-#: lib/BOM/Product/Transaction.pm:816
+#: lib/BOM/Product/Transaction.pm:830
 msgid "Sorry, your account cash balance is too high (%1). <B>Your maximum account balance is %2 </b>. Please withdraw money from your account to bring down your cash balance under that amount. You may not trade until you do so."
 msgstr "Xin lỗi, số dư tài khoản của bạn quá cao (%1). <B>Số dư tài khoản tối đa của bạn là %1 </b>. Vui lòng rút tiền để số dư tài khoản của bạn xuống dưới mức đó. Bạn không thể giao dịch cho tới khi bạn thực hiện điều đó."
 
-#: lib/BOM/Product/Transaction.pm:1268
+#: lib/BOM/Product/Transaction.pm:1283
 msgid "Sorry, your account is not authorised for any further contract purchases."
 msgstr "Xin lỗi, tài khoản của bạn không có quyền mua thêm hợp đồng."
 
@@ -6897,7 +6895,7 @@ msgstr "Bắt đầu Giao dịch"
 msgid "Start time"
 msgstr "Thời gian bắt đầu"
 
-#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:367
+#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:372
 msgid "Start time is in the past"
 msgstr "Thời gian bắt đầu trong quá khứ"
 
@@ -7602,11 +7600,11 @@ msgid "The content on this website is subject to change at any time without noti
 msgstr "Nội dung trên trang web này có thể thay đổi bất cứ lúc nào mà không cần thông báo trước và được cung cấp cho mục đích duy nhất là hỗ trợ nhà giao dịch đưa ra các quyết định đầu tư độc lập. % 1 đã thực hiện các biện pháp hợp lý để đảm bảo tính chính xác của thông tin trên trang web, tuy nhiên, công ty không đảm bảo tính chính xác và sẽ không chịu trách nhiệm đối với bất kỳ tổn thất hoặc thiệt hại nào phát sinh trực tiếp hoặc gián tiếp từ nội dung hoặc do không thể truy cập vào trang web, đối với bất kỳ sự chậm trễ hay thất bại trong việc truyền tải hoặc nhận hướng dẫn hoặc thông báo được gửi qua trang web này."
 
 #. ($currency,                to_monetary_number_format($amount)
-#: lib/BOM/Product/Transaction.pm:1036
+#: lib/BOM/Product/Transaction.pm:1051
 msgid "The contract %4 has changed from %1%2 to %1%3."
 msgstr "Hợp đồng%4 đã thay đổi từ %1%2 thành %1%3."
 
-#: lib/BOM/Product/Transaction.pm:1024
+#: lib/BOM/Product/Transaction.pm:1039
 msgid "The contract has expired"
 msgstr "Hợp đồng đã hết hạn"
 
@@ -7797,17 +7795,17 @@ msgid "The profit is the difference between the purchase price (the stake) and t
 msgstr "Lợi nhuận là phần chênh lệch giữa giá mua (cổ phần) và tiền thanh toán trên giao dịch thắng."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:943
+#: lib/BOM/Product/Transaction.pm:958
 msgid "The provided currency %1 is invalid."
 msgstr "Đồng tiền được cung câp %` không hợp lệ."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:935
+#: lib/BOM/Product/Transaction.pm:950
 msgid "The provided currency %1 is not the default currency"
 msgstr "Đồng tiền được cung cấp %1 không phải là đồng tiền mặc định"
 
 #. ($email)
-#: /home/git/regentmarkets/bom-app/create_account.cgi:127
+#: /home/git/regentmarkets/bom-app/create_account.cgi:130
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "Địa chỉ email được cung cấp %1 đã được sử dụng bởi một ID đăng nhập khác."
 
@@ -7869,7 +7867,7 @@ msgstr "Các giao dịch được thực hiện trên trang web này và mối 
 msgid "The two passwords that you entered do not match."
 msgstr "Hai mật khẩu bạn vừa nhập không khớp với nhau."
 
-#: lib/BOM/Product/Transaction.pm:1032
+#: lib/BOM/Product/Transaction.pm:1047
 msgid "The underlying market has moved too much since you priced the contract. "
 msgstr "Thị trường cơ sở đã biến chuyển quá nhiều từ khi bạn định giá hợp động. "
 
@@ -8048,7 +8046,7 @@ msgstr "Quyền chọn mua này sẽ giống cấu trúc JSON có thể �
 msgid "This client cashier section is locked."
 msgstr "Khu vực thu tiền khác hàng bị khóa."
 
-#: lib/BOM/Product/Transaction.pm:1128
+#: lib/BOM/Product/Transaction.pm:1143
 msgid "This contract cannot be properly validated at this time."
 msgstr "Hợp đồng này không thể được xác minh vào thời gian này."
 
@@ -8069,11 +8067,11 @@ msgid "This contract is affected by corporate action."
 msgstr "Hợp đồng này bị ảnh hưởng bởi hoạt động của công ty."
 
 #. (to_monetary_number_format($custom_limit)
-#: lib/BOM/Product/Transaction.pm:1206
+#: lib/BOM/Product/Transaction.pm:1221
 msgid "This contract is limited to "
 msgstr "Hợp đồng này bị giới hạn tới "
 
-#: lib/BOM/Product/Transaction.pm:1204
+#: lib/BOM/Product/Transaction.pm:1219
 msgid "This contract is unavailable on this account."
 msgstr "Hợp đồng này không có  trong tài khoản này."
 
@@ -8085,7 +8083,7 @@ msgstr "Hợp đồng này đã bị lỗ"
 msgid "This contract offers no return."
 msgstr "Hợp đồng này chào bán không lợi nhuận."
 
-#: lib/BOM/Product/Transaction.pm:626
+#: lib/BOM/Product/Transaction.pm:637
 msgid "This contract was not found among your open positions."
 msgstr "Không tìm thấy hợp đồng này trong vị thế mở của bạn."
 
@@ -8637,7 +8635,7 @@ msgstr "Lỗi lạ trong khi lưu nơi làm việc'#1'."
 msgid "Unlock Cashier/Settings sections"
 msgstr "Mở khóa khu Thu ngân/Thiết lập"
 
-#: lib/BOM/Product/Transaction.pm:420
+#: lib/BOM/Product/Transaction.pm:425
 msgid "Unsupported bet class $bet_params->{bet_class}"
 msgstr "Lớp cá cược không được hỗ $bet_params->{bet_class}"
 
@@ -8722,7 +8720,7 @@ msgstr "Xác thực mật khẩu mới"
 
 #. ($c->stash('website_name')
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:311
+#: /home/git/regentmarkets/bom-app/create_account.cgi:318
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:676
 msgid "Verify your email address - %1"
 msgstr "Xác nhận địa chỉ email của bạn- %1"
@@ -9562,18 +9560,18 @@ msgstr "Bạn đã mua hợp đồng với giá mua kết hợp của 5 l
 msgid "You have entered an invalid login ID"
 msgstr "Bạn đã nhập ID đăng nhập không hợp lệ"
 
-#: lib/BOM/Product/Transaction.pm:763 lib/BOM/Product/Transaction.pm:768
-#: lib/BOM/Product/Transaction.pm:773 lib/BOM/Product/Transaction.pm:860
+#: lib/BOM/Product/Transaction.pm:776 lib/BOM/Product/Transaction.pm:781
+#: lib/BOM/Product/Transaction.pm:786 lib/BOM/Product/Transaction.pm:875
 msgid "You have exceeded the daily limit for contracts of this type."
 msgstr "Bạn đã vượt quá giới hạn số hợp đồng trong ngày của loại này."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:902
+#: lib/BOM/Product/Transaction.pm:917
 msgid "You have exceeded your 7-day limit on losses of %1%2."
 msgstr "Bạn đã vượt quá giới hạn mức thua lỗ 7 ngày của %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:870
+#: lib/BOM/Product/Transaction.pm:885
 msgid "You have exceeded your daily limit on losses of %1%2."
 msgstr "Bạn đã vượt quá giới hạn thua lỗ hàng ngày của %1%2."
 
@@ -9758,7 +9756,7 @@ msgid "Your account balance"
 msgstr "Số dư tài khoản của bạn"
 
 #. ($currency,                to_monetary_number_format($balance)
-#: lib/BOM/Product/Transaction.pm:758
+#: lib/BOM/Product/Transaction.pm:771
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "Số dư tài khoản của bạn (%1%2) không đủ để mua hợp đồng này (%1%3)."
 
@@ -9766,7 +9764,7 @@ msgstr "Số dư tài khoản của bạn (%1%2) không đủ để mua hợ
 msgid "Your account does not require authentication at this time."
 msgstr "Tài khoản của bạn không yêu cầu xác thực vào lúc này."
 
-#: lib/BOM/Product/Transaction.pm:847
+#: lib/BOM/Product/Transaction.pm:862
 msgid "Your account has exceeded the trading limit with free promo code, please deposit if you wish to continue trading."
 msgstr "Tài khoản của bạn đã vượt quá hạn mức giao dịch với mã quảng miễn phí, xin vui lòng gửi tiền nếu bạn muốn tiếp tục giao dịch."
 
@@ -10726,7 +10724,7 @@ msgstr "Chỉ số Hoa Kỳ"
 
 #: Underlying Symbol SX5E
 msgid "Euro 50 Index"
-msgstr "Chỉ số châu Âu 50"
+msgstr "Chỉ số 50 châu Âu"
 
 #: Underlying Symbol AS51
 msgid "Australian Index"
@@ -10770,7 +10768,7 @@ msgstr "Chỉ số 30 Italia"
 
 #: Underlying Symbol RTSI
 msgid "Russian Regular Index"
-msgstr "Chỉ số Nga thông thường"
+msgstr "Chỉ số Thông thường Nga"
 
 #: Underlying Symbol SZSECOMP
 msgid "Shenzhen Index"
@@ -10782,7 +10780,7 @@ msgstr "Chỉ số Ý"
 
 #: Underlying Symbol N100
 msgid "Euro 100 Index"
-msgstr "100 chỉ số Euro"
+msgstr "Chỉ số 100 Euro"
 
 #: Underlying Symbol BFX
 msgid "Belgian Index"
@@ -10926,7 +10924,7 @@ msgstr "Tập đoàn xây dựng Vinci"
 
 #: Underlying Symbol NOSTL
 msgid "Statoil"
-msgstr "hãng Statoil"
+msgstr "Hãng Statoil"
 
 #: Underlying Symbol FPBN
 msgid "Danone"
@@ -11186,11 +11184,11 @@ msgstr "Tập đoàn bán lẻ đa quốc gia Wal-Mart Stores Inc."
 
 #: Underlying Symbol frxXPTAUD
 msgid "XPT/AUD"
-msgstr "Phương pháp quy đổi tiền tệ XPT/AUD"
+msgstr "Cặp tiền tệ XPT/AUD"
 
 #: Underlying Symbol frxXAGEUR
 msgid "XAG/EUR"
-msgstr "Biểu đồ quy đổi XAG/EUR"
+msgstr "Cặp tiền tệ XAG/EUR"
 
 #: Underlying Symbol frxBROGBP
 msgid "Oil/GBP"
@@ -11198,7 +11196,7 @@ msgstr "Dầu/GBP"
 
 #: Underlying Symbol frxXPDGBP
 msgid "XPD/GBP"
-msgstr "Biểu đồ quy đổi XPD/GBP"
+msgstr "Cặp tiền tệ XPD/GBP"
 
 #: Underlying Symbol frxXAUUSD
 msgid "Gold/USD"
@@ -11206,15 +11204,15 @@ msgstr "Vàng/ đô la Mỹ"
 
 #: Underlying Symbol frxXAGGBP
 msgid "XAG/GBP"
-msgstr "Biểu đồ quy đổi XAG/GBP"
+msgstr "Cặp tiền tệ XAG/GBP"
 
 #: Underlying Symbol frxXAGAUD
 msgid "XAG/AUD"
-msgstr "Biểu đồ quy đổi XAG/AUD"
+msgstr "Cặp tiền tệ XAG/AUD"
 
 #: Underlying Symbol frxXPDEUR
 msgid "XPD/EUR"
-msgstr "Biểu đồ quy đổi XPD/EUR"
+msgstr "Cặp tiền tệ XPD/EUR"
 
 #: Underlying Symbol frxBROUSD
 msgid "Oil/USD"
@@ -11222,23 +11220,23 @@ msgstr "Dầu/ đô la Mỹ"
 
 #: Underlying Symbol frxXPTUSD
 msgid "Platinum/USD"
-msgstr "Quy đổi Platinum/USD"
+msgstr "Cặp Platinum/USD"
 
 #: Underlying Symbol frxXPDUSD
 msgid "Palladium/USD"
-msgstr "Quy đổi Palladium/USD"
+msgstr "Cặp Palladium/USD"
 
 #: Underlying Symbol frxXAGUSD
 msgid "Silver/USD"
-msgstr "Quy đổi bạc/ đô la Mỹ"
+msgstr "Cặp Bạc/ đô la Mỹ"
 
 #: Underlying Symbol frxXPDAUD
 msgid "XPD/AUD"
-msgstr "Quy đổi XPD/AUD"
+msgstr "Cặp tiền tệ XPD/AUD"
 
 #: Underlying Symbol frxXAUAUD
 msgid "Gold/AUD"
-msgstr "Quy đổi vàng/AUD"
+msgstr "Vàng/AUD"
 
 #: Underlying Symbol frxBROEUR
 msgid "Oil/EUR"
@@ -11258,11 +11256,11 @@ msgstr "Vàng/GBP"
 
 #: Underlying Symbol frxXPTEUR
 msgid "XPT/EUR"
-msgstr "Quy đổi XPT/EUR"
+msgstr "Cặp tiền tệ XPT/EUR"
 
 #: Underlying Symbol frxXPTGBP
 msgid "XPT/GBP"
-msgstr "Quy đổi XPT/GBP"
+msgstr "Cặp tiền tệ XPT/GBP"
 
 #: Underlying Symbol RDBULL
 msgid "Random Bull"
@@ -11278,21 +11276,19 @@ msgstr "Mars ngẫu nhiên"
 
 #: Underlying Symbol RDSUN
 msgid "Random Sun"
-msgstr "Sun ngẫu nhiên"
+msgstr "Mặt trời ngẫu nhiên"
 
 #: Underlying Symbol SYNFCHI
-#, fuzzy
-#| msgid "French Fast Index"
 msgid "French Smart Index"
-msgstr "Chỉ số Nhanh Pháp"
+msgstr "Chỉ số Thông minh Pháp"
 
 #: Underlying Symbol SYNN225
 msgid "Japanese Smart Index"
-msgstr "Chỉ số thông thái Nhật Bản"
+msgstr "Chỉ số thông minh Nhật Bản"
 
 #: Underlying Symbol SYNHSI
 msgid "Hong Kong Smart Index"
-msgstr "Chỉ số thông thái Hồng Kông"
+msgstr "Chỉ số thông minh Hồng Kông"
 
 #: Underlying Symbol WLDEUR
 msgid "EUR Index"
@@ -11304,11 +11300,11 @@ msgstr "Chỉ số đô la Mỹ"
 
 #: Underlying Symbol SYNSX5E
 msgid "Euro 50 Smart Index"
-msgstr "Chỉ số thông thái Euro 50"
+msgstr "Chỉ số thông minh 50 Euro"
 
 #: Underlying Symbol SYNDJI
 msgid "Wall Street Smart Index"
-msgstr "Chỉ số thông minh phố Wall"
+msgstr "Chỉ số Thông minh phố Wall"
 
 #: Underlying Symbol SYNPSI20
 msgid "Portuguese Smart Index"
@@ -11324,7 +11320,7 @@ msgstr "Chỉ số thông minh Hà Lan"
 
 #: Underlying Symbol WLDAUD
 msgid "AUD Index"
-msgstr "Chỉ số thông minh AUD"
+msgstr "Chỉ số AUD"
 
 #: Underlying Symbol SYNGDAXI
 msgid "German Smart Index"
@@ -11340,7 +11336,7 @@ msgstr "Chỉ số thông minh Bombay"
 
 #: Underlying Symbol WLDGBP
 msgid "GBP Index"
-msgstr "Chỉ số thông minh GBP"
+msgstr "Chỉ số GBP"
 
 #: Underlying Symbol SYNSPC
 msgid "US Smart Index"
@@ -11360,11 +11356,11 @@ msgstr "Hàng hóa là những thứ được mang ra trao đổi buôn bán, c�
 
 #: Translation for market name
 msgid "Stocks"
-msgstr "Cổ phần"
+msgstr "Cổ phiếu"
 
 #: Explanation for market Stocks
 msgid "Stocks (or shares) represent the value of partial ownership in a single company."
-msgstr "Cổ phần (hay phần đóng góp) đại diện cho giá trị sở hữu một phần công ty."
+msgstr "Cổ phiếu (hay cổ phần) đại diện cho giá trị sở hữu một phần công ty."
 
 #: Translation for market name
 msgid "Randoms"
@@ -11376,11 +11372,11 @@ msgstr "Sự ngẫu nhiên chính là những khu mua sắm được mô phỏng
 
 #: Explanation for market Forex
 msgid "Forex (or foreign exchange) represents the ratio between the values of two currencies."
-msgstr "Forex (hay quy đổi ngoại tệ) chính là tỉ lệ giữa giá trị của 2 loại tiền tệ."
+msgstr "Forex (hay trao đổi ngoại tệ) chính là tỉ lệ giữa giá trị của 2 loại tiền tệ."
 
 #: Explanation for market Indices
 msgid "Indices represent the weighted value of a basket of companies, typically traded on the same exchange."
-msgstr "Chỉ số chính là giá trị cân đo đong đếm của các công ty, được giao dịch chủ yếu trên cùng một thị trường trao đổi."
+msgstr "Chỉ số chính là giá trị có trọng số của các công ty, được giao dịch chủ yếu trên cùng một thị trường trao đổi."
 
 #: Explanation for market Smart Markets
 msgid "Smart indices."
@@ -11396,15 +11392,15 @@ msgstr "Lĩnh vực kinh doanh đại diện cho giá trị tính toán của c�
 
 #: Translation for sub market name
 msgid "United Kingdom Stocks"
-msgstr "Thị trường chứng khoán Anh Quốc"
+msgstr "Chứng khoán Anh Quốc"
 
 #: Translation for sub market name
 msgid "India Stocks"
-msgstr "Thị trường chứng khoán Ấn Độ"
+msgstr "Chứng khoán Ấn Độ"
 
 #: Translation for sub market name
 msgid "Dutch Stocks"
-msgstr "Thị trường chứng khoán Hà Lan"
+msgstr "Chứng khoán Hà Lan"
 
 #: Translation for sub market name
 msgid "Synthetic Index"
@@ -11416,15 +11412,15 @@ msgstr "Những chỉ số tổng hợp"
 
 #: Translation for sub market name
 msgid "Australia Stocks"
-msgstr "Thị trường chứng khoán Australia"
+msgstr "Chứng khoán Úc"
 
 #: Translation for sub market name
 msgid "Americas Future"
-msgstr "Tổ chức phi lợi nhuận Americas Future"
+msgstr "Hợp đồng tương lai Mỹ"
 
 #: Translation for sub market name
 msgid "French Stocks"
-msgstr "Thị trường chứng khoán Pháp"
+msgstr "Chứng khoán Pháp"
 
 #: Translation for sub market name
 msgid "Major Pairs"
@@ -11444,11 +11440,11 @@ msgstr "Ngành nông nghiệp"
 
 #: Translation for sub market name
 msgid "Spain Stocks"
-msgstr "Thị trường chứng khoán Tây Ban Nha"
+msgstr "Chứng khoán Tây Ban Nha"
 
 #: Translation for sub market name
 msgid "Italy Stocks"
-msgstr "Thị trường chứng khoán Italia"
+msgstr "Chứng khoán Ý"
 
 #: Translation for sub market name
 msgid "Industrials Sector"
@@ -11464,11 +11460,11 @@ msgstr "Những chỉ số nhanh"
 
 #: Translation for sub market name
 msgid "Norway Stocks"
-msgstr "Thị trường chứng khoán Na Uy"
+msgstr "Chứng khoán Na Uy"
 
 #: Translation for sub market name
 msgid "Germany Stocks"
-msgstr "Thị trường chứng khoán Đức"
+msgstr "Chứng khoán Đức"
 
 #: Translation for sub market name
 msgid "Metals"
@@ -11480,15 +11476,15 @@ msgstr "Ngành công nghệ"
 
 #: Translation for sub market name
 msgid "Belgian Stocks"
-msgstr "Thị trường chứng khoán Bỉ"
+msgstr "Chứng khoán Bỉ"
 
 #: Translation for sub market name
 msgid "Korea Stocks"
-msgstr "Thị trường chứng khoán Hàn Quốc"
+msgstr "Chứng khoán Hàn Quốc"
 
 #: Translation for sub market name
 msgid "Consumer Srv Sector"
-msgstr "Chăm sóc khách hàng"
+msgstr "Lĩnh vực Chăm sóc khách hàng"
 
 #: Translation for sub market name
 msgid "Asia/Oceania"
@@ -11516,7 +11512,7 @@ msgstr "Thể hiện giao dịch của một ngày với các nhân tố th
 
 #: Translation for sub market name
 msgid "United States Stocks"
-msgstr "Thị trường chứng khoán Hoa Kỳ"
+msgstr "Chứng khoán Hoa Kỳ"
 
 #: Translation for sub market name
 msgid "Minor Pairs"
@@ -11564,7 +11560,7 @@ msgstr "Lĩnh vực Tài chính"
 
 #: Translation for sub market name
 msgid "Europe/Africa Future"
-msgstr "Hợp đồng Tương lại Châu Âu/Châu Phi"
+msgstr "Hợp đồng Tương lai Châu Âu/Châu Phi"
 
 #: Translation for sub market name
 msgid "Japan Stocks"
@@ -11631,7 +11627,7 @@ msgstr "%1 <strong>%2</strong> có tiền thưởng nếu <strong>điểm c
 
 #: Translation for contract type "ASIANU"
 msgid "asian up"
-msgstr "châu Á vươn lên"
+msgstr "lên kiểu châu Á"
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11642,7 +11638,7 @@ msgstr "châu Á vươn lên"
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (ASIANU - tick)
 msgid "%1 <strong>%2</strong> payout if the <strong>last tick</strong> of %3 is strictly <strong>higher</strong> than the <strong>average</strong> of the <strong>%5 ticks</strong>."
-msgstr "%1 <strong>%2</strong> tiền thưởng nếu <strong>điểm cuối</strong> của%3 <strong>cao</strong> hơn <strong>trung bình</strong> của <strong>%5 điểm</strong>."
+msgstr "%1 <strong>%2</strong>có tiền thưởng nếu <strong>điểm cuối</strong> của%3 bắt buộc<strong>cao</strong> hơn <strong>trung bình</strong> của <strong>%5 điểm</strong>."
 
 #: Translation for contract type "CALL"
 msgid "higher"
@@ -11698,7 +11694,7 @@ msgstr "%1 <strong>%2</strong> có tiền thưởng nếu như chữ số 
 
 #: Translation for contract type "DIGITMATCH"
 msgid "matches"
-msgstr "phù hợp"
+msgstr "khớp"
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11709,7 +11705,7 @@ msgstr "phù hợp"
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (DIGITMATCH - tick)
 msgid "%1 <strong>%2</strong> payout if the last digit of %3 <strong>is %6</strong> after <strong>%5 ticks</strong>."
-msgstr "%1 <strong>%2</strong> xuất chi nếu chữ số cuối cùng của %3 <strong>is %6</strong> sau <strong>%5 lần thay đổi</strong>."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu chữ số cuối cùng của %3 <strong>là %6</strong> sau <strong>%5 điểm</strong>."
 
 #: Translation for contract type "EXPIRYMISS"
 msgid "ends outside"
@@ -11724,7 +11720,7 @@ msgstr "kết thúc bên ngoài"
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (EXPIRYMISS - daily)
 msgid "%1 <strong>%2</strong> payout if %3 <strong>ends outside %7</strong> to <strong>%6</strong> at %5."
-msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>kết thúc ngoài %7</strong> tới <strong>%6</strong> tại %5."
+msgstr "%1 <strong>%2</strong>có tiền thưởng nếu %3 <strong>kết thúc ngoài %7</strong> tới <strong>%6</strong> tại %5."
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11735,7 +11731,7 @@ msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>kết thúc ngoài %7
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (EXPIRYMISS - intraday)
 msgid "%1 <strong>%2</strong> payout if %3 <strong>ends outside %7</strong> to <strong>%6</strong> at %5 after %4."
-msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>kết thúc bên ngoài %7</strong> tới <strong>%6</strong> tại %5 sau %4."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu %3 <strong>kết thúc bên ngoài %7</strong> tới <strong>%6</strong> tại %5 sau %4."
 
 #: Translation for contract type "EXPIRYRANGE"
 msgid "ends between"
@@ -11776,7 +11772,7 @@ msgstr "không chạm"
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (NOTOUCH - daily)
 msgid "%1 <strong>%2</strong> payout if %3 <strong>does not touch %6</strong> through %5."
-msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>không chạm %6</strong> thông qua %5."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu %3 <strong>không chạm %6</strong> thông qua %5."
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11787,11 +11783,11 @@ msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>không chạm %6</str
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (NOTOUCH - intraday)
 msgid "%1 <strong>%2</strong> payout if %3 <strong>does not touch %6</strong> through %5 after %4."
-msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>không chạm %6</strong> qua %5 sau %4."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu %3 <strong>không chạm %6</strong> qua %5 sau %4."
 
 #: Translation for contract type "ONETOUCH"
 msgid "touches"
-msgstr "sự tiếp xúc"
+msgstr "chạm"
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11828,7 +11824,7 @@ msgstr "thấp hơn"
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (PUT - daily)
 msgid "%1 <strong>%2</strong> payout if %3 is strictly <strong>lower</strong> than <strong>%6</strong> at %5."
-msgstr "%1 <strong>%2</strong> tiền thưởng bắt buộc là %3 <strong>thấp</strong> hơn <strong>%6</strong> tại %5."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu %3 <strong>bắt buộc thấp</strong> hơn <strong>%6</strong> tại %5."
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11865,7 +11861,7 @@ msgstr "nằm giữa"
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (RANGE - daily)
 msgid "%1 <strong>%2</strong> payout if %3 <strong>stays between %7</strong> to <strong>%6</strong> through %5."
-msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>nằm giữa %7</strong> tới <strong>%6</strong> qua %5."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu %3 <strong>nằm giữa %7</strong> tới <strong>%6</strong> qua %5."
 
 #. %1 - Payout Currency (example USD)
 #. %2 - Payout value (example 100)
@@ -11876,7 +11872,7 @@ msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>nằm giữa %7</stro
 #. %7 - Low barrier (when present)
 #: Translation for contract type description (RANGE - intraday)
 msgid "%1 <strong>%2</strong> payout if %3 <strong>stays between %7</strong> and <strong>%6</strong> through %5 after %4."
-msgstr "%1 <strong>%2</strong> xuất chi nếu %3 <strong>nằm giữa %7</strong> và <strong>%6</strong> qua %5 sau %4."
+msgstr "%1 <strong>%2</strong> có tiền thưởng nếu %3 <strong>nằm giữa %7</strong> và <strong>%6</strong> qua %5 sau %4."
 
 #: Translation for contract type "UPORDOWN"
 msgid "goes outside"

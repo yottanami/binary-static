@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: I 18N\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-05-06 05:44+0200\n"
+"PO-Revision-Date: 2015-05-07 08:08+0200\n"
 "Last-Translator: Putri Kumala <putri@regentmarkets.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/binary/static/id/>\n"
 "Language: id\n"
@@ -242,7 +242,7 @@ msgid "%1 provides you with the opportunity to either self-exclude or <a href=\"
 msgstr "%1 memiliki fasilitas untuk mengecualikan diri baik itu untuk mengecualikan-diri Anda atau <a href=\"%2\">tentukan batasan aktifitas trading Anda</a> pada website ini. Anda juga dapat <a href=\"%3\">menghubungi kami</a> untuk menyampaikan batasan yang anda inginkan melalui bantuan chatting langsung, email atau telepon. Batasan yang tersedia adalah sebagai berikut:"
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:951
+#: lib/BOM/Product/Transaction.pm:966
 msgid "%1 transactions may not be performed with this account."
 msgstr "Transaksi %1 tidak dapat dilakukan pada akun ini."
 
@@ -889,7 +889,7 @@ msgstr "Opsi binary adalah opsi yang memberikan hasil tetap yang ditentukan pada
 msgid "A derivative is a financial instrument whose value is determined by reference to an underlying market. Derivatives are commonly traded in the inter-bank market, and binaries are one of the simplest forms of derivatives."
 msgstr "Derivatif adalah instrumen financial dimana nilai adalah ditentukan oleh referensi sebuah market dasar. Derivatif pada umumnya diperdagangkan pada pasar antar-bank dan binary adalah salah satu bentuk yang paling sederhana dari derivatif."
 
-#: lib/BOM/Product/Transaction.pm:506 lib/BOM/Product/Transaction.pm:620
+#: lib/BOM/Product/Transaction.pm:514 lib/BOM/Product/Transaction.pm:631
 msgid "A general error has occurred."
 msgstr "Error telah terjadi."
 
@@ -994,7 +994,7 @@ msgid "Access to your personal data is strictly prohibited with the exception of
 msgstr "Akses kedalam data pribadi Anda adalah sangat terbatas kepada petugas utama Perusahaan yang memerukan data tersebut dalam menjalankan tugas mereka."
 
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:131
+#: /home/git/regentmarkets/bom-app/create_account.cgi:134
 msgid "According to our terms and conditions, you may only register once through our site. If you have forgotten the password of your existing account, please <a href=\"%1\">try our password recovery tool</a> or contact customer service."
 msgstr "Menurut syarat dan ketentuan, anda hanya dapat mendaftar satu akun uang riil pada situs kami. Jika anda lupa kata sandi akun Anda, silahkan <a href=\"%1\">coba alat pembuat kata sandi baru</a> atau hubungi customer service."
 
@@ -1015,9 +1015,9 @@ msgstr "Batasan rekening"
 msgid "Account Management and Tracking"
 msgstr "Pengelolaan Akun dan Pelacakan"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:106
-#: /home/git/regentmarkets/bom-app/create_account.cgi:262
-#: /home/git/regentmarkets/bom-app/create_account.cgi:408
+#: /home/git/regentmarkets/bom-app/create_account.cgi:109
+#: /home/git/regentmarkets/bom-app/create_account.cgi:265
+#: /home/git/regentmarkets/bom-app/create_account.cgi:414
 #: /home/git/regentmarkets/bom-app/lib/BOM/View/CGIForm.pm:3656
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/terms_and_conditions.html.tt:145
 msgid "Account Opening"
@@ -2121,10 +2121,8 @@ msgstr "Pelanggan yang terdaftar dibawah Binary (C.R.) S.A. dapat melanjutkan se
 
 #. ("<a href=\"http://www.mga.org.mt/\" target=\"_blank\">(www.mga.org.mt)</a>")
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:16
-#, fuzzy
-#| msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority at"
 msgid "Clients registered with Binary (Europe) Ltd can raise their unresolved disputes with the Malta Gaming Authority %1 at"
-msgstr "Pelanggan yang terdaftar di Binary (Europe) Ltd dapat meningkatkan sengketa yang belum terselesaikan dengan Otoritas Trading Malta di"
+msgstr "Klien terdaftar pada Binary (Europe) Ltd dapat melanjutkan sengketa dengan Malta Gaming Authority %1 di"
 
 #: /home/git/translations/binary-static/src/templates/toolkit/legal/complaints_disputes.html.tt:13
 msgid "Clients registered with Binary (IOM) Ltd can raise their unresolved disputes with the Isle of Man Gambling Supervision Commission at gaming@gov.im."
@@ -2570,7 +2568,7 @@ msgid "Dear %1 %2 %3,"
 msgstr "Kepada Yth. %1 %2 %3,"
 
 #. ($client_name, $ce_broker_name, $support_email)
-#: lib/BOM/Platform/Client/IDAuthentication.pm:140
+#: lib/BOM/Platform/Client/IDAuthentication.pm:143
 msgid ""
 "Dear %1,\n"
 "\n"
@@ -2874,7 +2872,7 @@ msgstr "Apa anda ingin mengunci keuntungan?"
 msgid "Do you want to see Binary.com in other languages, or can you suggest improvements to our current translations?"
 msgstr "Apakah anda ingin melihat Binary.com dalam bahasa lain, atau anda dapat menyarankan perbaikan pada terjemahan kami saat ini?"
 
-#: lib/BOM/Platform/Client/IDAuthentication.pm:139
+#: lib/BOM/Platform/Client/IDAuthentication.pm:142
 msgid "Documents are required to verify your identity"
 msgstr "Dokumen yang diperlukan untuk memverifikasi identitas anda"
 
@@ -2939,7 +2937,7 @@ msgstr "Dr"
 msgid "Draw Chart"
 msgstr "Gambar Grafik"
 
-#: lib/BOM/Product/Transaction.pm:1178
+#: lib/BOM/Product/Transaction.pm:1193
 msgid "Due to regulatory requirements, you are required to authenticate your account in order to continue trading."
 msgstr "Sesuai dengan peraturan yang berlaku, Anda diminta untuk membuktikan kebenaran akun Anda sebelum melanjutkan trading."
 
@@ -3107,7 +3105,7 @@ msgstr "Sampul (SMA 20 +/- 10%)"
 msgid "Equity Offering"
 msgstr "Penawaran Ekuitas"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:140
+#: /home/git/regentmarkets/bom-app/create_account.cgi:143
 msgid "Error : password field is blank!"
 msgstr "Error : kolom kata sandi kosong!"
 
@@ -3907,7 +3905,7 @@ msgstr "Jika anda memilih <strong>waktu mulai</strong> \"Sekarang\", maka <stron
 msgid "If you select a specific <strong>end time</strong>, the <strong>end time</strong> is the selected time."
 msgstr "Jika anda memilih <strong>waktu berakhir</strong> tertentu, maka <strong>waktu berakhir</strong> adalah waktu yang dipilih."
 
-#: lib/BOM/Product/Transaction.pm:699
+#: lib/BOM/Product/Transaction.pm:710
 msgid "If you wish to raise these limits, please authenticate your account."
 msgstr "Jika anda ingin meningkatkan batasan ini, silahkan otentikasi akun anda."
 
@@ -3977,7 +3975,7 @@ msgstr "Dengan gaya klasik Silicon Valley, seorang manager pengelola dana berjiw
 msgid "In foreign exchange markets, traders can enter contracts based on the change in price of one currency as it relates to another currency. For example if a trader selects Rise in the EUR/USD market, they are predicting that the value of the Euro will rise in relation to the value of the US dollar."
 msgstr "Pada market valuta asing, para trader dapat membeli kontrak berdasarkan pertukaran harga dari satu mata uang ke mata uang lainnya. Sebagai conth jika trader memilih kontrak Naik pada market EUR/USD, hal ini berarti mereka menganalisa nilai mata uang Euro akan lebih tinggi dari harga mata uang dolar AS."
 
-#: lib/BOM/Product/Transaction.pm:1231
+#: lib/BOM/Product/Transaction.pm:1246
 msgid "In order for you to place contracts, we need to know your Residence (Country). Please update your settings."
 msgstr "Untuk melakukan pembelian kontrak, kami perlu mengetahui domisili (Negara) anda. Silahkan perbarui bagian pengaturan."
 
@@ -5000,7 +4998,7 @@ msgstr "Kata Sandi Baru"
 msgid "New Password Request"
 msgstr "Permohonan Kata Sandi Baru"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:216
+#: /home/git/regentmarkets/bom-app/create_account.cgi:219
 msgid "New account registration fail."
 msgstr "Pendaftaran account baru gagal."
 
@@ -5998,17 +5996,17 @@ msgstr "Spot Beli"
 msgid "Purchase Time"
 msgstr "Waktu Beli"
 
-#: lib/BOM/Product/Transaction.pm:791
+#: lib/BOM/Product/Transaction.pm:805
 msgid "Purchase of this contract would cause you to exceed our payout limit for open contracts of this type. To continue please consider to sell a few contracts at the market or trade in different contract types."
 msgstr "Pembelian kontrak ini dapat menyebabkan Anda melebihi batasan pembelian kontrak yang diberikan. Untuk melanjutkan silahkan jual beberapa kontrak lain atau bertrading pada jenis kontrak lainnya."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:887
+#: lib/BOM/Product/Transaction.pm:902
 msgid "Purchase of this contract would cause you to exceed your 7-day turnover limit of %1%2."
 msgstr "Dengan membeli kontrak ini maka Anda akan melewati batasan pembelian 7-hari %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:697
+#: lib/BOM/Product/Transaction.pm:708
 msgid "Purchase of this contract would cause you to exceed your daily turnover limit of %1%2."
 msgstr "Dengan membeli kontrak ini maka Anda akan melebihi batasan pembelian kontrak harian yaitu %1%2."
 
@@ -6701,11 +6699,11 @@ msgstr "Maaf, error terjadi ketika memproses rekening anda."
 msgid "Sorry, an error occurred. Please contact customer support if this problem persists."
 msgstr "Terjadi error. Silahkan hubungi customer support jika masalah ini masih berlangsung."
 
-#: lib/BOM/Product/Transaction.pm:1244
+#: lib/BOM/Product/Transaction.pm:1259
 msgid "Sorry, contracts on Random Indices are not available in your country of residence"
 msgstr "Maaf, kontrak pada Random Indeks tidak tersedia di negara domisili anda"
 
-#: /home/git/regentmarkets/bom-app/create_account.cgi:86
+#: /home/git/regentmarkets/bom-app/create_account.cgi:89
 msgid "Sorry, new account opening is suspended for the time being."
 msgstr "Maaf, pendaftaran akun dibatalkan untuk sementara."
 
@@ -6750,7 +6748,7 @@ msgid "Sorry, the Payment Agent's currency "
 msgstr "Maaf, mata uang agen pembayaran "
 
 #. ($limit, $currency)
-#: lib/BOM/Product/Transaction.pm:840
+#: lib/BOM/Product/Transaction.pm:855
 msgid "Sorry, the aggregate payouts of contracts on your account cannot exceed %2%1."
 msgstr "Maaf, jumlah rata rata hasil kontrak pada akun Anda tidak dapat melebihi %2%1."
 
@@ -6782,7 +6780,7 @@ msgstr "Maaf, bentuk ini hanya tersedia untuk rekening virtual saja"
 msgid "Sorry, this feature is not available."
 msgstr "Maaf, fasilitas ini tidak tersedia."
 
-#: lib/BOM/Product/Transaction.pm:1404
+#: lib/BOM/Product/Transaction.pm:1422
 msgid "Sorry, this page cannot be refreshed."
 msgstr "Maaf, halaman ini tidak dapat direfreshkan."
 
@@ -6791,7 +6789,7 @@ msgid "Sorry, you are too young to open an account!"
 msgstr "Maaf, anda terlalu muda untuk mendaftar akun!"
 
 #. ($limit,                request()
-#: lib/BOM/Product/Transaction.pm:727
+#: lib/BOM/Product/Transaction.pm:739
 msgid "Sorry, you cannot hold more than %1 contracts at a given time. Please visit the <a href=\"%2\" class=\"pjaxload\">statement</a> page to automatically sell your expired contracts."
 msgstr "Maaf, anda tidak dapat memiliki lebih dari %1 kontrak dalam jangka waktu yang diberikan. Silahkan kunjungi bagian <a href=\"%2\" class=\"pjaxload\">pernyataan</a> untuk menjual beberapa kontrak yang telah diselesaikan."
 
@@ -6836,11 +6834,11 @@ msgid "Sorry, you have open positions. Please close out all open positions befor
 msgstr "Silahkan jual semua posisi terbuka anda sebelum meminta dana tambahan."
 
 #. ("$currency$balance",                $limit)
-#: lib/BOM/Product/Transaction.pm:816
+#: lib/BOM/Product/Transaction.pm:830
 msgid "Sorry, your account cash balance is too high (%1). <B>Your maximum account balance is %2 </b>. Please withdraw money from your account to bring down your cash balance under that amount. You may not trade until you do so."
 msgstr "Maaf, saldo Anda melebihi (%1). <B>Saldo maksimum Anda adalah %2 </b>. Silahkan lakukan penarikan untuk mengurangi saldo Anda. Anda tidak dapat melanjutkan trading sebelum melakukan hal tersebut."
 
-#: lib/BOM/Product/Transaction.pm:1268
+#: lib/BOM/Product/Transaction.pm:1283
 msgid "Sorry, your account is not authorised for any further contract purchases."
 msgstr "Maaf, akun anda tidak dapat membeli kontrak selanjutnya."
 
@@ -6902,7 +6900,7 @@ msgstr "Mulai Trading"
 msgid "Start time"
 msgstr "Waktu mulai"
 
-#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:367
+#: lib/BOM/Product/Contract.pm:1939 lib/BOM/Product/Transaction.pm:372
 msgid "Start time is in the past"
 msgstr "Waktu mulai adalah dimasa lalu"
 
@@ -7607,11 +7605,11 @@ msgid "The content on this website is subject to change at any time without noti
 msgstr "Isi dari website ini dapat dirubah sewaktu waktu tanpa pemberitahuan dan hanya disediakan untuk membantu para trader untuk mengambil keputusan melakukan investasi. %1 akan memastikan keakuratan informasi yang terdapat pada website namun demikian Perusahaan tidak menjamin keakuratan tersebut dan tidak akan menanggung kerugian atau kerusakan yang ditimbulkan oleh informasi tersebut atau jika anda mengalami masalah didalam mengakses website baik itu berhubung penundaan atau keterlambatan transmisi atau penerimaan berita atau instruksi yang dikirimkan melalui website ini."
 
 #. ($currency,                to_monetary_number_format($amount)
-#: lib/BOM/Product/Transaction.pm:1036
+#: lib/BOM/Product/Transaction.pm:1051
 msgid "The contract %4 has changed from %1%2 to %1%3."
 msgstr "Kontrak %4 telah berubah dari %1%2 ke %1%3."
 
-#: lib/BOM/Product/Transaction.pm:1024
+#: lib/BOM/Product/Transaction.pm:1039
 msgid "The contract has expired"
 msgstr "Kontrak telah berakhir"
 
@@ -7802,17 +7800,17 @@ msgid "The profit is the difference between the purchase price (the stake) and t
 msgstr "Keuntungan adalah selisih antara harga beli (modal) dengan hasil pada kontrak yang memberi untung."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:943
+#: lib/BOM/Product/Transaction.pm:958
 msgid "The provided currency %1 is invalid."
 msgstr "Mata uang yang disediakan %1 tidak berlaku."
 
 #. ($currency)
-#: lib/BOM/Product/Transaction.pm:935
+#: lib/BOM/Product/Transaction.pm:950
 msgid "The provided currency %1 is not the default currency"
 msgstr "Mata uang %1 bukan merupakan mata uang asal"
 
 #. ($email)
-#: /home/git/regentmarkets/bom-app/create_account.cgi:127
+#: /home/git/regentmarkets/bom-app/create_account.cgi:130
 msgid "The provided email address %1 is already in use by another Login ID."
 msgstr "Alamat email %1 sudah pernah digunakan oleh Login ID lain."
 
@@ -7874,7 +7872,7 @@ msgstr "Transaksi yang dilakukan di situs ini dan hubungan antara klien dan peru
 msgid "The two passwords that you entered do not match."
 msgstr "Kedua-dua password yang Anda masukkan tidak cocok."
 
-#: lib/BOM/Product/Transaction.pm:1032
+#: lib/BOM/Product/Transaction.pm:1047
 msgid "The underlying market has moved too much since you priced the contract. "
 msgstr "Market dasar telah bergerak terlalu banyak setelah anda menghitung harga. "
 
@@ -8053,7 +8051,7 @@ msgstr "Panggilan ini akan memberi struktur JSON yang sama yang bisa dilihat pad
 msgid "This client cashier section is locked."
 msgstr "Bagian kasir akun ini dibatalkan."
 
-#: lib/BOM/Product/Transaction.pm:1128
+#: lib/BOM/Product/Transaction.pm:1143
 msgid "This contract cannot be properly validated at this time."
 msgstr "Kontrak tidak dapat divalidasi untuk saat ini."
 
@@ -8074,11 +8072,11 @@ msgid "This contract is affected by corporate action."
 msgstr "Kontrak ini dipengaruhi oleh aksi korporasi."
 
 #. (to_monetary_number_format($custom_limit)
-#: lib/BOM/Product/Transaction.pm:1206
+#: lib/BOM/Product/Transaction.pm:1221
 msgid "This contract is limited to "
 msgstr "Kontrak ini terbatas ke "
 
-#: lib/BOM/Product/Transaction.pm:1204
+#: lib/BOM/Product/Transaction.pm:1219
 msgid "This contract is unavailable on this account."
 msgstr "Kontrak ini tidak tersedia pada akun ini."
 
@@ -8090,7 +8088,7 @@ msgstr "Kontrak ini rugi"
 msgid "This contract offers no return."
 msgstr "Kontrak ini tidak memberi hasil."
 
-#: lib/BOM/Product/Transaction.pm:626
+#: lib/BOM/Product/Transaction.pm:637
 msgid "This contract was not found among your open positions."
 msgstr "Kontrak tidak ditemukan pada posisi yang masih berjalan."
 
@@ -8195,7 +8193,7 @@ msgstr "Website ini tidak mengumpulkan informasi identitas pribadi mengenai anda
 #: /home/git/translations/binary-static/src/templates/haml/layouts/default/footer.html.haml:1
 #: /home/git/translations/binary-static/src/templates/toolkit/global/footer.html.tt:178
 msgid "This website is marketed in the UK and Isle of Man by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles, licenced and regulated by (1) the Gambling Supervision Commission in the Isle of Man, British Isles, current online gambling licence issued on 31 August 2012, and for UK clients by (2) the UK Gambling Commission - <a href='%1' target='_blank'>view license</a>. This website is marketed in the rest of the EU by Binary (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated by (1) the Malta Gaming Authority in Malta, licence no MGA/CL2/118/2000, 26th May 2010 and for UK clients by (2) the UK Gambling Commission - <a href='%2' target='_blank'>view license</a>. This website's services are not made available in the USA, Japan or Hong Kong, or to persons under age 18."
-msgstr "Website ini dipasarkan di Inggris dan Isle of Man oleh Binary (IOM) Ltd., beralamat di First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles berizin dan diatur oleh (1) Komisi pengawasan trading di Isle of Man, British Isles, izin trading online saat ini dikeluarkan pada tanggal 31 Agustus 2012, dan untuk Pelanggan Inggris oleh (2) Komisi trading Inggris - <a href='%1' target='_blank'>lihat lisensi</a>. Website ini dipasarkan di negara Eropa lainnya oleh Binary (Europe) Ltd., beralamat di Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta memiliki izin dan diatur oleh (1) Otoritas Trading Malta, nomor izin MGA/CL2/118/2000, 26 Mei 2010 dan untuk Klien Inggris oleh (2) Komisi Trading Inggris - <a href='%2' target='_blank'>lihat lisensi</a>. Layanan website ini tidak tersedia untuk penduduk AS, Jepang atau Hong Kong, atau berusia di bawah 18."
+msgstr "Website ini dipasarkan di Inggris dan Isle of Man oleh Binary (IOM) Ltd., beralamat di First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles berizin dan diatur oleh (1) Gambling Supervision Commission di Isle of Man, British Isles, izin trading online saat ini dikeluarkan pada tanggal 31 Agustus 2012, dan untuk Pelanggan Inggris oleh (2) UK Gambling Commission - <a href='%1' target='_blank'>lihat lisensi</a>. Website ini dipasarkan di negara Eropa lainnya oleh Binary (Europe) Ltd., beralamat di Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta memiliki izin dan diatur oleh (1) Malta Gaming Authority, nomor izin MGA/CL2/118/2000, 26 Mei 2010 dan untuk Klien Inggris oleh (2) UK Gambling Commission - <a href='%2' target='_blank'>lihat lisensi</a>. Layanan website ini tidak tersedia untuk penduduk AS, Jepang atau Hong Kong, atau berusia di bawah 18."
 
 #: /home/git/translations/binary-static/src/templates/toolkit/misc/affiliate_tac_tab.html.tt:29
 msgid "Throughout the term of this Agreement, you shall:"
@@ -8642,7 +8640,7 @@ msgstr "Error tidak dikenal saat menyimpan workspace '#1'."
 msgid "Unlock Cashier/Settings sections"
 msgstr "Membuka kunci Kasir/bagian Pengaturan"
 
-#: lib/BOM/Product/Transaction.pm:420
+#: lib/BOM/Product/Transaction.pm:425
 msgid "Unsupported bet class $bet_params->{bet_class}"
 msgstr "Jenis trading yang tidak tersedia $bet_params->{bet_class}"
 
@@ -8727,7 +8725,7 @@ msgstr "Verifikasi kata sandi baru"
 
 #. ($c->stash('website_name')
 #. (request()
-#: /home/git/regentmarkets/bom-app/create_account.cgi:311
+#: /home/git/regentmarkets/bom-app/create_account.cgi:318
 #: /home/git/regentmarkets/bom-web/lib/BOM/Web/User.pm:676
 msgid "Verify your email address - %1"
 msgstr "Verifikasi alamat email Anda - %1"
@@ -9567,18 +9565,18 @@ msgstr "Anda telah membeli kontrak dengan harga total lima kali jumlah bonus."
 msgid "You have entered an invalid login ID"
 msgstr "Anda telah memasukkan login ID yang salah"
 
-#: lib/BOM/Product/Transaction.pm:763 lib/BOM/Product/Transaction.pm:768
-#: lib/BOM/Product/Transaction.pm:773 lib/BOM/Product/Transaction.pm:860
+#: lib/BOM/Product/Transaction.pm:776 lib/BOM/Product/Transaction.pm:781
+#: lib/BOM/Product/Transaction.pm:786 lib/BOM/Product/Transaction.pm:875
 msgid "You have exceeded the daily limit for contracts of this type."
 msgstr "Anda telah melebihi batasan harian kontrak untuk jenis ini."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:902
+#: lib/BOM/Product/Transaction.pm:917
 msgid "You have exceeded your 7-day limit on losses of %1%2."
 msgstr "Anda telah melampaui batas kerugian 7-hari Anda %1%2."
 
 #. ($currency, $limit)
-#: lib/BOM/Product/Transaction.pm:870
+#: lib/BOM/Product/Transaction.pm:885
 msgid "You have exceeded your daily limit on losses of %1%2."
 msgstr "Anda telah melampaui batas harian kerugian Anda %1%2."
 
@@ -9763,7 +9761,7 @@ msgid "Your account balance"
 msgstr "Saldo akun Anda"
 
 #. ($currency,                to_monetary_number_format($balance)
-#: lib/BOM/Product/Transaction.pm:758
+#: lib/BOM/Product/Transaction.pm:771
 msgid "Your account balance (%1%2) is insufficient to buy this contract (%1%3)."
 msgstr "Saldo anda (%1%2) tidak mencukupi untuk membeli kontrak (%1%3) ini."
 
@@ -9771,7 +9769,7 @@ msgstr "Saldo anda (%1%2) tidak mencukupi untuk membeli kontrak (%1%3) ini."
 msgid "Your account does not require authentication at this time."
 msgstr "Akun Anda tidak memerlukan otentikasi untuk saat ini."
 
-#: lib/BOM/Product/Transaction.pm:847
+#: lib/BOM/Product/Transaction.pm:862
 msgid "Your account has exceeded the trading limit with free promo code, please deposit if you wish to continue trading."
 msgstr "Akun anda telah melebihi batasan trading menggunakan kode bonus, silakan mendeposit untuk melanjutkan trading."
 
@@ -11285,10 +11283,8 @@ msgid "Random Sun"
 msgstr "Random Sun"
 
 #: Underlying Symbol SYNFCHI
-#, fuzzy
-#| msgid "French Fast Index"
 msgid "French Smart Index"
-msgstr "French Fast Index"
+msgstr "French Smart Index"
 
 #: Underlying Symbol SYNN225
 msgid "Japanese Smart Index"
