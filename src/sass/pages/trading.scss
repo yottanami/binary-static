@@ -1,3 +1,19 @@
+#betpage {
+    .tab-content {
+        display: block;
+    }
+    .tab-menu {
+        margin-bottom: 1rem;
+    }
+    #bet_container_inner {
+        display: flex;
+    }
+    #bet_calculation_container {
+        margin-left: 1rem;
+        flex: 1;
+    }
+}
+
 .batch_transaction_total {
     text-align: right;
     font-weight: bold;
@@ -8,11 +24,7 @@
     font-weight: bold;
 }
 
-
-#betpage #content-holder #content {
-    form {
-        fieldset { background:none; }
-    }
+#bestpage #content-holder #content {
     width: 100%;
     > .content-tab-container {
         width: 100%;
@@ -50,15 +62,12 @@
     fieldset {
       border: 0;
     }
-    .form_button {
-      margin-top: 0;
-    }
     #betInputBox_container {
       position: relative;
       z-index: 10;
       margin: 0;
       .tab-content {
-         border: 1px solid $COLOR_DARK_GRAY;
+         border: 1px solid $COLOR_GRAY;
          min-height: 369px;
       }
       .tab-content-wrapper, .tab-content {
@@ -69,9 +78,6 @@
           border-bottom: none;
           > li {
             padding: 0;
-            .tm-ul-2 {
-              margin-top: 5px;
-            }
             a.tm-a {
               padding: 0 5px 0 5px;
               width: auto;
@@ -84,9 +90,6 @@
         font-size: 14px;
     }
     #bet_calculation_container {
-      margin: 0;
-      padding: 0;
-      position: relative;
       #page_timeout_notice {
         padding: 10px;
         background: white;
@@ -109,7 +112,6 @@
       }
       .rbox {
         margin: 0;
-        padding-bottom: 1.8em;
         .rbox-wrap {
           min-height: 140px;
           .bet-error-box {
@@ -117,69 +119,6 @@
               padding: 1em;
               font-size: 0.8em;
               width: auto;
-          }
-          .rbox-heading {
-            background-color: transparent;
-            margin-bottom: 0;
-            /*margin-bottom: 10px;*/
-            h4 {
-              padding: 0.7em 0 0.7em 4em;
-              text-transform: capitalize;
-            }
-            .asian_up {
-              background: url("../images/pages/trade/asian-u_1.svg") no-repeat 5% 75%;
-            }
-            .asian_down {
-              background: url("../images/pages/trade/asian-d_1.svg") no-repeat 5% 75%;
-            }
-            .differs {
-              background: url("../images/pages/trade/differs_1.svg") no-repeat 5% 75%;
-            }
-            .matches {
-              background: url("../images/pages/trade/matches_1.svg") no-repeat 5% 75%;
-            }
-            .rises {
-              background: url("../images/pages/trade/rise_1.png") no-repeat 5% 75%;
-            }
-            .falls {
-              background: url("../images/pages/trade/fall_1.png") no-repeat 5% 75%;
-            }
-            .higher {
-              background: url("../images/pages/trade/higher_1.png") no-repeat 5% 75%;
-            }
-            .lower {
-              background: url("../images/pages/trade/lower_1.png") no-repeat 5% 75%;
-            }
-            .touches {
-              background: url("../images/pages/trade/touch_1.png") no-repeat 5% 75%;
-            }
-            .does_not_touch {
-              background: url("../images/pages/trade/no-touch_1.png") no-repeat 5% 75%;
-            }
-            .stays_between {
-              background: url("../images/pages/trade/stay-in-between_1.png") no-repeat 5% 75%;
-            }
-            .goes_outside {
-              background: url("../images/pages/trade/stay-out_1.png") no-repeat 5% 75%;
-            }
-            .ends_between {
-              background: url("../images/pages/trade/ends-between_1.png") no-repeat 5% 75%;
-            }
-            .ends_outside {
-              background: url("../images/pages/trade/ends-outside_1.png") no-repeat 5% 75%;
-            }
-          }
-        }
-        .ui-tabs {
-          ul.ui-tabs-nav {
-            li {
-              list-style-image: none;
-            }
-          }
-        }
-        .ui-datepicker {
-          td {
-            padding: 0.1em;
           }
         }
         .form_button {
@@ -354,21 +293,10 @@
 .price_box {
   padding: 0;
   margin-top: 20;
-  border: 1px solid $COLOR_DARK_GRAY;
+  border: 1px solid $COLOR_LIGHT_GRAY;
   a {
     color: $COLOR_BRAND_BLUE;
   }
-}
-
-.price_box_first {
-  margin-top: 26px;
-  margin-bottom: 20px;
-}
-
-.price_box_last {
-    position: relative;
-    bottom: 0;
-    margin-bottom: 0;
 }
 
 /* added for the underlying highlight */
@@ -516,5 +444,62 @@
         &.rbox {
             padding-bottom: 0 !important;
         }
+    }
+}
+
+
+
+#bet_calculation_container {
+    .rbox-heading {
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+    h4 {
+        padding: .5rem 0 .5em 4rem;
+        text-transform: capitalize;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .asian_up {
+        background-image: url("../images/icons/trade-asian-up.svg");
+    }
+    .asian_down {
+        background-image: url("../images/icons/trade-asian-down.svg");
+    }
+    .differs {
+        background-image: url("../images/icons/trade-differs.svg");
+    }
+    .matches {
+        background-image: url("../images/icons/trade-match.svg");
+    }
+    .rises {
+        background-image: url("../images/icons/trade-rise.svg");
+    }
+    .falls {
+        background-image: url("../images/icons/trade-fall.svg");
+    }
+    .higher {
+        background-image: url("../images/icons/trade-higher.svg");
+    }
+    .lower {
+        background-image: url("../images/icons/trade-lower.svg");
+    }
+    .touches {
+        background-image: url("../images/icons/trade-touch.svg");
+    }
+    .does_not_touch {
+        background-image: url("../images/icons/trade-notouch.svg");
+    }
+    .stays_between {
+        background-image: url("../images/icons/trade-stays-between.svg");
+    }
+    .goes_outside {
+        background-image: url("../images/icons/trade-goes-outside.svg");
+    }
+    .ends_between {
+        background-image: url("../images/icons/trade-ends-between.svg");
+    }
+    .ends_outside {
+        background-image: url("../images/icons/trade-ends-outside.svg");
     }
 }

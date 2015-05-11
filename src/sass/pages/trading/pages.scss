@@ -16,15 +16,13 @@
     overflow: auto;
   }
   ul.not-li {
+      color: $COLOR_TEXT;
       display: block;
-      height: auto;
-      margin: 0 0 0 0.7em;
       background: none;
       border: 0;
-      line-height: 1em;
       li {
         background: none;
-        float:none;
+        height: 20px;
         display:list-item;
         margin:0;
         padding: 0;
@@ -36,19 +34,19 @@
 }
 
 #risefall {
-  background-image: url("../images/pages/contract_guide/rise-fall.svg");
+    background-image: url("../images/icons/trade-rise-fall.svg");
 }
 
 #higherlower {
-  background-image: url("../images/pages/contract_guide/higher-lower.svg");
+    background-image: url("../images/icons/pages/contract_guide/higher-lower.svg");
 }
 
 #touchnotouch {
-  background-image: url("../images/pages/contract_guide/touch-notouch.svg");
+    background-image: url("../images/icons/trade-touch-notouch.svg");
 }
 
 #inout {
-  background-image: url("../images/pages/contract_guide/in-out.svg");
+    background-image: url("../images/icons/trade-in-out.svg");
 }
 
 #strike_type, #amount, #expiry_step, #from_expiry, #pricingtable_bet_type {
@@ -61,15 +59,6 @@
   width: 35%;
   font-size: 100%;
   display: none;
-}
-
-#account_balance td {
-  text-align: right;
-  padding: 0;
-}
-
-#account_balance .currency {
-  padding: 0 2px;
 }
 
 #std_loading_img {
@@ -106,7 +95,7 @@
     text-align: center;
 }
 
-#content .paging-navigation {
+.paging-navigation {
     .paging-links {
         display: inline-block;
         float: right;
@@ -119,68 +108,11 @@
     }
 }
 
-/* portfolio */
-.portfolio-header-margin {
-    margin-bottom: 20px;
-}
-
-.portfolio-currency-converter {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.button-menu {
-  margin: 5px 0;
-}
-
 /* Light chart */
-#form_chart_director fieldset {
-    position: relative;
-    &#chart_compare_underlying,
-    &#chart_period {
-        background: none;
-        font-size: 0.9em;
-        border: none;
-        ul {
-            li {
-                float: left;
-                list-style-image: none;
-                list-style-position: inherit;
-                label.button {
-                    width: auto;
-                    .button {
-                        background: transparent;
-                        border: none;
-                        border-bottom: 2px solid $COLOR_GRAY_SHADE;
-                        border-radius: 0;
-                        color: $COLOR_TEXT;
-                        font-weight: normal;
-                        &.disabled {
-                            color: $COLOR_BRAND_ORANGE;
-                            font-weight: bold;
-                            border-bottom: 4px solid $COLOR_BRAND_ORANGE;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-#form_chart_director h5 {
-  padding: 8px;
-}
 
 #form_chart_director {
     ul.tm-ul {
-      margin:0;
         li.tm-li {
-            margin: 0;
-            margin-right: 0.2em;
-            font-size:85%;
-            padding: 0;
             a.tm-a {
                 padding: 0 1em;
                 display: block;
@@ -302,9 +234,6 @@
 #chart_period {
   z-index: 2;
   padding-bottom: 25px;
-  li {
-    margin-right: 10px;
-  }
 }
 
 #chart_properties label {
@@ -471,15 +400,6 @@ h2.finder {
   text-align: center;
 }
 
-div#lower_strike {
-  padding: 2px 0 9px 0;
-}
-
-div#lower_strike label {
-  width: 7.9%;
-}
-
-
 
 label#from_strike_label,
 label#from_strike_percent,
@@ -511,21 +431,6 @@ div#price_table_notes {
             span.tm-a-2 {
                 cursor: pointer;
             }
-        }
-    }
-}
-
-/* Payment Agent Deposit */
-#paymentagent_deposit {
-    ul.recursive_list {
-        margin-left: 1.5em;
-        li {
-            list-style-image: url("../images/pages/get-started/list-circle_1.png");
-        }
-    }
-    table.rbox-table.rbox-table-full {
-        tr.rbox-table-heading th {
-            text-align: left;
         }
     }
 }
@@ -616,13 +521,8 @@ div#price_table_notes {
         margin-top: 0;
     }
 }
-.get-started-content {
-    .button {
-        width: 100%;
-    }
-}
 
-.chartingapplication-content .appshot {
+.charting-application-content .appshot {
     height: 20rem;
     padding: 1rem 0;
     display: block;
@@ -644,5 +544,85 @@ div#price_table_notes {
     }
     #duration_container input, #duration_container select {
         width: 40%;
+    }
+}
+
+.smart-indices-content {
+    img {
+        height: 10rem;
+    }
+}
+
+.login-content {
+    #content {
+        width: 20rem;
+    }
+    form {
+        text-align: center;
+    }
+    .form-logo {
+        width: 7rem;
+    }
+    input, button {
+        width: 100%;
+    }
+    .errorfield {
+        margin-top: -1rem;
+    }
+    .bigerror {
+        margin-top: 1rem;
+    }
+}
+
+
+.signup-content {
+    #content {
+        width: 30rem;
+    }
+    .form-logo {
+        width: 7rem;
+    }
+    input, button {
+        width: 100%;
+    }
+    .errorfield {
+        margin-top: -1rem;
+    }
+    .bigerror {
+        margin-top: 1rem;
+    }
+}
+
+.random-markets-content {
+    img {
+        height: 7rem;
+    }
+}
+.contract-guide-content, .usermy_account-content {
+    img {
+        height: 5rem;
+    }
+}
+.pricing-table-content {
+    label {
+        display: block;
+    }
+    input, select {
+        width: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .row > div {
+        min-width: 25%;
+    }
+}
+.charting-livechart-content {
+    select, input {
+        width: 100%;
+    }
+    .btnrow {
+        display: flex;
+        justify-content: space-between;
     }
 }

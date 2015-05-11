@@ -19,6 +19,7 @@ sub toolkit {
         'charting/application' => ['charting/chart_application', 'default'],
         'charting/livechart' => ['charting/livechart', 'default'],
         'resources/rise_fall_table' => ['resources/rise_fall_table', 'default'],
+        'terms-and-conditions' => ['legal/tac', 'default'],
     );
     my $m = $url_map{$curr_path};
 
@@ -71,7 +72,6 @@ sub haml {
 
         'home5' => ['home5/index', 'full_width', '', 1],
 
-
         'ticker' => ['home/ticker', ''],
 
         'why-us' => ['static/why_us', 'full_width'],
@@ -102,6 +102,8 @@ sub haml {
         'get-started/random-markets' => ['get_started/random_markets', 'full_width'],
 
         'login' => ['home/login', $c->layout, '', 1],
+
+        'signup' => ['home/signup', 'full_width', '', 1],
 
         'not_found' => ['not_found', '', 404],
         'exception' => ['exception', 'exception', 500]
@@ -162,10 +164,9 @@ sub open_account_with_promocode {
     my $promo_code     = $self->param('promo');
     my $affilate_token = $self->param('t');
     return $self->redirect_to(
-        'linkto_acopening.cgi',
+        '/user/upgrade',
         {
             actype          => 'real',
-            promotionalcode => $promo_code,
             t               => $affilate_token
         });
 }

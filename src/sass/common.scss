@@ -69,7 +69,8 @@ hgroup {
 select,
 input,
 button,
-textarea {
+textarea,
+.inputlike {
     background: white;
     border: 1px solid $COLOR_GRAY;
     padding: 2px 3px;
@@ -92,7 +93,6 @@ textarea {
 }
 ul,
 ol {
-    margin: 0;
     li {
         line-height: 1.4em;
     }
@@ -101,6 +101,9 @@ ol li {
     list-style-type: decimal;
     list-style-image: none;
 }
+ul {
+    margin: 0 0 1rem 0;
+}
 ol {
     margin: 0 0 1rem 1.5rem;
 }
@@ -108,6 +111,9 @@ img {
     vertical-align: middle;
     border: 0;
     max-width: 100%;
+}
+img.h10 {
+    height: 10rem;
 }
 acronym,
 abbr {
@@ -151,60 +157,19 @@ label {
 }
 .errorrow,
 .errorfield {
+    //color: white;
+    //background: $COLOR_RED;
     color: $COLOR_RED;
+    border-radius: $BORDER_RADIUS;
+    padding: .125rem;
 }
 .text-only {
     color: $COLOR_TEXT;
 }
-.errorfield {
-    margin: 0;
-}
-.errorrow,
-.errorfield {
-    font-size: 93%;
-    font-style: italic;
-    margin-top: 8px;
-}
-.last-row {
-    margin-bottom: 0;
-}
-.form_button {
-    text-align: center;
-}
-.form_button .errorfield {
-    margin: 0;
-}
-.comment {
-    font-size: 93%;
-    font-style: italic;
-}
-.non_input {
-    color: $COLOR_TEXT;
-    line-height: 1.7em;
-}
-.non_input label {
-    line-height: 1.6em;
-}
-.gray {
-    color: $COLOR_DARK_GRAY;
-}
-.form_link {
-    display: block;
-    font-size: 76%;
-    line-height: 0.8em;
-}
 /* global styles */
-* {
-    margin: 0;
-}
 #popup {
     width: 95%;
     margin: 0 auto;
-}
-.clearfix {
-    clear: both;
-    visibility: hidden;
-    content: '.';
 }
 .hidden {
     display: none;
@@ -282,8 +247,7 @@ a.close {
     }
 
     .inpage_popup_content_box {
-        padding: 0;
-        margin: 0;
+        padding: 1rem 2rem;
         background: white;
         border: solid 2px $COLOR_GRAY;
         text-align: center;
@@ -330,4 +294,11 @@ a.close {
 }
 i {
     color: $COLOR_BRAND_ORANGE;
+}
+p.media, div.media {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+strong {
+    font-weight: bold;
 }

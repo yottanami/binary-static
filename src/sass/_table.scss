@@ -6,10 +6,16 @@ thead, tbody {
     border-bottom: 2px solid $COLOR_CONTROL_BORDER;
 }
 th, td {
-    padding: .5rem;
+    padding: .5rem .25rem;
     line-height: 1.4;
-    text-align: left;
+    text-align: center;
     vertical-align: middle;
+}
+th:first-child, td:first-child {
+    padding-left: 0;
+}
+th:last-child, td:last-child {
+    padding-right: 0;
 }
 th {
     color: #2a3052;
