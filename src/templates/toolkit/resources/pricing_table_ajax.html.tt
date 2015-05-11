@@ -8,12 +8,12 @@
 [% END %]
 
 <div id="[% tabid %]_prices-content" class="[% class %] toggle-content">
-    <div class="grd-parent grd-grd-grid-12 table-header grd-row-padding center-aligned">
-        <div class="grd-grid-2">
+    <div>
+        <div>
             [% l('Expiry') %]
         </div>
         [%- FOREACH strike IN strikes %]
-            <div class="grd-grid-1 grd-grid-mobile-2 [%- "grd-hide-mobile" IF (loop.index < center_index - 2 || loop.index > center_index + 2) %]">
+            <div class="[%- "grd-hide-mobile" IF (loop.index < center_index - 2 || loop.index > center_index + 2) %]">
                 [% strike.absolute %]
             </div>
         [% END -%]

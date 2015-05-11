@@ -237,6 +237,7 @@ var BetAnalysis = function () {
                         success: function(prices) {
                             tab.content.html(prices);
                             attach_tabs('#pricing_table_tabs');
+                            initTabs();
                         },
                         error: function(xhr, status) {
                             tab.content.html(status);

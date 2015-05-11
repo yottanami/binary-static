@@ -35,7 +35,7 @@
         <div id="lower_strike" [% IF double_barrier == 0 %] style="display:none;" [% END %]>
             <label for="low_strike">[% l('Low barrier') %]:</label>
             <input size="5" type="text" id="low_strike" name="low_strike" [% IF selected_low_strike %] value="[% selected_low_strike %]" [% END %] />
-            <span style="padding-left:.5rem">([% l('Absolute barrier') %])</span>
+            <span>([% l('Absolute barrier') %])</span>
         </div>
 
         <div>
