@@ -38,7 +38,7 @@
             </p>
         </div>
     </div>
-    <p>
+    <p class="btnrow">
         <button id="live_charts_show_interval" title="[% l("Show chart for the given dates") %]">[% l("Update") %]</button>
         <a class="button" href="" id="live_charts_show_spot">[% l("Show last spot") %]</a>
         <a class="button" href="" id="live_charts_hide_spot" disabled="disabled">[% l("Hide last spot") %]</a>

@@ -647,7 +647,7 @@ div#price_table_notes {
         height: 7rem;
     }
 }
-.contract-guide-content {
+.contract-guide-content, .usermy_account-content {
     img {
         height: 5rem;
     }
@@ -669,5 +669,9 @@ div#price_table_notes {
 .charting-livechart-content {
     select, input {
         width: 100%;
+    }
+    .btnrow {
+        display: flex;
+        justify-content: space-between;
     }
 }
