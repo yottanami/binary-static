@@ -1,0 +1,113 @@
+- stash(
+-   title => l('Online Trading platform for binary options on Forex, Indices, Commodities and Smart Indices'),
+- );
+
+%h1= "H1 Heading"
+%h2= "H2 Heading"
+%h3= "H3 Heading"
+
+%p
+    A paragraph with
+    %strong strong text
+    and
+    %a{:href => "#"} link
+
+%ul.bullet
+    %li= 'unordered list item 1'
+    %li= 'unordered list item 2'
+    %li= 'unordered list item 3'
+
+
+%ol
+    %li= 'ordered list item 1'
+    %li= 'ordered list item 2'
+    %li= 'ordered list item 3'
+
+%p.media
+    %a.button{:href => "#"}= "Button Link"
+
+%p.notice-msg= "Notice message"
+
+%p.error-msg= "Error message"
+
+%abbr{:rel => "tooltip" :title => "Tooltip message"}
+    Text with tooltip
+
+%p
+
+%input#loginid{:type => 'text' :placeholder => 'Text input'}
+
+%select
+    %option= l('Select input')
+    %option= l('Second option')
+    %option{:disabled => true}= l('Disabled')
+
+%p.errorfield= "error in loginid"
+
+%label{:for => 'date'}= 'Date'
+%input.has-date-picker{:name => 'date'}
+
+%label{:for => 'time'}= 'Time'
+%input.has-time-picker{:name => 'time' :time:minTimeHour => "8"}
+
+%button= "Button"
+
+%p
+
+%ul{:role => "tabs"}
+    %li.active
+        %a= 'Tab 1'
+    %li= 'Tab 2'
+    %li= 'Tab 3'
+
+%p
+
+%ul{:role => "segmented"}
+    %li.active
+        %a= 'Tab 1'
+    %li
+        %a= 'Tab 2'
+    %li
+        %a= 'Tab 3'
+
+%p
+
+%button.has-inpage-popup{:id => "_open-popup" :popup-width => "800"}= "Open Inpage Popup"
+    .inpage_popup_content{:class => 'invisible' :id => "_open-popup-content"}
+        %h2= "Popup Title"
+        %p
+            contents of the popup, might contain HTML.
+%p
+
+%table
+    %thead
+        %tr
+            %th
+                Header
+            %th
+                Header
+    %tfoot
+        %tr
+            %th
+                Footer
+            %th
+                Footer
+    %tbody
+        %tr
+            %td= "1"
+            %td= "data 1"
+        %tr
+            %td= "2"
+            %td= "data 2"
+.paging-navigation
+    %span.paging-desc= "Page 2 of 3"
+        %ul.paging-links
+          %li
+              %a{:href => "#"}= "Previous"
+          %li
+              %a{:href => "#"}= "1"
+          %li.current= "2"
+          %li
+              %a{:href => "#"}= "3"
+          %li
+              %a{:href => "#"}= "Next"
