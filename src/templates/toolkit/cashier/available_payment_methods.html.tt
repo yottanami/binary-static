@@ -3,7 +3,7 @@
 <p>[% l('You can fund your account with a minimum of &#36;/&pound;/&euro; 5 via any of the methods.') %]</p>
 
 <p class="by_client_type client_logged_out">
-    <a href="[% request.url_for('/', {actype => " real "}) %]" class="button">
+    <a href="[% request.url_for('/') %]" class="button">
         [% l('Open An Account Now') %]
     </a>
     <a href="[% deposit_url %]" class="button button_large by_client_type client_real with_login_cookies">
