@@ -2,7 +2,7 @@
     html {
         font-size: $FONT_SIZE_N / 2 + $FONT_SIZE_S / 2; // halfway between N and S
     }
-    .sitemap, .extra-award, .adcopy  {
+    .sitemap, .extra-award, .adcopy, .sidebar  {
         display: none;
     }
 }
@@ -12,6 +12,9 @@
     }
     .login-embed {
         flex: 1;
+    }
+    #client-logged-in {
+        position: block;
     }
     .nav2nd {
         left: 0;

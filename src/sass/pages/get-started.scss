@@ -8,9 +8,12 @@
     section {
         min-width: 10rem;
         flex: 1;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         text-align: center;
         min-width: 33%;
+        p {
+            height: 3.5rem;
+        }
         img {
             height: 100%;
         }
