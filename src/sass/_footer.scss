@@ -10,13 +10,13 @@ footer {
     font-size: $FONT_SIZE_S;
     h4 {
         font-weight: normal;
-        line-height: 1.5;
+        line-height: $LINE_HEIGHT;
     }
     a {
         color: $COLOR_TEXT;
         font-weight: normal;
         display: block;
-        line-height: 1.5;
+        line-height: $LINE_HEIGHT;
     }
 }
 .regulatory {

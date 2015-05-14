@@ -99,7 +99,7 @@ select,
 }
 label {
     text-align: left;
-    line-height: 2em;
+    line-height: $LINE_HEIGHT;
 }
 .thin-form {
     max-width: 320px;

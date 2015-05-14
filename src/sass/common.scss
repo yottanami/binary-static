@@ -26,7 +26,7 @@ a:visited {
 }
 p, code {
     margin-bottom: 1rem;
-    line-height: 1.4;
+    line-height: $LINE_HEIGHT;
 }
 code {
     background: rgba($COLOR_BRAND_BLUE, 0.1);
@@ -94,7 +94,7 @@ textarea {
 ul,
 ol {
     li {
-        line-height: 1.4em;
+        line-height: $LINE_HEIGHT;
     }
 }
 ol li {
@@ -134,19 +134,11 @@ form {
     text-align: right;
     padding-right: 1rem;
     width: 40%;
-    line-height: 1.7;
-}
-label {
-    line-height: 25px;
 }
 // used for form label in grid structure
 .form_label {
     text-align: right;
-    line-height: 25px;
-}
-.extra_tooltip_container label {
-    padding: 0;
-    width: 94%;
+    line-height: $LINE_HEIGHT;
 }
 #profit-table-form {
     background: white;
@@ -254,13 +246,6 @@ a.close {
     .ui-widget-content {
         background: none;
         border: none;
-    }
-}
-.paging-navigation {
-    ul.paging-links {
-        li {
-            line-height: 1;
-        }
     }
 }
 .reset_ol {
