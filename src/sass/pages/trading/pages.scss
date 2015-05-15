@@ -608,7 +608,7 @@ div#price_table_notes {
     .row {
         flex-wrap: wrap;
     }
-    .row > div {
+    .row > * {
         min-width: 25%;
     }
 }
@@ -619,5 +619,10 @@ div#price_table_notes {
     .btnrow {
         display: flex;
         justify-content: space-between;
+    }
+}
+.open-source-projects-content {
+    img {
+        height: 5rem;
     }
 }
