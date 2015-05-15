@@ -18,7 +18,8 @@
 .row
     %img{:src => url_for('images/pages/why-us/mga-logo.svg')}
     %img{:src => url_for('images/pages/why-us/why-us-proven-record_1.svg')}
-    %img{:src => url_for('images/pages/footer/isle-of-man.png')}
+    .media
+        %img{:src => url_for('images/pages/footer/isle-of-man.png')}
 
 %h3= l('How does [_1] make money?', stash->{website_name})
 %p= l('[_1] has thousands of clients taking a variety of positions on the financial markets at any one time, and earns a small margin on these trades.', stash->{website_name})
