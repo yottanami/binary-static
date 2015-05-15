@@ -1,3 +1,7 @@
+form {
+    margin-bottom: 1rem;
+}
+
 input,
 button,
 textarea,
@@ -98,8 +102,7 @@ select,
     cursor: pointer;
 }
 label {
-    text-align: left;
-    line-height: $LINE_HEIGHT;
+    line-height: 2;
 }
 .thin-form {
     max-width: 320px;
