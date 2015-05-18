@@ -631,3 +631,13 @@ div#price_table_notes {
         color: $COLOR_BRAND_ORANGE;
     }
 }
+.userprofit_table-content {
+    table {
+        thead th:first-child, thead th:nth-child(5) {
+            width: 20%;
+        }
+        tfoot th:first-child {
+            text-align: left;
+        }
+    }
+}

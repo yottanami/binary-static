@@ -3,7 +3,7 @@ table {
     border-collapse: collapse;
 }
 thead, tbody {
-    border-bottom: 2px solid $COLOR_CONTROL_BORDER;
+    border-bottom: 2px solid rgba($COLOR_BRAND_BLUE, 0.2);
 }
 th, td {
     padding: .5rem .25rem;
@@ -13,10 +13,10 @@ th, td {
 }
 th {
     color: #2a3052;
-    background: $COLOR_LIGHT_GRAY;
+    background: rgba($COLOR_BRAND_BLUE, 0.1);
 }
 tr {
-    border-bottom: 1px solid $COLOR_CONTROL_BORDER;
+    border-bottom: 1px solid rgba($COLOR_BRAND_BLUE, 0.2);
 }
 table ul {
     padding-left: 0;
