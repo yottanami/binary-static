@@ -40,8 +40,8 @@
 
         <fieldset>
             <label>[% l('Horizontal') %]:</label>
-            <label id="strike_label" class="inputlike" [% IF double_barrier == 1 %] style="display:none;" [% END %]>[% l('Barrier') %]</label>
-            <label id="high_strike_label" class="inputlike" [% IF double_barrier == 0 %] style="display:none;" [% END %]>[% l('High barrier') %]</label>
+            <label id="strike_label" [% IF double_barrier == 1 %] style="display:none;" [% END %]>[% l('Barrier') %]</label>
+            <label id="high_strike_label" [% IF double_barrier == 0 %] style="display:none;" [% END %]>[% l('High barrier') %]</label>
         </fieldset>
 
         <fieldset>
@@ -52,7 +52,7 @@
 
         <fieldset>
             <label>[% l('Vertical') %]:</label>
-            <label class="inputlike">[% l('Expiry') %]</label>
+            <label>[% l('Expiry') %]</label>
         </fieldset>
         <fieldset>
             <label for="expiry_step">[% l('Step') %]:</label>
