@@ -213,6 +213,7 @@ a.close {
     z-index: 1000;
     max-width: 90%;
     border-radius: $BORDER_RADIUS;
+    overflow: auto;
     .drag-handle {
         cursor: pointer;
     }
