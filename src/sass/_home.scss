@@ -16,8 +16,12 @@ $VPADDING: 4rem;
 }
 .hero hgroup {
     flex: 2;
-    padding: $VPADDING 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;    
     text-align: left;
+}
+hgroup {
+    margin-bottom: 2rem;
 }
 .sitemap h4, .hero h1, .hero h2, .hero h3, .home-container hgroup h1, .trade-desc h4 {
     margin-top: 0;
@@ -62,6 +66,7 @@ blockquote {
 }
 #open-account {
     padding: $VPADDING 2rem;
+    margin-bottom: 0;
     background: rgba($COLOR_BRAND_BLUE, 0.1);
     legend {
         margin: 0;
