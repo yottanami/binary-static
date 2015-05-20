@@ -9,16 +9,15 @@
         padding: 3px;
     }
     .rbox-heading {
-        font-weight: bold;
         background-color: $COLOR_LIGHT_GRAY;
         h4 {
-            font-size: 1em;
             margin: 0;
+            padding: .5rem 1rem;
         }
     }
     .rbox-content {
         background-color: white;
-        padding: 0.3em 0;
+        padding: 1rem;
         .half-1 {
             width: 50%;
             float: left;
