@@ -9,7 +9,6 @@ module.exports = {
                 'https://www.binary.com/styles',
                 'https://www.binary.com/c/trade.cgi?market=forex',
                 'https://www.binary.com/get-started',
-                'https://www.binary.com/c/available_payment_methods.cgi',
                 'https://www.binary.com/resources',
                 'https://www.binary.com/charting',
                 'https://www.binary.com/d/tick_trades.cgi'
