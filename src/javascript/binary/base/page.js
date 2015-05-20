@@ -609,6 +609,7 @@ Contents.prototype = {
     },
     activate_by_client_type: function() {
 
+        $('body').removeClass();
         $('body').toggleClass('client-logged-in', this.client.is_logged_in);
         $('body').toggleClass('client-not-logged-in', !this.client.is_logged_in);
         $('body').toggleClass('client-is-real', this.client.is_real);

@@ -8,7 +8,8 @@
 
 .client-not-logged-in #topbar,
 .client-is-real #topbar,
-.client-has-real #topbar .button {
+.client-has-real #topbar .button,
+.client-is-virtual .authenticate-menu {
     display: none;
 }
 
