@@ -6,13 +6,14 @@
 html {
     box-sizing: border-box;
     height: 100%;
-    font-size: 18px;
+    font-size: 17px;
     text-rendering: geometricPrecision;
 }
 body {
     background: #fff;
     color: $COLOR_TEXT;
-    font-family: proxima-nova, arial;
+    font-family: roboto, arial;
+    line-height: $LINE_HEIGHT;
 }
 a,
 a:visited {
@@ -24,18 +25,18 @@ a:visited {
         text-decoration: underline;
     }
 }
-p, code {
+p, code, fieldset {
     margin-bottom: 1rem;
-    line-height: 1.4;
 }
 code {
     background: rgba($COLOR_BRAND_BLUE, 0.1);
-    padding: .5rem 1rem;
+    padding: 1rem;
 }
 h1,
 h2,
 h3 {
     font-weight: 300;
+    line-height: 1;
 }
 h4 {
     font-weight: bold;
@@ -45,8 +46,7 @@ h2,
 h3,
 h4 {
     color: $COLOR_BRAND_BLUE;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
+    margin: 1rem 0;
     a {
         color: $COLOR_BRAND_BLUE !important;
     }
@@ -63,19 +63,6 @@ h3 {
 h4 {
     font-size: $FONT_SIZE_N;
 }
-hgroup {
-    margin-bottom: 2em;
-}
-select,
-input,
-button,
-textarea,
-.inputlike {
-    background: white;
-    border: 1px solid $COLOR_GRAY;
-    padding: 2px 3px;
-    color: $COLOR_TEXT;
-}
 input,
 button,
 textarea,
@@ -90,12 +77,6 @@ option {
 input,
 textarea {
     vertical-align: middle;
-}
-ul,
-ol {
-    li {
-        line-height: 1.4em;
-    }
 }
 ol li {
     list-style-type: decimal;
@@ -120,7 +101,7 @@ abbr {
     cursor: help;
 }
 .button.button-disabled button.button-disabled {
-    color: $COLOR_GRAY_SHADE;
+    color: $COLOR_GRAY;
     background: $COLOR_LIGHT_GRAY;
     cursor: default;
 }
@@ -134,19 +115,10 @@ form {
     text-align: right;
     padding-right: 1rem;
     width: 40%;
-    line-height: 1.7;
-}
-label {
-    line-height: 25px;
 }
 // used for form label in grid structure
 .form_label {
     text-align: right;
-    line-height: 25px;
-}
-.extra_tooltip_container label {
-    padding: 0;
-    width: 94%;
 }
 #profit-table-form {
     background: white;
@@ -156,12 +128,19 @@ label {
     background-color: $COLOR_YELLOW;
 }
 .errorrow,
-.errorfield {
+.errorfield,
+.error-msg {
     //color: white;
     //background: $COLOR_RED;
     color: $COLOR_RED;
     border-radius: $BORDER_RADIUS;
     padding: .125rem;
+}
+.notice-msg {
+    color: $COLOR_TEXT;
+    border-radius: $BORDER_RADIUS;
+    padding: .125rem;
+    background-color: $COLOR_YELLOW;
 }
 .text-only {
     color: $COLOR_TEXT;
@@ -183,16 +162,7 @@ label {
 .required_asterisk {
     color: $COLOR_BRAND_ORANGE;
 }
-.error-msg {
-    color: $COLOR_RED;
-    font-style: italic;
-    font-size: 93%;
-}
-.notice-msg {
-    color: $COLOR_TEXT;
-    background-color: $COLOR_YELLOW;
-    padding: 10px;
-}
+
 /* hacks - avoid! */
 /* using pixel as we need it to make footer sticky */
 .scrollbar-measure {
@@ -209,7 +179,8 @@ label {
 }
 ul.bullet li {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyMCI+DQo8cG9seWdvbiBmaWxsPSIjRTk4MDI1IiBwb2ludHM9IjguNjIzLDE5LjU1NyAwLDEwLjkzNiAzLjczNiw3LjE5OCA4LjYyMywxMi4wODIgMjAuMjYyLDAuNDQzIDI0LDQuMTggOC42MjMsMTkuNTU3Ii8+DQo8L3N2Zz4NCg==") no-repeat;
-    padding-left: 1.25em;
+    background-position: 2px;
+    padding-left: 1.5em;
 }
 a.close {
     display: inline-block;
@@ -242,6 +213,7 @@ a.close {
     z-index: 1000;
     max-width: 90%;
     border-radius: $BORDER_RADIUS;
+    overflow: auto;
     .drag-handle {
         cursor: pointer;
     }
@@ -249,19 +221,10 @@ a.close {
     .inpage_popup_content_box {
         padding: 1rem 2rem;
         background: white;
-        border: solid 2px $COLOR_GRAY;
-        text-align: center;
     }
     .ui-widget-content {
         background: none;
         border: none;
-    }
-}
-.paging-navigation {
-    ul.paging-links {
-        li {
-            line-height: 1;
-        }
     }
 }
 .reset_ol {

@@ -1,12 +1,12 @@
 @mixin chart-drop-down-content {
   margin-top:0;
-  border: 1px solid $COLOR_GRAY_SHADE;
+  border: 1px solid $COLOR_GRAY;
   .half-1, .half-2 {
     width: 47%;
     height: auto;
   }
   .half-1.with-separator {
-      border-right: 1px solid $COLOR_GRAY_SHADE;
+      border-right: 1px solid $COLOR_GRAY;
   }
   .tl, .tr, .bl, .br {
     display: none;
@@ -221,7 +221,7 @@
   display: none;
   background-color: white;
   padding: 0 0.7em 0.7em;
-  border: 1px solid $COLOR_GRAY_SHADE;
+  border: 1px solid $COLOR_GRAY;
   width: 8em;
   z-index: 2;
 }
@@ -435,11 +435,6 @@ div#price_table_notes {
     }
 }
 
-#payment-agent-registration ul.circles {
-    margin-left: 60px;
-    list-style-image: url("../images/pages/get-started/list-circle_1.png");
-}
-
 #asset-index {
     #forex-normal-tab span.tm-a-2 {
         cursor: pointer;
@@ -549,7 +544,7 @@ div#price_table_notes {
 
 .smart-indices-content {
     img {
-        height: 10rem;
+        height: 5rem;
     }
 }
 
@@ -613,7 +608,7 @@ div#price_table_notes {
     .row {
         flex-wrap: wrap;
     }
-    .row > div {
+    .row > * {
         min-width: 25%;
     }
 }
@@ -624,5 +619,25 @@ div#price_table_notes {
     .btnrow {
         display: flex;
         justify-content: space-between;
+    }
+}
+.open-source-projects-content {
+    img {
+        height: 5rem;
+    }
+}
+.affiliate-signup-content {
+    h3 {
+        color: $COLOR_BRAND_ORANGE;
+    }
+}
+.userprofit_table-content {
+    table {
+        thead th:first-child, thead th:nth-child(5) {
+            width: 20%;
+        }
+        tfoot th:first-child {
+            text-align: left;
+        }
     }
 }

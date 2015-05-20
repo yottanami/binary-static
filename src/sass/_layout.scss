@@ -6,7 +6,7 @@
 html, body {
     min-height: 100vh;
 }
-body, .msgbar, .header, #content, .sitemap,
+body, .msgbar, .header, .sitemap,
 .msgbar-wrapper, .header-wrapper, .content-wrapper, .sitemap-wrapper, .footer-wrapper {
     display: flex;
 }
@@ -40,7 +40,7 @@ body {
     margin-top: 0;
 }
 #content-holder > div {
-    padding: 2rem .5rem;
+    padding: 2rem .5rem 4rem;
     margin: 0 auto;
 }
 // .content-something:  max-width: $CONTENT_WIDTH;
@@ -76,6 +76,7 @@ body {
 }
 
 #logo {
+    width: 8rem;
     padding: .5em 0;
 }
 

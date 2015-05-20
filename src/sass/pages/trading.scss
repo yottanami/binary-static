@@ -161,9 +161,8 @@
           background: $COLOR_LIGHT_GRAY;
         }
         .rbox {
-          border: 1px solid $COLOR_GRAY_SHADE;
+          border: 1px solid $COLOR_GRAY;
           position: relative;
-          margin-bottom: 3em;
         }
         .rbox-table-full {
           border: 1px solid $COLOR_LIGHT_GRAY;
@@ -245,7 +244,7 @@
 }
 
 .price_moved_up {
-  background-color: $COLOR_LIGHT_BLUE;
+  background-color: $COLOR_BRAND_BLUE;
   color: white;
 }
 
@@ -301,7 +300,7 @@
 
 /* added for the underlying highlight */
 .is_intraday {
-    background-color: $COLOR_GRAY_SHADE;
+    background-color: $COLOR_GRAY;
 }
 
 .trade_confirm_container {

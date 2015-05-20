@@ -33,12 +33,13 @@ a.button {
 }
 button:disabled,
 .button-disabled {
-    color: $COLOR_GRAY_SHADE;
+    color: $COLOR_GRAY;
     background: $COLOR_LIGHT_GRAY;
 }
 
-.ui-datepicker {
+.ui-widget {
     background: white;
+    font-family: roboto, arial;
 }
 .ui-datepicker-calendar {
     thead, tbody, tr, td, th {
