@@ -150,27 +150,18 @@
     }
 }
 #instrument-content {
-    width: 80em;
+    width: 80rem;
 }
 #instrument-content label {
     float: none;
 }
 #moving-average-content,
 #settings-content {
-    width: 25em;
+    width: 25rem;
 }
 #indicator-content,
 #band-content {
-    width: 20em;
-}
-#intraday_interval {
-    ul.not-li {
-        margin: 0 0 0 1em;
-        label {
-            cursor: pointer;
-            width: auto;
-        }
-    }
+    width: 20rem;
 }
 .underlying_group, .underlying_group > * {
     float: left;
@@ -194,11 +185,18 @@
 #intraday_interval {
     position: absolute;
     display: none;
-    background-color: white;
-    padding: 0 0.7em 0.7em;
-    border: 1px solid $COLOR_GRAY;
-    width: 8em;
+    background-color: $COLOR_BRAND_BLUE;
+    margin-left: -1rem;
+    width: 10rem;
     z-index: 2;
+    ul.not-li {
+        margin: 0 0 0 1rem;
+        label {
+            color: white;
+            cursor: pointer;
+            width: auto;
+        }
+    }
 }
 #intraday_interval li {
     display: block;
