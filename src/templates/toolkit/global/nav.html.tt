@@ -23,10 +23,10 @@
                 [% language_select %]
             </div>
         </li>
-        <li id="client-logged-out">
+        <li class="login-container">
             <a href="[% request.url_for('login') %]" class="button login-btn">[% l("Log in") %]</a>
         </li>
-        <li id="client-logged-in" class="submenu">
+        <li class="submenu acount-container">
             [% INCLUDE global/account_menu.html.tt %]
         </li>
     </ul>

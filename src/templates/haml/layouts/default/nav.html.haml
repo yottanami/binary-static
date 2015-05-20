@@ -13,7 +13,7 @@
         %li.nav-spacer
         %li
             = include('layouts/default/language-select')
-        %li#client-logged-out
+        %li.login-container
             %a.button.login-btn{:href=>url_for('login')}= l('Log in')
-        %li#client-logged-in.submenu
+        %li.submenu.account-container
             = include('layouts/default/account_menu')

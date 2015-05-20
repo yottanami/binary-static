@@ -108,13 +108,12 @@ nav a {
     background-size: auto 70%;
     background-position: center center;
 }
-#client-logged-in,
-#client-logged-out {
+.login-container,
+.account-container {
     display: none;
 }
 /* Logo and top bar */
 #topbar {
-    display: none;
     text-align: center;
     color: white;
     background: $COLOR_NAV_ACTIVE;

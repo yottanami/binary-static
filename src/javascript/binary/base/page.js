@@ -612,12 +612,9 @@ Contents.prototype = {
         $('body').toggleClass('client-logged-in', this.client.is_logged_in);
         $('body').toggleClass('client-not-logged-in', !this.client.is_logged_in);
         $('body').toggleClass('client-is-real', this.client.is_real);
-        $('body').toggleClass('client-is-virtual', this.client.is_virtual);        
+        $('body').toggleClass('client-is-virtual', this.client.is_virtual);
         $('body').toggleClass('client-has-real', this.has_real_account());
 
-
-        $('#client-logged-in').toggle(this.client.is_logged_in);
-        $('#client-logged-out').toggle(!this.client.is_logged_in);
         $('.by_client_type').addClass('invisible');
 
         if (this.client.is_logged_in) {
@@ -633,12 +630,6 @@ Contents.prototype = {
             } else {
                 $('.by_client_type.client_virtual').removeClass('invisible');
                 $('.by_client_type.client_virtual').show();
-
-
-                if (1) {
-                    $('.virtual-upgrade-link').addClass('invisible');
-                    $('.virtual-upgrade-link').hide();
-                }
             }
         } else {
             $('.by_client_type.client_logged_out').removeClass('invisible');
