@@ -1,100 +1,91 @@
 @mixin chart-drop-down-content {
-  margin-top:0;
-  border: 1px solid $COLOR_GRAY;
-  .half-1, .half-2 {
-    width: 47%;
-    height: auto;
-  }
-  .half-1.with-separator {
-      border-right: 1px solid $COLOR_GRAY;
-  }
-  .tl, .tr, .bl, .br {
-    display: none;
-  }
-  .rbox-content {
-    height: auto;
-    overflow: auto;
-  }
-  ul.not-li {
-      color: $COLOR_TEXT;
-      display: block;
-      background: none;
-      border: 0;
-      li {
+    margin-top: 0;
+    border: 1px solid $COLOR_GRAY;
+    .half-1,
+    .half-2 {
+        width: 47%;
+        height: auto;
+    }
+    .half-1.with-separator {
+        border-right: 1px solid $COLOR_GRAY;
+    }
+    .tl,
+    .tr,
+    .bl,
+    .br {
+        display: none;
+    }
+    .rbox-content {
+        font-size: $FONT_SIZE_S;
+        height: auto;
+        overflow: auto;
+    }
+    ul.not-li {
+        color: $COLOR_TEXT;
+        display: block;
         background: none;
-        height: 20px;
-        display:list-item;
-        margin:0;
-        padding: 0;
-        label {
-           float: none;
+        border: 0;
+        li {
+            background: none;
+            display: list-item;
         }
-      }
-  }
+    }
 }
-
 #risefall {
     background-image: url("../images/icons/trade-rise-fall.svg");
 }
-
 #higherlower {
     background-image: url("../images/icons/pages/contract_guide/higher-lower.svg");
 }
-
 #touchnotouch {
     background-image: url("../images/icons/trade-touch-notouch.svg");
 }
-
 #inout {
     background-image: url("../images/icons/trade-in-out.svg");
 }
-
-#strike_type, #amount, #expiry_step, #from_expiry, #pricingtable_bet_type {
+#strike_type,
+#amount,
+#expiry_step,
+#from_expiry,
+#pricingtable_bet_type {
     width: 100%;
 }
-
 #account_balance {
-  float: right;
-  margin: 0 20px 10px 0;
-  width: 35%;
-  font-size: 100%;
-  display: none;
+    float: right;
+    margin: 0 20px 10px 0;
+    width: 35%;
+    font-size: 100%;
+    display: none;
 }
-
 #std_loading_img {
-  margin: 0 auto;
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
-
 /* statement */
-
 #tradingform {
-  label {
-    padding-top: 2px;
-  }
-  select {
-    background: white;
-    border: 1px solid $COLOR_GRAY;
-    margin-right: 5px;
-  }
-  input[type="text"] {
-    border: 1px solid $COLOR_GRAY;
-    margin-right: 5px;
-    width: 105px;
-  }
-  input[type="checkbox"] {
-    border: none;
-  }
+    label {
+        padding-top: 2px;
+    }
+    select {
+        background: white;
+        border: 1px solid $COLOR_GRAY;
+        margin-right: 5px;
+    }
+    input[type="text"] {
+        border: 1px solid $COLOR_GRAY;
+        margin-right: 5px;
+        width: 105px;
+    }
+    input[type="checkbox"] {
+        border: none;
+    }
 }
-
 #tradingform select {
-  width: 6.5em;
+    width: 6.5em;
 }
-
 #statement-table table tfoot th.num {
     text-align: center;
 }
-
 .paging-navigation {
     .paging-links {
         display: inline-block;
@@ -107,14 +98,12 @@
         }
     }
 }
-
 /* Light chart */
-
 #form_chart_director {
     ul.tm-ul {
         li.tm-li {
             a.tm-a {
-                padding: 0 1em;
+                padding: 0 0 0 1rem;
                 display: block;
                 span {
                     display: inline-block;
@@ -131,8 +120,6 @@
     }
     li.hover .drop-down-content {
         @include chart-drop-down-content;
-        margin:0;
-        top:24px;
         ul.not-li {
             position: relative;
             top: auto;
@@ -162,25 +149,20 @@
         }
     }
 }
-
 #instrument-content {
-  width: 80em;
+    width: 80em;
 }
-
 #instrument-content label {
-  float: none;
+    float: none;
 }
-
 #moving-average-content,
 #settings-content {
-  width: 25em;
+    width: 25em;
 }
-
 #indicator-content,
 #band-content {
-  width: 20em;
+    width: 20em;
 }
-
 #intraday_interval {
     ul.not-li {
         margin: 0 0 0 1em;
@@ -190,232 +172,186 @@
         }
     }
 }
-
-.underlying_group {
-  float: left;
-  margin: 0 0.5em;
+.underlying_group, .underlying_group > * {
+    float: left;
 }
-
 .drop-down-content {
-  left: auto;
-  top: 27px;
-  position: absolute;
-  background-color: white;
-  display: none;
-  z-index: 999;
+    left: auto;
+    top: 2rem;
+    position: absolute;
+    background-color: white;
+    display: none;
+    z-index: 999;
 }
-
 .hover .drop-down-content {
-  display: block;
+    display: block;
 }
-
 #chart_period input {
-  left: -9999px;
-  position: absolute;
-  top: 0;
+    left: -9999px;
+    position: absolute;
+    top: 0;
 }
-
 #intraday_interval {
-  position: absolute;
-  display: none;
-  background-color: white;
-  padding: 0 0.7em 0.7em;
-  border: 1px solid $COLOR_GRAY;
-  width: 8em;
-  z-index: 2;
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 0 0.7em 0.7em;
+    border: 1px solid $COLOR_GRAY;
+    width: 8em;
+    z-index: 2;
 }
-
 #intraday_interval li {
-  display: block;
+    display: block;
 }
-
 #chart_compare_underlying,
 #chart_period {
-  z-index: 2;
-  padding-bottom: 25px;
+    margin: 2rem 0;
 }
-
 #chart_properties label {
-  float: left;
-  width: 40%;
-  text-align: right;
-  padding-right: 10px;
+    float: left;
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
 }
-
 #chart_properties input {
-  width: 30%;
+    width: 30%;
 }
-
 #chart_compare_underlying li {
-  background: url("../images/pages/light_chart/linechart_legends_1.png");
-  background-repeat: no-repeat;
-  background-color: white;
-  padding: 0 15px;
+    background: url("../images/pages/light_chart/linechart_legends_1.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 0 15px;
 }
-
 #chart_compare_underlying input {
-  position: absolute;
-  visibility: hidden;
+    position: absolute;
+    visibility: hidden;
 }
-
 #chart_compare_underlying a:link,
 #chart_compare_underlying a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 #chart_compare_underlying .button-menu {
-  margin: 0;
+    margin: 0;
 }
-
 .line_1 {
-  background-position: 0 -35px !important;
+    background-position: 0 -35px !important;
 }
-
 .line_2 {
-  background-position: 0 -3px !important;
+    background-position: 0 -3px !important;
 }
-
 .line_3 {
-  background-position: 0 -67px !important;
+    background-position: 0 -67px !important;
 }
-
 .line_4 {
-  background-position: 0 -115px !important;
+    background-position: 0 -115px !important;
 }
-
 .line_5 {
-  background-position: 0 -19px !important;
+    background-position: 0 -19px !important;
 }
-
 .line_6 {
-  background-position: 0 -83px !important;
+    background-position: 0 -83px !important;
 }
-
 #chart_director_imageholder .notice-1 {
-  top: 25px;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
+    top: 25px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
-
 .live-help {
     margin: 1em 0 2em;
 }
-
 /* Aanlyse bet*/
 #bet_details-table td {
-  padding: 5px;
-  vertical-align: top;
+    padding: 5px;
+    vertical-align: top;
 }
-
 #bet_details-table em {
-  font-size: 60%;
-  font-weight: normal;
-  color: $COLOR_TEXT;
+    font-size: 60%;
+    font-weight: normal;
+    color: $COLOR_TEXT;
 }
-
 #profit_loss,
 #sale_price {
-  width: 11%;
+    width: 11%;
 }
-
 .bet_demo {
-  text-align: center;
-  margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 15px;
 }
-
 .finder {
-  background-color: white;
-  margin-bottom: 5px;
-  position: relative;
-  left: 1px;
+    background-color: white;
+    margin-bottom: 5px;
+    position: relative;
+    left: 1px;
 }
-
 h2.finder {
-  font-size: 1.0em;
-  padding: .4em 50px .4em 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  border-top: 1px solid $COLOR_GRAY;
-  color: $COLOR_BRAND_BLUE;
+    font-size: 1.0em;
+    padding: 0.4em 50px 0.4em 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-top: 1px solid $COLOR_GRAY;
+    color: $COLOR_BRAND_BLUE;
 }
-
 #desc {
-  margin: 0 10px 0 90px;
+    margin: 0 10px 0 90px;
 }
-
 .top-space {
-  padding-top: 10px;
+    padding-top: 10px;
 }
-
 .inline {
-  display: inline;
+    display: inline;
 }
-
 #openAccForm select#AddressState,
 #changeAccountForm select#AddressState {
-  width: 159px;
+    width: 159px;
 }
-
 #changeAccountForm {
-  label {
-    padding-top: 2px;
-  }
-  input {
-    border: 1px solid $COLOR_GRAY;
-  }
-  select {
-    border: 1px solid $COLOR_GRAY;
-    background: white;
-  }
+    label {
+        padding-top: 2px;
+    }
+    input {
+        border: 1px solid $COLOR_GRAY;
+    }
+    select {
+        border: 1px solid $COLOR_GRAY;
+        background: white;
+    }
 }
-
 #content #error_msg {
-  margin: 10px;
+    margin: 10px;
 }
-
 #bet_details-table {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
-
 .smaller-font table td,
 .smaller-font table th {
-  font-size: 0.85em;
+    font-size: 0.85em;
 }
-
 .left-align table td,
 .left-align table th {
-  text-align: left;
+    text-align: left;
 }
-
 .center-align table td,
 .center-align table th {
-  text-align: center;
+    text-align: center;
 }
-
-
 label#from_strike_label,
 label#from_strike_percent,
 label#from_expiry_label {
-  width: auto;
+    width: auto;
 }
-
 .hasDatepicker {
-  width: 8em;
+    width: 8em;
 }
-
 div#price_table_notes {
-  font-size: 0.92em;
-  padding-top: 15px;
+    font-size: 0.92em;
+    padding-top: 15px;
 }
-
-
 .tab-menu-wrap {
     ul#trading-times {
         margin-bottom: 1em;
     }
 }
-
 /* Terms and conditions */
 .tab-menu-wrap {
     ul#legal-menu {
@@ -427,7 +363,6 @@ div#price_table_notes {
         }
     }
 }
-
 #asset-index {
     #forex-normal-tab span.tm-a-2 {
         cursor: pointer;
@@ -451,13 +386,12 @@ div#price_table_notes {
             }
         }
         .tm-ul-2 {
-            .tm-li-2 a{
+            .tm-li-2 a {
                 display: inline;
             }
         }
     }
 }
-
 #settings_message {
     font-weight: bold;
     color: $COLOR_BRAND_ORANGE;
@@ -465,7 +399,6 @@ div#price_table_notes {
         font-size: 100%;
     }
 }
-
 #client_message.errorbox {
     background-image: none;
     text-align: center;
@@ -484,12 +417,10 @@ div#price_table_notes {
         }
     }
 }
-
 .logintrouble-content a {
     display: block;
     text-align: center;
 }
-
 .about-us-content {
     .about-col {
         flex: 7;
@@ -509,19 +440,18 @@ div#price_table_notes {
         margin-top: 0;
     }
 }
-
 .charting-application-content .appshot {
     height: 20rem;
     padding: 1rem 0;
     display: block;
     margin: auto;
 }
-
 .resourcesrise_fall_table-content {
     #duration_container {
         flex: 2;
     }
-    #atleast, #bet_currency {
+    #atleast,
+    #bet_currency {
         width: 100%;
     }
     form {
@@ -530,17 +460,16 @@ div#price_table_notes {
     label {
         display: block;
     }
-    #duration_container input, #duration_container select {
+    #duration_container input,
+    #duration_container select {
         width: 40%;
     }
 }
-
 .smart-indices-content {
     img {
         height: 5rem;
     }
 }
-
 .login-content {
     #content {
         width: 20rem;
@@ -551,7 +480,8 @@ div#price_table_notes {
     .form-logo {
         width: 7rem;
     }
-    input, button {
+    input,
+    button {
         width: 100%;
     }
     .errorfield {
@@ -561,8 +491,6 @@ div#price_table_notes {
         margin-top: 1rem;
     }
 }
-
-
 .signup-content {
     #content {
         width: 30rem;
@@ -570,7 +498,8 @@ div#price_table_notes {
     .form-logo {
         width: 7rem;
     }
-    input, button {
+    input,
+    button {
         width: 100%;
     }
     .errorfield {
@@ -580,13 +509,13 @@ div#price_table_notes {
         margin-top: 1rem;
     }
 }
-
 .random-markets-content {
     img {
         height: 7rem;
     }
 }
-.contract-guide-content, .usermy_account-content {
+.contract-guide-content,
+.usermy_account-content {
     img {
         height: 5rem;
     }
@@ -595,7 +524,8 @@ div#price_table_notes {
     label {
         display: block;
     }
-    input, select {
+    input,
+    select {
         width: 100%;
     }
     .row {
@@ -606,7 +536,8 @@ div#price_table_notes {
     }
 }
 .charting-livechart-content {
-    select, input {
+    select,
+    input {
         width: 100%;
     }
     .btnrow {
@@ -626,7 +557,8 @@ div#price_table_notes {
 }
 .userprofit_table-content {
     table {
-        thead th:first-child, thead th:nth-child(5) {
+        thead th:first-child,
+        thead th:nth-child(5) {
             width: 20%;
         }
         tfoot th:first-child {
