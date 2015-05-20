@@ -1,0 +1,9 @@
+.client-not-logged-in #topbar,
+.client-is-real #topbar,
+.client-has-real #topbar .button {
+    display: none;
+}
+
+.client-logged-in.client-is-virtual #topbar {
+    display: block;
+}

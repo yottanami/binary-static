@@ -1,24 +1,4 @@
 <div id="topbar">
-        <div class='grd-container'>
-            <div class='grd-grid-12 grd-parent'>
-                <div class='grd-grid-6 grd-grid-mobile-12 by_client_type client_virtual' id='virtualupgrade' style="display: none;">
-                    <span class='grd-hide-mobile'>
-                        <span id='virtual-text'>[% l("You're using a virtual money account.") %]</span>
-                    </span>
-                    <a class="virtual-upgrade-link pjaxload with_login_cookies pulser" href="[% request.url_for('/user/upgrade/') %]">[% l("Upgrade to a real money account") %]</a>
-                </div>
-                <div class='grd-grid-6 grd-grid-mobile-12 grd-parent' id='topbar-info'>
-                    <div class='grd-grid-5 grd-grid-mobile-7' id="gmt-clock"></div>
-                    <div class='grd-grid-3 grd-hide-mobile' id='contact-us'>
-                        <a class="pjaxload" href="[% request.url_for('contact') %]"[% target %]>[% l("Contact Us") %]</a>
-                    </div>
-                    <div class='grd-grid-4 grd-grid-mobile-5'>
-                        <div class="[% language %]" id='language_select'>
-                            [% language_select %]
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>    
+    [% l("You're using a virtual money account.") %]
+    <a class="button pjaxload" href="[% request.url_for('/user/upgrade/') %]">[% l("Upgrade to a real money account") %]</a>
+</div>
