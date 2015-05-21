@@ -7,7 +7,7 @@ header {
     display: flex;
     width: 100%;
     max-width: $CONTENT_WIDTH;
-    margin: 0 .5em;
+    margin: 0 0.5em;
 }
 #logo {
     img:nth-child(1) {
@@ -15,8 +15,8 @@ header {
     }
     img:nth-child(2) {
         height: 1.5rem;
-        margin-left: .25rem;
-        margin-top: .25rem;
+        margin-left: 0.25rem;
+        margin-top: 0.25rem;
     }
 }
 nav {
@@ -36,14 +36,10 @@ nav a {
         text-decoration: none;
     }
 }
-
-
 .login-btn {
     font-size: $FONT_SIZE_S;
-    margin: .7rem 0;
+    margin: 0.7rem 0;
 }
-
-
 .language-selector {
     select {
         text-indent: 100px;
@@ -53,14 +49,17 @@ nav a {
         margin: 1.1rem;
         background-position: 0 0;
         padding: 0;
-        &:hover, &:focus { box-shadow: none; }
-        background: url('../images/common/flags.png');
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+        background: url("../images/common/flags.png");
         background-size: 20px;
         background-repeat: no-repeat;
     }
 }
 .flag {
-    background: url('../images/flags.png');
+    background: url("../images/flags.png");
     background-size: 20px;
     background-repeat: no-repeat;
 }
@@ -79,7 +78,7 @@ nav a {
     border-right: 1px solid transparent;
 }
 .submenu:hover {
-    box-shadow: inset 0px 3px 0px 0px $COLOR_BRAND_ORANGE;
+    box-shadow: inset 0 3px 0 0 $COLOR_BRAND_ORANGE;
     background-color: $COLOR_NAV_ACTIVE;
     border-left: 1px solid $COLOR_NAV_BORDER;
     border-right: 1px solid $COLOR_NAV_BORDER;
@@ -91,7 +90,8 @@ nav a {
     border-right: 1px solid $COLOR_NAV_BORDER;
     border-bottom: 1px solid $COLOR_NAV_BORDER;
 }
-.nav-trade a, .nav-cashier a {
+.nav-trade a,
+.nav-cashier a {
     display: block;
 }
 .nav2nd li:hover {
@@ -108,7 +108,14 @@ nav a {
     background-size: auto 70%;
     background-position: center center;
 }
-
-#client-logged-in, #client-logged-out {
+.login-container,
+.account-container {
     display: none;
+}
+/* Logo and top bar */
+#topbar {
+    text-align: center;
+    color: white;
+    background: $COLOR_NAV_ACTIVE;
+    padding: .5rem;
 }

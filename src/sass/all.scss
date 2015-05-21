@@ -1,7 +1,6 @@
 @import "constants";
 @import "colors";
 
-/* common styles */
 @import "reset";
 @import "media-queries";
 @import "common";
@@ -13,18 +12,13 @@
 @import "layout";
 @import "table";
 @import "tabs";
+@import "tooltip";
 @import "readable";
+@import "access";
 
 @import "controls";
 @import "home";
 
-/* main style */
-@import "common/header";
-@import "common/nav";
-@import "common/exception";
-@import "common/tooltip";
-
-/* pages */
 @import "pages/ad.scss";
 @import "pages/ad1.scss";
 @import "pages/ad2.scss";
@@ -39,12 +33,8 @@
 @import "pages/cashier.scss";
 @import "pages/static.scss";
 @import "pages/timeline.scss";
+@import "pages/lightcharts.scss";
 
-
-/* media queries */
 @import "media-queries";
 
-/* external stylesheets
- * ===================================== */
-/* date picker */
 @import "external/jquery.ui.timepicker.scss";

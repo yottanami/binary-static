@@ -13,7 +13,7 @@
     .login-embed {
         flex: 1;
     }
-    #client-logged-in {
+    .account-container {
         position: block;
     }
     .nav2nd {
@@ -78,6 +78,9 @@
         padding-right: .5em;
     }
     .row {
+        flex-direction: column;
+    }
+    ul[role=tabs], ul[role=segmented] {
         flex-direction: column;
     }
 }
