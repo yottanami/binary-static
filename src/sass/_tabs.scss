@@ -6,6 +6,7 @@ ul[role=tabs], ul[role=segmented] {
         text-align: center;
     }
     a {
+        text-decoration: none;
         font-weight: normal;
         &:hover {
             text-decoration: none;

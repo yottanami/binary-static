@@ -12,10 +12,14 @@ footer {
         font-weight: normal;
     }
     a {
+        text-decoration: none;
         color: $COLOR_TEXT;
         font-weight: normal;
         display: block;
         line-height: 1.6;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 .regulatory {

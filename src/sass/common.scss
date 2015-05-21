@@ -18,12 +18,7 @@ body {
 a,
 a:visited {
     color: $COLOR_BRAND_BLUE;
-    text-decoration: none;
     font-weight: bold;
-    &:hover,
-    &:active {
-        text-decoration: underline;
-    }
 }
 p, code, fieldset {
     margin-bottom: 1rem;

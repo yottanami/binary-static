@@ -33,7 +33,7 @@
             </a>
         </p>
         <p class="media">
-            <a class="pjaxload button" href="[% request.url_for('/cashier/payment_methods') %]">[% l('Cashier') %]</a>
+            <a class="pjaxload button" href="[% request.url_for('/cashier') %]">[% l('Cashier') %]</a>
         </p>
         <p class="media">[% l('Make a deposit or withdraw') %]</p>
     </div>
