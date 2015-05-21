@@ -19,4 +19,4 @@
         %form#loginid-switch-form{:action => "[% request.url_for('user/loginid_switch?l=EN') %]", :method => "post"}
             %select#client_loginid
     %li
-        %a.pjaxload{:href=>url_for('logout')}= l('Log out')
+        %a{:href=>url_for('logout')}= l('Log out')
