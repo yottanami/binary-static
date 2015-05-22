@@ -22,6 +22,20 @@
         [% END %]
     </div>
     [% END %]
+    <div class='notice-msg invisible' id="investment_message">
+        <img class="responsive" src="[% request.url_for('images/pages/cashier/protection-icon.svg') %]"/>
+        <p>
+            [% l('Due to changes in regulation within the European Union, binary options on financial indices are now considered to be an investment activity.') %]
+        </p>
+        <p>
+            [% l('Accordingly, to continue trading binary options on forex/stock indices/commodities, please <a href="[_1]" class="pjaxload">open an account with Binary Investments (Europe) Ltd</a>., which is regulated by the Malta Financial Services Authority.', request.url_for('user/upgrade/financial')) %]
+        </p>
+    </div>
+    [% IF show_investment_message %]
+        <p class='notice-msg' id="investment_welcome_message">
+            [% l('Thank you for opening an account with Binary Investments (Europe) Ltd. This account will become operational after 28 May 2015.') %]
+        </p>
+    [% END %]
 [% END %]
 
 

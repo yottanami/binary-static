@@ -1,0 +1,38 @@
+.grd-row-padding
+%h1= l('Account Transfer')
+%br
+%form{:action => url_for('/cashier/account_transfer'), :method => 'POST'}
+  %fieldset
+    .grd-parent.grd-grid-12.grd-row-padding
+      .grd-grid-3.form_label
+        %label{:for => "transfer"}= l('Transfer')
+      .grd-grid-9
+        %select#transfer{:name => 'transfer', :id => 'account_transfer'}
+          - if (stash('options')->{'1'}) {
+              %option{ :value => "#{stash('options')->{'1'}->{'value'}}" }= stash('options')->{'1'}->{'text'}
+          - }
+          - if (stash('options')->{'2'}) {
+              %option{ :value => "#{stash('options')->{'2'}->{'value'}}" }= stash('options')->{'2'}->{'text'}
+          - }
+        - if (flash('error') and flash('error')->{transfer}) {
+          %p.errorfield= flash('error')->{transfer}
+        - }
+    .grd-parent.grd-grid-12.grd-row-padding
+      .grd-grid-3.form_label
+        %label{:for => "amount"}= l('Amount')
+      .grd-grid-9.grd-parent
+        .grd-grid-1.form_label
+          %label= stash('currency')
+        .grd-grid-11
+          %input#amount{:type => 'text', :name => 'amount', :placeholder => "#{l('Amount')}"}
+          - if (flash('error') and flash('error')->{amount}) {
+            %p.errorfield= flash('error')->{amount}
+          - }
+          %input#currency{:type => 'hidden', :name => 'currency', :value => "#{stash('currency')}"}
+    .grd-parent.grd-grid-12.grd-row-padding
+    .grd-parent.grd-grid-12.grd-row-padding
+      .grd-grid-4
+      .grd-grid-8
+        %span.button
+          %button#submit.button{:name => "submit" :type => "submit"}= l('Transfer')
+

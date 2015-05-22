@@ -123,10 +123,11 @@ var select_user_country = function() {
     if($('#residence').length > 0) {
         get_user_country(function() {
             var restricted_countries = new RegExp(page.settings.get('restricted_countries'));
-            if(restricted_countries.test(this.country)) {
+            var current_selected = $('#residence').val() || this.country;
+            if(restricted_countries.test(current_selected)) {
                 $('#residence').val('default').change();
             } else {
-                $('#residence').val(this.country).change();
+                $('#residence').val(current_selected).change();
             }
         });
     }

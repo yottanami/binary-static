@@ -25,35 +25,13 @@ ClientForm.prototype = {
             return true;
         }
     },
-    validate_promo_code_expiry: function() {
-        var has_expired = $('#promo_code_expired').val();
-        if(has_expired == "true") {
-            return false;
-        }
-
-        return true;
-    },
-    validate_promo_code_country: function() {
-        var country_list = $('#promo_code_countries').val();
-        if(country_list.indexOf('ALL') >= 0) {
-                return true;
-        } else {
-            var residence = $('#residence').val();
-            if(country_list.indexOf(residence) >= 0) {
-                return true;
-            }
-        }
-
-        return false;
-    },
     compare_new_password: function(new_password1, new_password2) {
-        if (new_password1.length > 0 && new_password2.length > 0)
-            {
-                if (new_password1 != new_password2) {
-                    return false;
-                }
+        if (new_password1.length > 0 && new_password2.length > 0) {
+            if (new_password1 == new_password2) {
+                return true;
             }
-            return true;
+        }
+        return false;
     },
     is_allowed_opening_account_country: function(selected_country) {
         var error_residence = clearInputErrorField('errorresidence');
@@ -162,6 +140,8 @@ ClientForm.prototype = {
         var that = this;
         $('#residence').on('change', function() {
             that.set_idd_for_residence($(this).val());
+            var address_state = $('#AddressState');
+            var current_state = address_state.length > 0 ? address_state.val() : '';
 
             var postcodeLabel = $('label[for=AddressPostcode]');
             if ($(this).val() == 'GB') {
@@ -179,23 +159,21 @@ ClientForm.prototype = {
                     dataType: "html"
                 }).done(function(response) {
                     $('#AddressState').html(response);
-                    that.hide_state_list_if_empty();
+                    that.hide_state_list_if_empty(current_state);
                 });
             } else {
                 $("#AddressState").parents(".row").first().hide(); //Hide States list.
             }
         });
     },
-    hide_state_list_if_empty: function() {
+    hide_state_list_if_empty: function(current_state) {
         var addr_state = $("#AddressState");
         if (addr_state.children().size() > 2) {
             addr_state.parents(".row").first().show();
+            addr_state.val(current_state);
         } else {
             addr_state.parents(".row").first().hide();
         }
-    },
-    set_virtual_login_id: function(loginid) {
-        $('#virtual_loginid').val(loginid);
     },
     set_virtual_email_id: function(email) {
         $('#Email').val(email);

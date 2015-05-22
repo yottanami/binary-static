@@ -1,10 +1,7 @@
 <h1>[% l('Settings') %]</h1>
-
 <div id="settings_message">
     [% IF success_msg %]<p class="success_msg" >[% success_msg %]</p>[% END %]
-    [% IF error_msg %]
-        <div id='error_msg'>[% error_msg %]</div>
-    [% END %]
+    [% IF error_msg %]<p id='error_msg' class='notice-msg'>[% error_msg %]</p>[% END %]
 </div>
 
 [% menu_content %]

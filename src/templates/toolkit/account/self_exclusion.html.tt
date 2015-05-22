@@ -1,6 +1,6 @@
 <h1>[% l('Self-Exclusion Facilities') %]</h1>
 
-<p>[% l('Trading the financial markets can become addictive. Fill in the form below to limit your participation on the website or send a signed letter or fax to our customer support team. Limits will only be removed or altered after 7 days with the exception of the self-exclusion date, which cannot be removed or altered once you have confirmed it.') %]</p>
+<p>[% l('Trading the financial markets can become addictive. Fill in the form below to limit your participation on the website or send a signed letter or fax to our customer support team. Limits will only be removed or altered after 7 days with the exception of the self-exclusion date, which cannot be removed or altered once you have confirmed it. To remove or alter your limits, please contact <a href="[_1]">customer support</a>.', request.url_for('contact')) %]</p>
 
 [% IF self_exclusion %]
     <h2>[% l('Your current self-exclusion settings are as follows:') %]</h2>
@@ -11,7 +11,7 @@
         [% END %]
 
         [% IF self_exclusion.max_turnover.defined %]
-        <li>[% l('Daily stake limit is currently set to <strong>[_1] [_2]</strong>',
+        <li>[% l('Daily turnover limit is currently set to <strong>[_1] [_2]</strong>',
                 client.currency, self_exclusion.max_turnover) %]</li>
         [% END %]
 
@@ -21,7 +21,7 @@
         [% END %]
 
         [% IF self_exclusion.max_7day_turnover.defined %]
-        <li>[% l('7-Day stake limit is currently set to <strong>[_1] [_2]</strong>',
+        <li>[% l('7-Day turnover limit is currently set to <strong>[_1] [_2]</strong>',
                 client.currency, self_exclusion.max_7day_turnover) %]</li>
         [% END %]
 

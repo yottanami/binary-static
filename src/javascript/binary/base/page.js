@@ -54,7 +54,14 @@ var User = function() {
                     disabled = 1;
                 }
 
-                loginid_array.push({'id':items[0], 'real':real, 'disabled':disabled });
+                var id_obj = { 'id':items[0], 'real':real, 'disabled':disabled };
+                if (/MLT/.test(items[0])) {
+                    id_obj['non_financial']= true;
+                }
+                if (/MF/.test(items[0])) {
+                    id_obj['financial']= true;
+                }
+                loginid_array.push(id_obj);
             }
 
             this.loginid_array = loginid_array;
@@ -382,9 +389,15 @@ Header.prototype = {
 
                 var loginid_text;
                 if (real == 1) {
-                    loginid_text = text.localize('Real Money') + ' (' + curr_loginid + ')';
+                    if(loginid_array[i].financial){
+                        loginid_text = text.localize('Investment Account') + ' (' + curr_loginid + ')';
+                    } else if(loginid_array[i].non_financial) {
+                        loginid_text = text.localize('Gaming Account') + ' (' + curr_loginid + ')';
+                    } else {
+                        loginid_text = text.localize('Real Account') + ' (' + curr_loginid + ')';
+                    }
                 } else {
-                    loginid_text = text.localize('Virtual Money') + ' (' + curr_loginid + ')';
+                    loginid_text = text.localize('Virtual Account') + ' (' + curr_loginid + ')';
                 }
 
                 var disabled_text = '';
@@ -588,6 +601,7 @@ var Contents = function(client, user) {
 Contents.prototype = {
     on_load: function() {
         this.activate_by_client_type();
+        this.topbar_message_visibility();
         this.update_body_id();
         this.update_content_class();
         this.tooltip.attach();
@@ -628,6 +642,12 @@ Contents.prototype = {
                     $('#payment-agent-section').addClass('invisible');
                     $('#payment-agent-section').hide();
                 }
+
+                // temporary only show for internal staff
+                if (!$.cookie('staff') || !/^Q?MF|MLT/.test(this.client.loginid)) {
+                    $('#account-transfer-section').addClass('invisible');
+                    $('#account-transfer-section').hide();
+                }
             } else {
                 $('.by_client_type.client_virtual').removeClass('invisible');
                 $('.by_client_type.client_virtual').show();
@@ -643,7 +663,6 @@ Contents.prototype = {
         $('body').attr('id', $('#body_id').html());
     },
     update_content_class: function() {
-
         var contentClass = $('#content_class').html();
 
         $('#content').parent()
@@ -685,7 +704,8 @@ Page.prototype = {
         this.on_change_loginid();
         this.record_affiliate_exposure();
         this.contents.on_load();
-        this.flag();
+        this.on_click_signup();
+        this.on_change_password();
     },
     on_unload: function() {
         this.header.on_unload();
@@ -704,6 +724,42 @@ Page.prototype = {
             $('#loginid-switch-form').submit();
         });
     },
+    on_change_password: function() {
+        $('#chooseapassword').on('input', function() {
+            $('#reenter-password').removeClass('invisible');
+            $('#reenter-password').show();
+        });
+    },
+    on_click_signup: function() {
+        $('#btn_registration').on('click', function() {
+            var pwd = $('#chooseapassword').val();
+            var pwd_2 = $('#chooseapassword_2').val();
+            var email = $('#Email').val();
+
+            if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)) {
+                $('#signup_error').text(text.localize('Invalid email address'));
+                $('#signup_error').removeClass('invisible');
+                $('#signup_error').show();
+                return false;
+            }
+            if (!client_form.compare_new_password(pwd, pwd_2)) {
+                $('#signup_error').text(text.localize('The two passwords that you entered do not match.'));
+                $('#signup_error').removeClass('invisible');
+                $('#signup_error').show();
+                return false;
+            }
+            // email != password
+            if (email == pwd) {
+                $('#signup_error').text(text.localize('Your password cannot be the same as your email'));
+                $('#signup_error').removeClass('invisible');
+                $('#signup_error').show();
+                return false;
+            }
+
+            $('#virtual-acc-form').submit();
+        });
+    },
+
     localize_for: function(language) {
         text = texts[language];
         moment.locale(language.toLowerCase());

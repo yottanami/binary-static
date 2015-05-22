@@ -159,18 +159,6 @@ sub offline {
     );
 }
 
-sub open_account_with_promocode {
-    my $self           = shift;
-    my $promo_code     = $self->param('promo');
-    my $affilate_token = $self->param('t');
-    return $self->redirect_to(
-        '/user/upgrade',
-        {
-            actype          => 'real',
-            t               => $affilate_token
-        });
-}
-
 sub login {
     my $self = shift;
     my ($loginid, $password);

@@ -69,5 +69,4 @@
         %]
 
         <title>[%= broker_name =%] - [%= title =%]</title>
-        <link rel="SHORTCUT ICON" href="[%= icon_url =%]" />
     </head>
