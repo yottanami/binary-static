@@ -1,10 +1,8 @@
-%# add_stash(errors=>"Under Maintenance.  This page is not currently operational.");
 
 % layout 'default';
 % title 'Contract Watch';
 
 <link href="//code.jquery.com/ui/1.10.3/themes/pepper-grinder/jquery-ui.min.css" rel="stylesheet">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.4/jquery.mousewheel.min.js" defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/globalize/0.1.1/globalize.min.js" defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/globalize/0.1.1/cultures/globalize.culture.ja-JP.js" defer></script>
@@ -22,13 +20,11 @@
     div.innerzone { padding: 12px }
     div.innerzone .ui-state-active { color: #f00 }
     div.buttonset    { display: inline-block; margin-bottom: 6px }
-    /*
     div#symbolbuts   { display: none }
     div#durationflds { display: none }
     div#payoutflds   { display: none }
     div#contractbuts { display: none }
     div#startflds    { display: none }
-    */
     div#barriers     { margin-top: 8px }
     div.cts          { display: none }
     div.contract  { float: left; width: 220px; height: 220px; padding: 6px }
@@ -250,6 +246,6 @@
     </div>
 
 <script>
-    g = new Object;
-    g.websockets_svr = "<%=$websockets_svr%>/websockets/contracts";
+    GlobalWSTrade = { websockets_svr: "<%=$websockets_svr%>/websockets/contracts" }
 </script>
+
