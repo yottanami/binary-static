@@ -44,11 +44,9 @@
 
 [% INCLUDE affiliates/commission_table.html.tt %]
 
-<p>
 
-<em>[% l('For affiliates who offer a trading advisory service based on the [_1] platform, we offer specialized payout structures. <a href="mailto:[_2]">Contact our affiliate manager, Karen Yap for details</a>.', broker_name, affiliate_email) %]</em>
-
-<p>
+<p>[% l('For affiliates who offer a trading advisory service based on the [_1] platform, we offer specialized payout structures.', broker_name) %]</p>
+<p><a class="button" href="mailto:[_1]">[% l('Contact our affiliate manager, Karen Yap for details', affiliate_email) %]</a></p>
 
 <h2>[% l('Best Tracking with "Forever Cookies"') %]</h2>
 <p>
