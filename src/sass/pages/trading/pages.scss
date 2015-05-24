@@ -526,11 +526,12 @@ div#price_table_notes {
     select {
         width: 100%;
     }
-    .row {
-        flex-wrap: wrap;
-    }
     .row > * {
         min-width: 25%;
+        flex: inherit;
+    }
+    .strike-step {
+        flex: 2;
     }
 }
 .charting-livechart-content {
