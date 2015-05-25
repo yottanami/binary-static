@@ -513,7 +513,9 @@ div#price_table_notes {
     }
 }
 .contract-guide-content,
-.usermy_account-content {
+.usermy_account-content,
+.open-source-projects-content,
+.partnerapi-content {
     img {
         height: 5rem;
     }
@@ -545,11 +547,6 @@ div#price_table_notes {
     }
     .interval {
         display: flex;
-    }
-}
-.open-source-projects-content {
-    img {
-        height: 5rem;
     }
 }
 .affiliate-signup-content {
