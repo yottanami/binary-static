@@ -20,6 +20,8 @@ sub toolkit {
         'charting/livechart' => ['charting/livechart', 'default'],
         'resources/rise_fall_table' => ['resources/rise_fall_table', 'default'],
         'terms-and-conditions' => ['legal/tac', 'default'],
+        'security-and-privacy' => ['legal/privacy', 'default'],
+        'complaints-and-disputes' => ['legal/complaints_disputes', 'default'],             
     );
     my $m = $url_map{$curr_path};
 

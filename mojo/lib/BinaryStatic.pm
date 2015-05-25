@@ -115,6 +115,8 @@ sub startup {
     $r->get('/charting/livechart')->to('page#toolkit')->name('charting-livechart');
     $r->get('/resources/rise_fall_table')->to('page#toolkit');
     $r->get('/terms-and-conditions')->to('page#toolkit')->name('terms-and-conditions');
+    $r->get('/security-and-privacy')->to('page#toolkit')->name('security-and-privacy');
+    $r->get('/complaints-and-disputes')->to('page#toolkit')->name('complaints-and-disputes');    
 
     $r->route('/exception')->to('page#exception');
     $r->route('/*')->to('page#not_found');

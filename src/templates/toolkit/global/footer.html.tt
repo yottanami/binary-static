@@ -15,8 +15,8 @@
             </div>
             <div class="col">
                 <h4>[% l('Terms') %]</h4>
-                <a class="pjaxload" href="[% request.url_for('/terms-and-conditions', {filecode => 'legal'}) %]">[% l('Terms and Conditions') %]</a>
-                <a class="pjaxload" href="[% request.url_for('/terms-and-conditions') %]#privacy-tab">[% l('Security and Privacy') %]</a>
+                <a class="pjaxload" href="[% request.url_for('/terms-and-conditions') %]">[% l('Terms and Conditions') %]</a>
+                <a class="pjaxload" href="[% request.url_for('/security-and-privacy') %]">[% l('Security and Privacy') %]</a>
                 <a class="pjaxload" href="[% request.url_for('responsible-trading') %]">[% l('Responsible Trading') %]</a>
                 <a class="pjaxload" href="[% request.url_for('/terms-and-conditions', {selected_tab => 'complaints-disputes-tac-tab'}) %]">[% l('Complaints and Disputes') %]</a>
                 <a href="http://www.gamcare.org.uk">[% l("GamCare") %]</a>
