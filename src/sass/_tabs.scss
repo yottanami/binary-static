@@ -1,5 +1,6 @@
 ul[role=tabs], ul[role=segmented] {
     display: flex;
+    overflow: hidden;
     margin-bottom: 1rem;
     li {
         flex: 1;
@@ -40,6 +41,7 @@ ul[role=segmented] {
         cursor: pointer;
     }
     li.active {
+        color: white;
         background-color: $COLOR_BRAND_BLUE;
         a {
             color: white;
