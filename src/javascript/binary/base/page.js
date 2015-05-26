@@ -692,13 +692,16 @@ Page.prototype = {
     },
     flag: function() {
         var idx = $('.language-selector select option:selected').index(),
-            offset = (idx + 1) * 15;
-        $('.language-selector select').css('background-position', '0 -' + offset + 'px');
+            offset = (idx + 1) * 15,
+            cssStyle = '-' + offset + 'px';
+        $('.language-selector select').css('background-position-y', offset);
+        console.log(cssStyle);
     },
     on_load: function() {
         this.url.reset();
         this.localize_for(this.language());
         this.header.on_load();
+        this.flag();
         this.on_change_language();
         this.on_change_loginid();
         this.record_affiliate_exposure();

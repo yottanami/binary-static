@@ -48,21 +48,16 @@ nav a {
         width: 20px;
         height: 15px;
         margin: 1rem;
-        background-position: 0 0;
         padding: 0;
         &:hover,
         &:focus {
             box-shadow: none;
         }
+        background-position: 0 0;
         background: url("../images/common/flags.png");
         background-size: 20px;
         background-repeat: no-repeat;
     }
-}
-.flag {
-    background: url("../images/flags.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
 }
 .header nav {
     color: white;
