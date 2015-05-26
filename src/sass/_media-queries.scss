@@ -10,17 +10,19 @@
     html {
         font-size: $FONT_SIZE_S;
     }
+    #logo {
+        width: auto;
+    }
     #logo > img:nth-child(2) {
         display: none;
     }
     .account-container {
-        position: block;
+        position: inherit;
     }
     .nav2nd {
         left: 0;
         right: 0;
     }
-    .login-embed input,
     .sitemap,
     .footer,
     .msgbar-wrapper,
@@ -38,7 +40,7 @@
     .nav-resources,
     .nav-help,
     .nav-account {
-        min-width: $HEADER_HEIGHT;
+        width: $HEADER_HEIGHT;
     }
     .nav-cashier a,
     .nav-resources a,

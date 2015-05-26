@@ -1,6 +1,9 @@
 // default states
 
-#topbar, .cashier-link {
+#topbar,
+.cashier-link,
+.login-container,
+.account-container {
     display: none;
 }
 
@@ -18,4 +21,8 @@
 .client-logged-in .account-container,
 .client-is-real .cashier-link {
     display: block;
+}
+
+.client-logged-in .account-container {
+//    display: list-item;
 }
