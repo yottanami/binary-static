@@ -10,8 +10,8 @@
     html {
         font-size: $FONT_SIZE_S;
     }
-    .login-embed {
-        flex: 1;
+    #logo > img:nth-child(2) {
+        display: none;
     }
     .account-container {
         position: block;
