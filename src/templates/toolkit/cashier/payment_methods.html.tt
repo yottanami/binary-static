@@ -245,27 +245,6 @@
 
     <div class="grd-row-padding grd-hide-mobile table-body">
         <div class="grd-grid-1">
-            <div id="cashu"></div>
-        </div>
-
-        <div class="grd-grid-2">
-            USD
-        </div>
-
-        <div class="grd-grid-3">
-            5 - 1,000
-        </div>
-
-        <div class="grd-grid-3">
-        </div>
-
-        <div class="grd-grid-3">
-            [% l('Deposit: Instant')%]<br>
-        </div>
-    </div>
-
-    <div class="grd-row-padding grd-hide-mobile table-body">
-        <div class="grd-grid-1">
             <div id="fastpay"></div>
         </div>
 

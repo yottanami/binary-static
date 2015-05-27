@@ -389,20 +389,6 @@ sub _main_menu_charting {
         link_class => 'pjaxload',
     };
 
-    # chart director
-    my $charts_director_ref = {
-        id  => 'topMenuLightCharts',
-        url => $self->c->url_for('/smartchart.cgi')->query(
-            {
-                market            => 'forex',
-                underlying_symbol => 'frxAUDJPY',
-                chart_type        => 'CANDLESTICK'
-            }
-        ),
-        link_class => 'pjaxload',
-        text       => $self->c->l('Light Charts'),
-    };
-
     # live charts
     my $live_charts_ref = {
         id         => 'topMenuLiveCharts',
@@ -411,7 +397,15 @@ sub _main_menu_charting {
         link_class => 'pjaxload',
     };
 
-    $charting_items_ref->{'sub_items'} = [$bomchart_ref, $charts_director_ref, $live_charts_ref,];
+    # high charts
+    my $highcharts_ref = {
+        id         => 'topMenuLiveCharts',
+        url        => '//highcharts.binary.com',
+        text       => $self->c->l('HighCharts'),
+        link_class => 'pjaxload',
+    };
+
+    $charting_items_ref->{'sub_items'} = [$bomchart_ref, $live_charts_ref, $highcharts_ref];
 
     return $charting_items_ref;
 }

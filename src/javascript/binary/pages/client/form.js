@@ -26,12 +26,13 @@ ClientForm.prototype = {
         }
     },
     compare_new_password: function(new_password1, new_password2) {
-        if (new_password1.length > 0 && new_password2.length > 0) {
-            if (new_password1 == new_password2) {
-                return true;
+        if (new_password1.length > 0 && new_password2.length > 0)
+            {
+                if (new_password1 != new_password2) {
+                    return false;
+                }
             }
-        }
-        return false;
+            return true;
     },
     is_allowed_opening_account_country: function(selected_country) {
         var error_residence = clearInputErrorField('errorresidence');
@@ -87,7 +88,7 @@ ClientForm.prototype = {
     },
     self_exclusion: function() {
         return {
-            has_something_to_save: function() {
+            has_something_to_save: function(init) {
                 var el, i;
                 var names = ['MAXCASHBAL', 'MAXOPENPOS',
                              'DAILYTURNOVERLIMIT', 'DAILYLOSSLIMIT',
@@ -95,7 +96,9 @@ ClientForm.prototype = {
                              'SESSIONDURATION', 'EXCLUDEUNTIL'];
                 for (i=0; i<names.length; i++) {
                     el = document.getElementById(names[i]);
-                    if (el && el.value.length > 0) {
+                    if (el) {
+                        el.value = el.value.replace(/^\s*/, '').replace(/\s*$/, '');
+                        if (el.value == (init[names[i]]===undefined ? '' : init[names[i]])) continue;
                         return true;
                     }
                 }

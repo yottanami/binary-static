@@ -6,6 +6,9 @@
     <li><a href="#promo-tac">[% l('Bonus Code') %]</a></li>
     <li><a href="#affiliate-tac">[% l('Affiliate') %]</a></li>
     [% IF request.country != 'JAPAN' %]<li><a href="#trading-agent-tac">[% l('Trading Agent') %]</a></li>[% END %]
+    <li><a href="#complaints-disputes-tac">[% l('Complaints and Disputes') %]</a></li>
+    <li><a href="#conflicts-policy-tac">[% l('conflicts Policy') %]</a></li>
+    <li><a href="#biel-terms-tac">[% l('BIEL Terms') %]</a></li>
 </ul>
 <div id="legal-tac" class="tab-content">
     [% INCLUDE legal/terms_and_conditions.html.tt %]
@@ -21,4 +24,13 @@
 </div>
 <div id="trading-agent-tac" class="tab-content">
     [% INCLUDE legal/trading_agent.html.tt %]
+</div>
+<div id="complaints-disputes-tac" class="tab-content">
+    [% INCLUDE legal/complaints_disputes.html.tt %]
+</div>
+<div id="conflicts-policy-tac" class="tab-content">
+    [% INCLUDE legal/conflicts_policy.html.tt %]
+</div>
+<div id="biel-terms-tac" class="tab-content">
+    [% INCLUDE legal/biel_terms.html.tt %]
 </div>
