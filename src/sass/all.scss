@@ -27,7 +27,6 @@
 @import "pages/get-started";
 @import "pages/trading";
 @import "pages/sell_popup";
-@import "pages/tabs";
 @import "pages/trading/common";
 @import "pages/trading/container";
 @import "pages/trading/pages";
@@ -38,6 +37,6 @@
 
 @import "media-queries";
 
-@import "pickadate/classic.css";
-@import "pickadate/classic.date.css";
-@import "pickadate/classic.time.css";
+@import "pickadate/classic";
+@import "pickadate/classic.date";
+@import "pickadate/classic.time";
