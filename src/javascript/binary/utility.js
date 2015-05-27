@@ -412,28 +412,6 @@ function find_active_jqtab(el) {
     return 0;
 }
 
-/**
- * attaches tabs to the specified element selector
- *
- * @param element any jquery selector or DOM/jQuery object
- */
-function attach_tabs() {
-    $('.has-tabs').each(function () {
-        var jqel = $(this);
-        var conf = {};
-        var active = 0;
-        try {
-            active = find_active_jqtab(jqel);
-        } catch (e) {
-            console.log(e, jqel);
-        }
-        if (active) {
-            conf['active'] = active;
-            $('li.active', jqel).removeClass('active');
-        }
-        jqel.tabs(conf);
-    });
-}
 
 function initTabs() {
 

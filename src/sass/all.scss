@@ -19,23 +19,25 @@
 
 @import "controls";
 @import "home";
-@import "common/reality-check";
 
-@import "pages/ad.scss";
-@import "pages/ad1.scss";
-@import "pages/ad2.scss";
-@import "pages/ad3.scss";
-@import "pages/get-started.scss";
-@import "pages/trading.scss";
-@import "pages/sell_popup.scss";
-@import "pages/tabs.scss";
-@import "pages/trading/common.scss";
-@import "pages/trading/container.scss";
-@import "pages/trading/pages.scss";
-@import "pages/cashier.scss";
-@import "pages/static.scss";
-@import "pages/timeline.scss";
+@import "pages/ad";
+@import "pages/ad1";
+@import "pages/ad2";
+@import "pages/ad3";
+@import "pages/get-started";
+@import "pages/trading";
+@import "pages/sell_popup";
+@import "pages/tabs";
+@import "pages/trading/common";
+@import "pages/trading/container";
+@import "pages/trading/pages";
+@import "pages/cashier";
+@import "pages/static";
+@import "pages/timeline";
+@import "pages/reality-check";
 
 @import "media-queries";
 
-@import "external/jquery.ui.timepicker.scss";
+@import "pickadate/classic.css";
+@import "pickadate/classic.date.css";
+@import "pickadate/classic.time.css";
