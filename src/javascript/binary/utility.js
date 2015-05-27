@@ -364,7 +364,7 @@ function initTabs() {
 }
 
 function initDateTimePicker() {
-    $('.has-date-picker').pickadate();
+    $('.has-date-picker').pickadate(); //.has-date-picker    input[type=date]
 }
 
 /*

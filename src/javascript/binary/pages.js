@@ -17,7 +17,8 @@ var trading_times_init = function() {
 
      var trading_times = $(tabset_name);
      var url = location.href;
-     $( "#tradingdate" ).datepicker({ minDate: 0, maxDate:'+1y', dateFormat: "yy-mm-dd", autoSize: true,
+     return;
+     $( "#tradingdate" ).pickadate({ minDate: 0, maxDate:'+1y', dateFormat: "yy-mm-dd", autoSize: true,
      onSelect: function( dateText, picker ){
          showLoadingImage(trading_times);
          url = page.url.url_for('resources/trading_times', 'date=' + dateText, 'cached');
