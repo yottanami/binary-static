@@ -273,86 +273,6 @@ function snake_case_to_camel_case(snake, lower_case_first_char, chars) {
 }
 
 /**
- * attaches a datepicker to the specified element
- * This is a thin wrapper for datepicker, helps to keep a unique site-wide
- * default configurations for the datepicker.
- *
- * @param element any jquery selector or DOM/jQuery object to attach the datepicker to
- * @param config custom configurations for the datepicker
- */
-function attach_date_picker(element, conf) {
-    var k,
-        target = $(element);
-    if (!target || !target.length) return false;
-    var today = new Date();
-    var next_year = new Date();
-    next_year.setDate(today.getDate() + 365);
-    var options = {
-        dateFormat: 'yy-mm-dd',
-        maxDate: next_year,
-    };
-    for (k in conf) if (conf.hasOwnProperty(k)) {
-        options[k] = conf[k];
-    }
-    return target.datepicker(options);
-}
-
-/**
- * attaches a timepicker to the specified element.
- * This is a thin wrapper for timepicker, helps to keep a unique site-wide
- * default configurations for the timepicker.
- *
- * @param element any jquery selector or DOM/jQuery object to attach the timepicker to
- * @param config custom configurations for the timepicker
- */
-function attach_time_picker(element, conf) {
-    var attr, k, target = $(element);
-    if (!target || !target.length) return false;
-    var opts = {
-        timeSeparator: ':',
-        showLeadingZero: true,
-        howMinutesLeadingZero: true,
-        hourText: text.localize("Hour"),
-        minuteText: text.localize("Minute"),
-        minTime: {},
-        maxTime: {},
-    };
-    var data_attrs = element_data_attrs(target);
-    var regex = /^time\:(.+)/;
-    for (attr in data_attrs) if (data_attrs.hasOwnProperty(attr)) {
-        var matched = attr.match(regex);
-        if (matched) {
-            var data = data_attrs[attr];
-            var opt_name = matched[1].trim();
-            if (data == 'true') {
-                data = true;
-            } else if (data == 'false') {
-                data = false;
-            }
-            opt_name = snake_case_to_camel_case(opt_name, true).toLowerCase();
-            switch (opt_name) {
-                case 'mintimehour':
-                    opts.minTime.hour = data;
-                    break;
-                case 'mintimeminute':
-                    opts.minTime.minute = data;
-                    break;
-                case 'maxtimehour':
-                    opts.maxTime.hour = data;
-                    break;
-                case 'maxtimeminute':
-                    opts.maxTime.minute = data;
-                    break;
-            }
-        }
-    }
-    for (k in conf) if (conf.hasOwnProperty(k)) {
-        opts[k] = conf[k];
-    }
-    return target.timepicker(opts);
-}
-
-/**
  * attaches an inpage popup to the specified element.
  *
  * @param element any jquery selector or DOM/jQuery object to attach the inpage popups to
@@ -442,3 +362,24 @@ function initTabs() {
         e.preventDefault();
     });
 }
+
+function initDateTimePicker() {
+    $('.has-date-picker').pickadate();
+}
+
+/*
+    var options = {
+        dateFormat: 'yy-mm-dd',
+        maxDate: next_year,
+    };
+
+        var opts = {
+            timeSeparator: ':',
+            showLeadingZero: true,
+            howMinutesLeadingZero: true,
+            hourText: text.localize("Hour"),
+            minuteText: text.localize("Minute"),
+            minTime: {},
+            maxTime: {},
+        };
+*/
