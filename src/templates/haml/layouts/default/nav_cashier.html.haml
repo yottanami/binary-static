@@ -1,0 +1,11 @@
+.nav-cashier
+    %a.pjaxload{:href => url_for('cashier')}= l('Cashier')
+%ul.nav2nd
+    %li
+        %a.pjaxload{:href => stash('deposit_url')}= l('Deposit or Withdraw')
+    %li
+        %a.pjaxload{:href => url_for('cashier/payment_agent_list')}= l('Payment Agent')
+    %li
+        %a.pjaxload{:href=>url_for('cashier/account_transfer')}= l('Transfer Between Accounts')
+    %li
+        %a.pjaxload{:href=>url_for('cashier/payment_methods')}= l('Payment Methods')
