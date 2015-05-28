@@ -40,6 +40,7 @@ input[type=tel],
 input[type=number],
 input[type=date],
 input[type=datepicker],
+.picker__input,
 .inputlike {
     padding: 0 0.5rem;
     height: 2rem;
@@ -56,6 +57,7 @@ input[type=tel],
 input[type=number],
 input[type=date],
 input[type=datepicker],
+.picker__input,
 .dob,
 .inputlike {
     border: 1px solid $COLOR_CONTROL_BORDER;
@@ -76,7 +78,7 @@ textarea {
     width: 25em;
 }
 select,
-#tradingdate,
+.picker__input,
 .date-picker,
 .arrow-expand-collapse,
 .down-arrow-1 {
@@ -90,7 +92,7 @@ select {
     -moz-appearance: none;
 }
 select,
-#tradingdate,
+.picker__input,
 .date-picker,
 .down-arrow {
     background-position: right center;
