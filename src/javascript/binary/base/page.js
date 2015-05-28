@@ -224,18 +224,13 @@ var Header = function(params) {
     this.user = params['user'];
     this.client = params['client'];
     this.settings = params['settings'];
-    this.menu = new Menu(params['url']);
     this.clock_started = false;
 };
 
 Header.prototype = {
     on_load: function() {
         this.show_or_hide_login_form();
-        this.register_dynamic_links();
         if (!this.clock_started) this.start_clock();
-    },
-    on_unload: function() {
-        this.menu.reset();
     },
     show_or_hide_login_form: function() {
         if (this.user.is_logged_in && this.client.is_logged_in) {
@@ -278,13 +273,6 @@ Header.prototype = {
         if(this.client.is_logged_in) {
             logged_in_url = page.url.url_for('user/my_account');
         }
-
-        $('#logo').attr('href', logged_in_url).on('click', function(event) {
-            event.preventDefault();
-            load_with_pjax(logged_in_url);
-        }).addClass('unbind_later');
-
-        this.menu.register_dynamic_links();
     },
     start_clock: function() {
         var clock = $('#gmt-clock');
@@ -554,7 +542,6 @@ Page.prototype = {
         this.on_change_password();
     },
     on_unload: function() {
-        this.header.on_unload();
         this.contents.on_unload();
     },
     on_change_language: function() {

@@ -103,8 +103,6 @@ onLoad.queue(function () {
         }
     );
 
-    MenuContent.init($('.content-tab-container').find('.tm-ul'));
-
     // attach the class to account form's div/fieldset for CSS visual effects
     var objFormEffect = new formEffects();
     objFormEffect.set($('form.formObject'));
