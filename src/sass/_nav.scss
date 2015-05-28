@@ -30,6 +30,7 @@ nav div {
     text-align: center;
 }
 nav a {
+    text-decoration: none;
     font-weight: normal;
     color: white !important;
     &:hover {
@@ -46,22 +47,17 @@ nav a {
         border: none;
         width: 20px;
         height: 15px;
-        margin: 1.1rem;
-        background-position: 0 0;
+        margin: 1rem;
         padding: 0;
         &:hover,
         &:focus {
             box-shadow: none;
         }
+        background-position: 0 0;
         background: url("../images/common/flags.png");
         background-size: 20px;
         background-repeat: no-repeat;
     }
-}
-.flag {
-    background: url("../images/flags.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
 }
 .header nav {
     color: white;
@@ -107,10 +103,6 @@ nav a {
     background-repeat: no-repeat;
     background-size: auto 70%;
     background-position: center center;
-}
-.login-container,
-.account-container {
-    display: none;
 }
 /* Logo and top bar */
 #topbar {

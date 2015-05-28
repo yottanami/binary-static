@@ -36,29 +36,3 @@ button:disabled,
     color: $COLOR_GRAY;
     background: $COLOR_LIGHT_GRAY;
 }
-
-.ui-widget {
-    background: white;
-    font-family: roboto, arial;
-}
-.ui-datepicker-calendar {
-    thead, tbody, tr, td, th {
-        border: none;
-    }
-}
-.ui-state-default {
-    background: none !important;
-    border: none !important;
-    &:hover {
-        outline: $COLOR_BRAND_ORANGE solid thin !important;
-    }
-}
-.ui-state-active {
-    color: white !important;
-    background: $COLOR_BRAND_ORANGE !important;
-}
-.ui-widget-header {
-    border: none;
-    background: none;
-    font-weight: normal;
-}

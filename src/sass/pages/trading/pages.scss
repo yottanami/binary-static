@@ -338,9 +338,6 @@ label#from_strike_percent,
 label#from_expiry_label {
     width: auto;
 }
-.hasDatepicker {
-    width: 8em;
-}
 div#price_table_notes {
     font-size: 0.92em;
     padding-top: 15px;
@@ -513,7 +510,9 @@ div#price_table_notes {
     }
 }
 .contract-guide-content,
-.usermy_account-content {
+.usermy_account-content,
+.open-source-projects-content,
+.partnerapi-content {
     img {
         height: 5rem;
     }
@@ -526,11 +525,12 @@ div#price_table_notes {
     select {
         width: 100%;
     }
-    .row {
-        flex-wrap: wrap;
-    }
     .row > * {
         min-width: 25%;
+        flex: inherit;
+    }
+    .strike-step {
+        flex: 2;
     }
 }
 .charting-livechart-content {
@@ -544,11 +544,6 @@ div#price_table_notes {
     }
     .interval {
         display: flex;
-    }
-}
-.open-source-projects-content {
-    img {
-        height: 5rem;
     }
 }
 .affiliate-signup-content {

@@ -20,6 +20,8 @@ sub toolkit {
         'charting/livechart' => ['charting/livechart', 'default'],
         'resources/rise_fall_table' => ['resources/rise_fall_table', 'default'],
         'terms-and-conditions' => ['legal/tac', 'default'],
+        'security-and-privacy' => ['legal/privacy', 'default'],
+        'complaints-and-disputes' => ['legal/complaints_disputes', 'default'],             
     );
     my $m = $url_map{$curr_path};
 
@@ -157,18 +159,6 @@ sub offline {
         text   => '<div class="center">' . $self->l('Unable to contact the server') . '</div>',
         status => 200,
     );
-}
-
-sub open_account_with_promocode {
-    my $self           = shift;
-    my $promo_code     = $self->param('promo');
-    my $affilate_token = $self->param('t');
-    return $self->redirect_to(
-        '/user/upgrade',
-        {
-            actype          => 'real',
-            t               => $affilate_token
-        });
 }
 
 sub login {

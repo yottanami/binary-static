@@ -6,7 +6,7 @@
 html {
     box-sizing: border-box;
     height: 100%;
-    font-size: 17px;
+    font-size: 16px;
     text-rendering: geometricPrecision;
 }
 body {
@@ -18,17 +18,13 @@ body {
 a,
 a:visited {
     color: $COLOR_BRAND_BLUE;
-    text-decoration: none;
     font-weight: bold;
-    &:hover,
-    &:active {
-        text-decoration: underline;
-    }
 }
 p, code, fieldset {
     margin-bottom: 1rem;
 }
 code {
+    display: block;
     background: rgba($COLOR_BRAND_BLUE, 0.1);
     padding: 1rem;
 }
@@ -46,7 +42,7 @@ h2,
 h3,
 h4 {
     color: $COLOR_BRAND_BLUE;
-    margin: 1rem 0;
+    margin: 2rem 0 1rem;
     a {
         color: $COLOR_BRAND_BLUE !important;
     }
@@ -223,10 +219,6 @@ a.close {
         padding: 1rem 2rem;
         background: white;
     }
-    .ui-widget-content {
-        background: none;
-        border: none;
-    }
 }
 .reset_ol {
     counter-reset: item;
@@ -247,14 +239,6 @@ a.close {
     border-bottom: 1px solid $COLOR_GRAY;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-#page-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-#content-holder {
-    flex: 1 1 auto;
 }
 i {
     color: $COLOR_BRAND_ORANGE;
