@@ -11,14 +11,13 @@
                 <a class="pjaxload" href="[% request.url_for('partnerapi') %]">[% l('Partner API') %]</a>
                 <a class="pjaxload" href="[% request.url_for('open-source-projects') %]" >[% l('Open Source') %]</a>
                 <a href="http://www.gamcare.org.uk/">[% l('GamCare') %]</a>
-                <a href="http://blog.binary.com/en/webinar/">[% l('Webinars') %]</a>
             </div>
             <div class="col">
                 <h4>[% l('Terms') %]</h4>
                 <a class="pjaxload" href="[% request.url_for('terms-and-conditions') %]">[% l('Terms and Conditions') %]</a>
                 <a class="pjaxload" href="[% request.url_for('security-and-privacy') %]">[% l('Security and Privacy') %]</a>
-                <a class="pjaxload" href="[% request.url_for('responsible-trading') %]">[% l('Responsible Trading') %]</a>
                 <a class="pjaxload" href="[% request.url_for('complaints-and-disputes') %]">[% l('Complaints and Disputes') %]</a>
+                <a class="pjaxload" href="[% request.url_for('responsible-trading') %]">[% l('Responsible Trading') %]</a>
                 <a href="http://www.gamcare.org.uk">[% l("GamCare") %]</a>
             </div>
             <div class="col">
@@ -27,7 +26,6 @@
                 <a class="pjaxload" href="[% request.url_for('group-history') %]">[% l('Group History') %]</a>
                 <a class="pjaxload us_patent_link" href="[% request.url_for('/legal/us_patents') %]" >[% l('Patents') %]</a>
                 <a class="pjaxload" href="[% request.url_for('careers') %]">[% l('Careers') %]</a>
-                <a href="http://blog.binary.com">[% l('Blog') %]</a>
                 <a href="http://binarycom.statuspage.io">[% l('Network Status') %]</a>
             </div>
             <div class="col social-col">

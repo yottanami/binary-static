@@ -3,7 +3,7 @@ footer {
 }
 .sitemap, .regulatory {
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem .5rem;
     max-width: $CONTENT_WIDTH;
 }
 .sitemap {
@@ -23,7 +23,6 @@ footer {
     }
 }
 .regulatory {
-    margin: 0 .5rem;
     font-size: $FONT_SIZE_XS;
 }
 .regulatory-logos {
