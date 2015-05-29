@@ -3,7 +3,7 @@ footer {
 }
 .sitemap, .regulatory {
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem .5rem;
     max-width: $CONTENT_WIDTH;
 }
 .sitemap {
@@ -24,17 +24,28 @@ footer {
 }
 .regulatory {
     font-size: $FONT_SIZE_XS;
-    img {
-        height: 5em;
-    }
 }
 .regulatory-logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    a {
+        width: 30%;
+    }
+    a + a {
+        margin-left: 5%;
+    }
+    a:nth-child(3) {
+        margin-top: .5rem;
+    }
+    a:last-child {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 .regulatory-text {
     text-align: justify;
-    flex: 5;
+    flex: 3;
 }
 .social-col img {
     width: 1rem;
