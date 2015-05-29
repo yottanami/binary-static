@@ -452,14 +452,20 @@ Contents.prototype = {
         }
         return false;
     },
+    init_access_classes: function() {
+        $('body')
+            .removeClass()
+            .toggleClass('client-logged-in', this.client.is_logged_in)
+            .toggleClass('client-not-logged-in', !this.client.is_logged_in)
+            .toggleClass('client-is-real', this.client.is_real)
+            .toggleClass('client-is-virtual', this.client.is_virtual)
+            .toggleClass('client-has-real', this.has_real_account())
+            .toggleClass('client-1', !$.cookie('staff') || !/^Q?MF|MLT/.test(this.client.loginid))
+            .toggleClass('client-2', !/^Q?CR/.test(this.client.loginid));
+    },
     activate_by_client_type: function() {
 
-        $('body').removeClass();
-        $('body').toggleClass('client-logged-in', this.client.is_logged_in);
-        $('body').toggleClass('client-not-logged-in', !this.client.is_logged_in);
-        $('body').toggleClass('client-is-real', this.client.is_real);
-        $('body').toggleClass('client-is-virtual', this.client.is_virtual);
-        $('body').toggleClass('client-has-real', this.has_real_account());
+        this.init_access_classes();
 
         $('.by_client_type').addClass('invisible');
 
