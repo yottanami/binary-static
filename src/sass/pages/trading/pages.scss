@@ -98,57 +98,6 @@
         }
     }
 }
-/* Light chart */
-#form_chart_director {
-    ul.tm-ul {
-        li.tm-li {
-            a.tm-a {
-                padding: 0 0 0 1rem;
-                display: block;
-                span {
-                    display: inline-block;
-                    right: 0;
-                }
-            }
-        }
-    }
-    #ticker {
-        margin-top: 3em;
-    }
-    #instrument-content .rbox-content {
-        height: 42.5em;
-    }
-    li.hover .drop-down-content {
-        @include chart-drop-down-content;
-        ul.not-li {
-            position: relative;
-            top: auto;
-            left: auto;
-        }
-    }
-    .drop-down-content {
-        @include chart-drop-down-content;
-    }
-    .popupbox {
-        .rbox.rbox-bg-alt {
-            margin: 0;
-            border: 1px solid $COLOR_DARK_GRAY;
-            ul.button-menu {
-                list-style: none;
-                text-align: center;
-                li {
-                    margin: 0;
-                    display: inline-block;
-                    list-style-image: none;
-                    padding-right: 1em;
-                }
-            }
-            .row {
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
 #instrument-content {
     width: 80rem;
 }
@@ -564,7 +513,7 @@ div#price_table_notes {
         }
     }
 }
-.userlogintrouble-content {
+.userlogintrouble-content, .resources-content {
     .col {
         min-width: 33.3333%;
     }
