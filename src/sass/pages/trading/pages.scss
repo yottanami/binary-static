@@ -512,7 +512,9 @@ div#price_table_notes {
 .contract-guide-content,
 .usermy_account-content,
 .open-source-projects-content,
-.partnerapi-content {
+.partnerapi-content,
+.resources-content,
+.cashier-content {
     img {
         height: 5rem;
     }
@@ -566,7 +568,4 @@ div#price_table_notes {
     .col {
         min-width: 33.3333%;
     }
-}
-.resources-content img, .cashier-content img {
-    height: 10rem;
 }
