@@ -2,6 +2,8 @@
     %a{:href => url_for('user/my_account')}!= l('My&nbsp;Account')
 %ul.nav2nd
     %li
+        %a#view-balances{:href => url_for('/user/balance')}= l('View balances')
+    %li
         %a.pjaxload{:href=>url_for('user/portfolio')}= l('Portfolio')
     %li
         %a.pjaxload{:href => url_for('user/profit_table')}= l('Profit Table')

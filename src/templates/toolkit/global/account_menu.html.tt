@@ -3,6 +3,9 @@
 </div>
 <ul class="nav2nd">
     <li>
+        <a id="view-balances" href="[% request.url_for('user/balance') %]">[% l('View balances') %]</a>
+    </li>
+    <li>
         <a class="pjaxload" href="[% request.url_for('user/portfolio') %]">[% l('Portfolio') %]</a>
     </li>
     <li>
