@@ -1,48 +1,3 @@
-@mixin chart-drop-down-content {
-    margin-top: 0;
-    border: 1px solid $COLOR_GRAY;
-    .half-1,
-    .half-2 {
-        width: 47%;
-        height: auto;
-    }
-    .half-1.with-separator {
-        border-right: 1px solid $COLOR_GRAY;
-    }
-    .tl,
-    .tr,
-    .bl,
-    .br {
-        display: none;
-    }
-    .rbox-content {
-        font-size: $FONT_SIZE_S;
-        height: auto;
-        overflow: auto;
-    }
-    ul.not-li {
-        color: $COLOR_TEXT;
-        display: block;
-        background: none;
-        border: 0;
-        li {
-            background: none;
-            display: list-item;
-        }
-    }
-}
-#risefall {
-    background-image: url("../images/icons/trade-rise-fall.svg");
-}
-#higherlower {
-    background-image: url("../images/icons/pages/contract_guide/higher-lower.svg");
-}
-#touchnotouch {
-    background-image: url("../images/icons/trade-touch-notouch.svg");
-}
-#inout {
-    background-image: url("../images/icons/trade-in-out.svg");
-}
 #strike_type,
 #amount,
 #expiry_step,
@@ -61,28 +16,7 @@
     margin: 0 auto;
     text-align: center;
 }
-/* statement */
-#tradingform {
-    label {
-        padding-top: 2px;
-    }
-    select {
-        background: white;
-        border: 1px solid $COLOR_GRAY;
-        margin-right: 5px;
-    }
-    input[type="text"] {
-        border: 1px solid $COLOR_GRAY;
-        margin-right: 5px;
-        width: 105px;
-    }
-    input[type="checkbox"] {
-        border: none;
-    }
-}
-#tradingform select {
-    width: 6.5em;
-}
+
 #statement-table table tfoot th.num {
     text-align: center;
 }
@@ -97,163 +31,6 @@
             margin: 0;
         }
     }
-}
-/* Light chart */
-#form_chart_director {
-    ul.tm-ul {
-        li.tm-li {
-            a.tm-a {
-                padding: 0 0 0 1rem;
-                display: block;
-                span {
-                    display: inline-block;
-                    right: 0;
-                }
-            }
-        }
-    }
-    #ticker {
-        margin-top: 3em;
-    }
-    #instrument-content .rbox-content {
-        height: 42.5em;
-    }
-    li.hover .drop-down-content {
-        @include chart-drop-down-content;
-        ul.not-li {
-            position: relative;
-            top: auto;
-            left: auto;
-        }
-    }
-    .drop-down-content {
-        @include chart-drop-down-content;
-    }
-    .popupbox {
-        .rbox.rbox-bg-alt {
-            margin: 0;
-            border: 1px solid $COLOR_DARK_GRAY;
-            ul.button-menu {
-                list-style: none;
-                text-align: center;
-                li {
-                    margin: 0;
-                    display: inline-block;
-                    list-style-image: none;
-                    padding-right: 1em;
-                }
-            }
-            .row {
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
-#instrument-content {
-    width: 80rem;
-}
-#instrument-content label {
-    float: none;
-}
-#moving-average-content,
-#settings-content {
-    width: 25rem;
-}
-#indicator-content,
-#band-content {
-    width: 20rem;
-}
-.underlying_group, .underlying_group > * {
-    float: left;
-}
-.drop-down-content {
-    left: auto;
-    top: 2rem;
-    position: absolute;
-    background-color: white;
-    display: none;
-    z-index: 999;
-}
-.hover .drop-down-content {
-    display: block;
-}
-#chart_period input {
-    left: -9999px;
-    position: absolute;
-    top: 0;
-}
-#intraday_interval {
-    position: absolute;
-    display: none;
-    background-color: $COLOR_BRAND_BLUE;
-    margin-left: -1rem;
-    width: 10rem;
-    z-index: 2;
-    ul.not-li {
-        margin: 0 0 0 1rem;
-        label {
-            color: white;
-            cursor: pointer;
-            width: auto;
-        }
-    }
-}
-#intraday_interval li {
-    display: block;
-}
-#chart_compare_underlying,
-#chart_period {
-    margin: 2rem 0;
-}
-#chart_properties label {
-    float: left;
-    width: 40%;
-    text-align: right;
-    padding-right: 10px;
-}
-#chart_properties input {
-    width: 30%;
-}
-#chart_compare_underlying li {
-    background: url("../images/pages/light_chart/linechart_legends_1.png");
-    background-repeat: no-repeat;
-    background-color: white;
-    padding: 0 15px;
-}
-#chart_compare_underlying input {
-    position: absolute;
-    visibility: hidden;
-}
-#chart_compare_underlying a:link,
-#chart_compare_underlying a:visited {
-    text-decoration: none;
-}
-#chart_compare_underlying .button-menu {
-    margin: 0;
-}
-.line_1 {
-    background-position: 0 -35px !important;
-}
-.line_2 {
-    background-position: 0 -3px !important;
-}
-.line_3 {
-    background-position: 0 -67px !important;
-}
-.line_4 {
-    background-position: 0 -115px !important;
-}
-.line_5 {
-    background-position: 0 -19px !important;
-}
-.line_6 {
-    background-position: 0 -83px !important;
-}
-#chart_director_imageholder .notice-1 {
-    top: 25px;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
 }
 .live-help {
     margin: 1em 0 2em;
@@ -512,7 +289,9 @@ div#price_table_notes {
 .contract-guide-content,
 .usermy_account-content,
 .open-source-projects-content,
-.partnerapi-content {
+.partnerapi-content,
+.resources-content,
+.cashier-content {
     img {
         height: 5rem;
     }
@@ -562,7 +341,7 @@ div#price_table_notes {
         }
     }
 }
-.userlogintrouble-content {
+.userlogintrouble-content, .resources-content {
     .col {
         min-width: 33.3333%;
     }
