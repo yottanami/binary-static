@@ -1,0 +1,10 @@
+<div class="nav-languages">
+    <a href="#">&nbsp</a>
+</div>
+<ul class="nav2nd language-options">
+    [% FOREACH lang IN languages %]
+    <li>
+        <a href="#" data-langcode="[% lang.code %]">[% lang.text %]</a>
+    </li>
+    [% END %]
+</ul>
