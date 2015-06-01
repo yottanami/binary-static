@@ -533,7 +533,6 @@ Page.prototype = {
             offset = (idx + 1) * 15,
             cssStyle = '-' + offset + 'px';
         $('.language-selector select').css('background-position-y', offset);
-        console.log(cssStyle);
     },
     on_load: function() {
         this.url.reset();
