@@ -14,16 +14,16 @@
 [%# Isle of Man or Malta, ask for original docs %]
 [% ELSIF country == 'Isle of Man' || country == 'Malta' %]
 <p>
-    [% website_name %] [% l('is required to verify that all clients are over the age of 18.') %]
+    [% l('To authenticate your account, kindly email the following to [_1]', '<a href="mailto:support@binary.com">support@binary.com</a>') %]
 </p>
 <p>
-    [% l('Kindly send a scan of one of the following documents by email:') %]
+    [% l('- A scanned copy of your passport, driving licence (provisional or full) or identity card, showing your name and date of birth.') %]
 </p>
 <p>
-    [% l('A scanned copy of your current valid passport, current driving licence (provisional or full) or identity card.') %]
+    [% l('and') %]
 </p>
 <p>
-    [% l('Please send this by email to [_1].', '<a href="mailto:support@binary.com">support@binary.com</a>') %]
+    [% l('- A scanned copy of a utility bill or bank statement (no more than 3 months old).') %]
 </p>
 [%# Costa Rica - only ask for clients that have withdrawn over 5000, and ask for scans only %]
 [% ELSIF country == 'Costa Rica' AND client.total_withdrawal_value >= 5000 %]
