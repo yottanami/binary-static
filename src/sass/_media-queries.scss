@@ -5,6 +5,9 @@
     .sitemap, .extra-award, .adcopy, .sidebar  {
         display: none;
     }
+    .regulatory-logos img {
+        height: 2rem !important;
+    }
 }
 @media all and (max-width: 479px) {
     html {
