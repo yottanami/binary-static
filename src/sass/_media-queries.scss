@@ -81,6 +81,9 @@
     }
     .row {
         flex-direction: column;
+        * {
+            margin-bottom: 1rem;
+        }
     }
     ul[role=tabs], ul[role=segmented] {
         flex-direction: column;
