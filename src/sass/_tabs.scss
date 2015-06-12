@@ -4,7 +4,12 @@ ul[role=tabs], ul[role=segmented] {
     margin-bottom: 1rem;
     li {
         flex: 1;
+        padding: .25rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
     }
     a {
         text-decoration: none;
@@ -17,13 +22,8 @@ ul[role=tabs], ul[role=segmented] {
 
 ul[role=tabs] {
     background: $COLOR_BRAND_BLUE;
-    a {
+    a, li {
         color: white;
-    }
-    li {
-        color: white;
-        padding: .25rem 1rem;
-        cursor: pointer;
     }
     li.active {
         box-shadow: inset 0px 3px 0px 0px $COLOR_BRAND_ORANGE;
@@ -36,10 +36,6 @@ ul[role=segmented] {
     background-color: rgba($COLOR_BRAND_BLUE, 0.1);
     border-radius: $BORDER_RADIUS;
     color: $COLOR_BRAND_BLUE;
-    li {
-        padding: .25rem 1rem;
-        cursor: pointer;
-    }
     li.active {
         color: white;
         background-color: $COLOR_BRAND_BLUE;
