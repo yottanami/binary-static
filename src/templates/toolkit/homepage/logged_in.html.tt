@@ -1,10 +1,13 @@
+<<<<<<< HEAD
 <h1>[% l('Welcome!') %]</h1>
 <p>[% welcome_text %] <span class="clientid">([% client.loginid %]).</span></p>
 
 [% IF show_authenticate_button %]
-    <a class="button pjaxload" href="[% request.url_for('/cashier/authenticate') %]">
-        [% l('Authenticate your account') %]
-    </a>
+    <div class="center-aligned">
+        <a class="button pjaxload" href="[% request.url_for('/cashier/authenticate') %]">
+            [% l('Authenticate your account') %]
+        </a>
+    </div>
 [% END %]
 
 [% IF client.is_virtual %]
@@ -25,7 +28,6 @@
     <div class="notice-msg">
         [% FOREACH message IN promo_messages %]
         <p>[% message %]</p>
-        [% END %]
     </div>
     [% END %]
     <div class='notice-msg invisible' id="investment_message">
@@ -38,7 +40,6 @@
         </p>
     </div>
 [% END %]
-
 
 <div class="row">
     <div class="col cashier-link">
