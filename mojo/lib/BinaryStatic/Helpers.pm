@@ -274,7 +274,7 @@ sub _main_menu_myaccount {
     push @{$my_account_ref->{sub_items}},
       {
         id         => 'topMenuChangePassword',
-        url        => $self->c->url_for('/change_password.cgi'),
+        url        => $self->c->url_for('/user/change_password),
         text       => $self->c->l('Password'),
         link_class => 'with_login_cookies pjaxload',
       };

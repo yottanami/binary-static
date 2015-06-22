@@ -520,20 +520,17 @@ var Page = function(config) {
 
 Page.prototype = {
     language: function() {
-        if ($('.language-selector').length > 0) {
-            return $('.language-selector select').val().toUpperCase(); //Required as mojo still provides lower case lang codes and most of our system expects upper case.
-        } else if(page.url.param('l')) {
+        if(page.url.param('l')) {
             return page.url.param('l');
         } else {
             return 'EN';
         }
     },
     flag: function() {
-        var idx = $('.language-selector select option:selected').index(),
-            offset = (idx + 1) * 15,
-            cssStyle = '-' + offset + 'px';
-        $('.language-selector select').css('background-position-y', offset);
-        console.log(cssStyle);
+        var idx = $('.language-options li a.selected').parent().index(),
+            offset = - (idx + 1) * 15,
+            cssStyle = offset + 'px';
+        $('.nav-languages a').css('background-position-y', offset);
     },
     on_load: function() {
         this.url.reset();
@@ -554,9 +551,10 @@ Page.prototype = {
     },
     on_change_language: function() {
         var that = this;
-        $('.language-selector').on('change', 'select', function() {
-            var language = $(this).find('option:selected').val();
+        $('.language-options').on('click', 'li', function(e) {
+            var language = $(this).find('a').attr('data-langcode');
             document.location = that.url_for_language(language);
+            e.preventDefault();
         });
     },
     on_change_loginid: function() {

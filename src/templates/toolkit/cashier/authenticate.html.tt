@@ -1,29 +1,25 @@
 <h1>[% l('Authentication') %]</h1>
 
-[% IF client.small_timer == 'yes' %]
-<p>[% l('View your <a href="[_1]">withdrawal limits</a>.', request.url_for('/cashier/limits')) %]</p>
-[% END %]
-
-[% IF client.small_timer.search('^notarised') || (client.small_timer == 'no' && companyaddr.size == 0) %]
+[% IF hide_authentication %]
 <p class="success_msg">
 [% l('Your account is fully authenticated. You can view your <a href="[_1]">trading limits here</a>.', request.url_for('/cashier/limits')) %]</p>
 
-[% ELSIF client.residence == 'gb' AND client.small_timer == 'yes' AND NOT manual AND ((NOT has_done_192_proveid_request AND NOT is_uploaded_id_doc AND NOT is_uploaded_addr_doc) OR request.is_logged_into_bo) %]
+[% ELSIF client.residence == 'gb' AND NOT client.client_fully_authenticated AND NOT manual AND ((NOT has_done_192_proveid_request AND NOT is_uploaded_id_doc AND NOT is_uploaded_addr_doc) OR request.is_logged_into_bo) %]
 [% id_auth_form.build() %]
 
 [%# Isle of Man or Malta, ask for original docs %]
 [% ELSIF country == 'Isle of Man' || country == 'Malta' %]
 <p>
-    [% website_name %] [% l('is required to verify that all clients are over the age of 18.') %]
+    [% l('To authenticate your account, kindly email the following to [_1]', '<a href="mailto:support@binary.com">support@binary.com</a>') %]
 </p>
 <p>
-    [% l('Kindly send a scan of one of the following documents by email:') %]
+    [% l('- A scanned copy of your passport, driving licence (provisional or full) or identity card, showing your name and date of birth.') %]
 </p>
 <p>
-    [% l('A scanned copy of your current valid passport, current driving licence (provisional or full) or identity card.') %]
+    [% l('and') %]
 </p>
 <p>
-    [% l('Please send this by email to [_1].', '<a href="mailto:support@binary.com">support@binary.com</a>') %]
+    [% l('- A scanned copy of a utility bill or bank statement (no more than 3 months old).') %]
 </p>
 [%# Costa Rica - only ask for clients that have withdrawn over 5000, and ask for scans only %]
 [% ELSIF country == 'Costa Rica' AND client.total_withdrawal_value >= 5000 %]
