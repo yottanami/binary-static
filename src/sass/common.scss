@@ -27,6 +27,7 @@ code {
     display: block;
     background: rgba($COLOR_BRAND_BLUE, 0.1);
     padding: 1rem;
+    overflow: auto;
 }
 h1,
 h2,
@@ -173,8 +174,13 @@ form {
     margin-right: auto;
     text-align: center;
 }
-ul.bullet li {
+ul.bullet li, .checkmark {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyMCI+DQo8cG9seWdvbiBmaWxsPSIjRTk4MDI1IiBwb2ludHM9IjguNjIzLDE5LjU1NyAwLDEwLjkzNiAzLjczNiw3LjE5OCA4LjYyMywxMi4wODIgMjAuMjYyLDAuNDQzIDI0LDQuMTggOC42MjMsMTkuNTU3Ii8+DQo8L3N2Zz4NCg==") no-repeat;
+}
+.checkmark {
+    background-position: center;
+}
+ul.bullet li {
     background-position: 0 2px;
     padding-left: 1.5em;
     margin-bottom: .25rem;

@@ -2,7 +2,7 @@
 
 %h1= l('API Developer Guide')
 
-%h2(id=>'registration')= l('Registration')
+%h2= l('Registration')
 %p
     = l('You must already have a valid account with Binary.com.')
     = l('It is not necessary to actually trade or to deposit funds to your account.')
@@ -12,7 +12,7 @@
     %a{:href=>url_for('/developer/register-api')}= l('register as an API Developer')
     = l('There may be a delay of up to 24 hours before your registration becomes valid.')
 
-%h2(id=>'authflow')= l('OAuth2 Authentication Using Auth-Code Flow')
+%h2= l('OAuth2 Authentication Using Auth-Code Flow')
 %p
     %em= l("This method is for web applications which are hosted on their own web-server. It is the most secure way of protecting your organisation's identity as the owner of your application.")
 %p= l('At a suitable stage in your application, when authorisation by a [_1] end-user is required, re-direct the end-user\'s browser to this URL:', stash->{website_name})
@@ -86,7 +86,7 @@
     = l('To see all such available calls, and to preview any such call and its output, use ')
     %a{:href=>'https://apigee.com/rmg/console/binary1'}= l('REST API Console Facility')
 
-%h2(id=>'call_wsok_serv')= l('Calling a WebSocket Service')
+%h2= l('Calling a WebSocket Service')
 %p
     = l('To authenticate to the WebSocket service, after opening the socket, an API Token must be passed using the [_1] message.', 'authorize')
     = l('Subsequent calls will act on behalf of the owner of that API Token.')
@@ -94,7 +94,7 @@
     = l('For more information about calling Websocket services see')
 %a{:href=>'https://github.com/binary-com/websockets-api/wiki'}= l('the Binary.com WebSocket API Reference pages')
 
-%h2(id=>'usertoken')= l('User Tokens')
+%h2= l('User Tokens')
 %p= l('Some call types accept a User Token.  This allows the call to act on behalf of the owner of that token.')
 %p= l('There are two ways to obtain an API Token:')
 %ol
@@ -121,7 +121,7 @@
     %li
         %a{:href=>'https://github.com/binary-com/websockets-api/wiki/Authorize'}= l('WebSocket API: Authorization')
 
-%h2(id=>'renewal')= l('OAuth2 Token Renewal')
+%h2= l('OAuth2 Token Renewal')
 %p
     %em= l("The access-token retrieved earlier has a limited lifetime.  In the case of Auth-Code Flow only, it can be renewed.")
 %p= l('The JSON structure which supplied the access_token also included a refresh_token.  Supply this in the following call:')
