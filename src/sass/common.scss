@@ -12,13 +12,22 @@ html {
 body {
     background: #fff;
     color: $COLOR_TEXT;
-    font-family: roboto, arial;
+    font-family: roboto, sans-serif;
     line-height: $LINE_HEIGHT;
 }
 a,
 a:visited {
     color: $COLOR_BRAND_BLUE;
     font-weight: bold;
+}
+a.external:after {
+    display: inline-block;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    margin-left: .5rem;
+    background-size: contain;
+    background-image: url(data:text/html;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQwIDQwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MCA0MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6bm9uZTtzdHJva2U6I0U4ODAyNDtzdHJva2Utd2lkdGg6MS44MjE4O30NCjwvc3R5bGU+DQo8ZyBpZD0iWE1MSURfNF8iIGNsYXNzPSJzdDAiPg0KCTxwb2x5bGluZSBpZD0iWE1MSURfM18iIHBvaW50cz0iMzEuOSwxMS45IDMxLjksMzguNSAxLjQsMzguNSAxLjQsOC4xIDI4LjEsOC4xIi8+DQoJPHBvbHlsaW5lIGlkPSJYTUxJRF8yXyIgcG9pbnRzPSIyMy4xLDEuNSAzOC42LDEuNSAzOC42LDE3Ii8+DQoJPGxpbmUgaWQ9IlhNTElEXzFfIiB4MT0iMTkuNiIgeTE9IjIwLjQiIHgyPSIzOC42IiB5Mj0iMS41Ii8+DQo8L2c+DQo8L3N2Zz4NCg==);
 }
 p, code, fieldset {
     margin-bottom: 1rem;
@@ -27,22 +36,26 @@ code {
     display: block;
     background: rgba($COLOR_BRAND_BLUE, 0.1);
     padding: 1rem;
-}
-h1,
-h2,
-h3 {
-    font-weight: 300;
-    line-height: 1;
-}
-h4 {
-    font-weight: bold;
+    overflow: auto;
 }
 h1,
 h2,
 h3,
 h4 {
-    color: $COLOR_BRAND_BLUE;
+    font-weight: 300;
+    line-height: 1;
     margin: 2rem 0 1rem;
+}
+h5, h6 {
+    font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $COLOR_BRAND_BLUE;
     a {
         color: $COLOR_BRAND_BLUE !important;
     }
@@ -57,6 +70,9 @@ h3 {
     font-size: $FONT_SIZE_L;
 }
 h4 {
+    font-size: $FONT_SIZE_M;
+}
+h5 {
     font-size: $FONT_SIZE_N;
 }
 input,
@@ -173,8 +189,13 @@ form {
     margin-right: auto;
     text-align: center;
 }
-ul.bullet li {
+ul.bullet li, .checkmark {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyMCI+DQo8cG9seWdvbiBmaWxsPSIjRTk4MDI1IiBwb2ludHM9IjguNjIzLDE5LjU1NyAwLDEwLjkzNiAzLjczNiw3LjE5OCA4LjYyMywxMi4wODIgMjAuMjYyLDAuNDQzIDI0LDQuMTggOC42MjMsMTkuNTU3Ii8+DQo8L3N2Zz4NCg==") no-repeat;
+}
+.checkmark {
+    background-position: center;
+}
+ul.bullet li {
     background-position: 0 2px;
     padding-left: 1.5em;
     margin-bottom: .25rem;

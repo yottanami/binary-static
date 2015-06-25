@@ -7,8 +7,14 @@
     flex: 1;
     padding-left: 1rem;
 }
+.col.s{
+	flex: .2;
+}
 .col.q {
     flex: .33333333;
+}
+.col.t {
+    flex: .5;
 }
 .col.f2 {
     flex: 2;

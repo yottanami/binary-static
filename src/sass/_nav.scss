@@ -41,23 +41,15 @@ nav a {
     font-size: $FONT_SIZE_S;
     margin: 0.7rem 0;
 }
-.language-selector {
-    select {
-        text-indent: 100px;
-        border: none;
-        width: 20px;
-        height: 15px;
-        margin: 1rem;
-        padding: 0;
-        &:hover,
-        &:focus {
-            box-shadow: none;
-        }
-        background-position: 0 0;
-        background: url("../images/common/flags.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-    }
+.nav-languages a {
+    display: block;
+    width: 20px;
+    height: 15px;
+    margin: 1rem 0;
+    background-position: 0 0;
+    background: url("../images/common/flags.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
 }
 .submenu {
     border-left: 1px solid transparent;
@@ -80,9 +72,12 @@ nav a {
 .nav-cashier a {
     display: block;
 }
-.nav2nd li:hover {
+.nav2nd li:hover a {
     color: white;
-    background: $COLOR_BRAND_ORANGE;
+    background: $COLOR_BRAND_ORANGE !important;
+}
+.nav2nd li a.selected {
+    background: $COLOR_BRAND_BLUE;
 }
 .nav-trade,
 .nav-cashier,

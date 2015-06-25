@@ -1,7 +1,4 @@
-footer {
-
-}
-.sitemap, .regulatory {
+.sitemap, .regulatory, .responsible-trading {
     margin: 0 auto;
     padding: 2rem .5rem;
     max-width: $CONTENT_WIDTH;
@@ -22,30 +19,30 @@ footer {
         }
     }
 }
-.regulatory {
-    font-size: $FONT_SIZE_XS;
-}
 .regulatory-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     a {
-        width: 30%;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    a + a {
-        margin-left: 5%;
+    img {
+        height: 4rem;
     }
-    a:nth-child(3) {
-        margin-top: .5rem;
-    }
-    a:last-child {
-        margin-left: 0;
-        width: 100%;
+    a:nth-child(3) img {
+        height: 3rem;
     }
 }
 .regulatory-text {
     text-align: justify;
     flex: 3;
+    font-size: $FONT_SIZE_XS;
+}
+.responsible-trading {
+    font-size: $FONT_SIZE_S;
 }
 .social-col img {
     width: 1rem;

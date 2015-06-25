@@ -18,6 +18,7 @@ $VPADDING: 4rem;
     flex: 2;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    padding-right: 1rem;
     text-align: left;
 }
 hgroup {
@@ -30,6 +31,7 @@ hgroup {
     margin-bottom: 0;
 }
 blockquote {
+    text-align: center;
     p {
         quotes: "\201C""\201D""\2018""\2019";
         margin: 0 2rem 1rem 2rem;
@@ -96,6 +98,7 @@ blockquote {
 }
 .trade-desc {
     text-align: left;
+    padding: 0 1rem 0 2rem;
     p {
         margin: 0 0 .5rem 0;
     }
