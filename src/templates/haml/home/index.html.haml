@@ -41,13 +41,13 @@
             .col
                 %img{ :src => url_for("images/pages/home/trade-tutorial.svg")}
             .col.trade-desc
-                %h4= l('All Markets')
+                %h5= l('All Markets')
                 %p= l('Currencies, Stock Indices and Commodities')
-                %h4= l('All Market Conditions')
+                %h5= l('All Market Conditions')
                 %p= l('Up/down, Touch/no-touch, Stays In/Goes Out')
-                %h4= l('All Durations')
+                %h5= l('All Durations')
                 %p= l('From 10 Seconds To 365 Days')
-                %h4= l('All Payouts')
+                %h5= l('All Payouts')
                 %p= l('From $1 To $100,000')
                 %a.button.pjaxload{:href => url_for('/user/upgrade')}= l('View Trading Platform')
 
