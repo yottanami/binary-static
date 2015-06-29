@@ -4,14 +4,12 @@
 
 %div{:itemscope :itemtype=>'http://schema.org/Organization'}
     .row
-        .col
-            %img.binary-logo{:src => url_for('images/pages/about/logo-blue.svg')}
         .col.about-col
             %h1= l('About Us')
             %p!= l('The <span itemprop="brand">[_1]</span> service (formerly known as BetOnMarkets.com) is owned and operated by Binary Ltd. Fully licensed and regulated, [_1] has been providing financial trading to a worldwide audience of over 1,000,000 clients since <span itemprop="foundingdate">1999</span>', stash->{website_name}) . "."
     .row
         .col
-            %img
+            %img.binary-logo{:src => url_for('images/pages/about/logo-blue.svg')}
             %h2{:itemprop=>'legalname'}= 'Binary Ltd'
             %p!= l("Binary Ltd, with registered office address situated at <span itemprop='location'>47 Esplanade, St. Helier, Jersey, JE 0BD Channel Islands</span>, is the holding company for the Binary group.")
         .col
@@ -33,6 +31,7 @@
             %h2= 'Binary Investments (Europe) Ltd.'
                 %p= l('Binary Investments (Europe) Ltd, Suite 2, Tower Road, Msida MSD1825, Malta. Licensed and regulated as a Category 3 Investment Services provider by the Malta Financial Services Authority (license no. IS/70156).')
                 %p= l('European Union residents with the exception of the UK, who wish to trade investment products, will have their account opened with Binary Investments (Europe) Ltd.')
+    .row
         .col
             %img{:src => url_for('images/pages/about/costa-rica.png')}
             %h2= 'Binary (C.R.) S.A.'
