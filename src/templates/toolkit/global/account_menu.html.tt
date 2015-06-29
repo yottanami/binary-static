@@ -18,9 +18,6 @@
         <a class="pjaxload" href="[% request.url_for('user/settings') %]">[% l('Settings') %]</a>
     </li>
     <li>
-        <a class="pjaxload" href="[% request.url_for('user/change_password') %]">[% l('Password') %]</a>
-    </li>
-    <li>
         <a class="pjaxload" href="[% request.url_for('affiliate/signup') %]">[% l('Affiliate') %]</a>
     </li>
     <li class="authenticate-menu">
