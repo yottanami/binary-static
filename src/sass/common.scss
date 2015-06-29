@@ -13,6 +13,8 @@ body {
     background: #fff;
     color: $COLOR_TEXT;
     font-family: roboto, sans-serif;
+}
+body, th, td {
     line-height: $LINE_HEIGHT;
 }
 a,
@@ -43,7 +45,7 @@ h2,
 h3,
 h4 {
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.1;
     margin: 2rem 0 1rem;
 }
 h5, h6 {

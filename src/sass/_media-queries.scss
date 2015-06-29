@@ -88,4 +88,9 @@
     ul[role=tabs], ul[role=segmented] {
         flex-direction: column;
     }
+    .home-content {
+        .hero hgroup, .trade-desc {
+            text-align: center;
+        }
+    }
 }
