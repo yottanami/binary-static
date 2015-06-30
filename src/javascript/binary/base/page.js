@@ -525,8 +525,8 @@ Page.prototype = {
     flag: function() {
         var idx = $('.language-options li a.selected').parent().index(),
             offset = - (idx + 1) * 15,
-            cssStyle = offset + 'px';
-        $('.nav-languages a').css('background-position-y', offset);
+            cssStyle = '0 ' + offset + 'px';
+        $('.nav-languages a').css('background-position', cssStyle);
     },
     on_load: function() {
         this.url.reset();
