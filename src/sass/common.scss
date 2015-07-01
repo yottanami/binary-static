@@ -263,6 +263,9 @@ a.close {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.margin-bottom{
+    margin-bottom: 30px;
+}
 i {
     color: $COLOR_BRAND_ORANGE;
 }
@@ -272,4 +275,8 @@ p.media, div.media {
 }
 strong {
     font-weight: bold;
+}
+a.external{
+    background: url("../images/pages/patents/link-icon.svg") center right no-repeat;
+    padding-right: 0.3rem;
 }
