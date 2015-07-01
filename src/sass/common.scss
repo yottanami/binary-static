@@ -198,9 +198,10 @@ ul.bullet li, .checkmark {
     background-position: center;
 }
 ul.bullet li {
-    background-position: 0 2px;
-    padding-left: 1.5em;
+    background-position: 0 .2rem;
+    padding-left: 1.25em;
     margin-bottom: .25rem;
+    background-size: 1rem;
 }
 a.close {
     display: inline-block;
