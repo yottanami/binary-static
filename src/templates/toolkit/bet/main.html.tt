@@ -4,7 +4,6 @@
     <div id="bet_container">
         [% INCLUDE bet/markets.html.tt %]
         <div id="gmt-clock"></div>
-
         [% menu_with_content_html %]
         <div id="bet_container_inner">
             <div id="bet_calculation_container">
@@ -13,5 +12,7 @@
         </div>
     </div>
 
-    [% bottom_page_content_html %]
+    <div id="bet_bottom_container">
+        [% bottom_page_content_html %]
+    </div>
 [% END %]
