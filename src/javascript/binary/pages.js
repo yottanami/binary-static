@@ -95,3 +95,7 @@ $('.nav2nd a').on('click', function() {
     nav2nd.hide();
     setTimeout(function() { nav2nd.show() });
 });
+
+if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+    $(header).css('position', 'sticky');
+}
