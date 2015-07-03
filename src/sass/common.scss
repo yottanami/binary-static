@@ -6,7 +6,7 @@
 html {
     box-sizing: border-box;
     height: 100%;
-    font-size: 16px;
+    font-size: $FONT_SIZE_N;
     text-rendering: geometricPrecision;
 }
 body {
