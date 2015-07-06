@@ -2,7 +2,7 @@
     <ul class="nav1st">
         <li class="submenu">
             <div class="nav-trade">
-                <a class="pjaxload" href="[% request.url_for('trade.cgi') %]" [% target %]>[% l("Trade") %]</a>
+                <a href="[% request.url_for('trade.cgi') %]" [% target %]>[% l("Trade") %]</a>
             </div>
         </li>
         <li class="submenu">
