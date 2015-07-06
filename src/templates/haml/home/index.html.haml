@@ -49,7 +49,7 @@
                 %p= l('From 10 Seconds To 365 Days')
                 %h5= l('All Payouts')
                 %p= l('From $1 To $100,000')
-                %a.button.pjaxload{:href => url_for('/user/upgrade')}= l('View Trading Platform')
+                %a.button{:href => url_for('/user/upgrade')}= l('View Trading Platform')
 
 .home-container
     .home-body
@@ -93,6 +93,6 @@
     .home-body
         %hgroup
             %h1!= l('<i>Payment</i> Methods')
-        %a.pjaxload{:href => url_for('/cashier/payment_methods')}
+        %a{:href => url_for('/cashier/payment_methods')}
             %img{:src => url_for("images/pages/home/payment-methods.svg")}
         %p{:style => "margin-bottom: -1em")}= l('Hundreds of deposit and withdrawal options.')
