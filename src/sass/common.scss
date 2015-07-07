@@ -144,9 +144,8 @@ form {
 .errorrow,
 .errorfield,
 .error-msg {
-    //color: white;
-    //background: $COLOR_RED;
-    color: $COLOR_RED;
+    color: white;
+    background: $COLOR_RED;
     border-radius: $BORDER_RADIUS;
     padding: .125rem;
 }
