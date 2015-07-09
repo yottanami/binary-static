@@ -7,6 +7,8 @@ $(document).ajaxSuccess(function () {
 });
 
 
+alert();
+
 var onLoad = new PjaxExecQueue();
 var onUnload = new PjaxExecQueue();
 
