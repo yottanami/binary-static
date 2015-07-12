@@ -3260,8 +3260,9 @@ function content_modifier() {
     if($.inArray(language.toLowerCase, languages) !== -1){
         console.log("Japabese language");
     }
-
 }
+
+content_modifier();
 ;var trade_contract_back = function () {
     $('#find_another_contract').on('click', function (e) {
         if (page.url.history_supported) {

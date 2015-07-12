@@ -109,5 +109,6 @@ function content_modifier() {
     if($.inArray(language.toLowerCase, languages) !== -1){
         console.log("Japabese language");
     }
-
 }
+
+content_modifier();
