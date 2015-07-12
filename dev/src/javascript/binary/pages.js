@@ -104,6 +104,7 @@ onLoad.queue_for_url(function() {
 function content_modifier() {
     var language = page.language();
     // list of languages that modification have json file
+    console.log("Language : " + language);
     var languages = ['ja'];
     if($.inArray(language.toLowerCase, languages) !== -1){
         console.log("Japabese language");
