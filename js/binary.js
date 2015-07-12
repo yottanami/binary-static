@@ -1776,8 +1776,6 @@ $(document).ajaxSuccess(function () {
 });
 
 
-alert();
-
 var onLoad = new PjaxExecQueue();
 var onUnload = new PjaxExecQueue();
 
@@ -3251,6 +3249,18 @@ onLoad.queue_for_url(function() {
         return false;
     });
 }, '/c/paymentagent_list');
+
+
+
+function content_modifier() {
+    var language = page.language();
+    // list of languages that modification have json file
+    var languages = ['ja'];
+    if($.inArray(language.toLowerCase, languages) !== -1){
+        console.log("Japabese language");
+    }
+
+}
 ;var trade_contract_back = function () {
     $('#find_another_contract').on('click', function (e) {
         if (page.url.history_supported) {

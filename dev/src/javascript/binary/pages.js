@@ -98,3 +98,15 @@ onLoad.queue_for_url(function() {
         return false;
     });
 }, '/c/paymentagent_list');
+
+
+
+function content_modifier() {
+    var language = page.language();
+    // list of languages that modification have json file
+    var languages = ['ja'];
+    if($.inArray(language.toLowerCase, languages) !== -1){
+        console.log("Japabese language");
+    }
+
+}
