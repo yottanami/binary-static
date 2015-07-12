@@ -3253,16 +3253,18 @@ onLoad.queue_for_url(function() {
 
 
 function content_modifier() {
-    var language = page.language();
+    var language = page.language.toLowerCase();
     // list of languages that modification have json file
     var languages = ['ja'];
-    if($.inArray(language.toLowerCase(), languages) !== -1){
+    if($.inArray(language, languages) !== -1){
         console.log("Japabese language");
         $.getJSON("https://static.binary.com/dev/src/javascript/binary/pages/languages/" + language + ".json", function( data ){
             $.each( data, function( key, val ) {
                 //items.push( "<li id='" + key + "'>" + val + "</li>" );
+                console.log("------------");
                 console.log(key);
                 console.log(val);
+                console.log("-------------");
             });
         })
             .done(function() {

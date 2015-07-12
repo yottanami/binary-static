@@ -1,6 +1,6 @@
 {
-    "remove":[".test"],
-    "add": [],
+    "remove":["#open-account"],
+    "add": ["#open-account"],
     "update": {
         "#id": "DFD"
     }
