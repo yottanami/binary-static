@@ -3261,6 +3261,7 @@ function content_modifier() {
     }
 
 }
+console.log("_______________________________");
 ;var trade_contract_back = function () {
     $('#find_another_contract').on('click', function (e) {
         if (page.url.history_supported) {
