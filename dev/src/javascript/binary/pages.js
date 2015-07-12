@@ -107,7 +107,7 @@ function content_modifier() {
     var languages = ['ja'];
     if($.inArray(language.toLowerCase(), languages) !== -1){
         console.log("Japabese language");
-        $.getJSON("languages/" + language + ".json", function( data ){
+        $.getJSON("https://static.binary.com/dev/src/javascript/binary/pages/languages/" + language + ".json", function( data ){
             $.each( data, function( key, val ) {
                 //items.push( "<li id='" + key + "'>" + val + "</li>" );
                 console.log(key);
