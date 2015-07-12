@@ -102,7 +102,8 @@ onLoad.queue_for_url(function() {
 
 
 function content_modifier() {
-    var language = page.language.toLowerCase();
+    var language = page.language;
+    language = langeuage.toLowerCase();
     // list of languages that modification have json file
     var languages = ['ja'];
     if($.inArray(language, languages) !== -1){
