@@ -104,10 +104,21 @@ onLoad.queue_for_url(function() {
 function content_modifier() {
     var language = page.language();
     // list of languages that modification have json file
-    console.log("Language : " + language);
     var languages = ['ja'];
-    if($.inArray(language.toLowerCase, languages) !== -1){
+    if($.inArray(language.toLowerCase(), languages) !== -1){
         console.log("Japabese language");
+        $.getJSON("languages/" + language + ".json", function( data ){
+            $.each( data, function( key, val ) {
+                //items.push( "<li id='" + key + "'>" + val + "</li>" );
+                console.log(key);
+                console.log(val);
+            });
+        })
+            .done(function() {
+            })
+            .fail(function() {
+
+            });
     }
 }
 
