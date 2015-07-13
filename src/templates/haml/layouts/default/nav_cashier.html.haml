@@ -1,5 +1,7 @@
 .nav-cashier
-    %a.pjaxload{:href => url_for('cashier')}= l('Cashier')
+    %a.pjaxload{:href => url_for('cashier')}
+        %img{:src => url_for('/images/icons/cashier.svg')}
+        %span= l('Cashier')
 %ul.nav2nd
     %li
         %a.pjaxload{:href=> url_for('cashier/payment_methods')}= l('Payment Methods')

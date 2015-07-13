@@ -1,5 +1,8 @@
 <div class="nav-cashier">
-    <a class="pjaxload" href="[% request.url_for('cashier') %]">[% l("Cashier") %]</a>
+    <a class="pjaxload" href="[% request.url_for('cashier') %]">
+        <img href="[% request.url_for('/images/icons/cashier.svg') %]">
+        [% l("Cashier") %]
+    </a>
 </div>
 <ul class="nav2nd">
     <li>
