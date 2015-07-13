@@ -2,49 +2,37 @@
 var trade_event_bindings = {};
 
 function contract_guide_popup() {
-    $('#bet_guide_content').on('click', 'a.bet_demo_link', function (e){
+    $('.contract-guide-content').on('click', '.bet_demo_link', function (e){
         e.preventDefault();
         var ip = new InPagePopup();
         ip.ajax_conf = { url: this.href, data: 'ajax_only=1' };
         ip.fetch_remote_content(true, '', function (data) {
-            attach_tabs('#contract_demo_container');
             return data;
         });
     });
 }
 
 var trading_times_init = function() {
-      var tabset_name = "#trading-tabs";
+     var url = page.url.url_for('resources/trading_times', 'date=' + dateText, 'cached'),
+         oneYearLater = moment().add(1, 'year').toDate();
 
-     var trading_times = $(tabset_name);
-     trading_times.tabs();
-     var url = location.href;
-     $( "#tradingdate" ).datepicker({ minDate: 0, maxDate:'+1y', dateFormat: "yy-mm-dd", autoSize: true,
-     onSelect: function( dateText, picker ){
-         trading_times.tabs( "destroy" );
-         showLoadingImage(trading_times);
-         url = page.url.url_for('resources/trading_times', 'date=' + dateText, 'cached');
-         $.ajax({
-                  url: url,
-                  data:  { 'ajax_only': 1 },
-                  success: function(html){
-                            trading_times.replaceWith(html);
-                            trading_times = $("#trading-tabs");
-                            trading_times.tabs();
-                            page.url.update(url);
-                         },
-                  error: function(xhr, textStatus, errorThrown){
-                          trading_times.empty().append(textStatus);
-                       },
-                });
-         }
-     });
-};
-
-var asset_index_init = function() {
-    var tabset_name = "#asset-tabs";
-    // jQueryUI tabs
-    $(tabset_name).tabs();
+     $("#tradingdate" ).pickadate({
+         max: oneYearLater,
+         onSet: function(context) {
+             showLoadingImage($('#trading-tabs'));
+             $.ajax({
+                url: url,
+                data:  { 'ajax_only': 1 },
+                success: function(html){
+                    $("#trading-tabs").replaceWith(html);
+                    page.url.update(url);
+                },
+                error: function(xhr, textStatus, errorThrown){
+                    trading_times.empty().append(textStatus);
+                },
+            });
+        }
+    });
 };
 
 function confirm_popup_action() {
@@ -86,7 +74,6 @@ function get_login_page_url() {
 
 onLoad.queue_for_url(contract_guide_popup, 'contract_guide');
 onLoad.queue_for_url(trading_times_init, 'trading_times');
-onLoad.queue_for_url(asset_index_init, 'asset_index');
 onLoad.queue_for_url(confirm_popup_action, 'my_account|confirm_popup');
 onLoad.queue_for_url(hide_payment_agents, 'cashier');
 
@@ -99,30 +86,6 @@ onLoad.queue_for_url(function() {
     });
 }, '/c/paymentagent_list');
 
-
-
-function content_modifier() {
-    var language = page.language;
-    language = language.toLowerCase();
-    // list of languages that modification have json file
-    var languages = ['ja'];
-    if($.inArray(language, languages) !== -1){
-        console.log("Japabese language");
-        $.getJSON("https://static.binary.com/dev/src/javascript/binary/pages/languages/" + language + ".json", function( data ){
-            $.each( data, function( key, val ) {
-                //items.push( "<li id='" + key + "'>" + val + "</li>" );
-                console.log("------------");
-                console.log(key);
-                console.log(val);
-                console.log("-------------");
-            });
-        })
-            .done(function() {
-            })
-            .fail(function() {
-
-            });
-    }
-}
-
-content_modifier();
+$('.login-content button').on('click', function() {
+    $('.form-logo').addClass('spinner');
+});
