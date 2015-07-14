@@ -1,5 +1,7 @@
 .nav-resources
-    %a{:href => url_for('/resources')}= l('Resources')
+    %a.pjaxload{:href => url_for('/resources')}
+        %img{:src => url_for('/images/icons/resources.svg')}
+        = l('Resources')
 %ul.nav2nd
     %li
         %a{:href=>url_for('/resources/asset_index')}= l('Asset Index')

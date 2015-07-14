@@ -1,5 +1,7 @@
 .nav-cashier
-    %a{:href => url_for('cashier')}= l('Cashier')
+    %a{:href => url_for('cashier')}
+        %img{:src => url_for('/images/icons/cashier.svg')}
+        = l('Cashier')
 %ul.nav2nd
     %li
         %a{:href=> url_for('cashier/payment_methods')}= l('Payment Methods')

@@ -1,5 +1,8 @@
 <div class="nav-resources">
-    <a href="[% request.url_for('/resources') %]">[% l("Resources") %]</a>
+    <a href="[% request.url_for('/resources') %]">
+        <img href="[% request.url_for('/images/icons/resources.svg') %]">
+        [% l("Resources") %]
+    </a>
 </div>
 <ul class="nav2nd">
     <li>

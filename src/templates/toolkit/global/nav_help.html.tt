@@ -1,5 +1,8 @@
 <div class="nav-help">
-    <a href="[% request.url_for('get-started') %]">[% l("Help") %]</a>
+    <a href="[% request.url_for('get-started') %]">
+        <img href="[% request.url_for('/images/icons/help.svg') %]">
+        [% l("Help") %]
+    </a>
 </div>
 <ul class="nav2nd">
     <li>

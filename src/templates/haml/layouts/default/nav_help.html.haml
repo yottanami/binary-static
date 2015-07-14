@@ -1,5 +1,7 @@
 .nav-help
-    %a{:href=>url_for('/get-started')}= l('Help')    
+    %a{:href=>url_for('/get-started')}
+        %img{:src => url_for('/images/icons/help.svg')}
+        = l('Help')
 %ul.nav2nd
     %li
         %a{:href => url_for('/resources/contract_guide')}= l('Trading Guide')

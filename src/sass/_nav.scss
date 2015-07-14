@@ -61,6 +61,10 @@ nav a {
     border-left: 1px solid $COLOR_NAV_BORDER;
     border-right: 1px solid $COLOR_NAV_BORDER;
 }
+.submenu img {
+    width: 100%;
+    display: none;
+}
 .nav2nd {
     margin-left: -1px;
     background-color: $COLOR_NAV_ACTIVE;
