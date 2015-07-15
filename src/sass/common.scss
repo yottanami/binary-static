@@ -6,13 +6,15 @@
 html {
     box-sizing: border-box;
     height: 100%;
-    font-size: 16px;
+    font-size: $FONT_SIZE_N;
     text-rendering: geometricPrecision;
 }
 body {
     background: #fff;
     color: $COLOR_TEXT;
     font-family: roboto, sans-serif;
+}
+body, th, td {
     line-height: $LINE_HEIGHT;
 }
 a,
@@ -43,7 +45,7 @@ h2,
 h3,
 h4 {
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.1;
     margin: 2rem 0 1rem;
 }
 h5, h6 {
@@ -142,9 +144,8 @@ form {
 .errorrow,
 .errorfield,
 .error-msg {
-    //color: white;
-    //background: $COLOR_RED;
-    color: $COLOR_RED;
+    color: white;
+    background: $COLOR_RED;
     border-radius: $BORDER_RADIUS;
     padding: .125rem;
 }
@@ -196,9 +197,10 @@ ul.bullet li, .checkmark {
     background-position: center;
 }
 ul.bullet li {
-    background-position: 0 2px;
-    padding-left: 1.5em;
+    background-position: 0 .2rem;
+    padding-left: 1.25em;
     margin-bottom: .25rem;
+    background-size: 1rem;
 }
 a.close {
     display: inline-block;
@@ -261,6 +263,9 @@ a.close {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.margin-bottom{
+    margin-bottom: 30px;
+}
 i {
     color: $COLOR_BRAND_ORANGE;
 }
@@ -270,4 +275,18 @@ p.media, div.media {
 }
 strong {
     font-weight: bold;
+}
+a.external{
+    background: url("../images/pages/patents/link-icon.svg") center right no-repeat;
+    padding-right: 0.3rem;
+}
+.icon {
+    height: 5rem;
+    width: 5rem;
+    padding: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 0px 1px rgba($COLOR_BRAND_BLUE, .5);
+    background: rgba($COLOR_BRAND_BLUE, .025);
+    border-radius: 100px;
 }

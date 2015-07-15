@@ -11,12 +11,6 @@
         padding-bottom: 3rem;
         text-align: center;
         min-width: 33%;
-        p {
-            height: 3.5rem;
-        }
-        img {
-            height: 100%;
-        }
     }
 }
 .baloon {
@@ -54,6 +48,6 @@
 }
 .beginners-faq-content {
     h3 {
-        color: $COLOR_BRAND_ORANGE;
+        // color: $COLOR_BRAND_ORANGE;
     }
 }

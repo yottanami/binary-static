@@ -59,3 +59,8 @@
     width: 2rem;
     height: 2rem;
 }
+
+/* Disable animations for specific elements */
+.nav-languages a {
+    transition: none !important;
+}
