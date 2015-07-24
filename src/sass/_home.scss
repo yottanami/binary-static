@@ -6,6 +6,13 @@ $VPADDING: 4rem;
 .home-content #content {
     max-width: 100% !important;
 }
+.home-content .row {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.home-content .payment-methods {
+    padding: 0 .5rem;
+}
 .hero {
     background-image: url('../images/pages/home/map.png');
     background-repeat: no-repeat;
@@ -23,6 +30,7 @@ $VPADDING: 4rem;
 }
 hgroup {
     margin-bottom: 2rem;
+    padding: 0 .5rem;
 }
 .sitemap h4, .hero h1, .hero h2, .hero h3, .home-container hgroup h1, .trade-desc h4 {
     margin-top: 0;
