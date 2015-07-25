@@ -32,7 +32,7 @@ ul[role=tabs] {
 }
 
 ul[role=segmented] {
-    border: 2px solid rgba($COLOR_BRAND_BLUE, 0.2);
+    box-shadow: inset 0px 0px 0px 1px rgba($COLOR_BRAND_BLUE, 0.2);
     background-color: rgba($COLOR_BRAND_BLUE, 0.1);
     border-radius: $BORDER_RADIUS;
     color: $COLOR_BRAND_BLUE;
