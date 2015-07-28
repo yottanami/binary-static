@@ -328,7 +328,7 @@ var BetPrice = function() {
         },
         show_loading: function() {
             var image_link = page.settings.get('image_link');
-            var loading_html = '<div class="progress"></div>';
+            var loading_html = '<p id="loading-price">'+text.localize('loading...')+'<br /><img src="'+image_link['hourglass']+'" /></p>';
             this.container().find('div.rbox-lowpad:first').show().html('<div class="rbox rbox-bg-alt"><div class="rbox-wrap"><div class="rbox-content">'+loading_html+'</div></div><span class="tl">&nbsp;</span><span class="tr">&nbsp;</span><span class="bl">&nbsp;</span><span class="br">&nbsp;</span></div></div>');
             this.container().show();
         },
@@ -428,7 +428,7 @@ var BetPrice = function() {
                     return prices;
                 },
                 prices_from_form: function () {
-
+                    
                     var prices = [],
                         order_forms = $('.orderform'),
                         order_forms_count = order_forms ? order_forms.length : 0,
@@ -436,7 +436,7 @@ var BetPrice = function() {
                         id,
                         prob,
                         error;
-
+                    
                     if (order_forms_count > 0 ) {
                         for (i = 0; i < order_forms_count; i++) {
                             id = $('input[name="display_id"]', form).val();
