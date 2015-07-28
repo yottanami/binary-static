@@ -1,113 +1,3 @@
-var sidebar_scroll = function(elm_selector) {
-    elm_selector.on('click', '#sidebar-nav li', function() {
-        var clicked_li = $(this);
-        $.scrollTo($('.section:eq(' + clicked_li.index() + ')'), 500);
-        return false;
-    }).addClass('unbind_later');
-
-    if (elm_selector.size()) {
-        // grab the initial top offset of the navigation
-        var selector = elm_selector.find('.sidebar');
-        var width = selector.width();
-        var sticky_navigation_offset_top = selector.offset().top;
-        // With thanks:
-        // http://www.backslash.gr/content/blog/webdevelopment/6-navigation-menu-that-stays-on-top-with-jquery
-
-        // our function that decides weather the navigation bar should have "fixed" css position or not.
-        var sticky_navigation = function() {
-            var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-
-            // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-            // otherwise change it back to relative
-            if (scroll_top > sticky_navigation_offset_top) {
-                selector.css({'position': 'fixed', 'top': 0, 'width': width});
-            } else {
-                selector.css({'position': 'relative'});
-            }
-        };
-
-        //run our function on load
-        sticky_navigation();
-
-        var sidebar_nav = selector.find('#sidebar-nav');
-        var length = elm_selector.find('.section').length;
-        $(window).on('scroll', function() {
-            // and run it again every time you scroll
-            sticky_navigation();
-
-            for (var i = 0; i < length; i++) {
-                if ($(window).scrollTop() === 0 || $(this).scrollTop() >= $('.section:eq(' + i + ')').offset().top - 5) {
-                    sidebar_nav.find('li').removeClass('selected');
-
-                    if ($(window).scrollTop() === 0) {
-                        // We're at the top of the screen, so highlight first nav item
-                        sidebar_nav.find('li:first-child').addClass('selected');
-                    } else if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
-                        // We're at bottom of screen so highlight last nav item.
-                        sidebar_nav.find('li:last-child').addClass('selected');
-                    } else {
-                        sidebar_nav.find('li:eq(' + i + ')').addClass('selected');
-                    }
-                }
-            }
-        });
-    }
-};
-
-var get_started_behaviour = function() {
-    // Get Started behaviour:
-    var update_active_subsection = function(to_show) {
-        var fragment;
-        var subsection = $('.subsection');
-        subsection.addClass('hidden');
-        to_show.removeClass('hidden');
-        var nav_back = $('.subsection-navigation .back');
-        var nav_next = $('.subsection-navigation .next');
-
-        if (to_show.hasClass('first')) {
-            nav_back.addClass('disabled');
-            nav_next.removeClass('disabled');
-        } else if (to_show.hasClass('last')) {
-            nav_back.removeClass('disabled');
-            nav_next.addClass('disabled');
-        } else {
-            nav_back.removeClass('disabled');
-            nav_next.removeClass('disabled');
-        }
-
-        fragment = to_show.find('a[name]').attr('name').slice(0, -8);
-        document.location.hash = fragment;
-
-        return false;
-    };
-    var to_show;
-    var nav = $('.get-started').find('.subsection-navigation');
-    var fragment;
-    var len = nav.length;
-
-    if (len) {
-        nav.on('click', 'a', function() {
-            var button = $(this);
-            if (button.hasClass('disabled')) {
-                return false;
-            }
-            var now_showing = $('.subsection:not(.hidden)');
-            var show = button.hasClass('next') ? now_showing.next('.subsection') : now_showing.prev('.subsection');
-            return update_active_subsection(show);
-        });
-
-        fragment = (location.href.split('#'))[1];
-        to_show = fragment ? $('a[name=' + fragment + '-section]').parent('.subsection') : $('.subsection.first');
-        update_active_subsection(to_show);
-    }
-
-    var random_market = $('.random-markets');
-    if (random_market.length > 0) {
-        sidebar_scroll(random_market);
-    }
-};
-
-
 var get_ticker = function() {
     var ticker = $('#hometicker');
     if (ticker.size()) {
@@ -137,29 +27,6 @@ var Charts = function(charts) {
     window.open(charts, 'DetWin', 'width=580,height=710,scrollbars=yes,location=no,status=no,menubar=no');
 };
 
-var home_bomoverlay = {
-    url : {
-	    param : {
-            get : function(name) {
-                name = name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
-                var regexS = "[\\?&]"+name+"=([^&#]*)";
-                var regex = new RegExp(regexS);
-                var results = regex.exec(window.location.href);
-                return (results === null)? null:results[1];
-            }
-        }
-    },
-
-    init : function() {
-        if (! this.url.param.get('frombom')) return;
-        var obj = document.getElementById('banner').getElementsByClassName('wrapper')[0];
-        var div = document.createElement('div');
-        div.className = 'bomoverlay';
-        obj.appendChild(div);
-        div.addEventListener('click', function() { this.parentNode.removeChild(this); });
-    }
-};
-
 var email_rot13 = function(str) {
     return str.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
 };
@@ -167,7 +34,7 @@ var email_rot13 = function(str) {
 var display_cs_contacts = function () {
     $('.contact-content').on("change", '#cs_telephone_number', function () {
         var val = $(this).val();
-        $('#display_cs_telephone').text(val);
+        $('#display_cs_telephone').html('<a href="tel:' + val + '">' + val + '</a>');
     });
     $('#cs_contact_eaddress').html(email_rot13("<n uers=\"znvygb:fhccbeg@ovanel.pbz\" ery=\"absbyybj\">fhccbeg@ovanel.pbz</n>"));
 };
@@ -185,8 +52,8 @@ var change_chat_icon = function () {
               desk_widget.css({
                   'background-image': 'url("' + image_link['livechaticon'] + '")',
                   'background-size': 'contain',
-                  'min-width': 50,
-                  'min-height': 50,
+                  'min-width': 35,
+                  'min-height': 35,
                   'width': 'auto'
               });
               desk_widget.hover(function() {
@@ -272,7 +139,6 @@ pjax_config_page('/$|/home', function() {
         onLoad: function() {
             select_user_country();
             get_ticker();
-            home_bomoverlay.init();
         }
     };
 });
@@ -357,7 +223,8 @@ pjax_config_page('/contact', function() {
 pjax_config_page('/careers', function() {
     return {
         onLoad: function() {
-            display_career_email();
+            $("#hr_contact_eaddress")
+                .html(email_rot13("<n uers=\"znvygb:ue@ovanel.pbz\" ery=\"absbyybj\">ue@ovanel.pbz</n>"));
         },
     };
 });
