@@ -220,17 +220,188 @@ URL.prototype = {
     },
 };
 
+var Menu = function(url) {
+    this.page_url = url;
+    var that = this;
+    $(this.page_url).on('change', function() { that.activate(); });
+};
+
+Menu.prototype = {
+    on_unload: function() {
+        this.reset();
+    },
+    activate: function() {
+        $('#menu-top li').removeClass('active');
+        this.hide_main_menu();
+
+        var active = this.active_menu_top();
+        var trading = $('#menu-top li:eq(3)');
+        if(active) {
+            active.addClass('active');
+            if(trading.is(active)) {
+                this.show_main_menu();
+            }
+        } else {
+            var is_mojo_page = /^\/$|\/login|\/home|\/smart-indices|\/ad|\/open-source-projects|\/white-labels|\/partnerapi$/.test(window.location.pathname);
+            if(!is_mojo_page) {
+                trading.addClass('active');
+                this.show_main_menu();
+            }
+        }
+    },
+    show_main_menu: function() {
+        $("#main-menu").removeClass('hidden');
+        this.activate_main_menu();
+    },
+    hide_main_menu: function() {
+        $("#main-menu").addClass('hidden');
+    },
+    activate_main_menu: function() {
+        //First unset everything.
+        $("#main-menu li.item").removeClass('active');
+        $("#main-menu li.item").removeClass('hover');
+        $("#main-menu li.sub_item a").removeClass('a-active');
+
+        var active = this.active_main_menu();
+        if(active.subitem) {
+            active.subitem.addClass('a-active');
+        }
+
+        if(active.item) {
+            active.item.addClass('active');
+            active.item.addClass('hover');
+        }
+
+        this.on_mouse_hover(active.item);
+
+        // enable only allowed markets
+        var allowed_markets = $.cookie('allowed_markets');
+        if(allowed_markets) {
+            var markets_array = allowed_markets.split(',');
+            var sub_items = $('li#topMenuStartBetting ul.sub_items');
+            sub_items.find('li').each(function () {
+                var link_id = $(this).attr('id').split('_')[1];
+                if(markets_array.indexOf(link_id) < 0) {
+                    var link = $(this).find('a');
+                    if(markets_array.indexOf(link.attr('id')) < 0) {
+                        link.addClass('disabled-link');
+                        link.removeAttr('href');
+                    }
+                }
+            });
+        }
+    },
+    reset: function() {
+        $("#main-menu .item").unbind();
+        $("#main-menu").unbind();
+    },
+    on_mouse_hover: function(active_item) {
+        $("#main-menu .item").on( 'mouseenter', function() {
+            $("#main-menu li.item").removeClass('hover');
+            $(this).addClass('hover');
+        });
+
+        $("#main-menu").on('mouseleave', function() {
+            $("#main-menu li.item").removeClass('hover');
+            if(active_item)
+                active_item.addClass('hover');
+        });
+    },
+    active_menu_top: function() {
+        var active;
+        var path = window.location.pathname;
+        $('#menu-top li a').each(function() {
+            if(path.indexOf(this.pathname) >= 0) {
+                active = $(this).closest('li');
+            }
+        });
+
+        return active;
+    },
+    active_main_menu: function() {
+        var path = window.location.pathname;
+        path = path.replace(/\/$/, "");
+        path = decodeURIComponent(path);
+
+        var item;
+        var subitem;
+
+        var that = this;
+        //Is something selected in main items list
+        $("#main-menu .items a").each(function () {
+            var url = new URL($(this).attr('href'));
+            if(url.is_in(that.page_url)) {
+                item = $(this).closest('.item');
+            }
+        });
+
+        $("#main-menu .sub_items a").each(function(){
+            var link_href = $(this).attr('href');
+            if (link_href) {
+                var url = new URL(link_href);
+                if(url.is_in(that.page_url)) {
+                    item = $(this).closest('.item');
+                    subitem = $(this);
+                }
+            }
+        });
+
+        return { item: item, subitem: subitem };
+    },
+    register_dynamic_links: function() {
+        var stored_market = page.url.param('market') || LocalStore.get('bet_page.market') || 'forex';
+        var allowed_markets = $.cookie('allowed_markets');
+        if(allowed_markets) {
+            var markets_array = allowed_markets.split(',');
+            if(markets_array.indexOf(stored_market) < 0) {
+                stored_market = markets_array[0];
+                LocalStore.set('bet_page.market', stored_market);
+            }
+        }
+        var start_trading = $('#topMenuStartBetting a:first');
+        var trade_url = start_trading.attr("href");
+        if(stored_market) {
+            if(/market=/.test(trade_url)) {
+                trade_url = trade_url.replace(/market=\w+/, 'market=' + stored_market);
+            } else {
+                trade_url += '&market=' + stored_market;
+            }
+            start_trading.attr("href", trade_url);
+
+            $('#menu-top li:eq(3) a').attr('href', trade_url);
+            $('#mobile-menu #topMenuStartBetting a.trading_link').attr('href', trade_url);
+        }
+
+        start_trading.on('click', function(event) {
+            event.preventDefault();
+            load_with_pjax(trade_url);
+        }).addClass('unbind_later');
+
+        $('#menu-top li:eq(3) a').on('click', function(event) {
+            event.preventDefault();
+            load_with_pjax(trade_url);
+        }).addClass('unbind_later');
+
+    }
+};
+
 var Header = function(params) {
     this.user = params['user'];
     this.client = params['client'];
     this.settings = params['settings'];
+    this.menu = new Menu(params['url']);
     this.clock_started = false;
 };
 
 Header.prototype = {
     on_load: function() {
         this.show_or_hide_login_form();
+        this.register_dynamic_links();
         if (!this.clock_started) this.start_clock();
+        this.simulate_input_placeholder_for_ie();
+    },
+    on_unload: function() {
+        this.menu.reset();
     },
     show_or_hide_login_form: function() {
         if (this.user.is_logged_in && this.client.is_logged_in) {
@@ -264,11 +435,37 @@ Header.prototype = {
             $("#client_loginid").html(loginid_select);
         }
     },
+    simulate_input_placeholder_for_ie: function() {
+        var test = document.createElement('input');
+        if ('placeholder' in test)
+            return;
+        $('input[placeholder]').each(function() {
+            var input = $(this);
+            $(input).val(input.attr('placeholder'));
+            $(input).focus(function() {
+                if (input.val() == input.attr('placeholder')) {
+                    input.val('');
+                }
+            });
+            $(input).blur(function() {
+                if (input.val() === '' || input.val() == input.attr('placeholder')) {
+                    input.val(input.attr('placeholder'));
+                }
+            });
+        });
+    },
     register_dynamic_links: function() {
         var logged_in_url = page.url.url_for('');
         if(this.client.is_logged_in) {
             logged_in_url = page.url.url_for('user/my_account');
         }
+
+        $('#logo').attr('href', logged_in_url).on('click', function(event) {
+            event.preventDefault();
+            load_with_pjax(logged_in_url);
+        }).addClass('unbind_later');
+
+        this.menu.register_dynamic_links();
     },
     start_clock: function() {
         var clock = $('#gmt-clock');
@@ -429,9 +626,11 @@ var Contents = function(client, user) {
 Contents.prototype = {
     on_load: function() {
         this.activate_by_client_type();
+        this.topbar_message_visibility();
         this.update_body_id();
         this.update_content_class();
         this.tooltip.attach();
+        this.init_draggable();
     },
     on_unload: function() {
         this.tooltip.detach();
@@ -439,55 +638,44 @@ Contents.prototype = {
             $('.unbind_later').off();
         }
     },
-    has_real_account: function() {
-
-        if (!this.user.is_logged_in) return false;
-
-        for (var i = 0; i < this.user.loginid_array.length; i++) {
-            if (this.user.loginid_array[i].real == 1) return true;
-        }
-        return false;
-    },
-    init_access_classes: function() {
-        $('body')
-            .removeClass()
-            .toggleClass('client-logged-in', this.client.is_logged_in)
-            .toggleClass('client-not-logged-in', !this.client.is_logged_in)
-            .toggleClass('client-is-real', this.client.is_real)
-            .toggleClass('client-is-virtual', this.client.is_virtual)
-            .toggleClass('client-has-real', this.has_real_account())
-            .toggleClass('client-1', !$.cookie('staff') || !/^Q?MF|MLT/.test(this.client.loginid))
-            .toggleClass('client-2', !/^Q?CR/.test(this.client.loginid));
-    },
     activate_by_client_type: function() {
-
-        this.init_access_classes();
-
         $('.by_client_type').addClass('invisible');
-
-        if (this.client.is_logged_in) {
-
+        if(this.client.is_logged_in) {
             if(this.client.is_real) {
                 $('.by_client_type.client_real').removeClass('invisible');
                 $('.by_client_type.client_real').show();
+
+                $('#topbar').addClass('dark-blue');
+                $('#topbar').removeClass('orange');
 
                 if (!/^Q?CR/.test(this.client.loginid)) {
                     $('#payment-agent-section').addClass('invisible');
                     $('#payment-agent-section').hide();
                 }
 
-                // temporary only show for internal staff
-                if (!$.cookie('staff') || !/^Q?MF|MLT/.test(this.client.loginid)) {
+                if (!/^Q?MF|MLT/.test(this.client.loginid)) {
                     $('#account-transfer-section').addClass('invisible');
                     $('#account-transfer-section').hide();
                 }
             } else {
                 $('.by_client_type.client_virtual').removeClass('invisible');
                 $('.by_client_type.client_virtual').show();
+
+                $('#topbar').addClass('orange');
+                $('#topbar').removeClass('dark-blue');
+
+                $('#account-transfer-section').addClass('invisible');
+                $('#account-transfer-section').hide();
             }
         } else {
             $('.by_client_type.client_logged_out').removeClass('invisible');
             $('.by_client_type.client_logged_out').show();
+
+            $('#topbar').removeClass('orange');
+            $('#topbar').addClass('dark-blue');
+
+            $('#account-transfer-section').addClass('invisible');
+            $('#account-transfer-section').hide();
         }
     },
     update_body_id: function() {
@@ -496,12 +684,57 @@ Contents.prototype = {
         $('body').attr('id', $('#body_id').html());
     },
     update_content_class: function() {
-        var contentClass = $('#content_class').html();
+        //This is required for our css to work.
+        $('#content').removeClass();
+        $('#content').addClass($('#content_class').html());
+    },
+    init_draggable: function() {
+        $('.draggable').draggable();
+    },
+    topbar_message_visibility: function() {
+        if(this.client.is_logged_in) {
+            var loginid_array = this.user.loginid_array;
+            var has_real = false;
 
-        $('#content').parent()
-            .removeClass()
-            .addClass(contentClass);
-    }
+            var has_financial = false;
+            var check_financial = false;
+            if (/MLT/.test(this.client.loginid)) {
+                check_financial = true;
+            }
+
+            for (var i=0;i<loginid_array.length;i++) {
+                var loginid = loginid_array[i].id;
+                var real = loginid_array[i].real;
+
+                if (real) {
+                    has_real = true;
+                    if (!check_financial) {
+                        break;
+                    }
+                    if (loginid_array[i].financial) {
+                        has_financial = true;
+                        break;
+                    }
+                }
+            }
+            if (has_real) {
+                $('.virtual-upgrade-link').addClass('invisible');
+                $('.virtual-upgrade-link').hide();
+
+                if (check_financial && !has_financial) {
+                    $('#financial-upgrade-link').removeClass('invisible');
+                    if ($('#investment_message').length > 0) {
+                        $('#investment_message').removeClass('invisible');
+                    }
+                } else {
+                    $('#financial-upgrade-link').addClass('invisible');
+                    if ($('#investment_message').length > 0) {
+                        $('#investment_message').addClass('invisible');
+                    }
+                }
+            }
+        }
+    },
 };
 
 var Page = function(config) {
@@ -516,23 +749,18 @@ var Page = function(config) {
 
 Page.prototype = {
     language: function() {
-        if(page.url.param('l')) {
+        if ($('#language_select').length > 0) {
+            return $('#language_select').attr('class').toUpperCase(); //Required as mojo still provides lower case lang codes and most of our system expects upper case.
+        } else if(page.url.param('l')) {
             return page.url.param('l');
         } else {
             return 'EN';
         }
     },
-    flag: function() {
-        var idx = $('.language-options li a.selected').parent().index(),
-            offset = - (idx + 1) * 15,
-            cssStyle = offset + 'px';
-        $('.nav-languages a').css('background-position-y', offset);
-    },
     on_load: function() {
         this.url.reset();
         this.localize_for(this.language());
         this.header.on_load();
-        this.flag();
         this.on_change_language();
         this.on_change_loginid();
         this.record_affiliate_exposure();
@@ -541,16 +769,17 @@ Page.prototype = {
         this.on_input_password();
         this.on_click_acc_transfer();
         this.on_click_view_balances();
+        $('#current_width').val(get_container_width());//This should probably not be here.
     },
     on_unload: function() {
+        this.header.on_unload();
         this.contents.on_unload();
     },
     on_change_language: function() {
         var that = this;
-        $('.language-options').on('click', 'li', function(e) {
-            var language = $(this).find('a').attr('data-langcode');
+        $('#language_select').on('change', 'select', function() {
+            var language = $(this).find('option:selected').attr('class');
             document.location = that.url_for_language(language);
-            e.preventDefault();
         });
     },
     on_change_loginid: function() {
@@ -633,6 +862,7 @@ Page.prototype = {
             });
         });
     },
+
     localize_for: function(language) {
         text = texts[language];
         moment.locale(language.toLowerCase());

@@ -1,4 +1,4 @@
-.sidebar
+.sidebar-left
   %ul.nav
     - my @nav = ({route => '/get-started/what-is-binary-trading',       text => l('Why choose binary trading?')},
     -            {route => '/get-started/types-of-trades',              text => l('Types of trades')},
@@ -15,5 +15,3 @@
       %li.$class
         %a{:href=>url_for($route), :class => 'pjaxload'}= $text
     - }
-  %p.by_client_type.client_logged_out.client_virtual
-    %a.button.pjaxload{:href => url_for('/')}= l('Open a Free account')

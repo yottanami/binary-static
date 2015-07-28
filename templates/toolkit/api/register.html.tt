@@ -1,6 +1,7 @@
-<h2>[%l('Partner API Registration for')%] [%client.loginid%] [%client.full_name%]</h2>
-<p class="error-msg">[% results %]</p>
-<form method="post">
+
+    <h2>[%l('Partner API Registration for')%] [%client.loginid%] [%client.full_name%]</h2>
+    <p class="error-msg">[% results %]</p>
+    <form method="post">
     <table>
         <tr>
             <td>*[%l('Application Name')%]</td>
@@ -20,11 +21,13 @@
     [% END %]
         <tr>
             <td colspan="3">
-                <button class="button" name="register" value="Register" type="submit">[% my_app ? l('Update') : l('Register') %]</button>
+                <span class="button">
+                    <button class="button" name="register" value="Register" type="submit">[% my_app ? l('Update') : l('Register') %]</button>
                 [% IF my_app %]
                     <button class="button" name="cancel" value="Cancel" type="submit">[%l('Cancel Registration')%]</button>
                 [% END %]
+                </span>
             </td>
         </tr>
     </table>
-</form>
+    </form>
